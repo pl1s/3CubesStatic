@@ -1,0 +1,158 @@
+@use "../abstracts" as *;
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: $font;
+  text-decoration: none;
+  outline: none;
+  border: none;
+}
+//scrollbar delete
+html::-webkit-scrollbar {
+  width: 0 !important;
+}
+
+html {
+  font-size: 100%;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+p {
+  color: $fontColor;
+}
+h1 {
+  font-size: 6rem;
+  font-weight: 400;
+}
+h2 {
+  font-size: 4rem;
+  font-weight: 200;
+}
+h3 {
+  font-size: 2.5rem;
+  font-weight: 300;
+}
+h4 {
+  font-size: 1.5rem;
+  font-weight: 500;
+}
+h5 {
+  font-size: 1.25rem;
+  font-weight: 500;
+}
+h6 {
+  font-size: 1rem;
+  font-weight: 500;
+}
+h7 {
+  font-size: 1vw;
+  font-weight: 500;
+}
+p {
+  font-size: 1.5rem;
+  font-weight: 300;
+}
+a {
+  font-size: 1.35rem;
+  font-weight: 300;
+}
+
+.full-height {
+  height: 100%;
+}
+.full-padding {
+  padding: 5% 5%;
+}
+.full-double-padding {
+  padding: 10% 10%;
+}
+.side-padding {
+  padding: 0 5%;
+}
+.top-bottom-padding {
+  padding: 5% 0;
+}
+.bottom-padding {
+  padding: 0 0 5% 0;
+}
+.top-padding {
+  padding: 5% 0 0 0;
+}
+
+.top-bottom-margin {
+  margin: 5% 0;
+}
+
+.bottom-margin {
+  margin: 0 0 5% 0;
+}
+
+.flex-between {
+  display: flex;
+  justify-content: space-between;
+}
+
+.flex-full {
+  display: flex;
+  width: 100%;
+  height: 100%;
+}
+
+.fullw {
+  width: 100%;
+}
+
+.center {
+  justify-content: center;
+  align-items: center;
+}
+
+.flex {
+  display: flex;
+}
+
+.flex-row {
+  display: flex;
+  flex-direction: row;
+}
+
+.flex-column {
+  display: flex;
+  flex-direction: column;
+}
+
+.checkbox {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.center-right {
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.wrap {
+  flex-wrap: wrap;
+}
+
+.jcLeft {
+  justify-content: flex-start;
+}
+
+.align-item-end {
+  align-items: flex-end;
+}
+
+button {
+  cursor: pointer;
+  // &:hover {
+  //   box-shadow: 0 0 10px 2px black;
+  //   font-weight: bolder;
+  //   transform: scale(1.1);
+  // }
+}

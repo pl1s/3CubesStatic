@@ -1,0 +1,128 @@
+@use "../abstracts" as *;
+.package {
+  &__title {
+    h2 {
+      text-align: center;
+    }
+  }
+  &__card {
+    &-container {
+      &_small {
+        background-color: $bgSection;
+        box-shadow: 0px 3px 1px -2px rgb(0 0 0 / 20%),
+          0px 2px 2px 0px rgb(0 0 0 / 14%), 0px 1px 5px 0px rgb(0 0 0 / 12%);
+        z-index: 999;
+      }
+    }
+    &-big {
+      background-color: $bgDarkSection;
+      box-shadow: 0px 3px 1px -2px rgb(0 0 0 / 20%),
+        0px 2px 2px 0px rgb(0 0 0 / 14%), 0px 1px 5px 0px rgb(0 0 0 / 12%);
+    }
+  }
+}
+
+.download {
+  button {
+    background-color: transparent;
+    border: 1px solid $btnOrange;
+    * {
+      color: $btnOrange;
+    }
+  }
+}
+
+.orderNow {
+  background-color: $bgFooter;
+  &__card {
+    * {
+      color: white;
+    }
+    &-text {
+    }
+    &-btn {
+      background-color: $btnOrange;
+      button {
+        background-color: transparent;
+        width: 100%;
+      }
+    }
+  }
+}
+
+.lessons {
+  &__background {
+    background-color: $bgDarkSection;
+  }
+
+  &__slider-card {
+    box-shadow: 0px 3px 1px -2px rgb(0 0 0 / 20%),
+      0px 2px 2px 0px rgb(0 0 0 / 14%), 0px 1px 5px 0px rgb(0 0 0 / 12%);
+  }
+
+  &__slider-card_txt {
+    background-color: $bgSection;
+    h5 {
+      text-align: center;
+    }
+  }
+
+  &__slider-larrow,
+  &__slider-rarrow {
+    box-shadow: 0px 3px 1px -2px rgb(0 0 0 / 20%),
+      0px 2px 2px 0px rgb(0 0 0 / 14%), 0px 1px 5px 0px rgb(0 0 0 / 12%);
+    cursor: pointer;
+  }
+}
+
+.reviews {
+  &__card {
+    background-color: $bgSection;
+  }
+  &__topWrapper-container {
+    &_card {
+      background-color: rgba($color: white, $alpha: 0.8);
+    }
+  }
+}
+
+.keyBenefits {
+  &__box {
+    background-color: $bgSection;
+    box-shadow: 0px 3px 1px -2px rgb(0 0 0 / 20%),
+      0px 2px 2px 0px rgb(0 0 0 / 14%), 0px 1px 5px 0px rgb(0 0 0 / 12%);
+  }
+  .overlay {
+    background-color: $overlayColor;
+    box-shadow: 0px 3px 1px -2px rgb(0 0 0 / 20%),
+      0px 2px 2px 0px rgb(0 0 0 / 14%), 0px 1px 5px 0px rgb(0 0 0 / 12%);
+  }
+}
+
+.payments {
+  &__top {
+  }
+  &__bottom {
+    background-color: $bgDarkSection;
+  }
+}
+.mars {
+  // &__title {
+  //   :nth-child(2) {
+  //     font-weight: 500;
+  //   }
+  // }
+  &__body {
+    &-themes_title {
+      :nth-child(2) {
+        font-weight: 600;
+        margin: 2% 0 5% 0;
+      }
+    }
+    &-slider_paginator {
+      button {
+        background: transparent;
+      }
+    }
+  }
+}

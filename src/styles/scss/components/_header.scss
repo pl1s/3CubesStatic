@@ -1,0 +1,33 @@
+@use "../abstracts" as *;
+
+header {
+  position: fixed;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-end;
+  width: 100%;
+  top: 0;
+  height: 15vh;
+  background: transparent;
+  .logo {
+    display: flex;
+    object-fit: contain;
+  }
+  .right-side {
+    display: flex;
+    justify-content: flex-end;
+    width: 80%;
+    &__navigation {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around;
+      flex-wrap: nowrap;
+      white-space: nowrap;
+      width: 100%;
+    }
+    &__language {
+      white-space: nowrap;
+    }
+  }
+}

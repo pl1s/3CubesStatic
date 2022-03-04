@@ -1,0 +1,13 @@
+// //break points
+// @mixin mq() {
+//   @media (max-width: 600px) {
+//     @content;
+//   }
+// }
+
+// //break points
+@mixin mq1500() {
+  @media (max-width: 1500px) {
+    @content;
+  }
+}

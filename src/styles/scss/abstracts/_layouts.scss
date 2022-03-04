@@ -1,0 +1,1348 @@
+@use "./breaks" as *;
+
+.companies {
+  height: 8vh;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  background: url(../../assets/main/Rectangle203.png) no-repeat center center;
+  background-size: 70%;
+}
+
+.game-learning {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 5% !important;
+  &__title {
+    flex: 1;
+    max-width: 60%;
+    @include mq1500 {
+      max-width: unset;
+    }
+  }
+  &__benefits {
+    flex: 1;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    * {
+      padding: 0 2%;
+    }
+    p {
+      max-width: 380px;
+    }
+  }
+  &__img {
+    flex: 4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 0%;
+    img {
+      height: 100%;
+      width: 100%;
+    }
+  }
+}
+
+.research {
+  display: flex;
+  flex-direction: column;
+  // height: 120vh;
+  background: url(../../assets/main/Group432.png) no-repeat center center;
+  background-size: cover;
+
+  &__topWrapper {
+    flex: 1;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    button {
+      margin: 5% 0;
+    }
+    .container {
+      display: flex;
+      flex-wrap: nowrap;
+      flex-direction: row;
+      justify-content: space-around;
+      width: 100%;
+      margin: 5% 0;
+      @include mq1500 {
+        flex-wrap: wrap;
+        justify-content: center;
+      }
+      .box {
+        display: grid;
+        grid-template-columns: 0.5fr 1fr;
+        width: 30%;
+        max-width: 500px;
+        margin: 1rem;
+        padding: 1rem 0;
+        @include mq1500 {
+          width: unset;
+        }
+        * {
+          align-self: center;
+        }
+        img {
+          justify-self: center;
+        }
+      }
+    }
+  }
+  &__bottomWrapper {
+    position: relative;
+    bottom: 0;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    text-align: center;
+    margin: 0 auto;
+    padding-top: 10%;
+    width: 58%;
+    @include mq1500 {
+      width: unset;
+    }
+  }
+}
+
+.teacherSupport {
+  display: flex;
+  margin: 0 5%;
+  justify-content: space-around;
+  min-height: 700px;
+  padding: 5% 10% 10% 10%;
+  img {
+    position: absolute;
+  }
+
+  .left {
+    top: 10%;
+    right: 0;
+    margin-right: 90%;
+  }
+
+  .right {
+    right: 0;
+    margin-top: -20px;
+  }
+  .right2 {
+    left: 0;
+    top: 50%;
+    margin-left: 80%;
+  }
+
+  .text {
+    // width: 80%;
+    position: relative;
+    padding-right: 1rem;
+    .mb150 {
+      margin-bottom: 150px;
+    }
+  }
+
+  &__wrapper1 {
+    justify-content: flex-start;
+    max-width: 30%;
+  }
+  &__wrapper2 {
+    align-items: center;
+    // margin-bottom: 150px;
+    max-width: 30%;
+  }
+  &__wrapper3 {
+    align-items: flex-end;
+    // width: 20%;
+    max-width: 30%;
+  }
+}
+
+.community {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  &__card {
+    position: absolute;
+    min-width: 35vh;
+    max-width: 600px;
+    margin: 45vh 60vw 0 10vw;
+    box-shadow: 0px 3px 1px -2px rgb(0 0 0 / 20%),
+      0px 2px 2px 0px rgb(0 0 0 / 14%), 0px 1px 5px 0px rgb(0 0 0 / 12%);
+    .paginator {
+      display: flex;
+      li {
+        width: 15px;
+        height: 15px;
+        border: 1px solid #fdd306;
+        margin: 0.5rem;
+      }
+    }
+  }
+  .Qmark {
+    position: absolute;
+    top: -90px;
+    left: 20px;
+  }
+  .slide {
+    padding: 10% 10% 0 10%;
+    &__title {
+      flex: 3;
+    }
+    &__body {
+      flex: 1;
+      .user {
+        padding: 1rem;
+        &__name {
+          padding-bottom: 0.25rem;
+        }
+      }
+    }
+  }
+
+  .paginator {
+    height: 100px;
+  }
+
+  &__topWrapper {
+    background: url(../../assets/main/Group433.png) no-repeat center center;
+    background-size: cover;
+    flex: 1;
+    img {
+      position: absolute;
+    }
+    &-left {
+      flex: 1;
+      padding: 0 0 0 5%;
+    }
+    &-right {
+      justify-content: center;
+      flex: 1;
+      padding: 0 5% 0 0;
+      max-width: 50%;
+      @include mq1500 {
+        flex: 2;
+        max-width: unset;
+      }
+    }
+  }
+
+  &__bottomWrapper {
+    flex: 1;
+    &-left {
+      flex: 1;
+    }
+    &-right {
+      flex: 1;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+}
+.achievements {
+  justify-content: space-between;
+  background: url(../../assets/main/Component17.png) no-repeat center 150px;
+  background-size: 100%;
+  .box {
+    display: grid;
+    grid-template-rows: repeat(2, 1fr);
+    max-width: 30%;
+    text-align: center;
+  }
+  h2 {
+    text-align: center;
+  }
+}
+
+.services {
+  // height: 100vh;
+  justify-content: space-between;
+  &__title {
+    justify-content: center;
+    align-items: flex-start;
+    height: 100px;
+  }
+  &__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+  }
+  img {
+    position: absolute;
+  }
+  &__card {
+    position: relative;
+    height: 20vw;
+    width: 20vw;
+    min-width: 300px;
+    min-height: 300px;
+    margin: 0 auto;
+    padding: 1rem;
+    .frame {
+      width: 25vw;
+      height: 28vw;
+      min-width: 360px;
+      min-height: 360px;
+    }
+  }
+  &__cardBig {
+    height: 25vw;
+    width: 25vw;
+    margin: 0 auto;
+    .frame {
+      width: 30vw;
+      height: 30vw;
+    }
+  }
+
+  &__cardLeft {
+    flex: 1;
+    margin-top: 10%;
+  }
+  &__cardMiddle {
+    flex: 1;
+    margin-top: -20%;
+  }
+  &__cardRight {
+    flex: 1;
+    margin-top: 10%;
+  }
+}
+//FORMAL PAGE
+///
+////////////////////////////////
+.package {
+  justify-content: center;
+  align-items: center;
+  &__title {
+    margin: 0 10vw 10% 10vw;
+    @include mq1500 {
+      margin: 0 5vw 10% 5vw;
+    }
+  }
+  &__card {
+    position: relative;
+    min-width: 100%;
+    height: 60%;
+    align-items: center;
+
+    &-big {
+      position: absolute;
+      width: 35vw;
+      height: 25vw;
+      padding: 0 5%;
+
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      margin: auto;
+
+      img {
+        position: absolute;
+        top: 80%;
+        width: 12vw;
+      }
+    }
+    &-container {
+      justify-content: space-between;
+      width: 100%;
+      margin: 0 5%;
+      &_small {
+        width: 25vw;
+        height: 15vw;
+        padding: 0 5%;
+        img {
+          position: absolute;
+          width: 12vw;
+        }
+        .right {
+          margin-left: 25vw;
+          margin-top: 15vw;
+        }
+        .left {
+          margin-right: 25vw;
+          margin-top: 15vw;
+        }
+      }
+    }
+  }
+}
+
+.download {
+  padding: 20% 0 12% 0;
+  &__container {
+    justify-content: center;
+    button {
+      width: 250px;
+      height: 70px;
+      margin-left: 1rem;
+      * {
+        padding: 0 0.25rem;
+      }
+    }
+  }
+}
+
+.orderNow {
+  position: absolute;
+  right: 0;
+  width: 30%;
+  max-width: 600px;
+  padding: 3% 2%;
+  margin-top: -6%;
+  margin-right: 10%;
+  z-index: 99;
+  &__card {
+    @include mq1500 {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+    }
+    &-text {
+    }
+    &-btn {
+      width: 200px;
+      height: 50px;
+    }
+  }
+}
+
+.lessons {
+  justify-content: space-around;
+  position: relative;
+  &__background {
+    position: absolute;
+    height: 70%;
+    right: 0;
+    left: 0;
+    top: 0;
+    z-index: -1;
+  }
+  &__title {
+    margin-left: 20%;
+    display: flex;
+    align-items: center;
+    padding: 10rem 0 5% 0;
+  }
+  &__slider {
+    width: 100%;
+    padding-bottom: 5%;
+
+    &-card {
+      width: 30%;
+      display: flex;
+      flex-direction: column;
+      margin: 0 1rem;
+
+      &_txt {
+        min-height: 200px;
+      }
+      img {
+        width: 100%;
+        transform: scale(1, 1.05);
+      }
+    }
+    &-larrow,
+    &-rarrow {
+      margin: 0 1rem;
+      height: 38px;
+      width: 38px;
+    }
+  }
+}
+
+.reviews {
+  // &__topWrapper-container_card {
+  //   width: 30%;
+  //   height: 30%;
+  // }
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  &__card {
+    position: absolute;
+    max-width: 500px;
+    margin-top: 64vh;
+    margin-right: 6vw;
+    margin-left: 51vw;
+    box-shadow: 0px 3px 1px -2px rgb(0 0 0 / 20%),
+      0px 2px 2px 0px rgb(0 0 0 / 14%), 0px 1px 5px 0px rgb(0 0 0 / 12%);
+    .paginator {
+      display: flex;
+      li {
+        width: 15px;
+        height: 15px;
+        border: 1px solid #fdd306;
+        margin: 0.5rem;
+      }
+    }
+  }
+  .Qmark {
+    position: absolute;
+    top: -90px;
+    right: 20px;
+  }
+  .slide {
+    padding: 10% 10% 0 10%;
+    &__title {
+      flex: 3;
+    }
+    &__body {
+      flex: 1;
+      .user {
+        padding: 1rem;
+        &__name {
+          padding-bottom: 0.25rem;
+        }
+      }
+    }
+  }
+
+  .paginator {
+    height: 100px;
+  }
+
+  &__topWrapper {
+    flex: 1.5;
+    background: url(../../assets/formal/Group431.png) no-repeat center center;
+    background-size: cover;
+
+    &-title {
+      width: 80%;
+      margin: 5% auto;
+      text-align: center;
+    }
+
+    &-container {
+      justify-content: space-between;
+
+      &_card {
+        position: relative;
+        width: 30%;
+        height: 20vh;
+        text-align: center;
+        padding: 0 2rem;
+        .cardLeft {
+          left: -2.5vh;
+          bottom: -20%;
+        }
+        .cardMiddle {
+          bottom: -20%;
+          right: -2.5vh;
+        }
+        .cardRight {
+          right: -10%;
+          top: -2.5vh;
+        }
+
+        img {
+          position: absolute;
+        }
+      }
+    }
+
+    .left {
+      flex: 1;
+      padding: 0 0 0 5%;
+    }
+    .right {
+      justify-content: center;
+      flex: 1;
+      padding: 0 5% 0 0;
+      max-width: 45%;
+    }
+  }
+
+  &__bottomWrapper {
+    flex: 1;
+    .right {
+      flex: 1;
+    }
+    .left {
+      flex: 1;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+}
+
+.keyBenefits {
+  position: relative;
+  height: 100vh;
+  .overlay {
+    position: absolute;
+    white-space: nowrap;
+    text-align: center;
+    bottom: 0;
+    right: 100%;
+    left: 0;
+    overflow: hidden;
+    width: 0;
+    height: 100%;
+    transition: 0.5s ease-in-out;
+  }
+  &__box {
+    position: relative;
+    white-space: nowrap;
+    text-align: center;
+    height: 20vw;
+    max-height: 300px;
+    max-width: 300px;
+    width: 20vw;
+    @include mq1500 {
+      white-space: normal;
+    }
+    &:hover .overlay {
+      width: 100%;
+      right: 0;
+    }
+  }
+  &__sideL,
+  &__sideR {
+    position: absolute;
+    justify-content: space-around;
+    height: 80vw;
+    max-height: 80%;
+    top: 0px;
+    bottom: 0px;
+  }
+  &__sideL {
+    left: 0;
+    margin: auto 0 auto 5%;
+    .left1 {
+      margin-left: 0vw;
+    }
+    .left2 {
+      margin-left: 8vw;
+    }
+    .left3 {
+      margin-left: 14vw;
+    }
+  }
+  &__sideR {
+    right: 0;
+    margin: auto 5% auto 0;
+    .right1 {
+      margin-left: 14vw;
+    }
+    .right2 {
+      margin-left: 8vw;
+    }
+    .right3 {
+      margin-right: 14vw;
+    }
+  }
+  &__title {
+    width: 60%;
+    margin: 0 auto;
+    text-align: center;
+    @include mq1500 {
+      width: unset;
+    }
+  }
+  img {
+    position: absolute;
+    margin: 0 auto;
+    left: 0;
+    right: 0;
+    bottom: 0;
+  }
+}
+
+.payments {
+  position: relative;
+  // height: 120vh;
+  &__top {
+    height: 30vw;
+  }
+  &__bottom {
+    padding: 10% 5% 5% 5%;
+    &-title {
+      text-align: center;
+      padding-top: 5%;
+    }
+    &-body {
+      background: url(../../assets/formal/Group429.png) no-repeat center;
+      background-size: 100%;
+      width: 100%;
+      justify-content: space-around;
+      &_box {
+        width: 20%;
+        text-align: center;
+        &:nth-child(odd) {
+          padding-top: 5%;
+        }
+        &:nth-child(even) {
+          padding-bottom: 5%;
+        }
+      }
+    }
+  }
+  &__video {
+    position: absolute;
+    margin: 0 15%;
+    top: 5vw;
+    left: 0;
+    right: 0;
+    display: flex;
+
+    video {
+      height: 80%;
+      width: 80%;
+      margin: 0 auto;
+    }
+  }
+}
+////////
+//NONFORMAL page
+.mars {
+  &__title {
+    * {
+      padding-bottom: 1%;
+    }
+  }
+  &__body {
+    // margin-top: 5%;
+    &-slider {
+      flex: 5;
+      &_container {
+        justify-content: space-between;
+        &-item {
+          width: 100%;
+          padding: 0 0 0 2%;
+          img {
+            width: 100%;
+          }
+        }
+      }
+      &_paginator {
+        position: relative;
+        text-align: end;
+        padding-top: 2%;
+        z-index: 99;
+        * {
+          padding: 0 5px;
+        }
+      }
+    }
+    &-themes {
+      flex: 3;
+      padding: 0 0 0 10%;
+      &_title {
+        padding: 0 0 10% 0;
+      }
+      &_list {
+        li {
+          display: flex;
+          align-items: center;
+          list-style-type: none;
+          padding: 2% 0;
+          img {
+            padding: 0 5px;
+          }
+        }
+
+        p {
+          padding: 7% 0;
+        }
+      }
+    }
+  }
+}
+
+.game-design {
+  position: relative;
+  padding: 5% 5% 0 5%;
+  &__background {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 40%;
+    z-index: -1;
+  }
+}
+
+.codeAcademy {
+  &__video {
+    position: relative;
+    flex: 1.5;
+    padding: 5% 0;
+
+    video {
+      width: 100%;
+      margin: 0 auto;
+    }
+    h4 {
+      position: relative;
+      width: 80%;
+      top: 5%;
+      text-align: center;
+      margin: auto;
+    }
+  }
+  &__card {
+    flex: 1;
+    margin-bottom: 10%;
+    &-collapsible {
+      width: 60%;
+      margin-bottom: 10%;
+      button {
+        align-items: center;
+        width: 100%;
+        margin-bottom: 5px;
+      }
+      img {
+      }
+      &_content {
+        display: none;
+        position: relative;
+        h4 {
+          position: relative;
+          width: 100%;
+          padding: 10%;
+          margin: auto;
+          top: 30%;
+          text-align: center;
+        }
+      }
+    }
+  }
+}
+
+.skillSet {
+  position: relative;
+  &__top {
+    height: 30vw;
+  }
+  &__bottom {
+    padding: 5%;
+    &-title {
+      text-align: center;
+      padding-top: 5%;
+    }
+    &-body {
+      background: url(../../assets/nonformal/skillBG.png) no-repeat center;
+      background-size: 100%;
+      width: 100%;
+      height: 400px;
+      justify-content: space-around;
+      // padding: 5% 0 10% 0;
+      &_box {
+        width: 200px;
+        text-align: center;
+        h4 {
+          position: absolute;
+          // width: 100%;
+        }
+
+        &:nth-child(2) {
+          margin-top: 15%;
+        }
+        &:nth-child(4) {
+          margin-bottom: 15%;
+        }
+        &:nth-child(5) {
+          margin-right: 5%;
+        }
+        &:nth-child(6) {
+          margin-top: 15%;
+        }
+      }
+    }
+  }
+}
+
+.marsPackage {
+  &__title {
+    width: 70vw;
+  }
+  &__body {
+    padding: 0 0 20% 0;
+    width: 100%;
+    justify-content: space-around;
+    &-box {
+      position: relative;
+      width: 30%;
+      max-width: 500px;
+      height: 200px;
+      img {
+        position: absolute;
+      }
+      .imgIdea {
+        margin-right: 100%;
+      }
+      .imgBoard {
+        margin-right: 80%;
+        margin-top: 170px;
+      }
+      .imgCertificate {
+        margin-left: 90%;
+        margin-top: 170px;
+      }
+    }
+  }
+}
+
+//BACKGROUND ELEMENTS
+.bg123,
+.bg5,
+.bgAB,
+.bgC {
+  position: absolute;
+}
+.bg5 {
+  right: 0;
+  bottom: 20%;
+}
+.bgAB {
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+}
+.bgC {
+}
+//BACKGROUND ELEMENTS
+
+.projectsLeft {
+  position: relative;
+  h2 {
+    margin-bottom: 5%;
+  }
+  .right {
+    right: 57%;
+  }
+  &__main {
+    &-title {
+      justify-content: space-around;
+      align-items: center;
+      width: 40%;
+      margin-left: 2%;
+      padding-bottom: 2%;
+      .skewb {
+        width: 75%;
+        padding-bottom: 10px;
+      }
+      &_img {
+        justify-content: flex-start;
+        align-items: center;
+        max-width: 150px;
+        text-align: center;
+        padding: 0 15% 0 0;
+        img {
+          width: 100%;
+        }
+      }
+    }
+    &-body {
+      width: 50%;
+      img {
+        width: 100%;
+      }
+    }
+  }
+  &__aside {
+    position: absolute;
+    justify-content: space-between;
+    align-items: center;
+    width: 30%;
+    height: 83%;
+    right: 30%;
+    bottom: 0;
+    &-card {
+      align-items: center;
+      width: 20vw;
+      min-height: 23%;
+    }
+  }
+}
+
+.projectsRight {
+  position: relative;
+  .paginator__wrapper {
+    width: 50%;
+    padding-left: 7%;
+    text-align: start;
+  }
+  h2 {
+    margin-bottom: 5%;
+  }
+  .right {
+    width: 100%;
+  }
+  &__main {
+    &-title {
+      justify-content: flex-end;
+      width: 100%;
+      padding-bottom: 2%;
+      &_wrapper {
+        justify-content: space-between;
+        align-items: center;
+        width: 40%;
+        margin-right: 2%;
+      }
+      .skewb {
+        width: 75%;
+        padding-bottom: 10px;
+      }
+      &_img {
+        justify-content: flex-start;
+        align-items: center;
+        max-width: 150px;
+        text-align: center;
+        padding: 0 15% 0 0;
+        h3 {
+          width: 70%;
+        }
+        img {
+          width: 100%;
+        }
+      }
+    }
+    &-body {
+      justify-content: flex-end;
+      width: 100% !important;
+      &_wrapper {
+        width: 100%;
+      }
+
+      img {
+        width: 50%;
+      }
+    }
+  }
+  &__aside {
+    position: absolute;
+    justify-content: space-between;
+    align-items: center;
+    left: 30%;
+    width: 30%;
+    height: 100%;
+    bottom: 0;
+    &-card {
+      align-items: center;
+      width: 20vw;
+      min-height: 23%;
+    }
+  }
+}
+
+//Lithuanian projects layouts +1card
+.projectsExtraR {
+  .paginator__wrapper {
+    width: 50%;
+    padding-left: 7%;
+    text-align: start;
+  }
+  h2 {
+    // margin-bottom: 5%;
+    margin: unset;
+  }
+  .right {
+    width: 100%;
+  }
+  &__main {
+    position: relative;
+    &-title {
+      justify-content: flex-end;
+      width: 100%;
+      padding-bottom: 2%;
+      &_wrapper {
+        justify-content: space-between;
+        align-items: center;
+        width: 40%;
+        margin-right: 2%;
+      }
+      .skewb {
+        width: 75%;
+        padding-bottom: 10px;
+      }
+      &_img {
+        justify-content: flex-start;
+        align-items: center;
+        max-width: 150px;
+        text-align: center;
+        padding: 0 15% 0 0;
+        h3 {
+          width: 70%;
+        }
+        img {
+          width: 100%;
+        }
+      }
+    }
+    &-body {
+      justify-content: flex-end;
+      width: 100% !important;
+      &_wrapper {
+        width: 100%;
+      }
+
+      img {
+        width: 50%;
+      }
+    }
+  }
+  &__aside {
+    position: absolute;
+    justify-content: space-between;
+    align-items: center;
+    left: 30%;
+    width: 30%;
+    height: 85%;
+    bottom: 4.2%;
+    &-card {
+      align-items: center;
+      width: 20vw;
+      min-height: 19%;
+      &_text-wrapper {
+        align-items: center;
+        img {
+          width: 15%;
+          margin-left: 5%;
+        }
+      }
+    }
+  }
+  &__sponsorship {
+    justify-content: space-between;
+    margin: 2% 0 0 56%;
+    @include mq1500 {
+      flex-direction: column !important;
+      justify-content: center;
+    }
+    img {
+      max-height: 70px;
+    }
+    &-container {
+      justify-content: space-between;
+      text-align: center;
+      &_brand {
+        justify-content: space-between;
+        align-items: center;
+        margin-left: 5%;
+      }
+    }
+    //TODO info box mq 1.8k column
+    &-info {
+      justify-content: center;
+      align-items: center;
+      @include mq1500 {
+        justify-content: flex-end;
+        margin-top: 10px;
+      }
+    }
+  }
+}
+
+.projectsExtraL {
+  h2 {
+    margin-bottom: 5%;
+  }
+  .right {
+    right: 57%;
+  }
+  &__main {
+    position: relative;
+    &-title {
+      justify-content: space-around;
+      align-items: center;
+      width: 40%;
+      margin-left: 2%;
+      padding-bottom: 2%;
+      .skewb {
+        width: 75%;
+        padding-bottom: 10px;
+      }
+      &_img {
+        justify-content: flex-start;
+        align-items: center;
+        max-width: 150px;
+        text-align: center;
+        padding: 0 15% 0 0;
+        img {
+          width: 100%;
+        }
+      }
+    }
+    &-body {
+      width: 50%;
+      img {
+        width: 100%;
+      }
+    }
+  }
+  &__aside {
+    position: absolute;
+    justify-content: space-between;
+    align-items: center;
+    width: 30%;
+    height: 83%;
+    right: 30%;
+    bottom: 0;
+    &-card {
+      align-items: center;
+      width: 20vw;
+      min-height: 19%;
+      &_text-wrapper {
+        align-items: center;
+        img {
+          width: 15%;
+          margin-left: 5%;
+        }
+      }
+    }
+  }
+  &__sponsorship {
+    justify-content: space-between;
+    margin: 2% 57% 0 0;
+    flex-direction: row-reverse !important;
+    @include mq1500 {
+      flex-direction: column !important;
+      justify-content: center;
+    }
+    img {
+      max-height: 70px;
+    }
+    &-container {
+      justify-content: space-between;
+      text-align: center;
+      @include mq1500 {
+        justify-content: center;
+      }
+      &_brand {
+        justify-content: space-between;
+        align-items: center;
+        margin-left: 5%;
+      }
+    }
+    //TODO info box mq 1.8k column
+    &-info {
+      justify-content: center;
+      align-items: center;
+      @include mq1500 {
+        justify-content: flex-start;
+        margin-top: 10px;
+      }
+    }
+  }
+}
+
+.news {
+  position: relative;
+  margin-top: 15vh;
+  @include mq1500 {
+    margin-top: 5vh;
+  }
+
+  &__background {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 40vh;
+    min-height: 400px;
+    z-index: -1;
+  }
+
+  &__title {
+    @include mq1500 {
+      align-items: center !important;
+    }
+    * {
+      padding-bottom: 1%;
+    }
+    &-container {
+      margin-right: 10%;
+      @include mq1500 {
+        margin: 5% 0 0 0;
+      }
+    }
+  }
+  &__body {
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    @include mq1500 {
+      justify-content: space-around;
+    }
+    &-card {
+      position: relative;
+      margin: 2rem;
+      min-height: 20vw;
+      width: 20%;
+      &_image {
+        flex: 5;
+        img {
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+        }
+      }
+      &_text {
+        flex: 1;
+        padding: 1rem;
+      }
+      &_tag {
+        position: absolute;
+        right: 0;
+        top: 10%;
+        min-height: 2vw;
+        width: 40%;
+      }
+    }
+  }
+}
+.intersection {
+  position: absolute;
+  left: 0;
+  top: 0;
+  margin-left: 15%;
+  margin-top: -7%;
+  @include mq1500 {
+    position: unset;
+    margin-left: unset;
+    margin: 10px 0;
+  }
+  &__selections {
+    padding: 3rem;
+    @include mq1500 {
+      padding: 1rem;
+    }
+    ul {
+      @include mq1500 {
+        display: flex;
+        //   display: grid;
+        //   grid-template-columns: repeat(1fr, 2);
+        //   grid-template-rows: repeat(1fr, 2);
+      }
+    }
+    li {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      margin: 1.5rem 0;
+      img {
+        padding-right: 5px;
+      }
+      @include mq1500 {
+        margin-left: 1.5rem;
+      }
+    }
+  }
+}

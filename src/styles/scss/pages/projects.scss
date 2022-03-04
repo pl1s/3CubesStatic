@@ -1,0 +1,19 @@
+@use "../abstracts" as *;
+
+.projectsLeft,
+.projectsRight,
+.projectsExtraR,
+.projectsExtraL,
+.paginatorRight {
+  &__sponsorship-info {
+    a {
+      color: $fontColor;
+      font-weight: 500;
+    }
+  }
+  &__aside {
+    &-card {
+      background-color: $bgSection;
+    }
+  }
+}

@@ -1,0 +1,66 @@
+@use "../abstracts" as *;
+.project-background {
+  background: url(../../assets/projects/hero.png) no-repeat 100% 100%;
+  background-size: cover;
+}
+.hero-main {
+  height: 100vh;
+  padding-top: 15vh !important;
+  &__cta {
+    height: 85vh;
+    display: flex;
+    flex-direction: row;
+
+    &-topLeft {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: flex-start;
+      padding: 0 5%;
+      h1,
+      button {
+        margin: 2% 0;
+      }
+      h3 {
+        margin: 2% 20% 2% 0;
+      }
+    }
+    &-topRight {
+      flex: 1;
+      display: flex;
+      .book {
+        height: 100%;
+        width: 100%;
+        object-fit: contain;
+      }
+    }
+  }
+}
+//DESIGN
+.hero-main {
+  background-color: $bgHero;
+
+  &__cta {
+    * {
+      color: white !important;
+    }
+    button {
+      width: 200px;
+      height: 50px;
+      background-color: $btnOrange;
+    }
+    &-topLeft {
+      color: red;
+      h1 {
+        font-size: 4vw;
+      }
+      h3 {
+        font-size: 2vw;
+      }
+      h4 {
+        font-size: 2vw;
+      }
+    }
+  }
+}
