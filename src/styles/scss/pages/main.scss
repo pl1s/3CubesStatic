@@ -1,12 +1,4 @@
 @use "../abstracts" as *;
-header {
-  background-color: transparent;
-  a {
-    color: white;
-    font-size: 1.35rem;
-    font-weight: 300;
-  }
-}
 
 .game-learning {
   background-color: $bgSection;

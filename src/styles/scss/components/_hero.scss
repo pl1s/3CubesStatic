@@ -1,16 +1,31 @@
 @use "../abstracts" as *;
 .project-background {
   background: url(../../assets/projects/hero.png) no-repeat 100% 100%;
-  background-size: cover;
+  background-size: 100%;
+  @include mq1500 {
+    background: url(../../assets/projects/hero.png) no-repeat 100% 70px;
+    min-height: 60vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
 }
 .hero-main {
-  height: 100vh;
   padding-top: 15vh !important;
+  @include mq1500 {
+    height: unset;
+  }
   &__cta {
     height: 85vh;
     display: flex;
     flex-direction: row;
-
+    @include mq1500 {
+      height: unset;
+      padding: 0 0 5% 0;
+    }
+    @include mq1024 {
+      flex-direction: column;
+    }
     &-topLeft {
       flex: 1;
       display: flex;
@@ -18,12 +33,18 @@
       justify-content: center;
       align-items: flex-start;
       padding: 0 5%;
+      @include mq1024 {
+        align-items: center;
+      }
       h1,
       button {
         margin: 2% 0;
       }
       h3 {
         margin: 2% 20% 2% 0;
+        @include mq1500 {
+          margin: 2%;
+        }
       }
     }
     &-topRight {
@@ -52,15 +73,18 @@
     }
     &-topLeft {
       color: red;
-      h1 {
-        font-size: 4vw;
+      @include mq1024 {
+        text-align: center;
       }
-      h3 {
-        font-size: 2vw;
-      }
-      h4 {
-        font-size: 2vw;
-      }
+      // h1 {
+      //   font-size: 4vw;
+      // }
+      // h3 {
+      //   font-size: 2vw;
+      // }
+      // h4 {
+      //   font-size: 2vw;
+      // }
     }
   }
 }

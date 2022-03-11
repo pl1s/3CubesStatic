@@ -6,13 +6,20 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <link rel='icon' href='../src/assets/edu_icon.svg' type='image/svg' />
   <link href='../src/styles/css/styles.css' rel="stylesheet">
+  <link rel="stylesheet" href="../src/styles/css/splide.min.css">
+  <link rel="stylesheet" href="../src/styles/css/splide-core.min.css">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Edukraftas</title>
 </head>
 
 <body>
-  <header class="side-padding">
+  <header class="side-padding darkHeader">
     <div class="logo"><a href="../pages/main.html"><img src="/src/assets/header_footer/logo.png" alt="logo" /></a>
+    </div>
+    <div class="hamburger">
+      <div class="line"></div>
+      <div class="line"></div>
+      <div class="line"></div>
     </div>
     <div class="right-side">
       <div class="right-side__navigation">
@@ -23,7 +30,7 @@
         <a href="./contacts.html">Kontaktai</a>
       </div>
       <div class="right-side__language">
-        LT | EN
+        <h4>LT | EN</h4>
       </div>
     </div>
   </header>
@@ -35,7 +42,7 @@
           <h1 class="title">Leiskitės į edukacinius nuotykius!</h1>
           <h3>Neformalus švietimas su "Minecraft"!</h3>
           <button>
-            <h5>Susisiekite</h5>
+            <h4>Susisiekite</h4>
           </button>
         </div>
         <div class="hero-main__cta-topRight">
@@ -46,46 +53,73 @@
     <section class="stats">
       <div class="stats__container">
         <div class="box">
-          <h3>8,000
-            <img src="" alt="">
-          </h3>
+          <div class="box__wrapper flex-row center">
+            <h3>8,000
+            </h3>
+            <img src="../src/assets/main/pliusas.png" alt="plus">
+          </div>
           <h6>Vaikų išmėgino pamokas su "Minecraft"</h6>
         </div>
         <div class="box">
-          <h3>30
-            <img src="" alt="">
-          </h3>
+          <div class="box__wrapper flex-row center">
+            <h3>30
+            </h3>
+            <img src="../src/assets/main/pliusas.png" alt="plus">
+          </div>
           <h6>Vaikų vedė savo mokiniams pamokas su "Minecraft"</h6>
         </div>
         <div class="box">
-          <h3>20,000
-            <img src="" alt="">
-          </h3>
+          <div class="box__wrapper flex-row center">
+            <h3>20,000
+            </h3>
+            <img src="../src/assets/main/pliusas.png" alt="plus">
+          </div>
           <h6>Mokyklų vedė savo mokiniams pamokas su "Minecraft"</h6>
         </div>
       </div>
     </section>
     <section class="mars flex-column full-padding">
-      <div class="mars__title flex-column center">
+      <div class="mars__title flex-column center bottom-padding">
         <h2>"Pirmieji Marso gyventojai"</h2>
         <h4>Užsiėmimų metu mokiniai kuria pirmąją kosminę gyvenvietę Marso
           planetoje!</h4>
       </div>
       <div class="mars__body flex-row">
         <div class="mars__body-slider">
-          <div class="mars__body-slider_container flex-row">
-            <div class="mars__body-slider_container-item">
-              <img src="../src/assets/nonformal/Rectangle -1.png" alt="mars">
+          <!-- <div class="mars__body-slider_container flex-row"> -->
+          <div class="splide">
+            <div class="splide__track">
+              <div class="splide__list">
+                <li class="splide__slide slide01">
+                  <div class="mars__body-slider_container-item">
+                    <img src="../src/assets/nonformal/Rectangle -1.png" alt="mars">
+                  </div>
+                </li>
+                <li class="splide__slide slide02">
+                  <div class="mars__body-slider_container-item">
+                    <img src="../src/assets/nonformal/Rectangle -2.png" alt="mars">
+                  </div>
+                </li>
+                <li class="splide__slide slide03">
+                  <div class="mars__body-slider_container-item">
+                    <img src="../src/assets/nonformal/Rectangle -2.png" alt="mars">
+                  </div>
+                </li>
+                <li class="splide__slide slide04">
+                  <div class="mars__body-slider_container-item">
+                    <img src="../src/assets/nonformal/Rectangle -2.png" alt="mars">
+                  </div>
+                </li>
+              </div>
+              <!-- </div> -->
             </div>
-            <div class="mars__body-slider_container-item">
-              <img src="../src/assets/nonformal/Rectangle -2.png" alt="mars">
-            </div>
-          </div>
-          <div class="mars__body-slider_paginator">
-            <button><img src="../src/assets/nonformal/arrowL.png" alt="left arrow"></button>
-            <button><img src="../src/assets/nonformal/arrowR.png" alt="right arrow"></button>
           </div>
         </div>
+        <!-- <div class="mars__body-slider_paginator">
+                  <button><img src="../src/assets/nonformal/arrowL.png" alt="left arrow"></button>
+                  <button><img src="../src/assets/nonformal/arrowR.png" alt="right arrow"></button>
+                </div> -->
+
         <div class="mars__body-themes flex-column">
           <div class="mars__body-themes_title flex center">
             <h3>Būrelio temos</h3>
@@ -144,16 +178,22 @@
         </div>
         <div class="mars__body-slider">
           <div class="mars__body-slider_container flex-row">
-            <div class="mars__body-slider_container-item" style="padding:0;">
-              <img src="../src/assets/nonformal/Rectangle -1.png" alt="mars">
+            <div class="splide02">
+              <div class="splide__track">
+                <div class="splide__list">
+                  <li class="splide__slide slide01">
+                    <div class="mars__body-slider_container-item" style="padding:0;">
+                      <img src="../src/assets/nonformal/Rectangle -1.png" alt="mars">
+                    </div>
+                  </li>
+                  <li class="splide__slide slide02">
+                    <div class="mars__body-slider_container-item">
+                      <img src="../src/assets/nonformal/Rectangle -2.png" alt="mars">
+                    </div>
+                  </li>
+                </div>
+              </div>
             </div>
-            <div class="mars__body-slider_container-item">
-              <img src="../src/assets/nonformal/Rectangle -2.png" alt="mars">
-            </div>
-          </div>
-          <div class="mars__body-slider_paginator" style="text-align:start;">
-            <button><img src="../src/assets/nonformal/arrowL.png" alt="left arrow"></button>
-            <button><img src="../src/assets/nonformal/arrowR.png" alt="right arrow"></button>
           </div>
         </div>
       </div>
@@ -227,10 +267,13 @@
         </div>
       </div>
     </section>
-    <section class="marsPackage flex-column center side-padding">
-      <div class="marsPackage__title top-bottom-padding">
+    <section class="marsPackage flex-column center full-padding">
+      <div class="marsPackage__title bottom-padding">
         <h2>Būrelį "Pirmieji Marso gyventojai" įsigijusioms švietimo įstaigoms suteikiame</h2>
       </div>
+      <!-- <div class="marsPackage__card">
+        <h4>Švietimo įstaigos susiekti dėl būrelių gali užpildžius kontaktinę formą! </h4>
+      </div> -->
       <div class="marsPackage__body flex-row">
         <div class="marsPackage__body-box flex center">
           <img class="imgIdea" src="../src/assets/nonformal/Ideation.png" alt="idea">
@@ -246,7 +289,7 @@
         </div>
       </div>
     </section>
-    <section class="contact-form full-padding flex-column center">
+    <!-- <section class="contact-form full-padding flex-column center">
       <h2>Susisiekite su mumis!</h2>
       <h4>Palikite savo kontaktus ir mes su Jumis susisieksime artimiasiu metu</h4>
       <form action="mailto:suppor@edukraft.lt" method="post" enctype="multipart/form-data" class="form flex-column">
@@ -269,7 +312,7 @@
         </div>
         </table>
       </form>
-    </section>
+    </section> -->
   </main>
   <footer class="footer flex-column side-padding">
     <div class="container flex-row">
@@ -313,6 +356,27 @@
   </footer>
 
   <script src="../src/js/collapsible.js"></script>
+  <script src="../src/js/navtoggle.js"></script>
+  <script src="../src/js/main.js"></script>
+  <script src="../src/js/splide.min.js"></script>
+  <script type="text/javascript">
+
+    new Splide(".splide", {
+      type: "loop",
+      perPage: 2,
+      perMove: 1,
+      autoplay: true,
+      pagination: false,
+    }).mount();
+
+    new Splide(".splide02", {
+      type: "loop",
+      perPage: 2,
+      perMove: 1,
+      autoplay: true,
+      pagination: false,
+    }).mount();
+  </script>
 </body>
 
 </html>

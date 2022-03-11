@@ -28,14 +28,22 @@
     flex: 1;
     display: flex;
     flex-wrap: nowrap;
-    justify-content: space-around;
+    justify-content: center;
     align-items: center;
     width: 100%;
     * {
-      padding: 0 2%;
+      padding: 2%;
     }
     p {
       max-width: 380px;
+    }
+    img {
+      @include mq480 {
+        transform: rotate(90deg);
+      }
+    }
+    @include mq480 {
+      flex-direction: column !important;
     }
   }
   &__img {
@@ -71,7 +79,7 @@
       display: flex;
       flex-wrap: nowrap;
       flex-direction: row;
-      justify-content: space-around;
+      justify-content: center;
       width: 100%;
       margin: 5% 0;
       @include mq1500 {
@@ -81,6 +89,7 @@
       .box {
         display: grid;
         grid-template-columns: 0.5fr 1fr;
+        flex: 1;
         width: 30%;
         max-width: 500px;
         margin: 1rem;
@@ -93,6 +102,9 @@
         }
         img {
           justify-self: center;
+        }
+        h4 {
+          padding: 1rem;
         }
       }
     }
@@ -121,19 +133,34 @@
   justify-content: space-around;
   min-height: 700px;
   padding: 5% 10% 10% 10%;
+  @include mq1024 {
+    flex-direction: column;
+    align-items: center;
+    padding: 5% 10% 15% 10%;
+  }
+  @include mq480 {
+    min-height: 500px;
+  }
+
   img {
     position: absolute;
+    @include mq1024 {
+      width: 50%;
+    }
   }
 
   .left {
     top: 10%;
     right: 0;
     margin-right: 90%;
+    @include mq480 {
+      top: 80%;
+    }
   }
 
   .right {
-    right: 0;
-    margin-top: -20px;
+    right: 10px;
+    margin-top: -15px;
   }
   .right2 {
     left: 0;
@@ -145,83 +172,132 @@
     // width: 80%;
     position: relative;
     padding-right: 1rem;
-    .mb150 {
-      margin-bottom: 150px;
-    }
   }
 
   &__wrapper1 {
     justify-content: flex-start;
     max-width: 30%;
+    @include mq1024 {
+      margin-right: 25%;
+      max-width: 60%;
+    }
+    @include mq767 {
+      margin-right: unset;
+    }
   }
   &__wrapper2 {
     align-items: center;
-    // margin-bottom: 150px;
     max-width: 30%;
+
+    @include mq1500 {
+      margin-bottom: 150px;
+    }
+    @include mq1024 {
+      margin-left: 50%;
+      max-width: 60%;
+      margin-bottom: unset;
+    }
+    @include mq767 {
+      margin-left: unset;
+    }
   }
   &__wrapper3 {
     align-items: flex-end;
-    // width: 20%;
     max-width: 30%;
+    @include mq1024 {
+      margin-right: 50%;
+      max-width: 60%;
+    }
+    @include mq767 {
+      margin-right: unset;
+    }
   }
 }
 
 .community {
   display: flex;
+  position: relative;
   flex-direction: column;
-  min-height: 100vh;
   &__card {
     position: absolute;
     min-width: 35vh;
     max-width: 600px;
-    margin: 45vh 60vw 0 10vw;
+    left: 10%;
+    top: 50%;
     box-shadow: 0px 3px 1px -2px rgb(0 0 0 / 20%),
       0px 2px 2px 0px rgb(0 0 0 / 14%), 0px 1px 5px 0px rgb(0 0 0 / 12%);
+    @include mq767 {
+      top: 50%;
+      min-width: unset;
+      max-width: 90%;
+      left: 0;
+      right: 0;
+      margin: 0 auto;
+    }
+    .splide__pagination__page.is-active {
+      background-color: yellow;
+    }
+    .splide__pagination__page {
+      border-radius: 0 !important;
+      width: 15px;
+      height: 15px;
+      border: 1px solid #fdd306;
+      margin: 0.5rem;
+      z-index: 2;
+    }
     .paginator {
       display: flex;
-      li {
-        width: 15px;
-        height: 15px;
-        border: 1px solid #fdd306;
-        margin: 0.5rem;
-      }
+      height: 100px;
+      list-style: none;
+      justify-content: center;
+      align-items: center;
     }
   }
   .Qmark {
     position: absolute;
     top: -90px;
     left: 20px;
+    @include mq767 {
+      transform: scale(0.5);
+      top: -70px;
+      left: 10px;
+    }
   }
   .slide {
     padding: 10% 10% 0 10%;
     &__title {
       flex: 3;
+      width: 90%;
     }
     &__body {
       flex: 1;
+      width: 80%;
       .user {
         padding: 1rem;
         &__name {
           padding-bottom: 0.25rem;
+          font-weight: 600;
         }
       }
     }
   }
 
-  .paginator {
-    height: 100px;
-  }
-
   &__topWrapper {
     background: url(../../assets/main/Group433.png) no-repeat center center;
     background-size: cover;
-    flex: 1;
+    padding: 10%;
+    @include mq1500 {
+      background-size: auto;
+    }
     img {
       position: absolute;
     }
     &-left {
       flex: 1;
       padding: 0 0 0 5%;
+      @include mq767 {
+        display: none;
+      }
     }
     &-right {
       justify-content: center;
@@ -236,7 +312,8 @@
   }
 
   &__bottomWrapper {
-    flex: 1;
+    padding: 10%;
+    min-height: 400px;
     &-left {
       flex: 1;
     }
@@ -245,6 +322,9 @@
       display: flex;
       justify-content: center;
       align-items: center;
+      @include mq1500 {
+        display: none;
+      }
     }
   }
 }
@@ -252,11 +332,21 @@
   justify-content: space-between;
   background: url(../../assets/main/Component17.png) no-repeat center 150px;
   background-size: 100%;
+  &__container {
+    @include mq1024 {
+      flex-direction: column;
+      align-items: center;
+    }
+  }
   .box {
     display: grid;
     grid-template-rows: repeat(2, 1fr);
     max-width: 30%;
     text-align: center;
+    @include mq1024 {
+      max-width: unset;
+      margin-bottom: 5%;
+    }
   }
   h2 {
     text-align: center;
@@ -264,12 +354,14 @@
 }
 
 .services {
-  // height: 100vh;
   justify-content: space-between;
   &__title {
     justify-content: center;
     align-items: flex-start;
     height: 100px;
+    @include mq480 {
+      height: unset;
+    }
   }
   &__container {
     display: flex;
@@ -277,6 +369,10 @@
     align-items: center;
     width: 100%;
     height: 100%;
+    @include mq1024 {
+      flex-direction: column;
+      padding: unset !important;
+    }
   }
   img {
     position: absolute;
@@ -289,34 +385,80 @@
     min-height: 300px;
     margin: 0 auto;
     padding: 1rem;
+    @include mq480 {
+      height: 70vw;
+      width: 70vw;
+      min-width: unset;
+      min-height: unset;
+    }
     .frame {
       width: 25vw;
       height: 28vw;
       min-width: 360px;
       min-height: 360px;
+      @include mq480 {
+        height: 85vw;
+        width: 85vw;
+        min-width: unset;
+        min-height: unset;
+      }
     }
   }
   &__cardBig {
     height: 25vw;
     width: 25vw;
+    min-width: 350px;
+    min-height: 350px;
     margin: 0 auto;
+    @include mq480 {
+      height: 70vw;
+      width: 70vw;
+      min-width: unset;
+      min-height: unset;
+    }
     .frame {
       width: 30vw;
       height: 30vw;
+      min-width: 450px;
+      min-height: 450px;
+      @include mq480 {
+        height: 85vw;
+        width: 85vw;
+        min-width: unset;
+        min-height: unset;
+      }
     }
   }
 
   &__cardLeft {
     flex: 1;
     margin-top: 10%;
+    @include mq1024 {
+      margin: 0 50% 10% 0;
+    }
+    @include mq767 {
+      margin: 0 0 10% 0;
+    }
   }
   &__cardMiddle {
     flex: 1;
     margin-top: -20%;
+    @include mq1024 {
+      margin: 0 0 10% 0;
+    }
+    @include mq767 {
+      margin: 0 0 10% 0;
+    }
   }
   &__cardRight {
     flex: 1;
     margin-top: 10%;
+    @include mq1024 {
+      margin: 0 0 10% 50%;
+    }
+    @include mq767 {
+      margin: 0 0 10% 0;
+    }
   }
 }
 //FORMAL PAGE
@@ -348,7 +490,10 @@
       bottom: 0;
       left: 0;
       margin: auto;
-
+      @include mq767 {
+        width: 45vw;
+        height: 35vw;
+      }
       img {
         position: absolute;
         top: 80%;
@@ -359,10 +504,22 @@
       justify-content: space-between;
       width: 100%;
       margin: 0 5%;
+
+      @include mq767 {
+        flex-direction: column !important;
+        align-items: center;
+      }
       &_small {
+        min-height: 20vw;
         width: 25vw;
-        height: 15vw;
-        padding: 0 5%;
+        padding: 1rem 5%;
+        @include mq767 {
+          width: 35vw;
+          height: 25vw;
+          &:first-child {
+            margin-bottom: 45vw;
+          }
+        }
         img {
           position: absolute;
           width: 12vw;
@@ -370,10 +527,18 @@
         .right {
           margin-left: 25vw;
           margin-top: 15vw;
+          @include mq767 {
+            margin-left: 30vw;
+            margin-top: 25vw;
+          }
         }
         .left {
-          margin-right: 25vw;
+          margin-right: 30vw;
           margin-top: 15vw;
+          @include mq767 {
+            margin-right: 35vw;
+            margin-top: 25vw;
+          }
         }
       }
     }
@@ -381,12 +546,11 @@
 }
 
 .download {
-  padding: 20% 0 12% 0;
+  padding: 10% 0 12% 0;
   &__container {
     justify-content: center;
     button {
-      width: 250px;
-      height: 70px;
+      padding: 1rem 2rem;
       margin-left: 1rem;
       * {
         padding: 0 0.25rem;
@@ -399,11 +563,14 @@
   position: absolute;
   right: 0;
   width: 30%;
+  min-width: 300px;
   max-width: 600px;
   padding: 3% 2%;
   margin-top: -6%;
   margin-right: 10%;
   z-index: 99;
+  @include mq767 {
+  }
   &__card {
     @include mq1500 {
       display: flex;
@@ -414,8 +581,7 @@
     &-text {
     }
     &-btn {
-      width: 200px;
-      height: 50px;
+      padding: 1rem 2rem;
     }
   }
 }
@@ -435,18 +601,20 @@
     margin-left: 20%;
     display: flex;
     align-items: center;
-    padding: 10rem 0 5% 0;
+    padding: 12rem 0 5% 0;
   }
   &__slider {
-    width: 100%;
+    position: relative;
+    width: 85vw;
     padding-bottom: 5%;
+    margin: 0 auto;
 
     &-card {
-      width: 30%;
+      // width: 30%;
       display: flex;
       flex-direction: column;
       margin: 0 1rem;
-
+      min-width: 25vw;
       &_txt {
         min-height: 200px;
       }
@@ -455,64 +623,59 @@
         transform: scale(1, 1.05);
       }
     }
-    &-larrow,
-    &-rarrow {
-      margin: 0 1rem;
-      height: 38px;
-      width: 38px;
-    }
+    // &-larrow,
+    // &-rarrow {
+    //   margin: 0 1rem;
+    //   height: 38px;
+    //   width: 38px;
+    // }
   }
 }
 
 .reviews {
-  // &__topWrapper-container_card {
-  //   width: 30%;
-  //   height: 30%;
-  // }
   display: flex;
+  position: relative;
   flex-direction: column;
-  min-height: 100vh;
   &__card {
     position: absolute;
     max-width: 500px;
-    margin-top: 64vh;
-    margin-right: 6vw;
-    margin-left: 51vw;
+    bottom: 15%;
+    right: 10%;
     box-shadow: 0px 3px 1px -2px rgb(0 0 0 / 20%),
       0px 2px 2px 0px rgb(0 0 0 / 14%), 0px 1px 5px 0px rgb(0 0 0 / 12%);
+    @include mq767 {
+      left: 10%;
+      margin: 0 auto;
+    }
+    .splide__pagination__page.is-active {
+      background-color: yellow;
+    }
+    .splide__pagination__page {
+      border-radius: 0 !important;
+      width: 15px;
+      height: 15px;
+      border: 1px solid #fdd306;
+      margin: 0.5rem;
+      z-index: 2;
+    }
     .paginator {
       display: flex;
-      li {
-        width: 15px;
-        height: 15px;
-        border: 1px solid #fdd306;
-        margin: 0.5rem;
-      }
+      height: 100px;
+      list-style: none;
+      justify-content: center;
+      align-items: center;
     }
   }
   .Qmark {
     position: absolute;
-    top: -90px;
+    top: -75px;
     right: 20px;
   }
   .slide {
-    padding: 10% 10% 0 10%;
-    &__title {
-      flex: 3;
-    }
-    &__body {
-      flex: 1;
-      .user {
-        padding: 1rem;
-        &__name {
-          padding-bottom: 0.25rem;
-        }
-      }
-    }
-  }
-
-  .paginator {
-    height: 100px;
+    padding: 15% 10% 0 10%;
+    text-align: center;
+    font-size: 2rem;
+    font-weight: 300;
   }
 
   &__topWrapper {
@@ -528,20 +691,30 @@
 
     &-container {
       justify-content: space-between;
-
+      padding: 0 5% 300px 5%;
+      @include mq1024 {
+        flex-wrap: wrap;
+        justify-content: space-around;
+        padding: 0 5% 200px 5%;
+      }
       &_card {
         position: relative;
         width: 30%;
         height: 20vh;
+        min-width: 210px;
+        min-height: 190px;
         text-align: center;
         padding: 0 2rem;
+        @include mq1024 {
+          margin: 0 2rem 50px 2rem;
+        }
         .cardLeft {
           left: -2.5vh;
           bottom: -20%;
         }
         .cardMiddle {
           bottom: -20%;
-          right: -2.5vh;
+          right: -4.5vh;
         }
         .cardRight {
           right: -10%;
@@ -568,6 +741,10 @@
 
   &__bottomWrapper {
     flex: 1;
+    padding: 200px 0;
+    @include mq1024 {
+      padding: 200px 0 50px 0;
+    }
     .right {
       flex: 1;
     }
@@ -582,10 +759,8 @@
 
 .keyBenefits {
   position: relative;
-  height: 100vh;
   .overlay {
     position: absolute;
-    white-space: nowrap;
     text-align: center;
     bottom: 0;
     right: 100%;
@@ -594,58 +769,97 @@
     width: 0;
     height: 100%;
     transition: 0.5s ease-in-out;
+    // h4 {
+    //   width: 50%;
+    // }
   }
   &__box {
     position: relative;
     white-space: nowrap;
     text-align: center;
-    height: 20vw;
+    height: 200px;
     max-height: 300px;
     max-width: 300px;
     width: 20vw;
+    margin: 1rem;
+    padding: 1rem;
     @include mq1500 {
       white-space: normal;
     }
+    @include mq767 {
+      width: 70%;
+      height: 100px;
+    }
+    @include mq480 {
+      width: 80%;
+      height: 100px;
+    }
+
     &:hover .overlay {
       width: 100%;
       right: 0;
     }
   }
-  &__sideL,
-  &__sideR {
-    position: absolute;
-    justify-content: space-around;
-    height: 80vw;
-    max-height: 80%;
-    top: 0px;
-    bottom: 0px;
+  &__container {
+    justify-content: space-between;
+    margin-top: -15rem;
+    @include mq1500 {
+      justify-content: flex-start;
+      margin-top: unset;
+      .left2,
+      .left3,
+      .right2,
+      .right3 {
+        left: 0% !important;
+        right: 0% !important;
+      }
+    }
+    &__sideL,
+    &__sideR {
+      position: absolute;
+      justify-content: space-around;
+      height: 80%;
+      min-height: 800px;
+      top: 0px;
+      bottom: 0px;
+    }
+
+    &-sideL {
+      left: 0;
+      // margin: auto 0 auto 5%;
+      @include mq767 {
+        flex: 1;
+        margin: 0;
+        align-items: center;
+      }
+      .left1 {
+      }
+      .left2 {
+        left: 5vw;
+      }
+      .left3 {
+        left: 10vw;
+      }
+    }
+    &-sideR {
+      right: 0;
+      // margin: auto 5% auto 0;
+      @include mq767 {
+        flex: 1;
+        margin: 0;
+        align-items: center;
+      }
+      .right1 {
+      }
+      .right2 {
+        right: 5vw;
+      }
+      .right3 {
+        right: 10vw;
+      }
+    }
   }
-  &__sideL {
-    left: 0;
-    margin: auto 0 auto 5%;
-    .left1 {
-      margin-left: 0vw;
-    }
-    .left2 {
-      margin-left: 8vw;
-    }
-    .left3 {
-      margin-left: 14vw;
-    }
-  }
-  &__sideR {
-    right: 0;
-    margin: auto 5% auto 0;
-    .right1 {
-      margin-left: 14vw;
-    }
-    .right2 {
-      margin-left: 8vw;
-    }
-    .right3 {
-      margin-right: 14vw;
-    }
-  }
+
   &__title {
     width: 60%;
     margin: 0 auto;
@@ -660,12 +874,18 @@
     left: 0;
     right: 0;
     bottom: 0;
+    @include mq1500 {
+      margin: unset;
+      left: unset;
+    }
+    @include mq767 {
+      display: none;
+    }
   }
 }
 
 .payments {
   position: relative;
-  // height: 120vh;
   &__top {
     height: 30vw;
   }
@@ -685,9 +905,15 @@
         text-align: center;
         &:nth-child(odd) {
           padding-top: 5%;
+          @include mq767 {
+            margin-top: 100px;
+          }
         }
         &:nth-child(even) {
           padding-bottom: 5%;
+          @include mq767 {
+            margin-bottom: 70px;
+          }
         }
       }
     }
@@ -719,21 +945,32 @@
     // margin-top: 5%;
     &-slider {
       flex: 5;
+      min-width: 60vw;
+      // width: 60vw;
       &_container {
         justify-content: space-between;
         &-item {
-          width: 100%;
-          padding: 0 0 0 2%;
+          // min-width: 30vw;
+          margin: 0 2%;
           img {
             width: 100%;
           }
         }
       }
-      &_paginator {
-        position: relative;
-        text-align: end;
-        padding-top: 2%;
-        z-index: 99;
+      // &_paginator {
+      //   position: relative;
+      //   text-align: end;
+      //   padding-top: 2%;
+      //   z-index: 99;
+      // * {
+      //   padding: 0 5px;
+      // }
+      .paginator {
+        display: flex;
+        height: 100px;
+        list-style: none;
+        justify-content: center;
+        align-items: center;
         * {
           padding: 0 5px;
         }
@@ -872,7 +1109,7 @@
     width: 70vw;
   }
   &__body {
-    padding: 0 0 20% 0;
+    // padding: 0 0 20% 0;
     width: 100%;
     justify-content: space-around;
     &-box {
@@ -950,6 +1187,7 @@
       }
     }
     &-body {
+      position: relative;
       width: 50%;
       img {
         width: 100%;
@@ -1016,13 +1254,14 @@
     }
     &-body {
       justify-content: flex-end;
-      width: 100% !important;
+      width: 50% !important;
+      margin-left: 50%;
       &_wrapper {
         width: 100%;
       }
 
       img {
-        width: 50%;
+        width: 100%;
       }
     }
   }
@@ -1058,6 +1297,11 @@
   }
   &__main {
     position: relative;
+    &-body {
+      position: relative;
+      margin-left: 50%;
+      padding-bottom: 50px;
+    }
     &-title {
       justify-content: flex-end;
       width: 100%;
@@ -1087,14 +1331,14 @@
       }
     }
     &-body {
-      justify-content: flex-end;
-      width: 100% !important;
+      width: 50% !important;
+      margin-left: 50%;
       &_wrapper {
         width: 100%;
       }
 
       img {
-        width: 50%;
+        width: 100%;
       }
     }
   }
@@ -1181,7 +1425,9 @@
       }
     }
     &-body {
+      position: relative;
       width: 50%;
+      padding-bottom: 50px;
       img {
         width: 100%;
       }
@@ -1245,10 +1491,6 @@
 
 .news {
   position: relative;
-  margin-top: 15vh;
-  @include mq1500 {
-    margin-top: 5vh;
-  }
 
   &__background {
     position: absolute;
@@ -1280,6 +1522,7 @@
     justify-content: space-between;
     @include mq1500 {
       justify-content: space-around;
+      flex-wrap: wrap;
     }
     &-card {
       position: relative;

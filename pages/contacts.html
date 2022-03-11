@@ -11,9 +11,13 @@
 </head>
 
 <body>
-  <header class="side-padding">
-    <div class="logo"><a href="../pages/main.html"><img src="/src/assets/header_footer/logo kontaktai.png"
-          alt="logo" /></a>
+  <header class="side-padding darkHeader">
+    <div class="logo"><a href="../pages/main.html"><img src="/src/assets/header_footer/logo.png" alt="logo" /></a>
+    </div>
+    <div class="hamburger">
+      <div class="line"></div>
+      <div class="line"></div>
+      <div class="line"></div>
     </div>
     <div class="right-side">
       <div class="right-side__navigation">
@@ -24,15 +28,15 @@
         <a href="./contacts.html">Kontaktai</a>
       </div>
       <div class="right-side__language">
-        LT | EN
+        <h4>LT | EN</h4>
       </div>
     </div>
   </header>
   <!-- contactFORM -->
-  <section class="contact-form full-paddingflex-column center">
+  <section class="contact-form full-padding flex-column center" style="height:55vh; margin-top:15vh;">
     <h2>Susisiekite su mumis!</h2>
     <h4>Palikite savo kontaktus ir mes su Jumis susisieksime artimiasiu metu</h4>
-    <form action="mailto:suppor@edukraft.lt" method="post" enctype="multipart/form-data" class="form flex-column">
+    <form action=" mailto:suppor@edukraft.lt" method="post" enctype="multipart/form-data" class="form flex-column">
       <div class="flex-row top flex-full ">
         <input class="fullw" type="text" placeholder="Vardas">
         <input class="fullw" type="text" placeholder="El.paštas">
@@ -95,7 +99,10 @@
       <h5>&copy;2022 Edukraftas. Visos teisės saugomos.</h5>
     </div>
   </footer>
-  </main>
+  <!-- script loading -->
+  <script src="../src/js/collapsible.js"></script>
+  <script src="../src/js/navtoggle.js"></script>
+  <script src="../src/js/main.js"></script>
 </body>
 
 </html>

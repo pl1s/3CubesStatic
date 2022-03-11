@@ -6,13 +6,20 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <link rel='icon' href='../src/assets/edu_icon.svg' type='image/svg' />
   <link href='../src/styles/css/styles.css' rel="stylesheet">
+  <link rel="stylesheet" href="../src/styles/css/splide.min.css">
+  <link rel="stylesheet" href="../src/styles/css/splide-core.min.css">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Edukraftas</title>
 </head>
 
 <body>
-  <header class="side-padding">
+  <header class="side-padding darkHeader">
     <div class="logo"><a href="../pages/main.html"><img src="/src/assets/header_footer/logo.png" alt="logo" /></a>
+    </div>
+    <div class="hamburger">
+      <div class="line"></div>
+      <div class="line"></div>
+      <div class="line"></div>
     </div>
     <div class="right-side">
       <div class="right-side__navigation">
@@ -23,7 +30,7 @@
         <a href="./contacts.html">Kontaktai</a>
       </div>
       <div class="right-side__language">
-        LT | EN
+        <h4>LT | EN</h4>
       </div>
     </div>
   </header>
@@ -34,10 +41,11 @@
           <h1 class="title">Žaidimu paremtos patirtys</h1>
           <h3>"Trys kubai" įgyvendinti projektai, naudojant "Minecraft"</h3>
           <button>
-            <h5>Susisiekite</h5>
+            <h4>Susisiekite</h4>
           </button>
         </div>
         <div class="hero-main__cta-topRight">
+          <!-- <img class="book" style="height:200px;" alt="book" class="book"> -->
         </div>
       </div>
     </section>
@@ -58,24 +66,35 @@
             </div>
           </div>
         </div>
-        <div class="projectsLeft__main-body"><img src="../src/assets/projects/en .png" alt=""></div>
-        <div class="mars__body-slider_paginator right">
-          <button><img src="../src/assets/nonformal/arrowL.png" alt="left arrow"></button>
-          <button><img src="../src/assets/nonformal/arrowR.png" alt="right arrow"></button>
+        <div class="projectsLeft__main-body">
+          <div class="splide">
+            <div class="splide__track">
+              <div class="splide__list">
+                <li class="splide__slide slide01">
+                  <img src="../src/assets/projects/en .png" alt="">
+                </li>
+                <li class="splide__slide slide02">
+                  <img src="../src/assets/projects/en .png" alt="">
+                </li>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
       <div class="projectsLeft__aside flex-column">
         <div class="projectsLeft__aside-card flex side-padding">
           <div class="projectsLeft__aside-card_text flex-column">
             <h7>Nauda</h7>
-            <h7>Skirtingų temų moduliai leidžia mokiniams gilintis į įvairias temas, pvz., anglies dioksidą, klimato
+            <h7>Skirtingų temų moduliai leidžia mokiniams gilintis į įvairias temas, pvz., anglies dioksidą,
+              klimato
               kaitą.</h7>
           </div>
         </div>
         <div class="projectsLeft__aside-card flex side-padding">
           <div class="projectsLeft__aside-card_text flex-column">
             <h7>Tema</h7>
-            <h7>Apie anglies dioksidą mokomasi saugioje virtualioje "Minecraft" laboratorijoje, o apie klimato kaitą
+            <h7>Apie anglies dioksidą mokomasi saugioje virtualioje "Minecraft" laboratorijoje, o apie klimato
+              kaitą
               mokinasi interaktyvios ekspedicijos metu Antarktidoje!</h7>
           </div>
         </div>
@@ -108,12 +127,17 @@
           </div>
         </div>
         <div class="projectsRight__main-body flex">
-          <img src="../src/assets/projects/mars.png" alt="mars">
-        </div>
-        <div class="mars__body-slider_paginator flex right" style="justify-content: flex-end;">
-          <div class="paginator__wrapper">
-            <button><img src="../src/assets/nonformal/arrowL.png" alt="Right arrow"></button>
-            <button><img src="../src/assets/nonformal/arrowR.png" alt="right arrow"></button>
+          <div class="splide02">
+            <div class="splide__track">
+              <div class="splide__list">
+                <li class="splide__slide slide01">
+                  <img src="../src/assets/projects/mars.png" alt="">
+                </li>
+                <li class="splide__slide slide02">
+                  <img src="../src/assets/projects/mars.png" alt="">
+                </li>
+              </div>
+            </div>
           </div>
         </div>
       </div>
@@ -151,10 +175,19 @@
         <div class="projectsLeft__main-title flex-row">
           <h3>TESLA Gigafactory 2 per "Minecraft"</h3>
         </div>
-        <div class="projectsLeft__main-body"><img src="../src/assets/projects/factory.png" alt=""></div>
-        <div class="mars__body-slider_paginator right">
-          <button><img src="../src/assets/nonformal/arrowL.png" alt="left arrow"></button>
-          <button><img src="../src/assets/nonformal/arrowR.png" alt="right arrow"></button>
+        <div class="projectsLeft__main-body">
+          <div class="splide03">
+            <div class="splide__track">
+              <div class="splide__list">
+                <li class="splide__slide slide01">
+                  <img src="../src/assets/projects/en .png" alt="">
+                </li>
+                <li class="splide__slide slide02">
+                  <img src="../src/assets/projects/en .png" alt="">
+                </li>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
       <div class="projectsLeft__aside flex-column full-height">
@@ -202,12 +235,17 @@
           </div>
         </div>
         <div class="projectsExtraR__main-body flex">
-          <img src="../src/assets/projects/oldtown.png" alt="oldtown">
-        </div>
-        <div class="mars__body-slider_paginator flex right" style="justify-content: flex-end;">
-          <div class="paginator__wrapper">
-            <button><img src="../src/assets/nonformal/arrowL.png" alt="Right arrow"></button>
-            <button><img src="../src/assets/nonformal/arrowR.png" alt="right arrow"></button>
+          <div class="splide04">
+            <div class="splide__track">
+              <div class="splide__list">
+                <li class="splide__slide slide01">
+                  <img src="../src/assets/projects/oldtown.png" alt="">
+                </li>
+                <li class="splide__slide slide02">
+                  <img src="../src/assets/projects/mars.png" alt="">
+                </li>
+              </div>
+            </div>
           </div>
         </div>
         <div class="projectsExtraR__sponsorship flex-row ">
@@ -265,7 +303,6 @@
             </div>
           </div>
         </div>
-      </div>
     </section>
     <!-- Trys Pradinukai -->
     <section class="projectsExtraL top-bottom-margin side-padding">
@@ -276,11 +313,18 @@
           </div>
         </div>
         <div class="projectsExtraL__main-body">
-          <img src="../src/assets/projects/pradinukai.png" alt="minecraft">
-        </div>
-        <div class="mars__body-slider_paginator right">
-          <button><img src="../src/assets/nonformal/arrowL.png" alt="left arrow"></button>
-          <button><img src="../src/assets/nonformal/arrowR.png" alt="right arrow"></button>
+          <div class="splide05">
+            <div class="splide__track">
+              <div class="splide__list">
+                <li class="splide__slide slide01">
+                  <img src="../src/assets/projects/pradinukai.png" alt="">
+                </li>
+                <li class="splide__slide slide02">
+                  <img src="../src/assets/projects/mars.png" alt="">
+                </li>
+              </div>
+            </div>
+          </div>
         </div>
         <div class="projectsExtraL__sponsorship flex-row ">
           <div class="projectsExtraL__sponsorship-container flex-row">
@@ -344,12 +388,17 @@
           </div>
         </div>
         <div class="projectsExtraR__main-body flex">
-          <img src="../src/assets/projects/gedas.png" alt="gediminas castle">
-        </div>
-        <div class="mars__body-slider_paginator flex right" style="justify-content: flex-end;">
-          <div class="paginator__wrapper">
-            <button><img src="../src/assets/nonformal/arrowL.png" alt="Right arrow"></button>
-            <button><img src="../src/assets/nonformal/arrowR.png" alt="right arrow"></button>
+          <div class="splide06">
+            <div class="splide__track">
+              <div class="splide__list">
+                <li class="splide__slide slide01">
+                  <img src="../src/assets/projects/gedas.png" alt="">
+                </li>
+                <li class="splide__slide slide02">
+                  <img src="../src/assets/projects/mars.png" alt="">
+                </li>
+              </div>
+            </div>
           </div>
         </div>
         <div class="projectsExtraR__sponsorship flex-row ">
@@ -404,7 +453,7 @@
       </div>
     </section>
     <!-- contactFORM -->
-    <section class="contact-form full-padding flex-column center">
+    <!-- <section class="contact-form full-padding flex-column center">
       <h2>Susisiekite su mumis!</h2>
       <h4>Palikite savo kontaktus ir mes su Jumis susisieksime artimiasiu metu</h4>
       <form action="mailto:suppor@edukraft.lt" method="post" enctype="multipart/form-data" class="form flex-column">
@@ -427,7 +476,7 @@
         </div>
         </table>
       </form>
-    </section>
+    </section> -->
   </main>
   <!-- Footer -->
   <footer class="footer flex-column side-padding">
@@ -470,7 +519,58 @@
       <h5>&copy;2022 Edukraftas. Visos teisės saugomos.</h5>
     </div>
   </footer>
-  </main>
-</body>
+  <!-- script loading -->
+  <script src="../src/js/collapsible.js"></script>
+  <script src="../src/js/navtoggle.js"></script>
+  <script src="../src/js/main.js"></script>
+  <script src="../src/js/splide.min.js"></script>
+  <script type="text/javascript">
 
-</html>
+    new Splide(".splide", {
+      type: "loop",
+      perPage: 1,
+      perMove: 1,
+      autoplay: true,
+      pagination: false,
+    }).mount();
+
+    new Splide(".splide02", {
+      type: "loop",
+      perPage: 1,
+      perMove: 1,
+      autoplay: true,
+      pagination: false,
+    }).mount();
+
+    new Splide(".splide03", {
+      type: "loop",
+      perPage: 1,
+      perMove: 1,
+      autoplay: true,
+      pagination: false,
+    }).mount();
+
+    new Splide(".splide04", {
+      type: "loop",
+      perPage: 1,
+      perMove: 1,
+      autoplay: true,
+      pagination: false,
+    }).mount();
+
+    new Splide(".splide05", {
+      type: "loop",
+      perPage: 1,
+      perMove: 1,
+      autoplay: true,
+      pagination: false,
+    }).mount();
+
+    new Splide(".splide06", {
+      type: "loop",
+      perPage: 1,
+      perMove: 1,
+      autoplay: true,
+      pagination: false,
+    }).mount();
+  </script>

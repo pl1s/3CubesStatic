@@ -2,8 +2,10 @@
 .footer {
   height: 30vh;
   justify-content: space-around;
-  h5,
-  input {
+  @include mq1024 {
+    height: unset;
+  }
+  h5 {
     margin-bottom: 10px;
   }
   .copyright {
@@ -11,6 +13,10 @@
   }
   .container {
     height: calc(30vh - 80px);
+    @include mq1024 {
+      height: unset;
+      flex-direction: column;
+    }
     &__right,
     &__left {
       justify-content: space-around;
@@ -21,25 +27,43 @@
     //TODO mq ipad left right p 5% 0
     &__left {
       flex: 1;
+      @include mq1024 {
+        padding: 5% 0;
+      }
       &-contact,
       &-info {
         display: grid;
-        grid-template-rows: repeat(10, 1fr);
+        grid-template-rows: repeat(8, 1fr);
+        @include mq1024 {
+          grid-template-rows: repeat(6, 0.5fr);
+        }
         h3 {
           grid-row: 2/4;
           @include mq1500 {
             grid-row: 3/4;
             padding-bottom: unset;
           }
+          @include mq1024 {
+            grid-row: 1/2;
+          }
         }
         .sub1 {
-          grid-row: 5/6;
+          grid-row: 4/5;
+          @include mq1024 {
+            grid-row: 3/4;
+          }
         }
         .sub2 {
-          grid-row: 6/7;
+          grid-row: 5/6;
+          @include mq1024 {
+            grid-row: 4/5;
+          }
         }
         .sub3 {
-          grid-row: 7/8;
+          grid-row: 6/8;
+          @include mq1024 {
+            grid-row: 5/7;
+          }
         }
       }
     }
@@ -47,10 +71,20 @@
     &__right {
       flex: 1;
       display: flex;
+      @include mq1024 {
+        text-align: center;
+        padding: 5% 0;
+      }
       &-subsrc {
         display: grid;
-        grid-template-rows: repeat(10, 1fr);
+        grid-template-rows: repeat(8, 1fr);
         width: 70%;
+        @include mq1024 {
+          grid-template-rows: repeat(6, 0.5fr);
+        }
+        @include mq480 {
+          width: 80%;
+        }
       }
 
       h3 {
@@ -59,9 +93,15 @@
           grid-row: 3/4;
           padding-bottom: unset;
         }
+        @include mq1024 {
+          grid-row: 1/2;
+        }
       }
       .sub1 {
-        grid-row: 5/6;
+        grid-row: 4/5;
+        @include mq1024 {
+          grid-row: 3/4;
+        }
       }
 
       .text {
@@ -75,10 +115,13 @@
       }
 
       &-input {
-        grid-row: 6/8;
+        grid-row: 5/7;
         display: flex;
         @include mq1500 {
           grid-row: 6/7;
+        }
+        @include mq1024 {
+          grid-row: 4/5;
         }
         input {
           width: 70%;
@@ -92,7 +135,7 @@
             width: unset;
           }
           h5 {
-            padding: 0 !important;
+            margin: 5px !important;
           }
         }
       }
@@ -104,8 +147,17 @@
         @include mq1500 {
           grid-row: 7/8;
         }
+        @include mq1024 {
+          grid-row: 5/7;
+        }
         input {
           transform: scale(1.7);
+          @include mq1024 {
+            transform: scale(1);
+          }
+        }
+        h5 {
+          margin-bottom: unset;
         }
       }
     }

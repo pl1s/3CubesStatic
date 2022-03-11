@@ -15,6 +15,18 @@ html::-webkit-scrollbar {
 
 html {
   font-size: 100%;
+  @include mq1500 {
+    font-size: 80%;
+  }
+  @include mq1024 {
+    font-size: 70%;
+  }
+  @include mq767 {
+    font-size: 60%;
+  }
+  @include mq480 {
+    font-size: 50%;
+  }
 }
 
 h1,
@@ -26,7 +38,7 @@ p {
   color: $fontColor;
 }
 h1 {
-  font-size: 6rem;
+  font-size: 5rem;
   font-weight: 400;
 }
 h2 {
@@ -82,6 +94,9 @@ a {
 }
 .top-padding {
   padding: 5% 0 0 0;
+}
+.noBottom-padding {
+  padding: 5% 5% 0 5%;
 }
 
 .top-bottom-margin {

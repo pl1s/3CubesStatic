@@ -1,0 +1,383 @@
+{
+  "nav": {
+    "formal": "Formal education",
+    "nonformal": "Informal education",
+    "projects": "Projects",
+    "news": "News",
+    "contacts": "Contacts"
+  },
+  "footer": {
+    "contact": {
+      "main": "Contacts"
+    },
+    "info": {
+      "main": "Information",
+      "knowHow": "How to become a partner?",
+      "privacy": "Privacy Policy",
+      "carrer": "Career"
+    },
+    "subs": {
+      "main": "Newsletters",
+      "desc": "Be the first to get all news!",
+      "btn": "Subscribe",
+      "checkBox": "I agree to privacy policy.",
+      "cc": "&copy;2022 Edukraftas. All rights reserved."
+    }
+  },
+  "main": {
+    "hero": {
+      "title": "Level-up in education",
+      "sub": "Game-based learning with \"Minecraft: Education Edition\"",
+      "btn": "Contact us!"
+    },
+    "stats": {
+      "left": "children had our game-based lessons",
+      "middle": "schools had our game-based lessons",
+      "right": "members in our community"
+    },
+    "gameLearning": {
+      "title": "How game-based learning enriches overall education?",
+      "txt": {
+        "left": "Lessons come alive with different worlds, characters and exercises",
+        "middle": "Students experience the results of their actions in simulated situations",
+        "right": "Research based benefits for students"
+      }
+    },
+    "research": {
+      "title": "Educational benefits for students - based on research",
+      "card": {
+        "left": "Developing <label>knowledge and competencies</label>",
+        "middle": "Improving students' <label>engagement and results!</label>",
+        "right": "Learning to<label>solve problems by collaborating</label>"
+      },
+      "btn": "Research",
+      "bottomWrapper": {
+        "title": "Teachers can manage lessons easily!",
+        "sub": "We provide what is needed the most",
+        "sub2": "Ką kalba pedagogai?"
+      }
+    },
+    "teacherSupport": {
+      "cardLeft": {
+        "main": "Personal consultant",
+        "desc": "\"Three Cubes\" consultant helps with the first lessons!"
+      },
+      "cardMiddle": {
+        "main": "Informational guides",
+        "desc": "Plans for lessons, video trainings accessible at any time."
+      },
+      "cardRight": {
+        "main": "Fully prepared lessons",
+        "desc": "Exercises and virtual worlds based on different topics"
+      }
+    },
+    "community": {
+      "title": {
+        "word": "",
+        "num": "95%"
+      },
+      "sub": "teachers rate \"Three Cubes\" educational content for formal education as \"good\" and \"very good\"!",
+      "slide01": {
+        "review": "The Great School Concept points out adventures in school. Game-based learning is a great method to reach to academic results!",
+        "userName": "Vaidas Bacys",
+        "userLocation": "The principal of Šiauliai region Dubysa Aukštupys school"
+      },
+      "slide02": {
+        "review": "The Great School Concept points out adventures in school. Game-based learning is a great method to reach to academic results!",
+        "userName": "Vaidas Bacys",
+        "userLocation": "The principal of Šiauliai region Dubysa Aukštupys school"
+      },
+      "slide03": {
+        "review": "The Great School Concept points out adventures in school. Game-based learning is a great method to reach to academic results!",
+        "userName": "Vaidas Bacys",
+        "userLocation": "The principal of Šiauliai region Dubysa Aukštupys school"
+      },
+      "title2": "Our \"Three Cubes\" Community"
+    },
+    "achievements": {
+      "title": "Our achievements",
+      "cardLeft": {
+        "desc": "In 2020 we won the 1st place in category \"Learning and education\" in a national competition"
+      },
+      "cardMiddle": {
+        "desc": "Certified \"Microsoft\" partners"
+      },
+      "cardRight": {
+        "desc": "In 2020 we were selected as one of the 16 best digital solutions in Europe"
+      }
+    },
+    "services": {
+      "title": "Our products",
+      "cardLeft": {
+        "main": "Informal education",
+        "desc": "",
+        "link": "More information >"
+      },
+      "cardMiddle": {
+        "main": "Formal education",
+        "desc": ""
+      },
+      "cardRight": {
+        "main": "Projects",
+        "desc": ""
+      }
+    }
+  },
+  "formal": {
+    "hero": {
+      "title": "Interactive lessons in schools!",
+      "sub": "Formal education with \"Minecraft: Education edition\"",
+      "btn": "Contact us!"
+    },
+    "package": {
+      "title": "\"Three Cubes\" interactive lessons - a great way to improve not only knowledge, but also competencies!",
+      "cardLeft": {
+        "desc": "Interactivity provides possibilities to gain knowledge in various ways"
+      },
+      "cardMiddle": {
+        "desc": "Lessons's topics chosen to correlate with formal education programs"
+      },
+      "cardRight": {
+        "desc": "The attention is directed on improving studnets' compotencies"
+      }
+    },
+    "download": {
+      "title": "Pamokų temų sąrašas",
+      "btn": "Atsisiųsti"
+    },
+    "orderNow": {
+      "main": "US schools are using \"First Humans on Mars\" course in their formal education!",
+      "btn": "Contact us!"
+    },
+    "lessons": {
+      "title": "Examples of lessons",
+      "slide01": {
+        "desc": "Lessons \"National symbols\""
+      },
+      "slide02": {
+        "desc": "Lessons \"Animals\""
+      },
+      "slide03": {
+        "desc": "Lessons \"Solar System\""
+      },
+      "slide04": {
+        "desc": "Lessons \"Solar System\""
+      }
+    },
+    "reviews": {
+      "title": "\"Trys kubai\" interaktyvios pamokos - suteikia patogų būdą ugdyti ne tik žinias, bet ir kompetencijas",
+      "title2": "Teacher observations on students' experiences, using \"Minecraft\" while learning",
+      "cardLeft": {
+        "desc": "Kuriamos pagal atnaujinama bendrojo ugdymo programą"
+      },
+      "cardMiddle": {
+        "desc": "Interaktyvumas suteikia galimybę gauti žinių įvairiomis formomis"
+      },
+      "cardRight": {
+        "desc": "Dėmesys kreipiamas į mokinių kompetencijų plėtojimą"
+      },
+      "slide01": {
+        "desc": "The shortage of abilieties to work in teams, patience and achieving results really came to light during exercises. The experience of \"Three Cubes\" lessons are very useful for developing these competencies."
+      },
+      "slide02": {
+        "desc": "The shortage of abilieties to work in teams, patience and achieving results really came to light during exercises. The experience of \"Three Cubes\" lessons are very useful for developing these competencies."
+      }
+    },
+    "keyBenefits": {
+      "title": "According to a survey, teachers who use \"Three Cubes\" lessons state that it improves…",
+      "sideL": {
+        "box1": {
+          "main": "Critical thinking",
+          "overlay": "Social abilities"
+        },
+        "box2": {
+          "main": "Attentiveness",
+          "overlay": "Collaborating"
+        },
+        "box3": {
+          "main": "Creativity",
+          "overlay": "Attention to details"
+        }
+      },
+      "sideR": {
+        "box1": {
+          "main": "Creativity",
+          "overlay": "Spatial thinking"
+        },
+        "box2": {
+          "main": "Information searching",
+          "overlay": "Digital literacy"
+        },
+        "box3": {
+          "main": "Attentive reading",
+          "overlay": "Helping each other"
+        }
+      }
+    },
+    "payments": {
+      "title": ""
+    }
+  },
+  "nonFormal": {
+    "hero": {
+      "title": "Interactive educational adventures!",
+      "sub": "Informal education with \"Minecraft: Education Edition\"!",
+      "btn": "Contact Us"
+    },
+    "mars": {
+      "title": "The First Humans on Mars",
+      "sub": "Create the first cosmic base on planet Mars!",
+      "themes": {
+        "title": "Topics of lessons",
+        "theme": [
+          "exploring the planet Mars;",
+          "building cosmic bases and rockets;",
+          "supplying the bases with energy, by using sun and wind power stations;",
+          "learning how to obtain fertilizers and grow food;",
+          "creating new stories, myths and legends for the people generation in Mars;",
+          "visiting the asteroid belt;",
+          "trading Mars resources;",
+          "driving with rovers;",
+          "programming",
+          "and more!"
+        ],
+        "sub": "There is no individual registration for lessons."
+      }
+    },
+    "gameDesign": {
+      "title": "Game design with \"Minecraft\"",
+      "sub": "Kursas vaikams apie žaidimų dizainą",
+      "desc": "Vaikai tampa kolonijos erdvėlaivio įgula, kuri sprendžia įvairias užduotis kartu su laivo valdymo robotu ir taip mokosi apie žaidimų dizainą!"
+    },
+    "codeAcademy": {
+      "sub": {
+        "text": "For individual registration visit \"CodeAcademy Kids\"",
+        "link": "here."
+      },
+      "themes": {
+        "title": "Topics of lessons",
+        "first": {
+          "main": "First semester",
+          "desc": "Game designer and game development"
+        },
+        "second": {
+          "main": "Second semester",
+          "desc": "Game designer and game development"
+        },
+        "third": {
+          "main": "Third semester",
+          "desc": "Game designer and game development"
+        }
+      }
+    },
+    "skillSet": {
+      "title": "Improving skills",
+      "skills": [
+        "Programming",
+        "Sciences",
+        "Teamwork",
+        "English",
+        "Economy",
+        "Individual work",
+        "Mathematics"
+      ]
+    },
+    "marsPackage": {
+      "title": "Organizations that get interactive \"Three Cubes\" lessons are provided with",
+      "box": ["Consultations", "Informational guides", "Fully prepared lessons"]
+    }
+  },
+  "projects": {
+    "label": "Partner",
+    "main": "Main partner",
+    "edu": "Educational partner",
+    "info": "More about project",
+    "card": ["Value", "Theme", "Interesting", "Reach", "Views"],
+    "hero": {
+      "title": "Game-based experiences",
+      "sub": "\"Three Cubes\" realized projects, using \"Minecraft\"",
+      "btn": "Contact us!"
+    },
+    "ecology": {
+      "title": "Informal education in United Kingdom",
+      "text": [
+        "Modules of different themes let children improve knowledge on various topics, e.g. Carbon Monoxide, Climate Change.",
+        "Learn about Carbon Monoxide in a safe virtual environment in \"Minecraft\" and Climate Change during an interactive expedition in Antarctica!",
+        "Students solve exercises individually and in teams.",
+        "Students and schools in United Kingdom have started these interactive lessons with \"Minecraft\""
+      ]
+    },
+    "mars": {
+      "title": "Formal education in the United States",
+      "text": [
+        "The course \"First Humans on Mars\" can aim to improve knowledge on mathematics, biology, chemistry, geography and astronomy.",
+        "The course consist of virtual Mars world and interactive exercises for students.",
+        "Students solve exercises individually and collaborating in teams.",
+        "Schools in the United States use \"Three Cubes\" lessons in their formal education."
+      ]
+    },
+    "gigaF": {
+      "title": "TESLA Gigafactory 2 with \"Minecraft\"",
+      "text": [
+        "\"Tesla\" has shared the video of the project in it's official \"Twitter\" account, saying that \"Lithuania knows the way to our hearts\".",
+        "During \"Gigaton\" a team has came up with an idea to build \"Tesla Gigafactory 2\" in \"Minecraft\".",
+        "Students solve exercises individually and collaborating in teams.",
+        "Students and schools in the United Kingdom use \"Three Cubes\" lessons with \"Minecraft\".",
+        "The video of the project has gained over 260,000 views on \"Youtube\"."
+      ]
+    },
+    "Vilnius": {
+      "title": "Lithuania related projects",
+      "sub": "Historical Vilnius with \"Minecraft\"",
+      "text": [
+        "We recreated historical Vilnius in 5 different epochs.",
+        "We rebuilt one of the most important Vilnius places: Gediminas Castle Tower, The Cathedral Square, National Museum - Palace of the Grand Dukes of Lithuania and the surrounding territory.",
+        "\"Minecraft\" builders consisted of students in schools and universities.",
+        "10 different Vilnius schools have tried out the maps with VR!",
+        "The video of the project gained over 40,000 views on \"Youtube\" platformoje."
+      ]
+    },
+    "3kids": {
+      "title": "Trys pradinukai",
+      "text": [
+        "3 educational adventures for improving knowledge on Lithuania's history.",
+        "Educational adventure themes: \"Rescuing Vytis\", \"The Teasure of the Dukes\" ir \"The Act of Independence\".",
+        "Some voices of the characters' are recorded by well-known people in Lithuania - Gabrielius Liaudanskas-Svaras and Liudas Mažylis.",
+        "Educational adventures can be downloaded and used for free",
+        "The video of the project has gained over 12,000 views on \"Youtube\"."
+      ]
+    },
+    "gedas": {
+      "title": "Improve Gediminas with \"Minecraft\"",
+      "text": [
+        "Just in 3 days 12 builders of \"Three Cubes\" have managed to creatively recreate Vilnius territory from 2,300,000 blocks during livestrem.",
+        "Together with telecom organisation \"Labas\", \"Three Cubes\" has came up with a project to creatively recreate Gediminas Castle Tower.",
+        "The main architect of building with \"Minecraft\" was youtuber and \"Three Cubes\" Co-Founder Darius Kniūkšta.",
+        "The event moderator was Orijus Gasanovas, comedians Mantas Katleris and Mantas Bartuševičius, historian Aurimas Švedas joined the livestream.",
+        "The video of the project has gained over 155,000 views on \"Facebook\"."
+      ]
+    }
+  },
+  "news": {
+    "title": "Naujienos",
+    "sub": "Apie mus rašo",
+    "label": ["Straipsniai", "Įvykiai", "Konferencija", "Podkastas"],
+    "cardMain": [
+      "Kompiuteriniai žaidimai vietoje pamokų?",
+      "Idėja laimėjo 20 000 eurų",
+      "Lietuviui pomėgis žaisti kompiuterinius žaidimus tapo profesija.",
+      "Kitas lygis. Tinklalaidė apie žaidimų industriją Lietuvoje."
+    ],
+    "cardAll": [
+      "\"Trys kubai\" pristatymas LR Seime apie mokymąsi su \"Minecraft\"",
+      "\"Trys kubai\" įgytas sertifikatas, atliktus \"Minecraft\" edukacinės platformos kursus Briuselyje \"Microsoft\" ofise",
+      "\"Trys kubai\" pristatymas apie \"Minecraft\" renginyje \"GameOn 2019\"",
+      "\"Trys kubai\" \"Minecraft\" dirbtuvės renginyje \"GameOn 2018\"",
+      "\"Trys kubai\" salė su \"Minecraft\" projektais, turinio kūrėjais ir pristatymais apie \"Youtube\" renginyje \"GameOn 2017\"",
+      "\"Trys kubai\" stendas su \"Minecraft\" turnyru, turinio kūrėjais ir diskusijomis renginyje \"Comic Con Baltics 2017\"",
+      "\"Trys kubai\" stendas su \"Minecraft\" edukaciniais nuotykiais parodoje \"Mokykla 2019\"",
+      "\"Hour of Code\" renginys rengtas kartu su \"Microsoft\" ir MO muziejumi",
+      "\"Women Go Tech\" konferencija"
+    ]
+  }
+}

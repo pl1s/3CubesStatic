@@ -6,13 +6,20 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <link rel='icon' href='../src/assets/edu_icon.svg' type='image/svg' />
   <link href='../src/styles/css/styles.css' rel="stylesheet">
+  <link rel="stylesheet" href="../src/styles/css/splide.min.css">
+  <link rel="stylesheet" href="../src/styles/css/splide-core.min.css">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Edukraftas</title>
 </head>
 
 <body>
-  <header class="side-padding">
+  <header class="side-padding darkHeader">
     <div class="logo"><a href="../pages/main.html"><img src="/src/assets/header_footer/logo.png" alt="logo" /></a>
+    </div>
+    <div class="hamburger">
+      <div class="line"></div>
+      <div class="line"></div>
+      <div class="line"></div>
     </div>
     <div class="right-side">
       <div class="right-side__navigation">
@@ -22,8 +29,22 @@
         <a href="./news.html">Naujienos</a>
         <a href="./contacts.html">Kontaktai</a>
       </div>
-      <div class="right-side__language">
-        LT | EN
+      <div class="right-side__language" id="langSelector" disabled="true" name="lang">
+        <!-- <h4>LT | EN</h4> -->
+        <button value="en">
+          <h4>LT</h4>
+        </button>
+        <button value="lt">
+          <h4>EN</h4>
+        </button>
+        <!-- <select disabled="true" id="langSelector" name="lang">
+          <option value="en">
+            EN
+          </option>
+          <option value="lt">
+            LT
+          </option>
+        </select> -->
       </div>
     </div>
   </header>
@@ -31,10 +52,10 @@
     <section class="hero-main side-padding">
       <div class="hero-main__cta">
         <div class="hero-main__cta-topLeft">
-          <h1 class="title">Kilk į kitą edukacijos lygį!</h1>
-          <h3>Žaidimu paremtas mokymasis formaliajame švietime.</h3>
+          <h1 class="element" data="main.hero.title">Kilk į kitą edukacijos lygį!</h1>
+          <h3 class="element" data="main.hero.sub">Žaidimu paremtas mokymasis formaliajame švietime.</h3>
           <button>
-            <h5>Susisiekite</h5>
+            <h4 class="element" data="main.hero.btn">Susisiekite</h4>
           </button>
         </div>
         <div class="hero-main__cta-topRight">
@@ -45,145 +66,205 @@
     <section class="stats">
       <div class="stats__container">
         <div class="box">
-          <h3>8,000
-            <img src="" alt="">
-          </h3>
-          <h6>Vaikų išmėgino pamokas su "Minecraft"</h6>
+          <div class="box__wrapper flex-row center">
+            <h3>8,000
+            </h3>
+            <img src="../src/assets/main/pliusas.png" alt="plus">
+          </div>
+          <h6 class="element" data="main.stats.left">Vaikų išmėgino pamokas su "Minecraft"</h6>
         </div>
         <div class="box">
-          <h3>30
-            <img src="" alt="">
-          </h3>
-          <h6>Vaikų vedė savo mokiniams pamokas su "Minecraft"</h6>
+          <div class="box__wrapper flex-row center">
+            <h3>30
+            </h3>
+            <img src="../src/assets/main/pliusas.png" alt="plus">
+          </div>
+          <h6 class="element" data="main.stats.middle">Vaikų vedė savo mokiniams pamokas su "Minecraft"
+          </h6>
         </div>
         <div class="box">
-          <h3>20,000
-            <img src="" alt="">
-          </h3>
-          <h6>Mokyklų vedė savo mokiniams pamokas su "Minecraft"</h6>
+          <div class="box__wrapper flex-row center">
+            <h3>20,000
+            </h3>
+            <img src="../src/assets/main/pliusas.png" alt="plus">
+          </div>
+          <h6 class="element" data="main.stats.right">Mokyklų vedė savo mokiniams pamokas su "Minecraft"
+          </h6>
         </div>
       </div>
     </section>
     <section class="companies side-padding">
-      <!-- <img src="../src/assets/main/Rectangle 203.png" alt="national library"> -->
-      <!-- <img src="" alt="cultural education">
-      <img src="" alt="microsoft">
-      <img src="" alt="Vilnius">
-      <img src="" alt="Reach for Change"> -->
     </section>
     <section class="game-learning side-padding">
-
       <div class="game-learning__title ">
-        <h2>Kaip žaidimu paremtas mokymasis praturtina švietimą?</h2>
+        <h2 class="title element" data="main.gameLearning.title">Kaip žaidimu paremtas mokymasis praturtina
+          švietimą?</h2>
       </div>
       <div class="game-learning__benefits top-bottom-padding flex-row">
-        <p>Pamokos temos - iš atnaujinamos ugdymo programos</p>
+        <p class="element" data="main.gameLearning.txt.left">Pamokos temos - iš atnaujinamos ugdymo
+          programos</p>
         <img src="../src/assets/main/Group 172.png" alt="arrow">
-        <p>Jos atgyja virtualiuose "Minecraft" pasauiuose su užduotimis ir veikėjais!</p>
+        <p class="element" data="main.gameLearning.txt.middle">Jos atgyja virtualiuose "Minecraft"
+          pasauiuose su užduotimis ir veikėjais!</p>
         <img src="../src/assets/main/Group 172.png" alt="arrow">
-        <p>Pamokos metu visa klasė leidžiasi į kelionę po interaktyvų temos pasaulį!</p>
+        <p class="element" data="main.gameLearning.txt.right">Pamokos metu visa klasė leidžiasi į kelionę
+          po interaktyvų temos pasaulį!</p>
       </div>
       <div class="game-learning__img">
         <img src="../src/assets/main/Group423.png" alt="planets">
       </div>
     </section>
     <section class="research">
-      <!-- <img class="research_background" src="../src/assets/main/Group432.png" alt="background"> -->
       <div class="research__topWrapper full-padding ">
         <div class="title">
-          <h2>Edukacinė nauda mokiniams - paremta tyrimais </h2>
+          <h2 class="element" data="main.research.title">Edukacinė nauda mokiniams - paremta tyrimais
+          </h2>
         </div>
-        <div class="container ">
+        <div class="container">
           <div class="box"><img src="../src/assets/main/Books.png" alt="books">
-            <h4><label>Tobulinamos bendrųjų dalykų</label>
-              žinios ir kompetencijos</label></h4>
+            <h4 class="element" data="main.research.card.left">Tobulinamos bendrųjų dalykų
+              <label> žinios ir kompetencijos</label>
+            </h4>
           </div>
           <div class="box"><img src="../src/assets/main/Trophy.png" alt="trophy">
-            <h4>Pagerėja mokinių
+            <h4 class="element" data="main.research.card.middle">Pagerėja mokinių
               <label>rezultatai ir įsitraukimas</label>
             </h4>
           </div>
           <div class="box"><img src="../src/assets/main/Pencil _ Ruler.png" alt="pen">
-            <h4>Mokomasi <label>problemų sprendimo bendradarbiaujant</label>
+            <h4 class="element" data="main.research.card.right">Mokomasi <label>problemų sprendimo
+                bendradarbiaujant</label>
             </h4>
           </div>
         </div>
         <button>
-          <h4>Tyrimai</h4>
+          <h4 class="element" data="main.research.btn">Tyrimai</h4>
         </button>
       </div>
       <div class="research__bottomWrapper">
-        <h2>Mokytojams pamokas vesti lengva!</h2>
-        <h4>Jūs gaunate tai, ko labiausiai reikia</h4>
+        <h2 class="element" data="main.research.bottomWrapper.title">Mokytojams pamokas vesti lengva!</h2>
+        <h4 class="element" data="main.research.bottomWrapper.sub">Jūs gaunate tai, ko labiausiai reikia</h4>
       </div>
     </section>
     <section class="teacherSupport">
       <div class="teacherSupport__wrapper1 flex">
         <div class="text">
-          <h4>Asmeninis konsultantas</h4>
-          <p>Pirmąsias pamokas Jums vesti padeda "Trys kubai" mokytojai!</p>
+          <h4 class="element" data="main.teacherSupport.cardLeft.main">Asmeninis konsultantas</h4>
+          <p class="element" data="main.teacherSupport.cardLeft.desc">Pirmąsias pamokas Jums vesti padeda "Trys kubai"
+            mokytojai!</p>
           <img class="left" src="../src/assets/main/Ideation.png" alt="light bulb">
         </div>
       </div>
       <div class="teacherSupport__wrapper2 flex">
         <div class="text">
-          <h4>Naudojimosi gidas</h4>
-          <p>Pamokų planai ir bet kada pasiekiami mokymai vaizdo įrašų forma.</p>
+          <h4 class="element" data="main.teacherSupport.cardMiddle.main">Naudojimosi gidas</h4>
+          <p class="element" data="main.teacherSupport.cardMiddle.desc">Pamokų planai ir bet kada pasiekiami mokymai
+            vaizdo įrašų forma.</p>
           <img class="right mb150" src="../src/assets/main/Chalkboard.png" alt="board">
         </div>
       </div>
       <div class="teacherSupport__wrapper3 flex">
-        <div class=" text ">
-          <h4>Pilnai paruoštos pamokos</h4>
-          <p>Užduočių komplektai ir virtualūs pasauliai pagal skirtingas pamokos temas.</p>
+        <div class="text ">
+          <h4 class="element" data="main.teacherSupport.cardRight.main">Pilnai paruoštos pamokos</h4>
+          <p class="element" data="main.teacherSupport.cardRight.desc">Užduočių komplektai ir virtualūs pasauliai pagal
+            skirtingas pamokos temas.</p>
           <img class=" right2" src="../src/assets/main/Certificate.png" alt="certification">
         </div>
       </div>
     </section>
     <section class="community">
       <div class="community__topWrapper flex-row">
-        <!-- <img src="../src/assets/main/Group 433.png" alt="background"> -->
         <div class="community__topWrapper-left"></div>
         <div class="community__topWrapper-right flex-column">
           <div class="title">
-            <h2>Net</h2>
-            <h1>95%</h1>
+            <h2 class="element" data="main.community.title.word">Net</h2>
+            <h1 class="element" data="main.community.title.num">95%</h1>
           </div>
-          <h3>mokytojų "Trys kubai" formalaus švietimo pamokų edukacinį turinį įvertina "gerai" ir "labai gerai"!</h3>
+          <h3 class="element" data="main.community.sub">mokytojų "Trys kubai" formalaus švietimo pamokų edukacinį turinį
+            įvertina "gerai" ir "labai gerai"!</h3>
         </div>
       </div>
       <div class="community__card">
         <img class="Qmark" src="../src/assets/main/Group 129.png" alt="quotation mark">
-        <div class="slide flex-column center">
-          <div class="slide__title">
-            <h4>Geros mokyklos koncepcijoje yra kalbama apie nuotykius mokykloje. Žaidimu paremtas
-              mokymasis yra puikus metodas siekti akademinių rezultatų!</h4>
-          </div>
-          <div class="slide__body flex-row">
-            <img src="../src/assets/main/Ellipse24.png" alt="">
-            <div class="user flex-column">
-              <div class="user__name">Vaidas Bacys</div>
-              <div class="user__location">Šiaulių r.Dubysos aukštupio mokyklos direktorius</div>
+
+        <div class="splide">
+          <div class="splide__track">
+            <div class="splide__list">
+              <li class="splide__slide slide01">
+                <div class="slide flex-column center">
+                  <div class="slide__title">
+                    <h4 class="element" data="main.community.slide01.review">Geros mokyklos koncepcijoje yra kalbama
+                      apie nuotykius mokykloje. Žaidimu paremtas
+                      mokymasis yra puikus metodas siekti akademinių rezultatų!</h4>
+                  </div>
+                  <div class="slide__body flex-row">
+                    <img src="../src/assets/main/Ellipse24.png" alt="">
+                    <div class="user flex-column">
+                      <div class="user__name element" data="main.community.slide01.userName">Vaidas Bacys</div>
+                      <div class="user__location element" data="main.community.slide01.userLocation">Šiaulių r.Dubysos
+                        aukštupio
+                        mokyklos direktorius</div>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li class="splide__slide slide02">
+                <div class="slide flex-column center">
+                  <div class="slide__title">
+                    <h4 class="element" data="main.community.slide02.review">Geros mokyklos koncepcijoje yra kalbama
+                      apie nuotykius mokykloje. Žaidimu paremtas
+                      mokymasis yra puikus metodas siekti akademinių rezultatų!</h4>
+                  </div>
+                  <div class="slide__body flex-row">
+                    <img src="../src/assets/main/Ellipse24.png" alt="">
+                    <div class="user flex-column">
+                      <div class="user__name element" data="main.community.slide02.userName">Vaidas Bacys</div>
+                      <div class="user__location element" data="main.community.slide02.userLocation">Šiaulių r.Dubysos
+                        aukštupio mokyklos direktorius</div>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li class="splide__slide slide03">
+                <div class="slide flex-column center">
+                  <div class="slide__title">
+                    <h4 class="element" data="main.community.slide03.review">Geros mokyklos koncepcijoje yra kalbama
+                      apie nuotykius
+                      mokykloje. Žaidimu paremtas
+                      mokymasis yra puikus metodas siekti akademinių rezultatų!</h4>
+                  </div>
+                  <div class="slide__body flex-row">
+                    <img src="../src/assets/main/Ellipse24.png" alt="">
+                    <div class="user flex-column">
+                      <div class="user__name element" data="main.community.slide03.userName">Vaidas Bacys</div>
+                      <div class="user__location element" data="main.community.slide03.userLocation">Šiaulių r.Dubysos
+                        aukštupio
+                        mokyklos direktorius</div>
+                    </div>
+                  </div>
+                </div>
+              </li>
             </div>
           </div>
         </div>
-        <div class="paginator flex-row center">
-          <ul class="flex-row" type="none">
-            <li></li>
-            <li></li>
-            <li></li>
-          </ul>
-        </div>
+        <ul class=" flex-row center" type="none">
+          <li><button class=" pagination-btn" type="button" aria-controls="slide01" aria-label="Go to slide 1"
+              aria-current="true"> </button></li>
+          <li><button class=" pagination-btn " type="button" aria-controls="slide02" aria-label="Go to slide 1"
+              aria-current="true"> </button></li>
+          <li><button class=" pagination-btn" type="none" aria-controls="slide03" aria-label="Go to slide 1"
+              aria-current="true"> </button></li>
+        </ul>
       </div>
       <div class="community__bottomWrapper flex-row">
         <div class="community__bottomWrapper-left"></div>
         <div class="community__bottomWrapper-right">
-          <h2>Mokyklų bendruomenė</h2>
+          <h2 class="element" data="main.community.title2">Mokyklų bendruomenė</h2>
         </div>
       </div>
     </section>
     <section class="achievements full-padding flex-column">
-      <h2>Pasiekimai</h2>
+      <h2 class="element" data="main.achievements.title">Pasiekimai</h2>
       <div class="achievements__container top-padding flex-between">
         <div class="box flex-column center">
           <div class="box__top">
@@ -191,7 +272,9 @@
           </div>
           <div class="box__bottom">
             <h3>Naujasis Knygnešys</h3>
-            <p>2020m. laimėjome 1 vietą kategorijoje "Mokymasis ir švietimas"</p>
+            <p class="element" data="main.achievements.cardLeft.desc">2020m. laimėjome 1 vietą kategorijoje "Mokymasis
+              ir
+              švietimas"</p>
           </div>
         </div>
         <div class="box flex-column center">
@@ -200,7 +283,7 @@
           </div>
           <div class="box__bottom">
             <h3>Microsoft</h3>
-            <p>Sertifikuoti "Microsoft" partneriai</p><br>
+            <p class="element" data="main.achievements.cardMiddle.desc">Sertifikuoti "Microsoft" partneriai</p><br>
           </div>
         </div>
         <div class="box flex-column center">
@@ -209,44 +292,46 @@
           </div>
           <div class="box__bottom">
             <h3>WSA</h3>
-            <p>2020 m. išrinkti vieni iš 16 geriausių skaitmeninių sprendimų Europoje</p>
+            <p class="element" data="main.achievements.cardRight.desc">2020 m. išrinkti vieni iš 16 geriausių
+              skaitmeninių
+              sprendimų Europoje</p>
           </div>
         </div>
       </div>
     </section>
     <section class="services bottom-padding flex-column">
       <div class="services__title bottom-margin flex-row">
-        <h2>Paslaugos</h2>
+        <h2 class="element" data="main.services.title">Paslaugos</h2>
       </div>
       <!-- <img src="../src/assets/" alt=""> -->
       <div class="services__container full-padding">
         <div class="services__cardLeft">
           <div class="services__card flex-column center">
             <img class="frame" src="../src/assets/main/Group 421.png" alt="">
-            <h3>Neformalus turinys</h3>
-            <h4>mokyklos,ugdymo centrams</h4>
-            <a href="">daugiau informacijos ></a>
+            <h3 class="element" data="main.services.cardLeft.main">Neformalus turinys</h3>
+            <h4 class="element" data="main.services.cardLeft.desc">mokyklos,ugdymo centrams</h4>
+            <a href="" class="element" data="main.services.cardLeft.link">daugiau informacijos ></a>
           </div>
         </div>
         <div class="services__cardMiddle">
           <div class="services__cardBig flex-column center">
             <img class="frame" src="../src/assets/main/Group 425.png" alt="">
-            <h3>Formalus turinys</h3>
-            <h4>mokykloms</h4>
-            <a href="">daugiau informacijos ></a>
+            <h3 class="element" data="main.services.cardMiddle.main">Formalus turinys</h3>
+            <h4 class="element" data="main.services.cardMiddle.desc">mokykloms</h4>
+            <a href="" class="element" data="main.services.cardLeft.link">daugiau informacijos ></a>
           </div>
         </div>
         <div class="services__cardRight">
           <div class="services__card flex-column center">
             <img class="frame" src="../src/assets/main/Group 422.png" alt="">
-            <h3>Projektai</h3>
-            <h4>įmonėms, organizacijoms</h4>
-            <a href="">daugiau informacijos ></a>
+            <h3 class="element" data="main.services.cardRight.main">Projektai</h3>
+            <h4 class="element" data="main.services.cardRight.desc">įmonėms, organizacijoms</h4>
+            <a href="" class="element" data="main.services.cardLeft.link">daugiau informacijos ></a>
           </div>
         </div>
       </div>
     </section>
-    <section class="contact-form full-padding flex-column center">
+    <!-- <section class="contact-form full-padding flex-column center">
       <h2>Susisiekite su mumis!</h2>
       <h4>Palikite savo kontaktus ir mes su Jumis susisieksime artimiasiu metu</h4>
       <form action="mailto:suppor@edukraft.lt" method="post" enctype="multipart/form-data" class="form flex-column">
@@ -269,85 +354,108 @@
         </div>
         </table>
       </form>
-    </section>
+    </section> -->
   </main>
   <footer class="footer flex-column side-padding">
     <div class="container flex-row">
       <div class="container__left flex-row">
         <div class="container__left-contact">
-          <h3>Kontaktai</h3>
-          <h5 class="sub1"><a href="tel:+370 (602) 91 919">+370 (602) 91 919</a></h5>
+          <h3 class="element" data="footer.contact.main">Kontaktai</h3>
+          <h5 class="sub1"><a href="tel:+370 (602) 91 919">+370 (602) 91
+              919</a></h5>
           <h5 class="sub2">info@edukraftas.lt</h5>
           <h5 class="sub3"><a href="htthp://mahps.google.com/?q=Žalgirio g. 88, LT-09301, Vilnius">Žalgirio g. 88,<br>
               LT-09301, Vilnius</a>
           </h5>
         </div>
         <div class="container__left-info">
-          <h3>Informacija</h3>
-          <h5 class="sub1"><a href="">Kaip tapti partneriu</a></h5>
-          <h5 class="sub2">privatumo politika</h5>
-          <h5 class="sub3"><a href="">Karjera</a>
+          <h3 class="element" data="footer.info.main">Informacija</h3>
+          <h5 class="sub1"><a href="" class="element" data="footer.info.knowHow">Kaip tapti partneriu</a></h5>
+          <h5 class="sub2"><a href="" class="element" data="footer.info.privacy">Privatumo politika</a></h5>
+          <h5 class="sub3"><a href="" class="element" data="footer.info.carrer">Karjera</a>
           </h5>
         </div>
       </div>
       <div class="container__right">
         <div class="container__right-subsrc">
-          <h3>Naujienlaiškis</h3>
-          <h5 class="sub1"><a href>Gaukite visas naujienas pirmieji!</a></h5>
+          <h3 class="element" data="footer.subs.main">Naujienlaiškis</h3>
+          <h5 class="sub1"><a href="" class="element" data="footer.subs.desc">Gaukite visas naujienas pirmieji!</a></h5>
           <div class="container__right-input">
             <input type="email" placeholder="El.paštas"><button>
-              <h5>Prenumeruoti</h5>
+              <h5 class="element" data="footer.subs.btn">Prenumeruoti</h5>
             </button>
           </div>
           <div class="container__right-privacy flex-row">
             <input class="flex-row" type="checkbox">
-            <h5 class="flex-row text">Sutinku su privatumo politika</h5>
+            <h5 class="flex-row text element" data="footer.subs.checkBox">Sutinku su privatumo politika</h5>
           </div>
         </div>
       </div>
     </div>
     <div class="copyright flex center">
-      <h5>&copy;2022 Edukraftas. Visos teisės saugomos.</h5>
+      <h5 class="flex-row text element" data="footer.subs.cc">&copy;2022 Edukraftas. Visos teisės saugomos.</h5>
     </div>
   </footer>
-  <!-- <footer class="footer flex-column">
-    <div class="container flex-row side-padding">
-      <div class="container__left flex-row center">
-        <div class="container__left-contact flex-column ">
-          <h3>Kontaktai</h3>
-          <p><a href="tel:+370 (602) 91 919">+370 (602) 91 919</a></p>
-          <p>info@edukraftas.lt</p>
-          <p><a href="http://maps.google.com/?q=Žalgirio g. 88, LT-09301, Vilnius">Žalgirio g. 88, LT-09301, Vilnius</a>
-          </p>
-        </div>
-        <div class="container__left-info flex-column">
-          <h3>Informacija</h3>
-          <p><a href="">Kaip tapti partneriu</a></p>
-          <p>Privatumo politika</p>
-          <p><a href="">Karjera</a>
-          </p>
-        </div>
-      </div>
-      <div class="container__right flex-column center">
-        <div class="container__right-subscription">
-          <h3>Naujienlaiškis</h3>
-          <p>Gaukite visas naujienas pirmieji!</p>
-          <div class="container__right-subscription_input">
-            <input type="email" placeholder="El.paštas"><button>Prenumeruoti</button>
-          </div>
-          <div class="flex-row privacy ">
-            <input class="flex-row" type="checkbox">
-            <h5 class="flex-row text text">Sutinku su privatumo politika</h5>
-          </div>
-          <br>
-          <br>
-        </div>
-      </div>
-    </div>
-    <div class="copyright flex center">
-      <p>&copy;2022 Edukraftas. Visos teisės saugomos.</p>
-    </div>
-  </footer> -->
+  <!-- script loading -->
+  <script src="../src/js/collapsible.js"></script>
+  <script src="../src/js/navtoggle.js"></script>
+  <script src="../src/js/main.js"></script>
+  <script src="../src/js/locale.js"></script>
+  <script src="../src/js/i18next.min.js"></script>
+  <script src="../src/js/splide.min.js"></script>
+  <!-- CONFIGS -->
+  <script>
+    function updateContent() {
+      const elements = document.getElementsByClassName("element");
+      for (let i = 0; i < elements.length; i++) {
+        const element = elements[i];
+        const k = element.getAttribute("data");
+        element.innerHTML = i18next.t(k);
+      }
+    }
+
+    async function i18Loader() {
+      const langs = ["en", "lt"];
+      const jsons = await Promise.all(
+        langs.map((l) => fetch("/src/lang/" + l + ".json").then((r) => r.json()))
+      );
+      const res = langs.reduce((acc, l, idx) => {
+        acc[l] = { translation: jsons[idx] };
+        return acc;
+      }, {});
+      await i18next.init({
+        lng: "en",
+        debug: true,
+        resources: res
+      });
+      updateContent();
+      i18next.on("languageChanged", () => {
+        updateContent();
+      });
+      const langSelector = document.getElementById("langSelector");
+      // langSelector.removeAttribute("disabled");
+      langSelector.addEventListener("click", (e) => {
+        console.log("clicked", e.target);
+        i18next.changeLanguage(e.target.innerText.toLowerCase());
+      });
+    }
+
+    i18Loader();
+  </script>
+
+  <script type="text/javascript">
+
+    new Splide(".splide", {
+      type: "loop",
+      perPage: 1,
+      autoplay: true,
+      arrows: false,
+      classes: {
+        pagination: 'paginator',
+      }
+    }).mount();
+  </script>
+
 </body>
 
 </html>
