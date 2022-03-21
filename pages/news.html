@@ -12,7 +12,8 @@
 
 <body>
   <header class="side-padding darkHeader">
-    <div class="logo"><a href="../pages/main.html"><img src="/src/assets/header_footer/logo.png" alt="logo" /></a>
+    <div class="logo"><a href="../pages/main.html"><img class="logoImg" src="/src/assets/header_footer/logo.png"
+          alt="logo" /></a>
     </div>
     <div class="hamburger">
       <div class="line"></div>
@@ -21,31 +22,37 @@
     </div>
     <div class="right-side">
       <div class="right-side__navigation">
-        <a href="./formal.html">Formalus švietimas</a>
-        <a href="./nonFormal.html">Neformalus švietimas</a>
-        <a href="./projects.html">Projektai</a>
-        <a href="./news.html">Naujienos</a>
-        <a href="./contacts.html">Kontaktai</a>
-      </div>
-      <div class="right-side__language">
-        <h4>LT | EN</h4>
+        <h5><a class="element nav" data="nav.formal" href="./formal.html">Formal education</a></h5>
+        <h5><a class="element nav" data="nav.nonformal" href="./nonFormal.html">Informal education</a></h5>
+        <h5><a class="element nav" data="nav.projects" href="./projects.html">Projects</a></h5>
+        <h5><a class="element nav" data="nav.news" href="./news.html">News</a></h5>
+        <h5><a class="element nav" data="nav.contacts" href="./contacts.html">Contacts</a></h5>
+        <div class="right-side__language flex-row">
+          <button class="lt" value="en" id="langSelector">
+            <h5>LT</h5>
+          </button>
+          <!-- <h5>|</h5> -->
+          <button class="en" value="lt" id="langSelector">
+            <h5>EN</h5>
+          </button>
+        </div>
       </div>
     </div>
   </header>
   <main>
-    <section class="news flex-column center full-padding" style="margin-top: 15vh;">
+    <section class="news flex-column center full-padding" style="margin-top: 10vh;">
       <div class="news__title flex-column center">
-        <h2>Naujienos</h2>
-        <h4>Apie mus rašo</h4>
+        <h2 class="element" data="news.title">Naujienos</h2>
+        <h4 class="element" data="news.sub">Apie mus rašo</h4>
       </div>
       <div class="news__body top-bottom-padding flex-full">
         <div class="news__body-card flex-column">
           <div class="news__body-card_image"><img src="../src/assets/projects/hero.png" alt=""></div>
           <div class="news__body-card_text">
-            <h5>Lietuvos mokyklose pamokos pradėjo vykti per "Minecraft".</h5>
+            <h5 class="element" data="news.cardMain1">Lietuvos mokyklose pamokos pradėjo vykti per "Minecraft".</h5>
           </div>
           <div class="news__body-card_tag flex center">
-            <h5>Straipsniai</h5>
+            <h5 class="element" data="news.label1">Straipsniai</h5>
           </div>
         </div>
         <div class="news__body-card flex-column">
@@ -53,11 +60,11 @@
             <img src="../src/assets/projects/gedas.png" alt="">
           </div>
           <div class="news__body-card_text">
-            <h5>Kompiuteriniai žaidimai vietoje pamokų?</h5>
-            <h5>Idėja laimėjo 20 000 eurų</h5>
+            <h5 class="element" data="news.cardMain2">Kompiuteriniai žaidimai vietoje pamokų? <br>
+              Idėja laimėjo 20 000 eurų</h5>
           </div>
           <div class="news__body-card_tag flex center">
-            <h5>Straipsniai</h5>
+            <h5 class="element" data="news.label1">Straipsniai</h5>
           </div>
         </div>
         <div class="news__body-card flex-column">
@@ -65,10 +72,11 @@
             <img src="" alt="">
           </div>
           <div class="news__body-card_text">
-            <h5>Lietuviui pomėgis žaisti kompiuterinius žaidimus tapo profesija.</h5>
+            <h5 class="element" data="news.cardMain3">Lietuviui pomėgis žaisti kompiuterinius žaidimus tapo profesija.
+            </h5>
           </div>
           <div class="news__body-card_tag flex center">
-            <h5>Straipsniai</h5>
+            <h5 class="element" data="news.label1">Straipsniai</h5>
           </div>
         </div>
         <div class="news__body-card flex-column">
@@ -76,10 +84,10 @@
             <img src="" alt="">
           </div>
           <div class="news__body-card_text">
-            <h5>Kitas lygis. Tinklalaidė apie žaidimų industriją Lietuvoje.</h5>
+            <h5 class="element" data="news.cardMain4">Kitas lygis. Tinklalaidė apie žaidimų industriją Lietuvoje.</h5>
           </div>
           <div class="news__body-card_tag flex center">
-            <h5>Podkastas</h5>
+            <h5 class="element" data="news.label4">Podkastas</h5>
           </div>
         </div>
     </section>
@@ -87,117 +95,127 @@
       <div class="news__background"></div>
       <div class=" news__title flex-column align-item-end flex-full">
         <div class="news__title-container flex-column center">
-          <h2>Mažesni projektai</h2>
-          <h5>Visi</h5>
+          <h2 class="element" data="news.title2">Mažesni projektai</h2>
+          <h5 class="element filterTxt"></h5>
         </div>
       </div>
       <section class="intersection">
         <div class="intersection__selections">
           <ul>
-            <li><img src="../src/assets/nonformal/Rectangle 237.png" alt="">
-              <h5>Mažesni svarbūs projektai</h5>
-            </li>
-            <li><img src="../src/assets/nonformal/Rectangle 237.png" alt="">
-              <h5>Įvykiai</h5>
-            </li>
-            <li><img src="../src/assets/nonformal/Rectangle 237.png" alt="">
-              <h5>Konferencijos</h5>
-            </li>
-            <li><img src="../src/assets/nonformal/Rectangle 237.png" alt="">
-              <h5>Visi</h5>
-            </li>
+            <button class="smallBtn btn">
+              <img src="../src/assets/nonformal/Rectangle 237.png" alt="">
+              <h5 class="element" data="news.filter.1">Mažesni svarbūs projektai</h5>
+            </button>
+            <button class="eventBtn btn">
+              <img src="../src/assets/nonformal/Rectangle 237.png" alt="">
+              <h5 class="element" data="news.filter.2">Įvykiai</h5>
+            </button>
+            <button class="confBtn btn">
+              <img src="../src/assets/nonformal/Rectangle 237.png" alt="">
+              <h5 class="element" data="news.filter.3">Konferencijos</h5>
+            </button>
+            <button class="allBtn btn active">
+              <img src="../src/assets/nonformal/Rectangle 237.png" alt="">
+              <h5 class="element" data="news.filter.4">Visi</h5>
+            </button>
           </ul>
         </div>
       </section>
       <div class="news__body flex-full wrap">
-        <div class=" news__body-card flex-column">
+        <div class=" news__body-card  flex-column event filterEl">
           <div class="news__body-card_image"><img src="" alt=""></div>
           <div class="news__body-card_text">
-            <h5>"Trys kubai" pristatymas LR Seime apie mokymąsi su "Minecraft"</h5>
+            <h5 class="element" data="news.cardAll1">"Trys kubai" pristatymas LR Seime apie mokymąsi su "Minecraft"</h5>
           </div>
           <div class="news__body-card_tag flex center">
-            <h5>Įvykiai</h5>
+            <h5 class="element" data="news.label2">Įvykiai</h5>
           </div>
         </div>
-        <div class="news__body-card flex-column">
+        <div class="news__body-card  flex-column event filterEl">
           <div class="news__body-card_image"><img src="" alt=""></div>
           <div class="news__body-card_text">
-            <h5>"Trys kubai" įgytas sertifikatas, atliktus "Minecraft" edukacinės platformos kursus Briuselyje
+            <h5 class="element" data="news.cardAll2">"Trys kubai" įgytas sertifikatas, atliktus "Minecraft" edukacinės
+              platformos kursus Briuselyje
               "Microsoft" ofise</h5>
           </div>
           <div class="news__body-card_tag flex center">
-            <h5>Įvykiai</h5>
+            <h5 class="element" data="news.label2">Įvykiai</h5>
           </div>
         </div>
-        <div class="news__body-card flex-column">
+        <div class="news__body-card  flex-column conference filterEl">
           <div class="news__body-card_image"><img src="" alt=""></div>
           <div class="news__body-card_text">
-            <h5>"Trys kubai" pristatymas apie "Minecraft" renginyje "GameOn 2019"</h5>
+            <h5 class="element" data="news.cardAll3">"Trys kubai" pristatymas apie "Minecraft" renginyje "GameOn 2019"
+            </h5>
           </div>
           <div class="news__body-card_tag flex center">
-            <h5>Konferencija</h5>
+            <h5 class="element" data="news.label3">Konferencija</h5>
           </div>
         </div>
-        <div class="news__body-card flex-column">
+        <div class="news__body-card  flex-column filterEl">
           <div class="news__body-card_image"><img src="" alt=""></div>
           <div class="news__body-card_text">
-            <h5>"Trys kubai" "Minecraft" dirbtuvės renginyje "GameOn 2018"</h5>
+            <h5 class="element" data="news.cardAll4">"Trys kubai" "Minecraft" dirbtuvės renginyje "GameOn 2018"</h5>
           </div>
           <div class="news__body-card_tag flex center">
-            <h5>Įvykiai</h5>
+            <h5 class="element" data="news.label2">Įvykiai</h5>
           </div>
         </div>
-        <div class="news__body-card flex-column">
+        <div class="news__body-card  flex-column filterEl">
           <div class="news__body-card_image"><img src="" alt=""></div>
           <div class="news__body-card_text">
-            <h5>"Trys kubai" salė su "Minecraft" projektais, turinio kūrėjais ir pristatymais apie "Youtube" renginyje
+            <h5 class="element" data="news.cardAll5">"Trys kubai" salė su "Minecraft" projektais, turinio kūrėjais ir
+              pristatymais apie "Youtube" renginyje
               "GameOn 2017"</h5>
           </div>
           <div class="news__body-card_tag flex center">
-            <h5>Įvykiai</h5>
+            <h5 class="element" data="news.label2">Įvykiai</h5>
           </div>
         </div>
-        <div class="news__body-card flex-column">
+        <div class="news__body-card  flex-column filterEl">
           <div class="news__body-card_image"><img src="" alt=""></div>
           <div class="news__body-card_text">
-            <h5>"Trys kubai" stendas su "Minecraft" turnyru, turinio kūrėjais ir diskusijomis renginyje "Comic Con
+            <h5 class="element" data="news.cardAll6">"Trys kubai" stendas su "Minecraft" turnyru, turinio kūrėjais ir
+              diskusijomis renginyje "Comic Con
               Baltics 2017"</h5>
           </div>
           <div class="news__body-card_tag flex center">
-            <h5>Įvykiai</h5>
+            <h5 class="element" data="news.label2">Įvykiai</h5>
           </div>
         </div>
-        <div class="news__body-card flex-column">
+        <div class="news__body-card  flex-column filterEl">
           <div class="news__body-card_image"><img src="" alt=""></div>
           <div class="news__body-card_text">
-            <h5>"Trys kubai" stendas su "Minecraft" edukaciniais nuotykiais parodoje "Mokykla 2019"</h5>
+            <h5 class="element" data="news.cardAll7">"Trys kubai" stendas su "Minecraft" edukaciniais nuotykiais
+              parodoje "Mokykla 2019"</h5>
           </div>
           <div class="news__body-card_tag flex center">
-            <h5>Įvykiai</h5>
+            <h5 class="element" data="news.label2">Įvykiai</h5>
           </div>
         </div>
-        <div class="news__body-card flex-column">
+        <div class="news__body-card  flex-column filterEl">
           <div class="news__body-card_image"><img src="" alt=""></div>
           <div class="news__body-card_text">
-            <h5>"Hour of Code" renginys rengtas kartu su "Microsoft" ir MO muziejumi</h5>
+            <h5 class="element" data="news.cardAll8">"Hour of Code" renginys rengtas kartu su "Microsoft" ir MO
+              muziejumi</h5>
           </div>
           <div class="news__body-card_tag flex center">
-            <h5>Įvykiai</h5>
+            <h5 class="element" data="news.label2">Įvykiai</h5>
           </div>
         </div>
-        <div class="news__body-card flex-column">
+        <div class="news__body-card  flex-column conference filterEl">
           <div class="news__body-card_image"><img src="" alt=""></div>
           <div class="news__body-card_text">
-            <h5>"Women Go Tech" konferencija</h5>
+            <h5 class="element" data="news.cardAll9">"Women Go Tech" konferencija</h5>
           </div>
           <div class="news__body-card_tag flex center">
-            <h5>Konferencija</h5>
+            <h5 class="element" data="news.label3">Konferencija</h5>
           </div>
         </div>
       </div>
       </div>
     </section>
-    <section class="contact-form full-padding flex-column center">
+    <!-- <section class="contact-form full-padding flex-column center">
       <h2>Susisiekite su mumis!</h2>
       <h5>Palikite savo kontaktus ir mes su Jumis susisieksime artimiasiu metu</h5>
       <form action="mailto:suppor@edukraft.lt" method="post" enctype="multipart/form-data" class="form flex-column">
@@ -220,51 +238,54 @@
         </div>
         </table>
       </form>
-    </section>
+    </section> -->
   </main>
   <footer class="footer flex-column side-padding">
     <div class="container flex-row">
       <div class="container__left flex-row">
         <div class="container__left-contact">
-          <h3>Kontaktai</h3>
-          <h5 class="sub1"><a href="tel:+370 (602) 91 919">+370 (602) 91 919</a></h5>
+          <h3 class="element" data="footer.contact.main">Contacts</h3>
+          <h5 class="sub1"><a href="tel:+370 (602) 91 919">+370 (602) 91
+              919</a></h5>
           <h5 class="sub2">info@edukraftas.lt</h5>
           <h5 class="sub3"><a href="htthp://mahps.google.com/?q=Žalgirio g. 88, LT-09301, Vilnius">Žalgirio g. 88,<br>
               LT-09301, Vilnius</a>
           </h5>
         </div>
         <div class="container__left-info">
-          <h3>Informacija</h3>
-          <h5 class="sub1"><a href="">Kaip tapti partneriu</a></h5>
-          <h5 class="sub2">privatumo politika</h5>
-          <h5 class="sub3"><a href="">Karjera</a>
+          <h3 class="element" data="footer.info.main">Information</h3>
+          <h5 class="sub1"><a href="" class="element" data="footer.info.knowHow">How to become a partner?</a></h5>
+          <h5 class="sub2"><a href="" class="element" data="footer.info.privacy">Privacy Policy</a></h5>
+          <h5 class="sub3"><a href="" class="element" data="footer.info.carrer">Career</a>
           </h5>
         </div>
       </div>
       <div class="container__right">
         <div class="container__right-subsrc">
-          <h3>Naujienlaiškis</h3>
-          <h5 class="sub1"><a href>Gaukite visas naujienas pirmieji!</a></h5>
+          <h3 class="element" data="footer.subs.main">Newsletters</h3>
+          <h5 class="sub1"><a href="" class="element" data="footer.subs.desc">Be the first to get all news!</a></h5>
           <div class="container__right-input">
-            <input type="email" placeholder="El.paštas"><button>
-              <h5>Prenumeruoti</h5>
+            <input class="email" type="email" placeholder="El.paštas"><button>
+              <h5 class="element" data="footer.subs.btn">Subscribe</h5>
             </button>
           </div>
           <div class="container__right-privacy flex-row">
             <input class="flex-row" type="checkbox">
-            <h5 class="flex-row text">Sutinku su privatumo politika</h5>
+            <h5 class="flex-row text element" data="footer.subs.checkBox">I agree to privacy policy.</h5>
           </div>
         </div>
       </div>
     </div>
     <div class="copyright flex center">
-      <h5>&copy;2022 Edukraftas. Visos teisės saugomos.</h5>
+      <h5 class="flex-row text element" data="footer.subs.cc">&copy;2022 "Edukraftas". All rights reserved.</h5>
     </div>
   </footer>
   <!-- script loading -->
-  <script src="../src/js/collapsible.js"></script>
   <script src="../src/js/navtoggle.js"></script>
-  <script src="../src/js/main.js"></script>
+  <script src="../src/js/filter.js"></script>
+  <script src="../src/js/i18next.min.js"></script>
+  <!-- CONFIGS -->
+  <script src="../src/js/locale.js"></script>
 </body>
 
 </html>

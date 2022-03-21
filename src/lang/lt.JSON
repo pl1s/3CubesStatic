@@ -32,7 +32,7 @@
     },
     "stats": {
       "left": "Vaikų išmėgino pamokas su \"Minecraft\"",
-      "middle": "Vaikų vedė savo mokiniams pamokas su  \"Minecraft\"",
+      "middle": "Mokyklų vedė savo mokiniams pamokas su  \"Minecraft\"",
       "right": "Mokyklų vedė savo mokiniams pamokas su \"Minecraft\""
     },
     "gameLearning": {
@@ -78,19 +78,19 @@
       },
       "sub": "mokytojų \"Trys kubai\" formalaus švietimo pamokų edukacinį turinį įvertina \"gerai\" ir \"labai gerai\"!",
       "slide01": {
-        "review": "Geros mokyklos koncepcijoje yra kalbama apie nuotykius mokykloje. Žaidimu paremtas mokymasis yra puikus metodas siekti akademinių rezultatų!",
+        "review": "“Geros mokyklos koncepcijoje yra kalbama apie nuotykius mokykloje. Žaidimu paremtas mokymasis yra puikus metodas siekti akademinių rezultatų!”",
         "userName": "Vaidas Bacys",
-        "userLocation": "Šiaulių r.Dubysos aukštupio mokyklos direktorius"
+        "userLocation": "“Dubysos aukštupio” mokyklos direktorius"
       },
       "slide02": {
-        "review": "Geros mokyklos koncepcijoje yra kalbama apie nuotykius mokykloje. Žaidimu paremtas mokymasis yra puikus metodas siekti akademinių rezultatų!",
-        "userName": "Vaidas Bacys",
-        "userLocation": "Šiaulių r.Dubysos aukštupio mokyklos direktorius"
+        "review": "“Mokiniai įtraukiami į praktinę, kūrybinę veiklą – taip stiprėja jų motyvacija mokytis”",
+        "userName": "Dainora Šešetienė",
+        "userLocation": "Mokyklos “Velžys” pradinių kl. mokytoja"
       },
       "slide03": {
-        "review": "Geros mokyklos koncepcijoje yra kalbama apie nuotykius mokykloje. Žaidimu paremtas mokymasis yra puikus metodas siekti akademinių rezultatų!",
-        "userName": "Vaidas Bacys",
-        "userLocation": "Šiaulių r.Dubysos aukštupio mokyklos direktorius"
+        "review": "“Pamokos padeda lavinti kūrybiškumą, technologinė intuicija, kritinį mąstymą, gebėjimą spręsti problemas individualiai ir komandose”",
+        "userName": "Jurgita Navikienė",
+        "userLocation": "“Gražiškiai” gimnazijos pradinių kl. mokytoja"
       },
       "title2": "Mokyklų bendruomenė"
     },
@@ -151,22 +151,18 @@
     },
     "lessons": {
       "title": "Pamokų pavyzdžiai",
-      "slide01": {
-        "desc": "Pamoka \"Valstybės simobliai\""
-      },
-      "slide02": {
-        "desc": "Pamoka \"Lietuvos gyvūnai\""
-      },
-      "slide03": {
-        "desc": "Pamoka \"Saulės sistema\""
-      },
-      "slide04": {
-        "desc": "Pamoka \"Saulės sistema\""
-      }
+      "slide01": "Pamoka \"Valstybės simobliai\"",
+      "slide02": "Pamoka \"Lietuvos gyvūnai\"",
+      "slide03": "Pamoka \"Saulės sistema\"",
+      "slide04": "Pamoka \"Saulės sistema\""
     },
     "reviews": {
       "title": "\"Trys kubai\" interaktyvios pamokos - suteikia patogų būdą ugdyti ne tik žinias, bet ir kompetencijas",
       "title2": "Mokytojų atsiliepimai",
+      "inter-card": {
+        "title": "Nacionalinės švietimo agentūros puslapyje <br> www.mokykla2030.lt teigiama, jog:",
+        "desc": "\"Atnaujinant ugdymo turinį laikomasi 2008 m. programose pradėtos kompoetencijų prieigos, tačiau išplėtota ir patikslinta pati kompetencijos samprata. Taip pat siekama atskleisti ryšius tarp dalykinio turinio ir kompetencijų ir iliustruoti, kaip kompetencijos ugdomas dalykiniu turiniu\""
+      },
       "cardLeft": {
         "desc": "Kuriamos pagal atnaujinama bendrojo ugdymo programą"
       },
@@ -229,18 +225,16 @@
       "sub": "Užsiėmimų metu mokiniai kuria pirmąją kosminę gyvenvietę Marso planetoje!",
       "themes": {
         "title": "Būrėlio temos",
-        "theme": [
-          "Marso planetos tyrinėjimas;",
-          "kosminių bazių ir raketų statymas;",
-          "saulės ir vėjo jėgainių kūrimas;",
-          "maisto auginimas Marse;",
-          "Marso istorijas, mitai ir legendos",
-          "apsilankymas asteroidų žiede;",
-          "prekyba Marso resursais;",
-          "kelionės su marsaeigiais;",
-          "robotukų programavimas",
-          "ir dar daugiau!"
-        ],
+        "theme1": "Marso planetos tyrinėjimas;",
+        "theme2": "kosminių bazių ir raketų statymas;",
+        "theme3": "saulės ir vėjo jėgainių kūrimas;",
+        "theme4": "maisto auginimas Marse;",
+        "theme5": "Marso istorijas, mitai ir legendos",
+        "theme6": "apsilankymas asteroidų žiede;",
+        "theme7": "prekyba Marso resursais;",
+        "theme8": "kelionės su marsaeigiais;",
+        "theme9": "robotukų programavimas",
+        "theme10": "ir dar daugiau!",
         "sub": "Individuali registracija į burelį nevyksta. <br> Būrelį gali įsigyti švietimo įstaigos."
       }
     },
@@ -251,7 +245,7 @@
     },
     "codeAcademy": {
       "sub": {
-        "text": "Į būrelį galite individualiai registruotis \"CodeAcademy Kids\" svetainėje",
+        "text": "Į būrelį galite individualiai registruotis \"CodeAcademy Kids\" svetainėje <a href=\"http://codeacademy.com\">čia.</a>",
         "link": "čia."
       },
       "themes": {
@@ -262,37 +256,42 @@
         },
         "second": {
           "main": "Antras semestras",
-          "desc": "Žaidimo dizainerio profesija ir žaidimų kūrimo disciplinos"
+          "desc": "Žaidimų prototipavimas ir žaidimo planavimo praktika"
         },
         "third": {
           "main": "Trečias semestras",
-          "desc": "Žaidimo dizainerio profesija ir žaidimų kūrimo disciplinos"
+          "desc": "Išmoktų teorinių ir praktinių žinių pritaikymas kuriant žaidimą"
         }
       }
     },
     "skillSet": {
       "title": "Būrelių metu tobulinami šie įgūdžiai",
-      "skills": [
-        "programavimo",
-        "gamtos mokslų",
-        "lietuvių kalbos",
-        "anglų kalbos",
-        "ekonomikos",
-        "darbas savarankiškai ir grupėse",
-        "matematikos"
-      ]
+      "skill1": "programavimo",
+      "skill2": "gamtos mokslų",
+      "skill3": "lietuvių kalbos",
+      "skill4": "anglų kalbos",
+      "skill5": "ekonomikos",
+      "skill6": "darbas savarankiškai ir grupėse",
+      "skill7": "matematikos"
     },
     "marsPackage": {
       "title": "Būrelį \"Pirmieji Marso gyventojai\" įsigijusioms švietimo įstaigoms suteikiame",
-      "box": ["Konsultacijas", "Naudojimosi gidas", "Pilnai paruoštos pamokos"]
+      "box1": "Konsultacijas",
+      "box2": "Naudojimosi gidas",
+      "box3": "Pilnai paruoštos pamokos"
     }
   },
   "projects": {
+    "title": "Tarptautiniai projectai",
     "label": "Partneris",
     "main": "Pagrindinis remėjas",
     "edu": "Edukacinis remėjas",
     "info": "Daugiau apie projektą",
-    "card": ["Nauda", "Tema", "Įdomu", "Sklaida", "Peržiūros"],
+    "card1": "Nauda",
+    "card2": "Tema",
+    "card3": "Įdomu",
+    "card4": "Sklaida",
+    "card5": "Peržiūros",
     "hero": {
       "title": "Žaidimu paremtos patirtys",
       "sub": "\"Trys kubai\" įgyvendinti projektai, naudojant \"Minecraft\"",
@@ -300,84 +299,79 @@
     },
     "ecology": {
       "title": "Neformalus švietimas Jungtinėje Karalystėje",
-      "text": [
-        "Skirtingų temų moduliai leidžia mokiniams gilintis į įvairias temas, pvz., anglies dioksidą, klimato kaitą.",
-        "Apie anglies dioksidą mokomasi saugioje virtualioje \"Minecraft\" laboratorijoje, o apie klimato kaitą mokinasi interaktyvios ekspedicijos metu Antarktidoje!",
-        "Mokiniai sprendžia užduotis individualiai ir bendradarbiaujant komandose.",
-        "Mokiniai ir mokyklos Jungtinėje Karalystėje pradeda \"Trys kubai\" pamokas su \"Minecraft\""
-      ]
+      "text1": "Skirtingų temų moduliai leidžia mokiniams gilintis į įvairias temas, pvz., anglies dioksidą, klimato kaitą.",
+      "text2": "Apie anglies dioksidą mokomasi saugioje virtualioje \"Minecraft\" laboratorijoje, o apie klimato kaitą mokinasi interaktyvios ekspedicijos metu Antarktidoje!",
+      "text3": "Mokiniai sprendžia užduotis individualiai ir bendradarbiaujant komandose.",
+      "text4": "Mokiniai ir mokyklos Jungtinėje Karalystėje pradeda \"Trys kubai\" pamokas su \"Minecraft\""
     },
     "mars": {
       "title": "Formalus švietimas Jungtinėse Valstijose",
-      "text": [
-        "Kursas \"Pirmieji Marso gyventojai\" ugdo matematikos, biologijos, chemijos, geografijos ir astronomijos žinias.",
-        "Kursą sudaro virtualus Marso pasaulis ir interaktyvios užduotys mokiniams",
-        "Mokiniai sprendžia užduotis individualiai ir bendradarbiaujant komandose.",
-        "Mokyklos Jungtinėse Valstijose naudoja \"Trys kubai\" pamokas formaliajame švietime."
-      ]
+      "text1": "Kursas \"Pirmieji Marso gyventojai\" ugdo matematikos, biologijos, chemijos, geografijos ir astronomijos žinias.",
+      "text2": "Kursą sudaro virtualus Marso pasaulis ir interaktyvios užduotys mokiniams",
+      "text3": "Mokiniai sprendžia užduotis individualiai ir bendradarbiaujant komandose.",
+      "text4": "Mokyklos Jungtinėse Valstijose naudoja \"Trys kubai\" pamokas formaliajame švietime."
     },
     "gigaF": {
       "title": "TESLA Gigafactory 2 per \"Minecraft\"",
-      "text": [
-        "Skirtingų temų moduliai leidžia mokiniams gilintis į įvairias temas, pvz., anglies dioksidą, klimato kaitą.",
-        "Apie anglies dioksidą mokomasi saugioje virtualioje \"Minecraft\" laboratorijoje, o apie klimato kaitą mokinasi interaktyvios ekspedicijos metu Antarktidoje!",
-        "Mokiniai sprendžia užduotis individualiai ir bendradarbiaujant komandose.",
-        "Mokiniai ir mokyklos Jungtinėje Karalystėje pradeda \"Trys kubai\" pamokas su \"Minecraft\"",
-        "Peržiūros - Projekto vaizdo įrašas surinko virš 260,000 peržiūrų \"Youtube\" platformoje."
-      ]
+      "text1": "Skirtingų temų moduliai leidžia mokiniams gilintis į įvairias temas, pvz., anglies dioksidą, klimato kaitą.",
+      "text2": "Apie anglies dioksidą mokomasi saugioje virtualioje \"Minecraft\" laboratorijoje, o apie klimato kaitą mokinasi interaktyvios ekspedicijos metu Antarktidoje!",
+      "text3": "Mokiniai sprendžia užduotis individualiai ir bendradarbiaujant komandose.",
+      "text4": "Mokiniai ir mokyklos Jungtinėje Karalystėje pradeda \"Trys kubai\" pamokas su \"Minecraft\"",
+      "text5": "Peržiūros - Projekto vaizdo įrašas surinko virš 260,000 peržiūrų \"Youtube\" platformoje."
     },
     "Vilnius": {
       "title": "Lietuviški projektai",
       "sub": "Vilniaus istoriniai blokeliai",
-      "text": [
-        "\"Minecraft\" žaidime atkūrėme istorinį Vilnių 5 skirtingose epochose.",
-        "Atstatėme vienas istoriškai svarbiausių Vilniaus vietų &#9472; Gedimino kalną, Vilniaus katedrą, Valdovų rūmus bei aplinkinę teritoriją.",
-        "\"Minecraft\" statytojų komandą sudarė moksleiviai ir studentai.",
-        "Žemėlapius su virtualios realybės įranga išbandė 10 skirtingų Vilniaus mokyklų!",
-        "Projekto vaizdo įrašas surinko virš 40,000 peržiūrų \"Youtube\" platformoje."
-      ]
+      "text1": "\"Minecraft\" žaidime atkūrėme istorinį Vilnių 5 skirtingose epochose.",
+      "text2": "Atstatėme vienas istoriškai svarbiausių Vilniaus vietų &#9472; Gedimino kalną, Vilniaus katedrą, Valdovų rūmus bei aplinkinę teritoriją.",
+      "text3": "\"Minecraft\" statytojų komandą sudarė moksleiviai ir studentai.",
+      "text4": "Žemėlapius su virtualios realybės įranga išbandė 10 skirtingų Vilniaus mokyklų!",
+      "text5": "Projekto vaizdo įrašas surinko virš 40,000 peržiūrų \"Youtube\" platformoje."
     },
     "3kids": {
-      "title": "Trys pradinukai",
-      "text": [
-        "3 edukaciniai nuotykiai skirti geriau paŽinti Lietuvos istorija.",
-        "Edukacinių nuotykių temos: \"Gelbstint Vytį\", \"Kunigaikščių lobiai\" ir \"Nepriklausomybės Aktas\".",
-        "Kai kurie veikėjai įgarsinti ir žinomų valstybingumo puoselėtojų kaip atlikėjas Gabrielius Liaudanskas-Svaras, mokslininkas Liudas.",
-        "Projektas pristatytas LRT \"Labas rytas\" laidoje, o edukacinius nuotykius buvo galima parsisiųsti ir juose mokytis nemokamai",
-        "Projekto vaizdo įrašas surinko virš 12,000 peržiūrų \"Youtube\" platformoje."
-      ]
+      "title": "\"Trys pradinukai\"",
+      "text1": "3 edukaciniai nuotykiai skirti geriau paŽinti Lietuvos istorija.",
+      "text2": "Edukacinių nuotykių temos: \"Gelbstint Vytį\", \"Kunigaikščių lobiai\" ir \"Nepriklausomybės Aktas\".",
+      "text3": "Kai kurie veikėjai įgarsinti ir žinomų valstybingumo puoselėtojų kaip atlikėjas Gabrielius Liaudanskas-Svaras, mokslininkas Liudas.",
+      "text4": "Projektas pristatytas LRT \"Labas rytas\" laidoje, o edukacinius nuotykius buvo galima parsisiųsti ir juose mokytis nemokamai",
+      "text5": "Projekto vaizdo įrašas surinko virš 12,000 peržiūrų \"Youtube\" platformoje."
     },
     "gedas": {
       "title": "Paturbink Gediminą",
-      "text": [
-        "Tik per 3 paras tiesioginės transliacijos metu 12 \"Trys kūbai\" statytojų sugebėjo atkurti ir \"paturbinti\" Vilniaus vietovę iš 2,300,000 blokelių.",
-        "Kartu su \"Labas\" komanda \"Trys kūbai\" sumanė virtualioje erdvėje patobulinti Gedimino kalną ir pilį.",
-        "Pagrindinis \"Minecraft\" statybų architektas buvo youtuberis ir \"Trys kūbai\" bendraįkūrėjas Darius Kniūkšta.",
-        "Į transliaciją prisijungė ir Mantas Katleris, Mantas Bartuševičius, istorikas Aurimas Švedas, o renginį vedė Orijus Gasanovas.",
-        "Projekto vaizdo įrašas surinko virš 155,000 peržiūrų \"Facebook\" platformoje."
-      ]
+      "text1": "Tik per 3 paras tiesioginės transliacijos metu 12 \"Trys kūbai\" statytojų sugebėjo atkurti ir \"paturbinti\" Vilniaus vietovę iš 2,300,000 blokelių.",
+      "text": "Kartu su \"Labas\" komanda \"Trys kūbai\" sumanė virtualioje erdvėje patobulinti Gedimino kalną ir pilį.",
+      "text3": "Pagrindinis \"Minecraft\" statybų architektas buvo youtuberis ir \"Trys kūbai\" bendraįkūrėjas Darius Kniūkšta.",
+      "text4": "Į transliaciją prisijungė ir Mantas Katleris, Mantas Bartuševičius, istorikas Aurimas Švedas, o renginį vedė Orijus Gasanovas.",
+      "text5": "Projekto vaizdo įrašas surinko virš 155,000 peržiūrų \"Facebook\" platformoje."
     }
   },
   "news": {
     "title": "Naujienos",
+    "title2": "Mažesni projektai",
     "sub": "Apie mus rašo",
-    "label": ["Straipsniai", "Įvykiai", "Konferencija", "Podkastas"],
-    "cardMain": [
-      "Kompiuteriniai žaidimai vietoje pamokų?",
-      "Idėja laimėjo 20 000 eurų",
-      "Lietuviui pomėgis žaisti kompiuterinius žaidimus tapo profesija.",
-      "Kitas lygis. Tinklalaidė apie žaidimų industriją Lietuvoje."
-    ],
-    "cardAll": [
-      "\"Trys kubai\" pristatymas LR Seime apie mokymąsi su \"Minecraft\"",
-      "\"Trys kubai\" įgytas sertifikatas, atliktus \"Minecraft\" edukacinės platformos kursus Briuselyje \"Microsoft\" ofise",
-      "\"Trys kubai\" pristatymas apie \"Minecraft\" renginyje \"GameOn 2019\"",
-      "\"Trys kubai\" \"Minecraft\" dirbtuvės renginyje \"GameOn 2018\"",
-      "\"Trys kubai\" salė su \"Minecraft\" projektais, turinio kūrėjais ir pristatymais apie \"Youtube\" renginyje \"GameOn 2017\"",
-      "\"Trys kubai\" stendas su \"Minecraft\" turnyru, turinio kūrėjais ir diskusijomis renginyje \"Comic Con Baltics 2017\"",
-      "\"Trys kubai\" stendas su \"Minecraft\" edukaciniais nuotykiais parodoje \"Mokykla 2019\"",
-      "\"Hour of Code\" renginys rengtas kartu su \"Microsoft\" ir MO muziejumi",
-      "\"Women Go Tech\" konferencija"
-    ]
+    "sub2": "Visi",
+    "label1": "Straipsniai",
+    "label2": "Įvykiai",
+    "label3": "Konferencija",
+    "label4": "Podkastas",
+    "filter": {
+      "1": "Mažesni svarbūs projektai",
+      "2": "Įvykiai",
+      "3": "Konferencijos",
+      "4": "Visi"
+    },
+    "cardMain1": "Lietuvos mokyklose pamokos pradėjo vykti per \"Minecraft\".",
+    "cardMain2": "Kompiuteriniai žaidimai vietoje pamokų? <br> Idėja laimėjo 20 000 eurų.",
+    "cardMain3": "Lietuviui pomėgis žaisti kompiuterinius žaidimus tapo profesija.",
+    "cardMain4": "Kitas lygis. Tinklalaidė apie žaidimų industriją Lietuvoje.",
+    "cardAll1": "\"Trys kubai\" pristatymas LR Seime apie mokymąsi su \"Minecraft\"",
+    "cardAll2": "\"Trys kubai\" įgytas sertifikatas, atliktus \"Minecraft\" edukacinės platformos kursus Briuselyje \"Microsoft\" ofise",
+    "cardAll3": "\"Trys kubai\" pristatymas apie \"Minecraft\" renginyje \"GameOn 2019\"",
+    "cardAll4": "\"Trys kubai\" \"Minecraft\" dirbtuvės renginyje \"GameOn 2018\"",
+    "cardAll5": "\"Trys kubai\" salė su \"Minecraft\" projektais, turinio kūrėjais ir pristatymais apie \"Youtube\" renginyje \"GameOn 2017\"",
+    "cardAll6": "\"Trys kubai\" stendas su \"Minecraft\" turnyru, turinio kūrėjais ir diskusijomis renginyje \"Comic Con Baltics 2017\"",
+    "cardAll7": "\"Trys kubai\" stendas su \"Minecraft\" edukaciniais nuotykiais parodoje \"Mokykla 2019\"",
+    "cardAll8": "\"Hour of Code\" renginys rengtas kartu su \"Microsoft\" ir MO muziejumi",
+    "cardAll9": "\"Women Go Tech\" konferencija"
   }
 }

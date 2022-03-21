@@ -1,4 +1,16 @@
 document.addEventListener("DOMContentLoaded", function () {
+  //activeClass on active path
+  const navContainer = document.querySelector(".right-side__navigation");
+
+  let navs = navContainer.getElementsByClassName("nav");
+
+  console.log(navs);
+  for (let i = 0; i < navs.length; i++) {
+    if (document.location.href.indexOf(navs[i].href) >= 0) {
+      navs[i].className = "element active";
+    }
+  }
+
   //hide-show shadowClass toggle
   const header = document.querySelector("header");
   let prevScrollpos = window.scrollY;
@@ -9,7 +21,7 @@ document.addEventListener("DOMContentLoaded", function () {
     if (prevScrollpos > currentScrollPos) {
       header.style.top = "0";
       header.classList.add("shadow");
-    } else if (window.innerWidth > 1500 && prevScrollpos <= currentScrollPos) {
+    } else if (window.innerWidth > 1024 && prevScrollpos <= currentScrollPos) {
       header.style.top = "-15vh";
     }
 
@@ -18,7 +30,7 @@ document.addEventListener("DOMContentLoaded", function () {
     }
     prevScrollpos = currentScrollPos;
 
-    if (window.innerWidth < 1500 && currentScrollPos > 0) {
+    if (window.innerWidth < 1024 && currentScrollPos > 0) {
       header.classList.add("shadow");
     }
   };
@@ -26,12 +38,27 @@ document.addEventListener("DOMContentLoaded", function () {
   //toggle navmenu on smaller screens
   const hambuger = document.querySelector(".hamburger");
   const navLinks = document.querySelector(".right-side__navigation");
-  const links = document.querySelectorAll(".right-side__navigation a");
-
+  const links = document.querySelectorAll(
+    ".right-side__navigation h5, .right-side__language"
+  );
   hambuger.addEventListener("click", () => {
     navLinks.classList.toggle("open");
     links.forEach((link) => {
       link.classList.toggle("fade");
     });
   });
+  //collapsible nav
+  let coll = document.getElementsByClassName("collapsible");
+
+  for (let i = 0; i < coll.length; i++) {
+    coll[i].addEventListener("click", function () {
+      this.classList.toggle("active");
+      var content = this.nextElementSibling;
+      if (content.style.display === "block") {
+        content.style.display = "none";
+      } else {
+        content.style.display = "block";
+      }
+    });
+  }
 });

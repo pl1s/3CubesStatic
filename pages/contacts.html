@@ -12,7 +12,8 @@
 
 <body>
   <header class="side-padding darkHeader">
-    <div class="logo"><a href="../pages/main.html"><img src="/src/assets/header_footer/logo.png" alt="logo" /></a>
+    <div class="logo"><a href="../pages/main.html"><img class="logoImg" src="/src/assets/header_footer/logo.png"
+          alt="logo" /></a>
     </div>
     <div class="hamburger">
       <div class="line"></div>
@@ -21,14 +22,20 @@
     </div>
     <div class="right-side">
       <div class="right-side__navigation">
-        <a href="./formal.html">Formalus švietimas</a>
-        <a href="./nonFormal.html">Neformalus švietimas</a>
-        <a href="./projects.html">Projektai</a>
-        <a href="./news.html">Naujienos</a>
-        <a href="./contacts.html">Kontaktai</a>
-      </div>
-      <div class="right-side__language">
-        <h4>LT | EN</h4>
+        <h5><a class="element nav" data="nav.formal" href="./formal.html">Formal education</a></h5>
+        <h5><a class="element nav" data="nav.nonformal" href="./nonFormal.html">Informal education</a></h5>
+        <h5><a class="element nav" data="nav.projects" href="./projects.html">Projects</a></h5>
+        <h5><a class="element nav" data="nav.news" href="./news.html">News</a></h5>
+        <h5><a class="element nav" data="nav.contacts" href="./contacts.html">Contacts</a></h5>
+        <div class="right-side__language flex-row">
+          <button class="lt" value="en" id="langSelector">
+            <h5>LT</h5>
+          </button>
+          <!-- <h5>|</h5> -->
+          <button class="en" value="lt" id="langSelector">
+            <h5>EN</h5>
+          </button>
+        </div>
       </div>
     </div>
   </header>
@@ -63,46 +70,44 @@
     <div class="container flex-row">
       <div class="container__left flex-row">
         <div class="container__left-contact">
-          <h3>Kontaktai</h3>
-          <h5 class="sub1"><a href="tel:+370 (602) 91 919">+370 (602) 91 919</a></h5>
+          <h3 class="element" data="footer.contact.main">Contacts</h3>
+          <h5 class="sub1"><a href="tel:+370 (602) 91 919">+370 (602) 91
+              919</a></h5>
           <h5 class="sub2">info@edukraftas.lt</h5>
-          <h5 class="sub3"><a href="htthp://mahps.google.com/?q=Žalgirio g. 88, LT-09301, Vilnius">Žalgirio g. 88,
-              LT-09301,
-              Vilnius</a>
+          <h5 class="sub3"><a href="htthp://mahps.google.com/?q=Žalgirio g. 88, LT-09301, Vilnius">Žalgirio g. 88,<br>
+              LT-09301, Vilnius</a>
           </h5>
         </div>
         <div class="container__left-info">
-          <h3>Informacija</h3>
-          <h5 class="sub1"><a href="">Kaip tapti partneriu</a></h5>
-          <h5 class="sub2">privatumo politika</h5>
-          <h5 class="sub3"><a href="">Karjera</a>
+          <h3 class="element" data="footer.info.main">Information</h3>
+          <h5 class="sub1"><a href="" class="element" data="footer.info.knowHow">How to become a partner?</a></h5>
+          <h5 class="sub2"><a href="" class="element" data="footer.info.privacy">Privacy Policy</a></h5>
+          <h5 class="sub3"><a href="" class="element" data="footer.info.carrer">Career</a>
           </h5>
         </div>
       </div>
       <div class="container__right">
         <div class="container__right-subsrc">
-          <h3>Naujienlaiškis</h3>
-          <h5 class="sub1"><a href>Gaukite visas naujienas pirmieji!</a></h5>
+          <h3 class="element" data="footer.subs.main">Newsletters</h3>
+          <h5 class="sub1"><a href="" class="element" data="footer.subs.desc">Be the first to get all news!</a></h5>
           <div class="container__right-input">
-            <input type="email" placeholder="El.paštas"><button>
-              <h5>Prenumeruoti</h5>
+            <input class="email" type="email" placeholder="El.paštas"><button>
+              <h5 class="element" data="footer.subs.btn">Subscribe</h5>
             </button>
           </div>
           <div class="container__right-privacy flex-row">
             <input class="flex-row" type="checkbox">
-            <h5 class="flex-row text">Sutinku su privatumo politika</h5>
+            <h5 class="flex-row text element" data="footer.subs.checkBox">I agree to privacy policy.</h5>
           </div>
         </div>
       </div>
     </div>
     <div class="copyright flex center">
-      <h5>&copy;2022 Edukraftas. Visos teisės saugomos.</h5>
+      <h5 class="flex-row text element" data="footer.subs.cc">&copy;2022 "Edukraftas". All rights reserved.</h5>
     </div>
   </footer>
   <!-- script loading -->
-  <script src="../src/js/collapsible.js"></script>
   <script src="../src/js/navtoggle.js"></script>
-  <script src="../src/js/main.js"></script>
 </body>
 
 </html>

@@ -1,8 +1,5 @@
 document.addEventListener("DOMContentLoaded", function () {
-  const header = document.querySelector("header");
-  window.addEventListener("scroll", function () {
-    // console.log(window.scrollY);
-  });
+
 });
 // const loginBtn = document.querySelector("button");
 // const required = document.querySelector("#required");

@@ -14,7 +14,8 @@
 
 <body>
   <header class="side-padding darkHeader">
-    <div class="logo"><a href="../pages/main.html"><img src="/src/assets/header_footer/logo.png" alt="logo" /></a>
+    <div class="logo"><a href="../pages/main.html"><img class="logoImg" src="/src/assets/header_footer/logo.png"
+          alt="logo" /></a>
     </div>
     <div class="hamburger">
       <div class="line"></div>
@@ -23,26 +24,31 @@
     </div>
     <div class="right-side">
       <div class="right-side__navigation">
-        <a href="./formal.html">Formalus švietimas</a>
-        <a href="./nonFormal.html">Neformalus švietimas</a>
-        <a href="./projects.html">Projektai</a>
-        <a href="./news.html">Naujienos</a>
-        <a href="./contacts.html">Kontaktai</a>
-      </div>
-      <div class="right-side__language">
-        <h4>LT | EN</h4>
+        <h5><a class="element nav" data="nav.formal" href="./formal.html">Formal education</a></h5>
+        <h5><a class="element nav" data="nav.nonformal" href="./nonFormal.html">Informal education</a></h5>
+        <h5><a class="element nav" data="nav.projects" href="./projects.html">Projects</a></h5>
+        <h5><a class="element nav" data="nav.news" href="./news.html">News</a></h5>
+        <h5><a class="element nav" data="nav.contacts" href="./contacts.html">Contacts</a></h5>
+        <div class="right-side__language flex-row">
+          <button class="lt" value="en" id="langSelector">
+            <h5>LT</h5>
+          </button>
+          <!-- <h5>|</h5> -->
+          <button class="en" value="lt" id="langSelector">
+            <h5>EN</h5>
+          </button>
+        </div>
       </div>
     </div>
   </header>
-
   <main>
     <section class="hero-main side-padding">
       <div class="hero-main__cta">
         <div class="hero-main__cta-topLeft">
-          <h1 class="title">Leiskitės į edukacinius nuotykius!</h1>
-          <h3>Neformalus švietimas su "Minecraft"!</h3>
+          <h1 class="title element" data="nonFormal.hero.title">Interactive educational adventures!</h1>
+          <h3 class="element" data="nonFormal.hero.sub">Informal education with "Minecraft: Education Edition"!</h3>
           <button>
-            <h4>Susisiekite</h4>
+            <h4 class="element" data="nonFormal.hero.btn">Contact Us!</h4>
           </button>
         </div>
         <div class="hero-main__cta-topRight">
@@ -58,15 +64,15 @@
             </h3>
             <img src="../src/assets/main/pliusas.png" alt="plus">
           </div>
-          <h6>Vaikų išmėgino pamokas su "Minecraft"</h6>
+          <h6 class="element" data="main.stats.left">Children had our game-based lessons</h6>
         </div>
         <div class="box">
           <div class="box__wrapper flex-row center">
-            <h3>30
-            </h3>
+            <h3>30,000</h3>
             <img src="../src/assets/main/pliusas.png" alt="plus">
           </div>
-          <h6>Vaikų vedė savo mokiniams pamokas su "Minecraft"</h6>
+          <h6 class="element" data="main.stats.middle">Schools had our game-based lessons
+          </h6>
         </div>
         <div class="box">
           <div class="box__wrapper flex-row center">
@@ -74,15 +80,15 @@
             </h3>
             <img src="../src/assets/main/pliusas.png" alt="plus">
           </div>
-          <h6>Mokyklų vedė savo mokiniams pamokas su "Minecraft"</h6>
+          <h6 class="element" data="main.stats.right">Members in our community
+          </h6>
         </div>
       </div>
     </section>
-    <section class="mars flex-column full-padding">
-      <div class="mars__title flex-column center bottom-padding">
-        <h2>"Pirmieji Marso gyventojai"</h2>
-        <h4>Užsiėmimų metu mokiniai kuria pirmąją kosminę gyvenvietę Marso
-          planetoje!</h4>
+    <section class="mars flex-column">
+      <div class="mars__title flex-column center full-padding">
+        <h2 class="element" data="nonFormal.mars.title">"The First Humans on Mars"</h2>
+        <h4 class="element" data="nonFormal.mars.sub">Create the first cosmic base on planet Mars!</h4>
       </div>
       <div class="mars__body flex-row">
         <div class="mars__body-slider">
@@ -111,53 +117,50 @@
                   </div>
                 </li>
               </div>
-              <!-- </div> -->
             </div>
           </div>
         </div>
-        <!-- <div class="mars__body-slider_paginator">
-                  <button><img src="../src/assets/nonformal/arrowL.png" alt="left arrow"></button>
-                  <button><img src="../src/assets/nonformal/arrowR.png" alt="right arrow"></button>
-                </div> -->
-
         <div class="mars__body-themes flex-column">
           <div class="mars__body-themes_title flex center">
-            <h3>Būrelio temos</h3>
+            <h3 class="element" data="nonFormal.mars.themes.title">Topics of lessons</h3>
           </div>
           <div class="mars__body-themes_list">
             <ul>
               <li><img src="../src/assets/nonformal/Rectangle 237.png" alt="">
-                <h4>Marso planetos tyrinėjimas;</h4>
+                <h4 class="element" data="nonFormal.mars.themes.theme1">exploring the planet Mars;</h4>
               </li>
               <li><img src="../src/assets/nonformal/Rectangle 237.png" alt="">
-                <h4>kosminių bazių ir raketų statymas;</h4>
+                <h4 class="element" data="nonFormal.mars.themes.theme2">building cosmic bases and rockets;</h4>
               </li>
               <li><img src="../src/assets/nonformal/Rectangle 237.png" alt="">
-                <h4>saulės ir vėjo jėgainių kūrimas;</h4>
+                <h4 class="element" data="nonFormal.mars.themes.theme3">supplying the bases with energy, by using sun
+                  and wind power stations;</h4>
               </li>
               <li><img src="../src/assets/nonformal/Rectangle 237.png" alt="">
-                <h4>maisto auginimas Marse;</h4>
+                <h4 class="element" data="nonFormal.mars.themes.theme4">learning how to obtain fertilizers and grow
+                  food;</h4>
               </li>
               <li><img src="../src/assets/nonformal/Rectangle 237.png" alt="">
-                <h4>Marso istorijas, mitai ir legendos</h4>
+                <h4 class="element" data="nonFormal.mars.themes.theme5">creating new stories, myths and legends for the
+                  people generation in Mars;</h4>
               </li>
               <li><img src="../src/assets/nonformal/Rectangle 237.png" alt="">
-                <h4>apsilankymas asteroidų žiede;</h4>
+                <h4 class="element" data="nonFormal.mars.themes.theme6">visiting the asteroid belt;</h4>
               </li>
               <li><img src="../src/assets/nonformal/Rectangle 237.png" alt="">
-                <h4>prekyba Marso resursais;</h4>
+                <h4 class="element" data="nonFormal.mars.themes.theme7">trading Mars resources;</h4>
               </li>
               <li><img src="../src/assets/nonformal/Rectangle 237.png" alt="">
-                <h4>kelionės su marsaeigiais;</h4>
+                <h4 class="element" data="nonFormal.mars.themes.theme8">driving with rovers;</h4>
               </li>
               <li><img src="../src/assets/nonformal/Rectangle 237.png" alt="">
-                <h4>robotukų programavimas</h4>
+                <h4 class="element" data="nonFormal.mars.themes.theme9">programming</h4>
               </li>
               <li><img src="../src/assets/nonformal/Rectangle 237.png" alt="">
-                <h4>ir dar daugiau!</h4>
+                <h4 class="element" data="nonFormal.mars.themes.theme10">and more!</h4>
               </li>
             </ul>
-            <p>Individuali registracija į burelį nevyksta. <br> Būrelį gali įsigyti švietimo įstaigos.</p>
+            <p class="element" data="nonFormal.mars.themes.sub">There is no individual registration for lessons.
           </div>
         </div>
       </div>
@@ -169,9 +172,10 @@
       <div class="mars__body flex-row">
         <div class="mars__body-themes flex-column center" style="padding:0 0 0 5%;">
           <div class="mars__body-themes_title" style="padding:0;">
-            <h2>Žaidimų dizainas su "Minecraft"</h2>
-            <h4>Kursas vaikams apie žaidimų dizainą</h4>
-            <h4>Vaikai tampa kolonijos erdvėlaivio įgula, kuri sprendžia įvairias užduotis kartu su laivo valdymo robotu
+            <h2 class="element" data="nonFormal.gameDesign.title">Game design with "Minecraft"</h2>
+            <h4 class="element" data="nonFormal.gameDesign.sub">Kursas vaikams apie žaidimų dizainą</h4>
+            <h4 class="element" data="nonFormal.gameDesign.desc">Vaikai tampa kolonijos erdvėlaivio įgula, kuri
+              sprendžia įvairias užduotis kartu su laivo valdymo robotu
               ir
               taip mokosi apie žaidimų dizainą!</h4>
           </div>
@@ -201,34 +205,37 @@
     <section class="codeAcademy flex-row">
       <div class="codeAcademy__video">
         <video src="../src/assets/formal/video.mp4" poster="../src/assets/formal/videoPoster.png" controls></video>
-        <h4>Į būrelį galite individualiai registruotis "CodeAcademy Kids" svetainėje <a
-            href="http://codeacademy.com">čia.</a></a></h4>
+        <h4 class="element" data="nonFormal.codeAcademy.sub.text">For individual registration visit "CodeAcademy Kids"
+          <a href="http://codeacademy.com">here.</a>
+        </h4>
       </div>
       <div class="codeAcademy__card flex-column center ">
         <div class="codeAcademy__card-title bottom-padding">
-          <h3>Būrelio temos</h3>
+          <h3 class="element" data="nonFormal.codeAcademy.themes.title">Topics of lessons</h3>
         </div>
         <div class="codeAcademy__card-collapsible">
           <button class="collapsible flex-row ">
             <img src="../src/assets/nonformal/1.png" alt="number 1">
-            <h4>Pirmas semestras</h4>
+            <h4 class="element" data="nonFormal.codeAcademy.themes.first.main">First semester</h4>
           </button>
           <div class="codeAcademy__card-collapsible_content" style="display:block;">
-            <h4>Žaidimo dizainerio profesija ir žaidimų kūrimo disciplinos</h4>
+            <h4 class="element" data="nonFormal.codeAcademy.themes.first.desc">Game design and game development basics
+            </h4>
           </div>
           <button class="collapsible flex-row ">
             <img src="../src/assets/nonformal/2.png" alt="number 2">
-            <h4>Antras semestras</h4>
+            <h4 class="element" data="nonFormal.codeAcademy.themes.second.main">Second semester</h4>
           </button>
           <div class="codeAcademy__card-collapsible_content">
-            <h4>Žaidimo dizainerio profesija ir žaidimų kūrimo disciplinos</h4>
+            <h4 class="element" data="nonFormal.codeAcademy.themes.second.desc">Game planning and prototyping</h4>
           </div>
           <button class="collapsible flex-row ">
             <img src="../src/assets/nonformal/3.png" alt="number 3">
-            <h4>Trečias semestras</h4>
+            <h4 class="element" data="nonFormal.codeAcademy.themes.third.main">Third semester</h4>
           </button>
           <div class="codeAcademy__card-collapsible_content">
-            <h4>Žaidimo dizainerio profesija ir žaidimų kūrimo disciplinos</h4>
+            <h4 class="element" data="nonFormal.codeAcademy.themes.third.desc">Applying learned theoretical and
+              practical knowledge by developing a game</h4>
           </div>
         </div>
       </div>
@@ -240,52 +247,50 @@
       <img class="bgC" src="../src/assets/nonformal/C.png" alt="C">
       <div class="skillSet__bottom">
         <div class="skillSet__bottom-title">
-          <h2>Būrelių metu tobulinami šie įgūdžiai</h2>
+          <h2 class="element" data="nonFormal.skillSet.title">Improving skills</h2>
         </div>
-        <div class="skillSet__bottom-body flex-row">
+        <div class="skillSet__bottom-body flex-row top-bottom-padding">
           <div class="skillSet__bottom-body_box flex center">
-            <h4>programavimo</h4>
+            <h4 class="element" data="nonFormal.skillSet.skill1">programming</h4>
           </div>
           <div class="skillSet__bottom-body_box flex center">
-            <h4>gamtos mokslų</h4>
+            <h4 class="element" data="nonFormal.skillSet.skill2">sciences</h4>
           </div>
           <div class="skillSet__bottom-body_box flex center">
-            <h4>lietuvių kalbos</h4>
+            <h4 class="element" data="nonFormal.skillSet.skill3">teamwork</h4>
           </div>
           <div class="skillSet__bottom-body_box flex center">
-            <h4>anglų kalbos</h4>
+            <h4 class="element" data="nonFormal.skillSet.skill4">English</h4>
           </div>
           <div class="skillSet__bottom-body_box flex center">
-            <h4>ekonomikos</h4>
+            <h4 class="element" data="nonFormal.skillSet.skill5">economy</h4>
           </div>
           <div class="skillSet__bottom-body_box flex center">
-            <h4>darbas savarankiškai ir grupėse</h4>
+            <h4 class="element" data="nonFormal.skillSet.skill6">individual work</h4>
           </div>
           <div class="skillSet__bottom-body_box flex center">
-            <h4>matematikos</h4>
+            <h4 class="element" data="nonFormal.skillSet.skill7">mathematics</h4>
           </div>
         </div>
       </div>
     </section>
     <section class="marsPackage flex-column center full-padding">
       <div class="marsPackage__title bottom-padding">
-        <h2>Būrelį "Pirmieji Marso gyventojai" įsigijusioms švietimo įstaigoms suteikiame</h2>
+        <h2 class="element" data="nonFormal.marsPackage.title">Organizations that get interactive "Three Cubes" lessons
+          are provided with</h2>
       </div>
-      <!-- <div class="marsPackage__card">
-        <h4>Švietimo įstaigos susiekti dėl būrelių gali užpildžius kontaktinę formą! </h4>
-      </div> -->
       <div class="marsPackage__body flex-row">
         <div class="marsPackage__body-box flex center">
           <img class="imgIdea" src="../src/assets/nonformal/Ideation.png" alt="idea">
-          <h4>Konsultacijas</h4>
+          <h4 class="element" data="nonFormal.marsPackage.box1">Personal consultant</h4>
         </div>
         <div class="marsPackage__body-box flex center">
           <img class="imgBoard" src="../src/assets/nonformal/Chalkboard.png" alt="board">
-          <h4>Naudojimosi gidas</h4>
+          <h4 class="element" data="nonFormal.marsPackage.box2">Informational guides</h4>
         </div>
         <div class="marsPackage__body-box flex center">
           <img class="imgCertificate" src="../src/assets/nonformal/Certificate.png" alt="certificate">
-          <h4>Pilnai paruoštos pamokos</h4>
+          <h4 class="element" data="nonFormal.marsPackage.box3">Fully prepared lessons</h4>
         </div>
       </div>
     </section>
@@ -318,63 +323,78 @@
     <div class="container flex-row">
       <div class="container__left flex-row">
         <div class="container__left-contact">
-          <h3>Kontaktai</h3>
-          <h5 class="sub1"><a href="tel:+370 (602) 91 919">+370 (602) 91 919</a></h5>
+          <h3 class="element" data="footer.contact.main">Contacts</h3>
+          <h5 class="sub1"><a href="tel:+370 (602) 91 919">+370 (602) 91
+              919</a></h5>
           <h5 class="sub2">info@edukraftas.lt</h5>
-          <h5 class="sub3"><a href="htthp://mahps.google.com/?q=Žalgirio g. 88, LT-09301, Vilnius">Žalgirio g. 88,
-              LT-09301,
-              Vilnius</a>
+          <h5 class="sub3"><a href="htthp://mahps.google.com/?q=Žalgirio g. 88, LT-09301, Vilnius">Žalgirio g. 88,<br>
+              LT-09301, Vilnius</a>
           </h5>
         </div>
         <div class="container__left-info">
-          <h3>Informacija</h3>
-          <h5 class="sub1"><a href="">Kaip tapti partneriu</a></h5>
-          <h5 class="sub2">privatumo politika</h5>
-          <h5 class="sub3"><a href="">Karjera</a>
+          <h3 class="element" data="footer.info.main">Information</h3>
+          <h5 class="sub1"><a href="" class="element" data="footer.info.knowHow">How to become a partner?</a></h5>
+          <h5 class="sub2"><a href="" class="element" data="footer.info.privacy">Privacy Policy</a></h5>
+          <h5 class="sub3"><a href="" class="element" data="footer.info.carrer">Career</a>
           </h5>
         </div>
       </div>
       <div class="container__right">
         <div class="container__right-subsrc">
-          <h3>Naujienlaiškis</h3>
-          <h5 class="sub1"><a href>Gaukite visas naujienas pirmieji!</a></h5>
+          <h3 class="element" data="footer.subs.main">Newsletters</h3>
+          <h5 class="sub1"><a href="" class="element" data="footer.subs.desc">Be the first to get all news!</a></h5>
           <div class="container__right-input">
-            <input type="email" placeholder="El.paštas"><button>
-              <h5>Prenumeruoti</h5>
+            <input class="email" type="email" placeholder="El.paštas"><button>
+              <h5 class="element" data="footer.subs.btn">Subscribe</h5>
             </button>
           </div>
           <div class="container__right-privacy flex-row">
             <input class="flex-row" type="checkbox">
-            <h5 class="flex-row text">Sutinku su privatumo politika</h5>
+            <h5 class="flex-row text element" data="footer.subs.checkBox">I agree to privacy policy.</h5>
           </div>
         </div>
       </div>
     </div>
     <div class="copyright flex center">
-      <h5>&copy;2022 Edukraftas. Visos teisės saugomos.</h5>
+      <h5 class="flex-row text element" data="footer.subs.cc">&copy;2022 "Edukraftas". All rights reserved.</h5>
     </div>
   </footer>
-
-  <script src="../src/js/collapsible.js"></script>
+  <!-- script loading -->
   <script src="../src/js/navtoggle.js"></script>
-  <script src="../src/js/main.js"></script>
+  <script src="../src/js/i18next.min.js"></script>
   <script src="../src/js/splide.min.js"></script>
+  <!-- CONFIGS -->
+  <script src="../src/js/locale.js"></script>
   <script type="text/javascript">
 
     new Splide(".splide", {
       type: "loop",
       perPage: 2,
       perMove: 1,
+      gap: "1rem",
       autoplay: true,
       pagination: false,
+      breakpoints: {
+        480: {
+          perPage: 1,
+          gap: false,
+        }
+      },
     }).mount();
 
     new Splide(".splide02", {
       type: "loop",
       perPage: 2,
       perMove: 1,
+      gap: "1rem",
       autoplay: true,
       pagination: false,
+      breakpoints: {
+        480: {
+          perPage: 1,
+          gap: false,
+        }
+      },
     }).mount();
   </script>
 </body>

@@ -14,7 +14,8 @@
 
 <body>
   <header class="side-padding darkHeader">
-    <div class="logo"><a href="../pages/main.html"><img src="/src/assets/header_footer/logo.png" alt="logo" /></a>
+    <div class="logo"><a href="../pages/main.html"><img class="logoImg" src="/src/assets/header_footer/logo.png"
+          alt="logo" /></a>
     </div>
     <div class="hamburger">
       <div class="line"></div>
@@ -23,14 +24,20 @@
     </div>
     <div class="right-side">
       <div class="right-side__navigation">
-        <a href="./formal.html">Formalus švietimas</a>
-        <a href="./nonFormal.html">Neformalus švietimas</a>
-        <a href="./projects.html">Projektai</a>
-        <a href="./news.html">Naujienos</a>
-        <a href="./contacts.html">Kontaktai</a>
-      </div>
-      <div class="right-side__language">
-        <h4>LT | EN</h4>
+        <h5><a class="element nav" data="nav.formal" href="./formal.html">Formal education</a></h5>
+        <h5><a class="element nav" data="nav.nonformal" href="./nonFormal.html">Informal education</a></h5>
+        <h5><a class="element nav" data="nav.projects" href="./projects.html">Projects</a></h5>
+        <h5><a class="element nav" data="nav.news" href="./news.html">News</a></h5>
+        <h5><a class="element nav" data="nav.contacts" href="./contacts.html">Contacts</a></h5>
+        <div class="right-side__language flex-row">
+          <button class="lt" value="en" id="langSelector">
+            <h5>LT</h5>
+          </button>
+          <!-- <h5>|</h5> -->
+          <button class="en" value="lt" id="langSelector">
+            <h5>EN</h5>
+          </button>
+        </div>
       </div>
     </div>
   </header>
@@ -38,10 +45,10 @@
     <section class="hero-main side-padding">
       <div class="hero-main__cta">
         <div class="hero-main__cta-topLeft">
-          <h1 class="title">Interaktyvios pamokos Jūsų klasėje!</h1>
-          <h3>Formalus švietimas su "Minecraft" edukacine platforma</h3>
+          <h1 class="title element" data="formal.hero.title">Interactive lessons in schools!</h1>
+          <h3 class="element" data="formal.hero.sub">Formal education with "Minecraft: Education edition"</h3>
           <button>
-            <h4>Susisiekite</h4>
+            <h4 class="element" data="formal.hero.btn">Contact us!</h4>
           </button>
         </div>
         <div class="hero-main__cta-topRight">
@@ -57,15 +64,15 @@
             </h3>
             <img src="../src/assets/main/pliusas.png" alt="plus">
           </div>
-          <h6>Vaikų išmėgino pamokas su "Minecraft"</h6>
+          <h6 class="element" data="main.stats.left">Children had our game-based lessons</h6>
         </div>
         <div class="box">
           <div class="box__wrapper flex-row center">
-            <h3>30
-            </h3>
+            <h3>30,000</h3>
             <img src="../src/assets/main/pliusas.png" alt="plus">
           </div>
-          <h6>Vaikų vedė savo mokiniams pamokas su "Minecraft"</h6>
+          <h6 class="element" data="main.stats.middle">Schools had our game-based lessons
+          </h6>
         </div>
         <div class="box">
           <div class="box__wrapper flex-row center">
@@ -73,36 +80,38 @@
             </h3>
             <img src="../src/assets/main/pliusas.png" alt="plus">
           </div>
-          <h6>Mokyklų vedė savo mokiniams pamokas su "Minecraft"</h6>
+          <h6 class="element" data="main.stats.right">Members in our community
+          </h6>
         </div>
       </div>
     </section>
     <section class="package flex-column full-padding">
       <div class="package__title">
-        <h2>3 - 4 kl. formalaus švietimo pasaulio pažinimo pamokų paketas!</h2>
+        <h2 class="element" data="formal.package.title">"Three Cubes" interactive lessons - a great way to improve not
+          only knowledge, but also competencies!
+        </h2>
       </div>
       <div class="package__card flex-row">
         <div class="package__card-container flex-row">
           <div class="package__card-container_small flex center">
             <div class="package__card-container_small_text">
-              <h4>
-                Jį sudaro 18 skirtingų temų iš atnaujinamų bendrojo ugdymo programų </h4>
+              <h4 class="element" data="formal.package.cardLeft.desc">
+                Interactivity provides possibilities to gain knowledge in various ways</h4>
             </div>
             <img class="left" src="../src/assets/formal/Open Book.png" alt="book">
           </div>
           <div class="package__card-container_small flex center">
             <div class="package__card-container_small_text">
-              <h4>
-                Neišnaudotos temos persikelia į senakančius mokslo metus! </h4>
+              <h4 class="element" data="formal.package.cardMiddle.desc">
+                The attention is directed on improving students' compotencies</h4>
             </div>
             <img class="right" src="../src/assets/formal/Deadline.png" alt="calendar">
           </div>
         </div>
         <div class="package__card-big flex center">
           <div class="package__card-big_text">
-            <h4>
-              Net 95% mokytojų "Trys kubai" formalaus švietimo pamokų edukacinį turinį įvertina "gerai" ir "labai
-              gerai"!
+            <h4 class="element" data="formal.package.cardRight.desc">
+              Lessons's topics chosen to correlate with formal education programs
             </h4>
           </div>
           <img src="../src/assets/formal/Graduation Hat.png" alt="graduation hat">
@@ -111,9 +120,11 @@
     </section>
     <section class="download">
       <div class="download__container flex-row ">
-        <h3>Pamokų temų sąrašas</h3>
+        <h3 class="element" data="formal.download.title">Topics of lessons <small>(LT)</small></h3>
         <button class="flex center">
-          <h4>Atsisiųsti</h4> <img src="../src/assets/formal/Group 345.png" alt="download">
+          <a href="../src/assets/themes.pdf" download="3Cubes themes list">
+            <h4 class="element" data="formal.download.btn">Download</h4>
+          </a><img src="../src/assets/formal/Group 345.png" alt="download">
         </button>
       </div>
     </section>
@@ -121,12 +132,13 @@
     <section class="orderNow">
       <div class="orderNow__card flex-column">
         <div class="orderNow__card-text top-bottom-padding">
-          <h5>Įsigyti pamokas kitiems mokslo metams jau galite nuo dabar iki birželio 1d.!</h5>
+          <h5 class="element" data="formal.orderNow.main">US schools are using "First Humans on Mars" course in their
+            formal education!</h5>
         </div>
         <div class="orderNow__card-btn flex center">
           <button>
             <a href="../pages/contacts.html">
-              <h5>Susisiekite</h5>
+              <h5 class="element" data="formal.orderNow.btn">Contact us!</h5>
             </a>
           </button>
         </div>
@@ -134,7 +146,7 @@
     </section>
     <section class="lessons flex-column">
       <div class="lessons__title">
-        <h2>Pamokų pavyzdžiai</h2>
+        <h2 class="element" data="formal.lessons.title">Examples of lessons</h2>
       </div>
       <div class="lessons__background"></div>
       <div class="lessons__slider splide01 side-padding flex-row center">
@@ -145,7 +157,7 @@
                 <img src="../src/assets/formal/Rectangle 204.png" alt="">
               </div>
               <div class="lessons__slider-card_txt flex center">
-                <h5>Pamoka "Valstybės simobliai"</h5>
+                <h5 class="element" data="formal.lessons.slide01">Lesson "National symbols"</h5>
               </div>
             </li>
             <li class="lessons__slider-card splide__slide slide02">
@@ -153,7 +165,7 @@
                 <img src="../src/assets/formal/Rectangle 205.png" alt="">
               </div>
               <div class="lessons__slider-card_txt flex center">
-                <h5>Pamoka "Lietuvos gyvūnai"</h5>
+                <h5 class="element" data="formal.lessons.slide02">Lesson "Animals"</h5>
               </div>
             </li>
             <li class="lessons__slider-card splide__slide slide03">
@@ -161,7 +173,7 @@
                 <img src="../src/assets/formal/Rectangle 206.png" alt="">
               </div>
               <div class="lessons__slider-card_txt flex center">
-                <h5>Pamoka "Saulės sistema"</h5>
+                <h5 class="element" data="formal.lessons.slide03">Lesson "Solar System"</h5>
               </div>
             </li>
             <li class="lessons__slider-card splide__slide slide04">
@@ -169,7 +181,7 @@
                 <img src="../src/assets/formal/Rectangle 205.png" alt="">
               </div>
               <div class="lessons__slider-card_txt flex center">
-                <h5>Pamoka "Saulės sistema"</h5>
+                <h5 class="element" data="formal.lessons.slide04">Lesson "Solar System"</h5>
               </div>
             </li>
           </div>
@@ -177,49 +189,63 @@
     </section>
     <section>
       <div class="research__bottomWrapper noBottom-padding">
-        <h2>Mokytojams pamokas vesti lengva!</h2>
-        <h4>Jūs gaunate tai, ko labiausiai reikia</h4>
+        <h2 class="element" data="main.research.bottomWrapper.title">Mokytojams pamokas vesti lengva!</h2>
+        <h4 class="element" data="main.research.bottomWrapper.sub">Jūs gaunate tai, ko labiausiai reikia</h4>
       </div>
-      <div class="teacherSupport ">
+      <div class="teacherSupport" style="margin-bottom:5%;">
         <div class="teacherSupport__wrapper1 flex">
           <div class="text">
-            <h4>Asmeninis konsultantas</h4>
-            <p>Pirmąsias pamokas Jums vesti padeda "Trys kubai" mokytojai!</p>
+            <h4 class="element" data="main.teacherSupport.cardLeft.main">Asmeninis konsultantas</h4>
+            <p class="element" data="main.teacherSupport.cardLeft.desc">Pirmąsias pamokas Jums vesti padeda "Trys kubai"
+              mokytojai!</p>
             <img class="left" src="../src/assets/main/Ideation.png" alt="light bulb">
           </div>
         </div>
         <div class="teacherSupport__wrapper2 flex">
           <div class="text">
-            <h4>Naudojimosi gidas</h4>
-            <p>Pamokų planai ir bet kada pasiekiami mokymai vaizdo įrašų forma.</p>
+            <h4 class="element" data="main.teacherSupport.cardMiddle.main">Naudojimosi gidas</h4>
+            <p class="element" data="main.teacherSupport.cardMiddle.desc">Pamokų planai ir bet kada pasiekiami mokymai
+              vaizdo įrašų forma.</p>
             <img class="right mb150" src="../src/assets/main/Chalkboard.png" alt="board">
           </div>
         </div>
         <div class="teacherSupport__wrapper3 flex">
-          <div class=" text ">
-            <h4>Pilnai paruoštos pamokos</h4>
-            <p>Užduočių komplektai ir virtualūs pasauliai pagal skirtingas pamokos temas.</p>
+          <div class="text ">
+            <h4 class="element" data="main.teacherSupport.cardRight.main">Pilnai paruoštos pamokos</h4>
+            <p class="element" data="main.teacherSupport.cardRight.desc">Užduočių komplektai ir virtualūs pasauliai
+              pagal
+              skirtingas pamokos temas.</p>
             <img class=" right2" src="../src/assets/main/Certificate.png" alt="certification">
           </div>
         </div>
       </div>
     </section>
     <section class="reviews">
+      <div class="reviews__inter-card flex-column center">
+        <h4>Nacionalinės švietimo agentūros puslapyje <br> www.mokykla2030.lt teigiama, jog:</h4>
+        <p>"Atnaujinant ugdymo turinį laikomasi 2008 m. programose pradėtos kompoetencijų prieigos, tačiau išplėtota ir
+          patikslinta pati kompetencijos samprata. Taip pat siekama atskleisti ryšius tarp dalykinio turinio ir
+          kompetencijų ir iliustruoti, kaip kompetencijos ugdomas dalykiniu turiniu"</p>
+      </div>
       <div class="reviews__topWrapper flex-column">
         <div class="reviews__topWrapper-title">
-          <h2>"Trys kubai" interaktyvios pamokos - suteikia patogų būdą ugdyti ne tik žinias, bet ir kompetencijas</h2>
+          <h2 class="element" data="formal.reviews.title">"Trys kubai" interaktyvios pamokos - suteikia patogų būdą
+            ugdyti ne tik žinias, bet ir kompetencijas</h2>
         </div>
         <div class="reviews__topWrapper-container flex-row">
           <div class="reviews__topWrapper-container_card flex center cardLeft">
-            <h4>Kuriamos pagal atnaujinama bendrojo ugdymo programą</h4>
+            <h4 class="element" data="formal.reviews.cardLeft.desc">Kuriamos pagal atnaujinama bendrojo ugdymo programą
+            </h4>
             <img class="cardLeft" src="../src/assets/formal/Group 226.png" alt="">
           </div>
           <div class="reviews__topWrapper-container_card flex center cardMiddle">
-            <h4>Interaktyvumas suteikia galimybę gauti žinių įvairiomis formomis</h4>
+            <h4 class="element" data="formal.reviews.cardMiddle.desc">Interaktyvumas suteikia galimybę gauti žinių
+              įvairiomis formomis</h4>
             <img class="cardMiddle" src="../src/assets/formal/Group 229.png" alt="">
           </div>
           <div class="reviews__topWrapper-container_card flex center ">
-            <h4>Dėmesys kreipiamas į mokinių kompetencijų plėtojimą</h4>
+            <h4 class="element" data="formal.reviews.cardRight.desc">Dėmesys kreipiamas į mokinių kompetencijų plėtojimą
+            </h4>
             <img class="cardRight" src="../src/assets/formal/Group 231.png" alt="">
           </div>
         </div>
@@ -231,31 +257,29 @@
             <div class="splide__list">
               <li class="splide__slide slide01">
                 <div class="slide flex-row center">
-                  Labai išryškėjo gebėjimo dirbti komandoje, pakantumo kitiems grupės nariams, kantrybės siekiant
-                  rezultato stygius - šių gebėjimų ugdymui yra itin vertinga "Trys kūbai" pamokų paskirtis.
+                  <h4 class="element" data="formal.reviews.slide01.desc">
+                    The shortage of abilieties to work in teams, patience and achieving results really came to light
+                    during exercises. The experience of \"Three Cubes\" lessons are very useful for developing these
+                    competencies.
+                  </h4>
                 </div>
               </li>
               <li class="splide__slide slide02">
                 <div class="slide flex-row center">
-                  Labai išryškėjo gebėjimo dirbti komandoje, pakantumo kitiems grupės nariams, kantrybės siekiant
-                  rezultato stygius - šių gebėjimų ugdymui yra itin vertinga "Trys kūbai" pamokų paskirtis.
+                  <h4 class="element" data="formal.reviews.slide02.desc">
+                    They help their classmates without being asked. Children understand that every single classmate is
+                    very important – they all have to work together in order to succeed.
+                  </h4>
                 </div>
               </li>
             </div>
           </div>
         </div>
       </div>
-      <!-- <ul class=" flex-row center" type="none">
-        <li><button class=" pagination-btn" type="button" aria-controls="slide01" aria-label="Go to slide 1"
-            aria-current="true"> </button></li>
-        <li><button class=" pagination-btn " type="button" aria-controls="slide02" aria-label="Go to slide 1"
-            aria-current="true"> </button></li>
-        <li><button class=" pagination-btn" type="none" aria-controls="slide03" aria-label="Go to slide 1"
-            aria-current="true"> </button></li>
-      </ul> -->
       <div class="reviews__bottomWrapper flex-row">
         <div class="left side-padding">
-          <h2>Mokytojų atsiliepimai</h2>
+          <h2 class="element" data="formal.reviews.title2">Teacher observations on students' experiences, using
+            "Minecraft" while learning</h2>
         </div>
         <div class="right">
         </div>
@@ -263,52 +287,47 @@
     </section>
     <section class="keyBenefits full-padding">
       <div class="keyBenefits__title">
-        <h2>Pagal apklausas, mokytojai, turintys "Trys kubai" pamokas teigia, jog jos ugdo</h2>
+        <h2 class="element" data="formal.keyBenefits.title">According to a survey, teachers who use "Three Cubes"
+          lessons state that it improves…</h2>
       </div>
       <div class="keyBenefits__container top-padding flex-row">
         <div class="keyBenefits__container-sideL flex-column">
           <div class="keyBenefits__box flex center left1">
-            <h4>Kritinį mąstymą</h4>
+            <h5 class="element" data="formal.keyBenefits.sideL.box1.main">Critical thinking</h5>
             <div class="overlay flex center">
-              <h4>Socialinius gebėjimus</h4>
+              <h5 class="element" data="formal.keyBenefits.sideL.box1.overlay">Social abilities</h5>
             </div>
           </div>
-          <!-- <div class="keyBenefits__box flex center left2">
-            <h4>Bendradarbiavimą</h4>
-            <div class="overlay flex center">
-              <h4>Dėmesingumą</h4>
-            </div>
-          </div> -->
           <div class="keyBenefits__box flex center left2">
-            <h4>Bendradarbiavimą</h4>
+            <h5 class="element" data="formal.keyBenefits.sideL.box2.main">Attentiveness</h5>
             <div class="overlay flex center">
-              <h4>Dėmesingumą</h4>
+              <h5 class="element" data="formal.keyBenefits.sideL.box2.overlay">Collaborating</h5>
             </div>
           </div>
           <div class="keyBenefits__box flex center left3">
-            <h4>Kūrybiškumą</h4>
+            <h5 class="element" data="formal.keyBenefits.sideL.box3.main">Creativity</h5>
             <div class="overlay flex center">
-              <h4>Pastabumą detalėms</h4>
+              <h5 class="element" data="formal.keyBenefits.sideL.box3.overlay">Attention to details</h5>
             </div>
           </div>
         </div>
         <div class="keyBenefits__container-sideR flex-column">
           <div class="keyBenefits__box flex center right1">
-            <h4>Kūrybiškumą</h4>
+            <h5 class="element" data="formal.keyBenefits.sideR.box1.main">Creativity</h5>
             <div class="overlay flex center">
-              <h4>Erdvinį mąstymą</h4>
+              <h5 class="element" data="formal.keyBenefits.sideR.box1.overlay">Spatial thinking</h5>
             </div>
           </div>
           <div class="keyBenefits__box flex center right2">
-            <h4>Informacijos ieškojimą</h4>
+            <h5 class="element" data="formal.keyBenefits.sideR.box2.main">Information searching</h5>
             <div class="overlay flex center">
-              <h4>Skaitmeninį raštingumą</h4>
+              <h5 class="element" data="formal.keyBenefits.sideR.box2.overlay">Digital literacy</h5>
             </div>
           </div>
           <div class="keyBenefits__box flex center right3">
-            <h4>Įdėmų skaitymą</h4>
+            <h5 class="element" data="formal.keyBenefits.sideR.box3.main">Attentive reading</h5>
             <div class="overlay flex center">
-              <h4>Pagalbą vienas kitam</h4>
+              <h5 class="element" data="formal.keyBenefits.sideR.box3.overlay">Helping each other</h5>
             </div>
           </div>
         </div>
@@ -316,31 +335,34 @@
       <img src="../src/assets/formal/EducraftPitchBench.png" alt="player">
     </section>
     <section class="research">
-      <div class="research__topWrapper top-padding">
+      <div class="research__topWrapper full-padding ">
         <div class="title">
-          <h2>Edukacinė nauda mokiniams - paremta tyrimais </h2>
+          <h2 class="element" data="main.research.title">Educational benefits for students - based on research
+          </h2>
         </div>
         <div class="container">
           <div class="box"><img src="../src/assets/main/Books.png" alt="books">
-            <h4><label>Tobulinamos bendrųjų dalykų</label>
-              žinios ir kompetencijos</label></h4>
+            <h4 class="element" data="main.research.card.left">Developing <label>knowledge and competencies</label>
+            </h4>
           </div>
           <div class="box"><img src="../src/assets/main/Trophy.png" alt="trophy">
-            <h4>Pagerėja mokinių
-              <label>rezultatai ir įsitraukimas</label>
+            <h4 class="element" data="main.research.card.middle">Improving students' <label>engagement and
+                results!</label>
             </h4>
           </div>
           <div class="box"><img src="../src/assets/main/Pencil _ Ruler.png" alt="pen">
-            <h4>Mokomasi <label>problemų sprendimo bendradarbiaujant</label>
+            <h4 class="element" data="main.research.card.right">Learning to<label>solve problems by
+                collaborating</label>
             </h4>
           </div>
         </div>
         <button>
-          <h4>Tyrimai</h4>
+          <h4 class="element" data="main.research.btn">Research</h4>
         </button>
       </div>
-      <div class="research__bottomWrapper">
-        <h2>Ką kalba pedagogai?</h2>
+      <div class="research__bottomWrapper side-padding">
+        <h2 class="element" data="main.research.bottomWrapper.title">Teachers can manage lessons easily!</h2>
+        <h4 class="element" data="main.research.bottomWrapper.sub">We provide what is needed the most</h4>
       </div>
     </section>
     <section class="payments flex-column">
@@ -397,48 +419,49 @@
     <div class="container flex-row">
       <div class="container__left flex-row">
         <div class="container__left-contact">
-          <h3>Kontaktai</h3>
-          <h5 class="sub1"><a href="tel:+370 (602) 91 919">+370 (602) 91 919</a></h5>
+          <h3 class="element" data="footer.contact.main">Contacts</h3>
+          <h5 class="sub1"><a href="tel:+370 (602) 91 919">+370 (602) 91
+              919</a></h5>
           <h5 class="sub2">info@edukraftas.lt</h5>
-          <h5 class="sub3"><a href="htthp://mahps.google.com/?q=Žalgirio g. 88, LT-09301, Vilnius">Žalgirio g. 88,
-              LT-09301,
-              Vilnius</a>
+          <h5 class="sub3"><a href="htthp://mahps.google.com/?q=Žalgirio g. 88, LT-09301, Vilnius">Žalgirio g. 88,<br>
+              LT-09301, Vilnius</a>
           </h5>
         </div>
         <div class="container__left-info">
-          <h3>Informacija</h3>
-          <h5 class="sub1"><a href="">Kaip tapti partneriu</a></h5>
-          <h5 class="sub2">privatumo politika</h5>
-          <h5 class="sub3"><a href="">Karjera</a>
+          <h3 class="element" data="footer.info.main">Information</h3>
+          <h5 class="sub1"><a href="" class="element" data="footer.info.knowHow">How to become a partner?</a></h5>
+          <h5 class="sub2"><a href="" class="element" data="footer.info.privacy">Privacy Policy</a></h5>
+          <h5 class="sub3"><a href="" class="element" data="footer.info.carrer">Career</a>
           </h5>
         </div>
       </div>
       <div class="container__right">
         <div class="container__right-subsrc">
-          <h3>Naujienlaiškis</h3>
-          <h5 class="sub1"><a href>Gaukite visas naujienas pirmieji!</a></h5>
+          <h3 class="element" data="footer.subs.main">Newsletters</h3>
+          <h5 class="sub1"><a href="" class="element" data="footer.subs.desc">Be the first to get all news!</a></h5>
           <div class="container__right-input">
-            <input type="email" placeholder="El.paštas"><button>
-              <h5>Prenumeruoti</h5>
+            <input class="email" type="email" placeholder="El.paštas"><button>
+              <h5 class="element" data="footer.subs.btn">Subscribe</h5>
             </button>
           </div>
           <div class="container__right-privacy flex-row">
             <input class="flex-row" type="checkbox">
-            <h5 class="flex-row text">Sutinku su privatumo politika</h5>
+            <h5 class="flex-row text element" data="footer.subs.checkBox">I agree to privacy policy.</h5>
           </div>
         </div>
       </div>
     </div>
     <div class="copyright flex center">
-      <h5>&copy;2022 Edukraftas. Visos teisės saugomos.</h5>
+      <h5 class="flex-row text element" data="footer.subs.cc">&copy;2022 "Edukraftas". All rights reserved.</h5>
     </div>
   </footer>
 
   <!-- script loading -->
-  <script src="../src/js/collapsible.js"></script>
   <script src="../src/js/navtoggle.js"></script>
-  <script src="../src/js/main.js"></script>
+  <script src="../src/js/i18next.min.js"></script>
   <script src="../src/js/splide.min.js"></script>
+  <!-- CONFIGS -->
+  <script src="../src/js/locale.js"></script>
   <script type="text/javascript">
 
     new Splide(".splide01", {
@@ -446,6 +469,13 @@
       perPage: 3,
       perMove: 1,
       autoplay: true,
+      pagination: false,
+      gap: "1rem",
+      breakpoints: {
+        1500: {
+          perPage: 1,
+        }
+      },
       classes: {
         pagination: 'paginator',
       }

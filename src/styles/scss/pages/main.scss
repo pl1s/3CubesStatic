@@ -61,14 +61,26 @@ footer {
     a {
       color: $aColor;
       font-weight: 500;
-      font-size: 1rem;
+      font-size: 1.25rem;
+      @include mq1500 {
+        font-size: 1rem;
+      }
+      @include mq480 {
+        width: 70%;
+      }
     }
   }
   h4 {
     padding: 0 0 10% 0;
+    @include mq480 {
+      font-size: 1.25rem;
+    }
   }
   h3 {
-    padding: 0 0 10px 0;
+    padding: 0 10px 10px 10px;
+    @include mq480 {
+      font-size: 1.5rem;
+    }
   }
 }
 

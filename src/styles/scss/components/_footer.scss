@@ -1,15 +1,22 @@
 @use "../abstracts" as *;
 .footer {
   height: 30vh;
+  min-height: 300px;
   justify-content: space-around;
   @include mq1024 {
     height: unset;
+  }
+  @include mq480 {
+    padding: 1rem 10%;
   }
   h5 {
     margin-bottom: 10px;
   }
   .copyright {
-    height: 50px;
+    // height: 50px;
+    @include mq480 {
+      justify-content: unset;
+    }
   }
   .container {
     height: calc(30vh - 80px);
@@ -17,52 +24,73 @@
       height: unset;
       flex-direction: column;
     }
+    @include mq480 {
+      flex-direction: column-reverse;
+    }
     &__right,
     &__left {
       justify-content: space-around;
+      @include mq480 {
+        justify-content: flex-start;
+      }
       h3 {
-        padding-bottom: 50px;
+        padding-bottom: 30px;
       }
     }
     //TODO mq ipad left right p 5% 0
     &__left {
       flex: 1;
       @include mq1024 {
-        padding: 5% 0;
+        padding: 2% 0 0 0;
+      }
+      @include mq480 {
+        flex-direction: column;
       }
       &-contact,
       &-info {
         display: grid;
-        grid-template-rows: repeat(8, 1fr);
+        grid-template-rows: repeat(6, 1fr);
         @include mq1024 {
-          grid-template-rows: repeat(6, 0.5fr);
+          grid-template-rows: repeat(5, 0.5fr);
+        }
+        @include mq480 {
+          padding: 0 0 4% 0;
         }
         h3 {
-          grid-row: 2/4;
-          @include mq1500 {
-            grid-row: 3/4;
-            padding-bottom: unset;
-          }
+          grid-row: 2/3;
           @include mq1024 {
             grid-row: 1/2;
+            padding-bottom: unset;
+          }
+          @include mq480 {
+            padding-bottom: 4%;
           }
         }
         .sub1 {
-          grid-row: 4/5;
+          grid-row: 3/4;
           @include mq1024 {
             grid-row: 3/4;
           }
+          @include mq480 {
+            grid-row: 2/3;
+          }
         }
         .sub2 {
-          grid-row: 5/6;
+          grid-row: 4/5;
           @include mq1024 {
             grid-row: 4/5;
           }
+          @include mq480 {
+            grid-row: 3/4;
+          }
         }
         .sub3 {
-          grid-row: 6/8;
+          grid-row: 5/7;
           @include mq1024 {
             grid-row: 5/7;
+          }
+          @include mq480 {
+            grid-row: 4/6;
           }
         }
       }
@@ -73,34 +101,47 @@
       display: flex;
       @include mq1024 {
         text-align: center;
-        padding: 5% 0;
+        padding: 2% 0;
+      }
+      @include mq480 {
+        padding: 2% 0 4% 0;
       }
       &-subsrc {
         display: grid;
-        grid-template-rows: repeat(8, 1fr);
+        grid-template-rows: repeat(6, 1fr);
         width: 70%;
         @include mq1024 {
-          grid-template-rows: repeat(6, 0.5fr);
+          grid-template-rows: repeat(5, 0.5fr);
+          width: 50%;
         }
         @include mq480 {
+          grid-template-rows: repeat(4, 0.5fr);
           width: 80%;
+          text-align: start;
         }
       }
 
       h3 {
-        grid-row: 2/4;
-        @include mq1500 {
-          grid-row: 3/4;
-          padding-bottom: unset;
-        }
+        grid-row: 2/3;
+        // @include mq1500 {
+        //   grid-row: 3/4;
+        //   padding-bottom: unset;
+        // }
         @include mq1024 {
           grid-row: 1/2;
+          padding-bottom: unset;
+        }
+        @include mq480 {
+          padding-bottom: 4%;
         }
       }
       .sub1 {
-        grid-row: 4/5;
+        grid-row: 3/4;
         @include mq1024 {
           grid-row: 3/4;
+        }
+        @include mq480 {
+          grid-row: 2/3;
         }
       }
 
@@ -115,20 +156,25 @@
       }
 
       &-input {
-        grid-row: 5/7;
+        grid-row: 4/5;
         display: flex;
-        @include mq1500 {
-          grid-row: 6/7;
-        }
+        // @include mq1500 {
+        //   grid-row: 5/6;
+        // }
         @include mq1024 {
           grid-row: 4/5;
+        }
+        @include mq480 {
+          grid-row: 3/4;
         }
         input {
           width: 70%;
           margin: unset;
+          color: black !important;
+          font-size: 1rem;
         }
         button {
-          width: 30%;
+          // width: 30%;
           height: 100%;
           padding: 0 1rem;
           @include mq1500 {
@@ -141,14 +187,17 @@
       }
 
       &-privacy {
-        grid-row: 8/9;
+        grid-row: 5/6;
         align-items: center;
         margin: 5px 0 0 3px;
-        @include mq1500 {
-          grid-row: 7/8;
-        }
+        // @include mq1500 {
+        //   grid-row: 6/7;
+        // }
         @include mq1024 {
           grid-row: 5/7;
+        }
+        @include mq480 {
+          grid-row: 4/5;
         }
         input {
           transform: scale(1.7);

@@ -15,17 +15,14 @@ html::-webkit-scrollbar {
 
 html {
   font-size: 100%;
-  @include mq1500 {
+  @include mq1024 {
     font-size: 80%;
   }
-  @include mq1024 {
+  @include mq767 {
     font-size: 70%;
   }
-  @include mq767 {
-    font-size: 60%;
-  }
   @include mq480 {
-    font-size: 50%;
+    font-size: 60%;
   }
 }
 
@@ -38,20 +35,24 @@ p {
   color: $fontColor;
 }
 h1 {
-  font-size: 5rem;
+  font-size: 4rem;
   font-weight: 400;
 }
 h2 {
-  font-size: 4rem;
+  font-size: 3rem;
   font-weight: 200;
+  @include mq480 {
+    font-size: 2rem;
+    font-weight: 500;
+  }
 }
 h3 {
-  font-size: 2.5rem;
+  font-size: 2rem;
   font-weight: 300;
 }
 h4 {
   font-size: 1.5rem;
-  font-weight: 500;
+  font-weight: 400;
 }
 h5 {
   font-size: 1.25rem;
@@ -64,6 +65,15 @@ h6 {
 h7 {
   font-size: 1vw;
   font-weight: 500;
+  @include mq1024 {
+    font-size: 1.25vw;
+  }
+  @include mq767 {
+    font-size: 1.4vw;
+  }
+  @include mq480 {
+    font-size: 4vw;
+  }
 }
 p {
   font-size: 1.5rem;
@@ -79,12 +89,18 @@ a {
 }
 .full-padding {
   padding: 5% 5%;
+  @include mq480 {
+    padding: 5% 10%;
+  }
 }
 .full-double-padding {
   padding: 10% 10%;
 }
 .side-padding {
   padding: 0 5%;
+  @include mq480 {
+    padding: 0 10%;
+  }
 }
 .top-bottom-padding {
   padding: 5% 0;
@@ -120,6 +136,10 @@ a {
 
 .fullw {
   width: 100%;
+}
+
+.top5 {
+  top: 5% !important;
 }
 
 .center {

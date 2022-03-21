@@ -16,7 +16,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 5% !important;
+  // padding: 5% !important;
   &__title {
     flex: 1;
     max-width: 60%;
@@ -31,19 +31,24 @@
     justify-content: center;
     align-items: center;
     width: 100%;
-    * {
-      padding: 2%;
-    }
-    p {
-      max-width: 380px;
-    }
-    img {
-      @include mq480 {
-        transform: rotate(90deg);
-      }
-    }
     @include mq480 {
       flex-direction: column !important;
+    }
+
+    p {
+      max-width: 380px;
+      padding: 2%;
+      @include mq480 {
+        max-width: 200px;
+      }
+    }
+    img {
+      @include mq1024 {
+        transform: scale(0.7);
+      }
+      @include mq480 {
+        transform: rotate(90deg) scale(0.6);
+      }
     }
   }
   &__img {
@@ -53,8 +58,16 @@
     align-items: center;
     height: 0%;
     img {
-      height: 100%;
-      width: 100%;
+      width: 80%;
+      @include mq1500 {
+        width: 70%;
+      }
+      @include mq1024 {
+        width: 60%;
+      }
+      @include mq480 {
+        width: 100%;
+      }
     }
   }
 }
@@ -72,6 +85,12 @@
     justify-content: space-around;
     align-items: center;
     flex-direction: column;
+    @include mq1500 {
+      padding: 5% 10% 0 10% !important;
+    }
+    @include mq1500plus {
+      padding: 5% 10% 15% 10% !important;
+    }
     button {
       margin: 5% 0;
     }
@@ -85,6 +104,8 @@
       @include mq1500 {
         flex-wrap: wrap;
         justify-content: center;
+        align-items: center;
+        flex-direction: column;
       }
       .box {
         display: grid;
@@ -92,16 +113,38 @@
         flex: 1;
         width: 30%;
         max-width: 500px;
-        margin: 1rem;
+        margin: 1rem 1rem 1rem 0;
         padding: 1rem 0;
         @include mq1500 {
           width: unset;
+          min-height: 160px;
+        }
+        @include mq1024 {
+          display: flex;
+          width: 50%;
+        }
+        @include mq767 {
+          width: 60%;
+        }
+        @include mq480 {
+          width: unset;
+          max-height: 100px;
+          min-height: unset;
+          min-width: 266px;
+          // margin: 2% 20%;
+          // grid-template-columns: unset;
         }
         * {
           align-self: center;
         }
         img {
           justify-self: center;
+          @include mq1024 {
+            transform: scale(0.7);
+          }
+          @include mq480 {
+            transform: scale(0.5);
+          }
         }
         h4 {
           padding: 1rem;
@@ -131,28 +174,35 @@
   display: flex;
   margin: 0 5%;
   justify-content: space-around;
-  min-height: 700px;
-  padding: 5% 10% 10% 10%;
+  min-height: 500px;
+  padding: 5% 10% 5% 10%;
+
   @include mq1024 {
     flex-direction: column;
     align-items: center;
-    padding: 5% 10% 15% 10%;
+    padding: 5% 10% 10% 10%;
   }
+  // @include mq767 {
+  //   min-height: 670px;
+  //   padding: 0 5% 5% 5%;
+  // }
   @include mq480 {
     min-height: 500px;
+    // padding: 0;
   }
 
   img {
     position: absolute;
+    max-width: 128px;
     @include mq1024 {
       width: 50%;
     }
   }
 
   .left {
-    top: 10%;
+    top: 15%;
     right: 0;
-    margin-right: 90%;
+    margin-right: 95%;
     @include mq480 {
       top: 80%;
     }
@@ -165,52 +215,57 @@
   .right2 {
     left: 0;
     top: 50%;
-    margin-left: 80%;
+    margin-left: 85%;
   }
 
   .text {
     // width: 80%;
     position: relative;
     padding-right: 1rem;
+    margin: 0 10%;
+    @include mq480 {
+      margin: 0;
+    }
   }
 
   &__wrapper1 {
     justify-content: flex-start;
-    max-width: 30%;
+    // max-width: 30%;
     @include mq1024 {
-      margin-right: 25%;
+      margin-right: 10vw;
       max-width: 60%;
     }
-    @include mq767 {
-      margin-right: unset;
-    }
+    // @include mq767 {
+    //   margin-right: unset;
+    // }
   }
   &__wrapper2 {
     align-items: center;
-    max-width: 30%;
+    // max-width: 30%;
 
     @include mq1500 {
-      margin-bottom: 150px;
+      margin-bottom: 50px;
     }
+
     @include mq1024 {
-      margin-left: 50%;
+      margin-left: 30vw;
       max-width: 60%;
       margin-bottom: unset;
     }
-    @include mq767 {
-      margin-left: unset;
-    }
+    // @include mq767 {
+    //   margin-left: unset;
+    // }
   }
   &__wrapper3 {
     align-items: flex-end;
-    max-width: 30%;
+    // max-width: 20vw;
     @include mq1024 {
       margin-right: 50%;
       max-width: 60%;
     }
-    @include mq767 {
-      margin-right: unset;
-    }
+    // @include mq767 {
+    //   margin-right: unset;
+    // }
   }
 }
 
@@ -221,59 +276,91 @@
   &__card {
     position: absolute;
     min-width: 35vh;
-    max-width: 600px;
+    max-width: 450px;
     left: 10%;
-    top: 50%;
+    top: 40%;
     box-shadow: 0px 3px 1px -2px rgb(0 0 0 / 20%),
       0px 2px 2px 0px rgb(0 0 0 / 14%), 0px 1px 5px 0px rgb(0 0 0 / 12%);
-    @include mq767 {
+    @include mq1500 {
       top: 50%;
-      min-width: unset;
-      max-width: 90%;
+    }
+    @include mq1024 {
+      top: 45%;
       left: 0;
       right: 0;
       margin: 0 auto;
+    }
+
+    @include mq767 {
+      width: 50%;
     }
     .splide__pagination__page.is-active {
       background-color: yellow;
     }
     .splide__pagination__page {
       border-radius: 0 !important;
-      width: 15px;
-      height: 15px;
+      width: 10px;
+      height: 10px;
       border: 1px solid #fdd306;
       margin: 0.5rem;
       z-index: 2;
     }
     .paginator {
       display: flex;
-      height: 100px;
       list-style: none;
       justify-content: center;
       align-items: center;
+      padding-bottom: 1rem;
     }
   }
   .Qmark {
     position: absolute;
     top: -90px;
     left: 20px;
-    @include mq767 {
+    @include mq1024 {
       transform: scale(0.5);
       top: -70px;
-      left: 10px;
+      left: -10px;
+    }
+    @include mq480 {
+      transform: scale(0.3);
+      left: -20%;
     }
   }
   .slide {
     padding: 10% 10% 0 10%;
+    @include mq480 {
+      padding: 10% 1rem 0 1rem;
+    }
     &__title {
-      flex: 3;
+      flex: 2;
       width: 90%;
+      min-height: 200px;
+      padding-top: 5%;
+      @include mq1500 {
+        min-height: 150px;
+      }
+      @include mq480 {
+        min-height: 110px;
+      }
     }
     &__body {
       flex: 1;
       width: 80%;
+      @include mq1024 {
+        width: 100%;
+      }
+      img {
+        max-width: 70px;
+        max-height: 70px;
+        margin: auto 0;
+        @include mq1024 {
+          transform: scale(0.75);
+        }
+      }
       .user {
         padding: 1rem;
+        justify-content: center;
         &__name {
           padding-bottom: 0.25rem;
           font-weight: 600;
@@ -313,7 +400,10 @@
 
   &__bottomWrapper {
     padding: 10%;
-    min-height: 400px;
+    min-height: 430px;
+    @include mq1024 {
+      min-height: 300px;
+    }
     &-left {
       flex: 1;
     }
@@ -332,6 +422,11 @@
   justify-content: space-between;
   background: url(../../assets/main/Component17.png) no-repeat center 150px;
   background-size: 100%;
+  @include mq1024 {
+    background: url(../../assets/main/Group\ 512.png) no-repeat center 75px;
+    background-size: 100%;
+    z-index: -1;
+  }
   &__container {
     @include mq1024 {
       flex-direction: column;
@@ -341,11 +436,33 @@
   .box {
     display: grid;
     grid-template-rows: repeat(2, 1fr);
+    grid-gap: 1rem;
     max-width: 30%;
     text-align: center;
     @include mq1024 {
-      max-width: unset;
-      margin-bottom: 5%;
+      max-width: 400px;
+      height: 200px;
+      // margin-bottom: 5%;
+    }
+    @include mq480 {
+      grid-template-rows: unset;
+      height: unset;
+      grid-gap: unset;
+      margin-bottom: 30px;
+    }
+    &__top {
+      @include mq480 {
+        max-height: 80px;
+      }
+      img {
+        @include mq480 {
+          max-width: 100px;
+          max-height: 50px;
+        }
+      }
+    }
+    &__bottom {
+      align-self: start;
     }
   }
   h2 {
@@ -355,10 +472,14 @@
 
 .services {
   justify-content: space-between;
+  background: url(../../assets/main/Ellipse24.png) no-repeat center;
+  background-size: 100%;
   &__title {
     justify-content: center;
     align-items: flex-start;
-    height: 100px;
+    @include mq1500 {
+      margin: 0 0 7% 0 !important;
+    }
     @include mq480 {
       height: unset;
     }
@@ -367,12 +488,16 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 100%;
+    width: 80%;
     height: 100%;
-    @include mq1024 {
-      flex-direction: column;
-      padding: unset !important;
+    margin: 0 auto;
+    @include mq1500 {
+      width: 100%;
     }
+    // @include mq1024 {
+    //   flex-direction: column;
+    //   padding: unset !important;
+    // }
   }
   img {
     position: absolute;
@@ -381,83 +506,147 @@
     position: relative;
     height: 20vw;
     width: 20vw;
-    min-width: 300px;
-    min-height: 300px;
+    max-width: 350px;
+    max-height: 350px;
     margin: 0 auto;
     padding: 1rem;
-    @include mq480 {
-      height: 70vw;
-      width: 70vw;
+    @include mq1500 {
+      height: 25vw;
+      width: 25vw;
+    }
+    @include mq1024 {
+      height: 25vw;
+      width: 25vw;
       min-width: unset;
       min-height: unset;
+    }
+    @include mq767 {
+      height: 35vw;
+      width: 35vw;
+    }
+    @include mq480 {
+      min-width: 120px;
+      min-height: 120px;
     }
     .frame {
       width: 25vw;
-      height: 28vw;
-      min-width: 360px;
-      min-height: 360px;
+      height: 25vw;
+      max-width: 430px;
+      max-height: 430px;
+      @include mq1500 {
+        width: 30vw;
+        height: 30vw;
+      }
+      @include mq1024 {
+        height: 30vw;
+        width: 30vw;
+        // min-width: 20vw;
+        // min-height: 20vw;
+      }
+      @include mq767 {
+        height: 45vw;
+        width: 40vw;
+      }
       @include mq480 {
-        height: 85vw;
-        width: 85vw;
-        min-width: unset;
-        min-height: unset;
+        // height: 65vw;
+        // width: 65vw;
       }
     }
+    // a {
+    //   @include mq1500 {
+    //     position: absolute;
+    //     bottom: 15%;
+    //   }
+    // }
   }
   &__cardBig {
+    position: relative;
     height: 25vw;
     width: 25vw;
-    min-width: 350px;
-    min-height: 350px;
+    max-width: 350px;
+    max-height: 350px;
     margin: 0 auto;
-    @include mq480 {
-      height: 70vw;
-      width: 70vw;
+    @include mq1024 {
+      min-width: 210px;
+    }
+    @include mq767 {
+      height: 35vw;
+      width: 35vw;
       min-width: unset;
-      min-height: unset;
+    }
+    @include mq480 {
+      min-width: 120px;
+      min-height: 120px;
     }
     .frame {
       width: 30vw;
       height: 30vw;
-      min-width: 450px;
-      min-height: 450px;
+      max-width: 430px;
+      max-height: 430px;
+      // min-width: 450px;
+      // min-height: 450px;
+      @include mq1024 {
+        // height: 30vw;
+        // width: 30vw;
+        min-width: 260px;
+        min-height: unset;
+      }
+      @include mq767 {
+        height: 43vw;
+        width: 43vw;
+      }
       @include mq480 {
-        height: 85vw;
-        width: 85vw;
+        // height: 65vw;
+        // width: 65vw;
         min-width: unset;
         min-height: unset;
       }
     }
+
+    // a {
+    //   @include mq1500 {
+    //     position: absolute;
+    //     bottom: 20%;
+    //   }
+    // }
   }
 
   &__cardLeft {
     flex: 1;
     margin-top: 10%;
-    @include mq1024 {
-      margin: 0 50% 10% 0;
-    }
+    // @include mq1024 {
+    //   margin: 0 50% 10% 0;
+    // }
     @include mq767 {
-      margin: 0 0 10% 0;
+      margin-top: 40%;
     }
   }
   &__cardMiddle {
     flex: 1;
     margin-top: -20%;
-    @include mq1024 {
-      margin: 0 0 10% 0;
-    }
     @include mq767 {
-      margin: 0 0 10% 0;
+      position: absolute;
+      left: 0;
+      right: 0;
+      margin-top: -45%;
     }
+    // @include mq1024 {
+    //   margin: 0 0 10% 0;
+    // }
+    // @include mq767 {
+    //   margin: 0 0 10% 0;
+
+    // }
   }
   &__cardRight {
     flex: 1;
     margin-top: 10%;
-    @include mq1024 {
-      margin: 0 0 10% 50%;
-    }
+    // @include mq1024 {
+    //   position: absolute;
+    //   margin: 0 0 10% 50%;
+    // }
     @include mq767 {
-      margin: 0 0 10% 0;
+      margin-top: 40%;
     }
   }
 }
@@ -467,6 +656,9 @@
 .package {
   justify-content: center;
   align-items: center;
+  @include mq480 {
+    padding: 5% !important;
+  }
   &__title {
     margin: 0 10vw 10% 10vw;
     @include mq1500 {
@@ -481,63 +673,118 @@
 
     &-big {
       position: absolute;
-      width: 35vw;
-      height: 25vw;
+      width: 30vw;
+      height: 20vw;
       padding: 0 5%;
-
       top: 0;
       right: 0;
       bottom: 0;
       left: 0;
       margin: auto;
-      @include mq767 {
-        width: 45vw;
-        height: 35vw;
+      @include mq1500 {
+        min-height: 200px;
       }
+      @include mq767 {
+        min-width: 220px;
+        min-height: 180px;
+        width: 45vw;
+      }
+      @include mq480 {
+        min-height: 150px;
+      }
+
       img {
         position: absolute;
         top: 80%;
         width: 12vw;
+        min-width: 80px;
+        @include mq767 {
+          left: -10%;
+        }
+      }
+      &_text {
+        h4 {
+          @include mq767 {
+            text-align: center;
+          }
+        }
       }
     }
     &-container {
       justify-content: space-between;
       width: 100%;
-      margin: 0 5%;
-
+      margin: 0 15%;
+      @include mq1500 {
+        margin: 0 10% !important;
+      }
+      @include mq1024 {
+        margin: 0 5% !important;
+      }
       @include mq767 {
+        position: relative;
         flex-direction: column !important;
-        align-items: center;
+        height: 350px;
+      }
+      @include mq480 {
+        height: 310px;
       }
       &_small {
-        min-height: 20vw;
-        width: 25vw;
+        position: relative;
+        min-height: 15vw;
+        width: 18vw;
         padding: 1rem 5%;
+        @include mq1500 {
+          width: 24vw;
+        }
+        @include mq1024 {
+          width: 28vw;
+        }
         @include mq767 {
-          width: 35vw;
-          height: 25vw;
+          position: absolute;
+          min-width: 180px;
+          min-height: 100px;
+          &:nth-child(2) {
+            bottom: 0;
+            right: 0;
+          }
+        }
+        @include mq480 {
           &:first-child {
-            margin-bottom: 45vw;
+            margin-bottom: 200px;
+          }
+        }
+        &_text {
+          @include mq767 {
+            text-align: center;
           }
         }
         img {
           position: absolute;
-          width: 12vw;
+          width: 10vw;
+          min-width: 70px;
         }
         .right {
-          margin-left: 25vw;
-          margin-top: 15vw;
+          margin-left: 18vw;
+          margin-top: 18vw;
+          @include mq1500 {
+            right: -15%;
+          }
           @include mq767 {
-            margin-left: 30vw;
-            margin-top: 25vw;
+            top: -40%;
+            right: 0;
+            margin-top: unset;
           }
         }
         .left {
-          margin-right: 30vw;
-          margin-top: 15vw;
+          margin-right: 18vw;
+          margin-top: 18vw;
+          @include mq1500 {
+            left: -15%;
+          }
           @include mq767 {
-            margin-right: 35vw;
-            margin-top: 25vw;
+            margin-right: unset;
+            right: -20%;
+            left: unset;
           }
         }
       }
@@ -546,14 +793,25 @@
 }
 
 .download {
-  padding: 10% 0 12% 0;
+  padding: 10% 5% 12% 5%;
   &__container {
     justify-content: center;
+    align-items: center;
+    h3 {
+      @include mq480 {
+        text-align: center;
+      }
+    }
     button {
       padding: 1rem 2rem;
       margin-left: 1rem;
       * {
         padding: 0 0.25rem;
+      }
+      img {
+        @include mq1024 {
+          transform: scale(0.7);
+        }
       }
     }
   }
@@ -569,9 +827,13 @@
   margin-top: -6%;
   margin-right: 10%;
   z-index: 99;
-  @include mq767 {
+  @include mq480 {
+    position: unset;
+    width: 100%;
+    min-width: unset;
   }
   &__card {
+    padding: 1rem;
     @include mq1500 {
       display: flex;
       justify-content: center;
@@ -602,33 +864,41 @@
     display: flex;
     align-items: center;
     padding: 12rem 0 5% 0;
+    @include mq480 {
+      padding: 5% 0;
+    }
   }
   &__slider {
     position: relative;
-    width: 85vw;
     padding-bottom: 5%;
-    margin: 0 auto;
-
+    margin: 0 10%;
+    @include mq1500 {
+      width: 50%;
+      margin: 0 auto;
+    }
+    @include mq767 {
+      width: 60%;
+      margin: 0 auto;
+    }
+    @include mq480 {
+      width: 70%;
+      padding: 0 !important;
+    }
     &-card {
-      // width: 30%;
       display: flex;
       flex-direction: column;
-      margin: 0 1rem;
-      min-width: 25vw;
       &_txt {
-        min-height: 200px;
+        max-height: 200px;
+        padding: 20% 10px;
+        @include mq480 {
+          padding: 10% 10px;
+        }
       }
       img {
         width: 100%;
         transform: scale(1, 1.05);
       }
     }
-    // &-larrow,
-    // &-rarrow {
-    //   margin: 0 1rem;
-    //   height: 38px;
-    //   width: 38px;
-    // }
   }
 }
 
@@ -636,16 +906,57 @@
   display: flex;
   position: relative;
   flex-direction: column;
+  &__inter-card {
+    position: absolute;
+    text-align: center;
+    width: 700px;
+    top: -15%;
+    left: 5%;
+    right: 60%;
+    padding: 4rem;
+    @include mq1500 {
+      padding: 3rem;
+      width: 500px;
+    }
+    @include mq1500 {
+      position: unset;
+      width: 100%;
+      padding: 1.5rem 10%;
+    }
+  }
   &__card {
     position: absolute;
     max-width: 500px;
-    bottom: 15%;
+    bottom: 170px;
     right: 10%;
     box-shadow: 0px 3px 1px -2px rgb(0 0 0 / 20%),
       0px 2px 2px 0px rgb(0 0 0 / 14%), 0px 1px 5px 0px rgb(0 0 0 / 12%);
-    @include mq767 {
-      left: 10%;
+    @include mq1500 {
+      right: 5%;
+      bottom: 5%;
+    }
+    @include mq1024 {
+      bottom: 30px;
+      left: 0;
+      right: 0%;
       margin: 0 auto;
+      max-width: 400px;
+    }
+    @include mq767 {
+      margin: 0 auto;
+      min-width: 220px;
+      max-width: 284px;
+    }
+    @include mq480 {
+      width: 80%;
+    }
+    .Qmark {
+      @include mq767 {
+        transform: scale(0.5);
+      }
+      @include mq480 {
+        right: -15% !important;
+      }
     }
     .splide__pagination__page.is-active {
       background-color: yellow;
@@ -657,6 +968,10 @@
       border: 1px solid #fdd306;
       margin: 0.5rem;
       z-index: 2;
+      @include mq767 {
+        height: 8px;
+        width: 8px;
+      }
     }
     .paginator {
       display: flex;
@@ -664,12 +979,23 @@
       list-style: none;
       justify-content: center;
       align-items: center;
+      @include mq1024 {
+        height: unset;
+        padding: 2rem;
+      }
     }
   }
   .Qmark {
     position: absolute;
     top: -75px;
-    right: 20px;
+    left: 20px;
+    @include mq1500 {
+      transform: scale(0.75);
+    }
+    @include mq1024 {
+      transform: scale(0.5);
+      left: 0;
+    }
   }
   .slide {
     padding: 15% 10% 0 10%;
@@ -685,40 +1011,54 @@
 
     &-title {
       width: 80%;
-      margin: 5% auto;
+      margin: 10% auto 5% auto;
       text-align: center;
+      @include mq1500 {
+        margin: 5% auto;
+      }
     }
 
     &-container {
       justify-content: space-between;
-      padding: 0 5% 300px 5%;
+      padding: 0 5% 5% 5%;
       @include mq1024 {
         flex-wrap: wrap;
         justify-content: space-around;
-        padding: 0 5% 200px 5%;
+        padding: 0;
       }
       &_card {
         position: relative;
-        width: 30%;
         height: 20vh;
-        min-width: 210px;
+        min-width: 185px;
         min-height: 190px;
         text-align: center;
-        padding: 0 2rem;
+        margin: 0 5%;
+        padding: 2rem;
+        @include mq1500 {
+          height: 20vw;
+        }
         @include mq1024 {
+          width: 25%;
           margin: 0 2rem 50px 2rem;
+        }
+        @include mq480 {
+          transform: scale(0.75);
+          margin: 0;
         }
         .cardLeft {
           left: -2.5vh;
           bottom: -20%;
         }
         .cardMiddle {
+          right: -3.5vh;
           bottom: -20%;
-          right: -4.5vh;
         }
         .cardRight {
-          right: -10%;
+          right: -3.5vh;
           top: -2.5vh;
+          @include mq480 {
+            right: -6vh;
+          }
         }
 
         img {
@@ -742,17 +1082,32 @@
   &__bottomWrapper {
     flex: 1;
     padding: 200px 0;
+    @include mq1500 {
+      padding: 10% 5%;
+    }
     @include mq1024 {
-      padding: 200px 0 50px 0;
+      padding: 5% 5% 400px 5%;
+    }
+    @include mq480 {
+      padding: 5% 5% 300px 5%;
     }
     .right {
       flex: 1;
+      @include mq1024 {
+        display: none;
+      }
     }
     .left {
       flex: 1;
       display: flex;
       justify-content: center;
       align-items: center;
+      h2 {
+        @include mq1024 {
+          font-size: 2rem;
+          text-align: center;
+        }
+      }
     }
   }
 }
@@ -775,12 +1130,12 @@
   }
   &__box {
     position: relative;
-    white-space: nowrap;
+
     text-align: center;
+    // height: 200px;
     height: 200px;
-    max-height: 300px;
-    max-width: 300px;
-    width: 20vw;
+    width: 200px;
+    // width: 20vw;
     margin: 1rem;
     padding: 1rem;
     @include mq1500 {
@@ -906,13 +1261,18 @@
         &:nth-child(odd) {
           padding-top: 5%;
           @include mq767 {
-            margin-top: 100px;
+            margin-top: 90px;
+            align-items: flex-start;
           }
         }
         &:nth-child(even) {
           padding-bottom: 5%;
           @include mq767 {
-            margin-bottom: 70px;
+            margin-bottom: 50px;
+            align-items: flex-end;
+            h3 {
+              margin-bottom: 45px;
+            }
           }
         }
       }
@@ -930,6 +1290,9 @@
       height: 80%;
       width: 80%;
       margin: 0 auto;
+      @include mq767 {
+        width: 90%;
+      }
     }
   }
 }
@@ -940,31 +1303,26 @@
     * {
       padding-bottom: 1%;
     }
+    h4 {
+      text-align: center;
+    }
   }
   &__body {
-    // margin-top: 5%;
+    @include mq1024 {
+      flex-direction: column !important;
+    }
     &-slider {
       flex: 5;
-      min-width: 60vw;
-      // width: 60vw;
+      min-width: 50vw;
       &_container {
         justify-content: space-between;
         &-item {
-          // min-width: 30vw;
-          margin: 0 2%;
           img {
             width: 100%;
           }
         }
       }
-      // &_paginator {
-      //   position: relative;
-      //   text-align: end;
-      //   padding-top: 2%;
-      //   z-index: 99;
-      // * {
-      //   padding: 0 5px;
-      // }
+
       .paginator {
         display: flex;
         height: 100px;
@@ -979,22 +1337,38 @@
     &-themes {
       flex: 3;
       padding: 0 0 0 10%;
+      @include mq1024 {
+        align-items: flex-start;
+      }
       &_title {
         padding: 0 0 10% 0;
+        @include mq1024 {
+          padding: 2% 0 10px 0;
+        }
       }
       &_list {
         li {
           display: flex;
-          align-items: center;
+          align-items: flex-start;
           list-style-type: none;
-          padding: 2% 0;
+          padding-bottom: 2%;
+          @include mq1024 {
+            padding: 1% 0;
+          }
           img {
             padding: 0 5px;
+            @include mq767 {
+              width: 25px;
+              height: 14px;
+            }
           }
         }
 
         p {
           padding: 7% 0;
+          @include mq1024 {
+            padding: 10px 0;
+          }
         }
       }
     }
@@ -1004,6 +1378,9 @@
 .game-design {
   position: relative;
   padding: 5% 5% 0 5%;
+  @include mq480 {
+    padding: 0;
+  }
   &__background {
     position: absolute;
     top: 0;
@@ -1011,6 +1388,9 @@
     left: 0;
     right: 40%;
     z-index: -1;
+    @include mq767 {
+      right: 0;
+    }
   }
 }
 
@@ -1019,6 +1399,9 @@
     position: relative;
     flex: 1.5;
     padding: 5% 0;
+    @include mq767 {
+      padding: 10% 0 0 0;
+    }
 
     video {
       width: 100%;
@@ -1027,14 +1410,21 @@
     h4 {
       position: relative;
       width: 80%;
-      top: 5%;
+      vertical-align: middle;
       text-align: center;
       margin: auto;
+      padding: 2%;
     }
   }
   &__card {
     flex: 1;
+    @include mq767 {
+      display: none !important;
+    }
     margin-bottom: 10%;
+    @include mq1024 {
+      margin-bottom: -10%;
+    }
     &-collapsible {
       width: 60%;
       margin-bottom: 10%;
@@ -1076,9 +1466,11 @@
       background: url(../../assets/nonformal/skillBG.png) no-repeat center;
       background-size: 100%;
       width: 100%;
-      height: 400px;
       justify-content: space-around;
-      // padding: 5% 0 10% 0;
+      @include mq480 {
+        width: 90%;
+        margin: 0 auto;
+      }
       &_box {
         width: 200px;
         text-align: center;
@@ -1087,6 +1479,11 @@
           // width: 100%;
         }
 
+        &:nth-child(1) {
+          @include mq480 {
+            margin-bottom: 15%;
+          }
+        }
         &:nth-child(2) {
           margin-top: 15%;
         }
@@ -1098,6 +1495,11 @@
         }
         &:nth-child(6) {
           margin-top: 15%;
+        }
+        &:nth-child(7) {
+          @include mq480 {
+            margin-bottom: 15%;
+          }
         }
       }
     }
@@ -1112,24 +1514,67 @@
     // padding: 0 0 20% 0;
     width: 100%;
     justify-content: space-around;
+    @include mq1024 {
+      flex-direction: column !important;
+      align-items: center;
+    }
     &-box {
       position: relative;
       width: 30%;
       max-width: 500px;
       height: 200px;
+      @include mq1024 {
+        margin-bottom: 2%;
+        height: unset;
+        width: 40%;
+        min-width: 240px;
+        &:first-child {
+          margin-right: 50%;
+        }
+        &:last-child {
+          margin-left: 50%;
+        }
+      }
+      @include mq767 {
+        &:first-child {
+          margin-right: unset;
+        }
+        &:last-child {
+          margin-left: unset;
+        }
+      }
       img {
         position: absolute;
+        @include mq1024 {
+          position: unset;
+          width: 40%;
+          padding: 1rem;
+        }
+      }
+      h4 {
+        padding: 1rem;
       }
       .imgIdea {
         margin-right: 100%;
+        @include mq1024 {
+          margin-right: unset;
+        }
       }
       .imgBoard {
         margin-right: 80%;
         margin-top: 170px;
+        @include mq1024 {
+          margin-right: unset;
+          margin-top: unset;
+        }
       }
       .imgCertificate {
         margin-left: 90%;
         margin-top: 170px;
+        @include mq1024 {
+          margin-left: unset;
+          margin-top: unset;
+        }
       }
     }
   }
@@ -1141,9 +1586,12 @@
 .bgAB,
 .bgC {
   position: absolute;
+  width: 50%;
+  // width: 100%;
+  // bottom: 0;
 }
 .bg5 {
-  right: 0;
+  right: 20%;
   bottom: 20%;
 }
 .bgAB {
@@ -1153,13 +1601,29 @@
   margin: 0 auto;
 }
 .bgC {
+  top: 20%;
+  right: 0;
+}
+.bg123 {
 }
 //BACKGROUND ELEMENTS
 
 .projectsLeft {
   position: relative;
+  @include mq1024 {
+    margin: 5% 0 10% 0 !important;
+  }
+  @include mq480 {
+    padding: 0 !important;
+  }
   h2 {
     margin-bottom: 5%;
+  }
+  h3 {
+    @include mq480 {
+      font-size: 1.5rem;
+      font-weight: 500;
+    }
   }
   .right {
     right: 57%;
@@ -1171,9 +1635,21 @@
       width: 40%;
       margin-left: 2%;
       padding-bottom: 2%;
+      @include mq1024 {
+        width: 60%;
+      }
+      @include mq480 {
+        width: 100%;
+
+        padding: 0 5% 2% 5%;
+        text-align: center;
+      }
       .skewb {
         width: 75%;
         padding-bottom: 10px;
+        @include mq1024 {
+          padding-bottom: 7px;
+        }
       }
       &_img {
         justify-content: flex-start;
@@ -1185,10 +1661,32 @@
           width: 100%;
         }
       }
+      &_imgWrapper {
+        @include mq480 {
+          display: none !important;
+        }
+      }
     }
     &-body {
       position: relative;
       width: 50%;
+      @include mq1024 {
+        width: 70%;
+      }
+      @include mq480 {
+        width: 100%;
+        height: 200vw;
+      }
+      .splide {
+        @include mq480 {
+          margin-top: 80vw;
+        }
+      }
+      .splide03 {
+        @include mq480 {
+          margin-top: 77vw;
+        }
+      }
       img {
         width: 100%;
       }
@@ -1202,20 +1700,65 @@
     height: 83%;
     right: 30%;
     bottom: 0;
+    @include mq1024 {
+      right: 6%;
+    }
+    @include mq767 {
+      right: 5%;
+    }
+    @include mq480 {
+      top: 10%;
+      right: 0;
+      left: 0;
+      margin: 0 auto;
+      height: unset !important;
+    }
     &-card {
       align-items: center;
       width: 20vw;
       min-height: 23%;
+      &:nth-child(2) {
+        @include mq480 {
+          position: relative;
+          bottom: 8%;
+        }
+      }
+      &:nth-child(3) {
+        @include mq480 {
+          position: relative;
+          top: 8%;
+        }
+      }
+      @include mq1024 {
+        width: 25vw;
+      }
+      @include mq767 {
+        width: 30vw;
+      }
+      @include mq480 {
+        min-height: 30vw;
+        width: 70vw;
+      }
     }
   }
 }
 
 .projectsRight {
   position: relative;
+  @include mq1024 {
+    margin: 5% 0 10% 0 !important;
+  }
+  @include mq480 {
+    padding: 0 !important;
+    width: 100% !important;
+  }
   .paginator__wrapper {
     width: 50%;
     padding-left: 7%;
     text-align: start;
+  }
+  @include mq1024 {
+    width: 75%;
   }
   h2 {
     margin-bottom: 5%;
@@ -1228,11 +1771,30 @@
       justify-content: flex-end;
       width: 100%;
       padding-bottom: 2%;
+      @include mq480 {
+        padding: 0 5% 2% 5%;
+        text-align: center;
+      }
       &_wrapper {
         justify-content: space-between;
         align-items: center;
         width: 40%;
         margin-right: 2%;
+        @include mq1024 {
+          width: 50%;
+          margin-right: 15%;
+        }
+        @include mq480 {
+          width: 100%;
+          margin-right: unset;
+          justify-content: center;
+        }
+        h3 {
+          @include mq480 {
+            font-size: 1.5rem;
+            font-weight: 500;
+          }
+        }
       }
       .skewb {
         width: 75%;
@@ -1251,17 +1813,36 @@
           width: 100%;
         }
       }
+      &_imgWrapper {
+        @include mq480 {
+          display: none !important;
+        }
+      }
     }
     &-body {
+      position: relative;
       justify-content: flex-end;
       width: 50% !important;
       margin-left: 50%;
+      @include mq1024 {
+        width: 100% !important;
+        margin-left: 38%;
+      }
+      @include mq480 {
+        height: 190vw;
+        margin-left: unset;
+      }
       &_wrapper {
         width: 100%;
       }
 
       img {
         width: 100%;
+      }
+      .splide02 {
+        @include mq480 {
+          margin-top: 72vw;
+        }
       }
     }
   }
@@ -1273,16 +1854,54 @@
     width: 30%;
     height: 100%;
     bottom: 0;
+    @include mq1024 {
+      left: 10%;
+    }
+    @include mq480 {
+      top: 5%;
+      right: 0;
+      left: 0;
+      margin: 0 auto;
+      height: unset;
+    }
     &-card {
       align-items: center;
       width: 20vw;
+      //??
       min-height: 23%;
+      //?
+      @include mq1024 {
+        width: 25vw;
+      }
+      // @include mq767 {
+      //   width: 2vw;
+      // }
+      &:nth-child(2) {
+        @include mq480 {
+          position: relative;
+          bottom: 8%;
+        }
+      }
+      &:nth-child(3) {
+        @include mq480 {
+          position: relative;
+          top: 8%;
+        }
+      }
+      @include mq480 {
+        min-height: 30vw;
+        width: 70vw;
+      }
     }
   }
 }
 
 //Lithuanian projects layouts +1card
 .projectsExtraR {
+  @include mq480 {
+    padding: 0 !important;
+    width: 100% !important;
+  }
   .paginator__wrapper {
     width: 50%;
     padding-left: 7%;
@@ -1306,11 +1925,31 @@
       justify-content: flex-end;
       width: 100%;
       padding-bottom: 2%;
+      @include mq480 {
+        padding: 0 5% 2% 5%;
+        text-align: center;
+      }
       &_wrapper {
         justify-content: space-between;
         align-items: center;
         width: 40%;
         margin-right: 2%;
+        @include mq1024 {
+          width: 65%;
+        }
+        @include mq767 {
+          margin-right: unset;
+        }
+        @include mq480 {
+          width: 100%;
+          justify-content: center;
+        }
+        h3 {
+          @include mq480 {
+            font-size: 1.5rem;
+            font-weight: 500;
+          }
+        }
       }
       .skewb {
         width: 75%;
@@ -1333,12 +1972,30 @@
     &-body {
       width: 50% !important;
       margin-left: 50%;
+      @include mq1024 {
+        width: 70% !important;
+        margin-left: 30%;
+      }
+      @include mq480 {
+        height: 230vw;
+        width: 100% !important;
+        margin-left: unset;
+      }
       &_wrapper {
         width: 100%;
       }
-
       img {
         width: 100%;
+      }
+      .splide04 {
+        @include mq480 {
+          margin-top: 85vw;
+        }
+      }
+      .splide06 {
+        @include mq480 {
+          margin-top: 77vw;
+        }
       }
     }
   }
@@ -1350,14 +2007,55 @@
     width: 30%;
     height: 85%;
     bottom: 4.2%;
+    @include mq1024 {
+      left: 3%;
+    }
+    @include mq767 {
+      left: 2%;
+    }
+    @include mq480 {
+      top: 5%;
+      right: 0;
+      left: 0;
+      margin: 0 auto;
+      height: unset;
+    }
     &-card {
       align-items: center;
       width: 20vw;
-      min-height: 19%;
+      min-height: 17%;
+      @include mq1024 {
+        width: 25vw;
+      }
+      @include mq767 {
+        width: 30vw;
+      }
+      &:nth-child(2) {
+        @include mq480 {
+          position: relative;
+          bottom: 5%;
+        }
+      }
+      &:nth-child(3) {
+        @include mq480 {
+          position: relative;
+          top: 10%;
+        }
+      }
+      &:nth-child(4) {
+        @include mq480 {
+          position: relative;
+          top: 5%;
+        }
+      }
+      @include mq480 {
+        min-height: 120px;
+        width: 70vw;
+      }
       &_text-wrapper {
         align-items: center;
         img {
-          width: 15%;
+          width: 10%;
           margin-left: 5%;
         }
       }
@@ -1370,12 +2068,200 @@
       flex-direction: column !important;
       justify-content: center;
     }
+    @include mq1024 {
+      margin: 2% 25% 0 33%;
+    }
+    @include mq767 {
+      margin: 2% 25% 0 35%;
+    }
     img {
+      width: 100%;
       max-height: 70px;
     }
     &-container {
       justify-content: space-between;
       text-align: center;
+      &_brand {
+        justify-content: space-between;
+        align-items: center;
+        margin-left: 5%;
+      }
+    }
+    //TODO info box mq 1.8k column
+    &-info {
+      justify-content: center;
+      align-items: center;
+      @include mq1500 {
+        justify-content: flex-start;
+        margin-top: 10px;
+      }
+    }
+  }
+}
+
+.projectsExtraL {
+  @include mq480 {
+    padding: 0 !important;
+    width: 100% !important;
+    margin: 5% 0 15% 0 !important;
+  }
+  h2 {
+    margin-bottom: 5%;
+  }
+  .right {
+    right: 57%;
+  }
+  &__main {
+    position: relative;
+    &-title {
+      justify-content: space-around;
+      align-items: center;
+      width: 40%;
+      margin-left: 2%;
+      padding-bottom: 2%;
+      @include mq480 {
+        justify-content: center;
+        width: 100%;
+        margin-left: unset;
+      }
+      .skewb {
+        width: 75%;
+        padding-bottom: 10px;
+      }
+      &_img {
+        justify-content: flex-start;
+        align-items: center;
+        max-width: 150px;
+        text-align: center;
+        padding: 0 15% 0 0;
+        img {
+          width: 100%;
+          @include mq1024 {
+            width: 70%;
+          }
+        }
+      }
+      h3 {
+        @include mq480 {
+          font-size: 1.5rem;
+          font-weight: 500;
+        }
+      }
+    }
+    &-body {
+      position: relative;
+      width: 50%;
+      padding-bottom: 50px;
+      @include mq1024 {
+        width: 70%;
+      }
+      @include mq480 {
+        height: 200vw;
+        width: 100% !important;
+        margin-left: unset;
+      }
+      img {
+        width: 100%;
+      }
+      .splide05 {
+        @include mq480 {
+          margin-top: 62vw;
+        }
+      }
+    }
+  }
+  &__aside {
+    position: absolute;
+    justify-content: space-between;
+    align-items: center;
+    width: 30%;
+    height: 83%;
+    right: 30%;
+    bottom: 0;
+    @include mq1024 {
+      right: 3%;
+    }
+    @include mq767 {
+      right: 2%;
+    }
+    @include mq480 {
+      top: 5%;
+      right: 0;
+      left: 0;
+      margin: 0 auto;
+      height: unset;
+    }
+    &-card {
+      align-items: center;
+      width: 20vw;
+      min-height: 17%;
+      @include mq1024 {
+        width: 25vw;
+      }
+      @include mq767 {
+        width: 30vw;
+      }
+      &:nth-child(2) {
+        @include mq480 {
+          position: relative;
+          bottom: 5%;
+        }
+      }
+      &:nth-child(3) {
+        @include mq480 {
+          position: relative;
+          top: 10%;
+        }
+      }
+      &:nth-child(4) {
+        @include mq480 {
+          position: relative;
+          top: 5%;
+        }
+      }
+      @include mq480 {
+        min-height: unset;
+        width: 70vw;
+      }
+      &_text-wrapper {
+        align-items: center;
+        img {
+          width: 10%;
+          margin-left: 5%;
+        }
+      }
+    }
+  }
+  &__sponsorship {
+    justify-content: space-between;
+    margin: 2% 57% 0 0;
+    flex-direction: row-reverse !important;
+    @include mq1500 {
+      flex-direction: column !important;
+      justify-content: center;
+    }
+    @include mq1024 {
+      margin: 2% 33% 0 0;
+    }
+    @include mq767 {
+      margin: 2% 35% 0 0;
+    }
+    @include mq480 {
+      display: none !important;
+    }
+    img {
+      width: 100%;
+      // max-height: 70px;
+      @include mq1024 {
+        width: 70%;
+      }
+    }
+    &-container {
+      justify-content: space-between;
+      text-align: center;
+      @include mq1500 {
+        justify-content: flex-end;
+      }
       &_brand {
         justify-content: space-between;
         align-items: center;
@@ -1394,104 +2280,8 @@
   }
 }
 
-.projectsExtraL {
-  h2 {
-    margin-bottom: 5%;
-  }
-  .right {
-    right: 57%;
-  }
-  &__main {
-    position: relative;
-    &-title {
-      justify-content: space-around;
-      align-items: center;
-      width: 40%;
-      margin-left: 2%;
-      padding-bottom: 2%;
-      .skewb {
-        width: 75%;
-        padding-bottom: 10px;
-      }
-      &_img {
-        justify-content: flex-start;
-        align-items: center;
-        max-width: 150px;
-        text-align: center;
-        padding: 0 15% 0 0;
-        img {
-          width: 100%;
-        }
-      }
-    }
-    &-body {
-      position: relative;
-      width: 50%;
-      padding-bottom: 50px;
-      img {
-        width: 100%;
-      }
-    }
-  }
-  &__aside {
-    position: absolute;
-    justify-content: space-between;
-    align-items: center;
-    width: 30%;
-    height: 83%;
-    right: 30%;
-    bottom: 0;
-    &-card {
-      align-items: center;
-      width: 20vw;
-      min-height: 19%;
-      &_text-wrapper {
-        align-items: center;
-        img {
-          width: 15%;
-          margin-left: 5%;
-        }
-      }
-    }
-  }
-  &__sponsorship {
-    justify-content: space-between;
-    margin: 2% 57% 0 0;
-    flex-direction: row-reverse !important;
-    @include mq1500 {
-      flex-direction: column !important;
-      justify-content: center;
-    }
-    img {
-      max-height: 70px;
-    }
-    &-container {
-      justify-content: space-between;
-      text-align: center;
-      @include mq1500 {
-        justify-content: center;
-      }
-      &_brand {
-        justify-content: space-between;
-        align-items: center;
-        margin-left: 5%;
-      }
-    }
-    //TODO info box mq 1.8k column
-    &-info {
-      justify-content: center;
-      align-items: center;
-      @include mq1500 {
-        justify-content: flex-start;
-        margin-top: 10px;
-      }
-    }
-  }
-}
-
 .news {
   position: relative;
-
   &__background {
     position: absolute;
     top: 0;
@@ -1517,6 +2307,7 @@
       }
     }
   }
+
   &__body {
     flex-wrap: nowrap;
     justify-content: space-between;
@@ -1575,11 +2366,12 @@
         //   grid-template-rows: repeat(1fr, 2);
       }
     }
-    li {
+    button {
       display: flex;
       flex-direction: row;
       align-items: center;
       margin: 1.5rem 0;
+      background: transparent;
       img {
         padding-right: 5px;
       }
