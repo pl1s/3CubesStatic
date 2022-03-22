@@ -472,8 +472,8 @@
 
 .services {
   justify-content: space-between;
-  background: url(../../assets/main/Ellipse24.png) no-repeat center;
-  background-size: 100%;
+  background: url(../../assets/main/pilis3.png) no-repeat center;
+  // background-size: 100%;
   &__title {
     justify-content: center;
     align-items: flex-start;
@@ -551,6 +551,9 @@
         // height: 65vw;
         // width: 65vw;
       }
+    }
+    a {
+      z-index: 999;
     }
     // a {
     //   @include mq1500 {
@@ -950,6 +953,7 @@
     @include mq480 {
       width: 80%;
     }
+
     .Qmark {
       @include mq767 {
         transform: scale(0.5);
@@ -998,6 +1002,7 @@
     }
   }
   .slide {
+    height: 100%;
     padding: 15% 10% 0 10%;
     text-align: center;
     font-size: 2rem;
@@ -1377,9 +1382,29 @@
 
 .game-design {
   position: relative;
-  padding: 5% 5% 0 5%;
-  @include mq480 {
-    padding: 0;
+  // padding: 5% 5% 0 5%;
+  // @include mq480 {
+  //   padding: 0;
+  // }
+  .mars__spacer {
+    @include mq1024 {
+      width: 100%;
+      padding-top: 5%;
+    }
+  }
+  .mars__title2 {
+    max-width: 60%;
+  }
+  .mars__body-themes_title {
+    * {
+      padding-bottom: 1%;
+      @include mq480 {
+        text-align: center !important;
+      }
+    }
+    h4 {
+      text-align: start;
+    }
   }
   &__background {
     position: absolute;
@@ -1395,6 +1420,16 @@
 }
 
 .codeAcademy {
+  &__footer {
+    white-space: nowrap;
+    * {
+      padding-right: 1rem;
+    }
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    margin-top: 5%;
+  }
   &__video {
     position: relative;
     flex: 1.5;
@@ -1409,7 +1444,7 @@
     }
     h4 {
       position: relative;
-      width: 80%;
+      // width: 80%;
       vertical-align: middle;
       text-align: center;
       margin: auto;
@@ -1426,8 +1461,17 @@
       margin-bottom: -10%;
     }
     &-collapsible {
-      width: 60%;
+      width: 80%;
+      max-width: 600px;
       margin-bottom: 10%;
+      .collapsible {
+        justify-content: space-between;
+        h4 {
+          font-size: 1.6rem;
+          font-weight: 500;
+          margin: 0 auto;
+        }
+      }
       button {
         align-items: center;
         width: 100%;
@@ -1460,7 +1504,7 @@
     padding: 5%;
     &-title {
       text-align: center;
-      padding-top: 5%;
+      // padding-top: 5%;
     }
     &-body {
       background: url(../../assets/nonformal/skillBG.png) no-repeat center;
@@ -2075,7 +2119,7 @@
       margin: 2% 25% 0 35%;
     }
     img {
-      width: 100%;
+      // width: 100%;
       max-height: 70px;
     }
     &-container {

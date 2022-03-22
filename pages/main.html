@@ -10,6 +10,20 @@
   <link rel="stylesheet" href="../src/styles/css/splide-core.min.css">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Three Cubes</title>
+  <!-- MailerLite Universal -->
+  <script>
+    (function (m, a, i, l, e, r) {
+      m['MailerLiteObject'] = e; function f() {
+        var c = { a: arguments, q: [] }; var r = this.push(c); return "number" != typeof r ? r : f.bind(c.q);
+      }
+      f.q = f.q || []; m[e] = m[e] || f.bind(f.q); m[e].q = m[e].q || f.q; r = a.createElement(i);
+      var _ = a.getElementsByTagName(i)[0]; r.async = 1; r.src = l + '?v' + (~~(new Date().getTime() / 1000000));
+      _.parentNode.insertBefore(r, _);
+    })(window, document, 'script', 'https://static.mailerlite.com/js/universal.js', 'ml');
+
+    var ml_account = ml('accounts', '1928266', 'y4a6p1v7u9', 'load');
+  </script>
+  <!-- End MailerLite Universal -->
 </head>
 
 <body>
@@ -285,7 +299,7 @@
             <img class="frame" src="../src/assets/main/Group 421.png" alt="">
             <h3 class="element" data="main.services.cardLeft.main">Informal education</h3>
             <h4 class="element" data="main.services.cardLeft.desc"></h4>
-            <a href="" class="element" data="main.services.cardLeft.link">More information ></a>
+            <a href="../pages/nonFormal.html" class="element" data="main.services.cardLeft.link">More information ></a>
           </div>
         </div>
         <div class="services__cardMiddle">
@@ -293,7 +307,7 @@
             <img class="frame" src="../src/assets/main/Group 425.png" alt="">
             <h3 class="element" data="main.services.cardMiddle.main">Formal education</h3>
             <h4 class="element" data="main.services.cardMiddle.desc"></h4>
-            <a href="" class="element" data="main.services.cardLeft.link">More information ></a>
+            <a href="../pages/formal.html" class="element" data="main.services.cardLeft.link">More information ></a>
           </div>
         </div>
         <div class="services__cardRight">
@@ -301,7 +315,7 @@
             <img class="frame" src="../src/assets/main/Group 422.png" alt="">
             <h3 class="element" data="main.services.cardRight.main">Projects</h3>
             <h4 class="element" data="main.services.cardRight.desc"></h4>
-            <a href="" class="element" data="main.services.cardLeft.link">More information ></a>
+            <a href="../pages/projects.html" class="element" data="main.services.cardLeft.link">More information ></a>
           </div>
         </div>
       </div>
@@ -356,13 +370,17 @@
           <h3 class="element" data="footer.subs.main">Newsletters</h3>
           <h5 class="sub1"><a href="" class="element" data="footer.subs.desc">Be the first to get all news!</a></h5>
           <div class="container__right-input">
-            <input class="email" type="email" placeholder="El.paštas"><button>
-              <h5 class="element" data="footer.subs.btn">Subscribe</h5>
+            <!-- <input class="email" type="email" placeholder="El.paštas"> -->
+            <button>
+              <a href="javascript:;" onclick="ml_webform_5619112('show')">
+                <h5 class="element" data="footer.subs.btn">Subscribe</h5>
+              </a>
+
             </button>
           </div>
           <div class="container__right-privacy flex-row">
-            <input class="flex-row" type="checkbox">
-            <h5 class="flex-row text element" data="footer.subs.checkBox">I agree to privacy policy.</h5>
+            <!-- <input class="flex-row" type="checkbox">
+            <h5 class="flex-row text element" data="footer.subs.checkBox">I agree to privacy policy.</h5> -->
           </div>
         </div>
       </div>
@@ -370,12 +388,13 @@
     <div class="copyright flex center">
       <h5 class="flex-row text element" data="footer.subs.cc">&copy;2022 "Edukraftas". All rights reserved.</h5>
     </div>
+
   </footer>
   <!-- script loading -->
   <script src="../src/js/navtoggle.js"></script>
   <script src="../src/js/i18next.min.js"></script>
   <script src="../src/js/splide.min.js"></script>
-  <!-- <script src="../src/js/newsletter.js"></script> -->
+  <script src="../src/js/newsletter.js"></script>
   <!-- CONFIGS -->
   <script src="../src/js/locale.js"></script>
   <script type="text/javascript">
@@ -390,7 +409,10 @@
       }
     }).mount();
   </script>
-
+  <script>
+    var ml_webform_5619112 = ml_account('webforms', '5619112', 'r5m8i8', 'load');
+    ml_webform_5619112('animation', 'fadeIn');
+  </script>
 </body>
 
 </html>

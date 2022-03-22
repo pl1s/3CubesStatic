@@ -176,7 +176,7 @@
         "desc": "Labai išryškėjo gebėjimo dirbti komandoje, pakantumo kitiems grupės nariams, kantrybės siekiant rezultato stygius - šių gebėjimų ugdymui yra itin vertinga \"Trys kūbai\" pamokų paskirtis."
       },
       "slide02": {
-        "desc": "Labai išryškėjo gebėjimo dirbti komandoje, pakantumo kitiems grupės nariams, kantrybės siekiant rezultato stygius - šių gebėjimų ugdymui yra itin vertinga \"Trys kūbai\" pamokų paskirtis."
+        "desc": "Vaikams \"Minecraft\" mokomoji aplinka yra saugi terpė daryti klaidas ir iš to mokytis."
       }
     },
     "keyBenefits": {
@@ -248,6 +248,7 @@
         "text": "Į būrelį galite individualiai registruotis \"CodeAcademy Kids\" svetainėje <a href=\"http://codeacademy.com\">čia.</a>",
         "link": "čia."
       },
+      "footer": "Būrelis kurtas bendradarbiaujant su",
       "themes": {
         "title": "Būrelio temos",
         "first": {
@@ -339,7 +340,7 @@
     "gedas": {
       "title": "Paturbink Gediminą",
       "text1": "Tik per 3 paras tiesioginės transliacijos metu 12 \"Trys kūbai\" statytojų sugebėjo atkurti ir \"paturbinti\" Vilniaus vietovę iš 2,300,000 blokelių.",
-      "text": "Kartu su \"Labas\" komanda \"Trys kūbai\" sumanė virtualioje erdvėje patobulinti Gedimino kalną ir pilį.",
+      "text2": "Kartu su \"Labas\" komanda \"Trys kūbai\" sumanė virtualioje erdvėje patobulinti Gedimino kalną ir pilį.",
       "text3": "Pagrindinis \"Minecraft\" statybų architektas buvo youtuberis ir \"Trys kūbai\" bendraįkūrėjas Darius Kniūkšta.",
       "text4": "Į transliaciją prisijungė ir Mantas Katleris, Mantas Bartuševičius, istorikas Aurimas Švedas, o renginį vedė Orijus Gasanovas.",
       "text5": "Projekto vaizdo įrašas surinko virš 155,000 peržiūrų \"Facebook\" platformoje."

@@ -139,7 +139,9 @@ a {
 }
 
 .top5 {
-  top: 5% !important;
+  @include mq480 {
+    top: 5% !important;
+  }
 }
 
 .center {

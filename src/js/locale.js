@@ -1,6 +1,18 @@
 const langSelector = document.querySelectorAll("#langSelector");
 const logo = document.querySelector(".logoImg");
-const cookie = document.cookie;
+let cookie = "";
+
+//get ONLY lang Cookie
+function getLangCookie() {
+  let cookies = {};
+  document.cookie.split(";").map(function (el) {
+    let [k, v] = el.split("=");
+    if (el.length == 2) {
+      cookie = el;
+    }
+  });
+  return cookie;
+}
 
 //toggle logo LT->EN
 function toggleLogo(cookie) {
@@ -62,4 +74,5 @@ async function i18Loader() {
   toggleClass();
   toggleLogo();
 }
+getLangCookie();
 i18Loader();

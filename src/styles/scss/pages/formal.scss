@@ -144,7 +144,7 @@
   &__body {
     &-themes_title {
       :nth-child(2) {
-        font-weight: 600;
+        font-weight: 500;
         margin: 2% 0 5% 0;
         @include mq1024 {
           padding-bottom: 2%;
@@ -155,6 +155,10 @@
         @include mq1024 {
           padding-bottom: 2%;
           margin: 0;
+          max-width: 55%;
+        }
+        @include mq767 {
+          max-width: unset;
         }
       }
     }

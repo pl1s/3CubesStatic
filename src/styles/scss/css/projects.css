@@ -523,8 +523,7 @@
 
 .services {
   justify-content: space-between;
-  background: url(../../assets/main/Ellipse24.png) no-repeat center;
-  background-size: 100%;
+  background: url(../../assets/main/pilis3.png) no-repeat center;
 }
 .services__title {
   justify-content: center;
@@ -614,6 +613,9 @@
     height: 45vw;
     width: 40vw;
   }
+}
+.services__card a {
+  z-index: 999;
 }
 .services__cardBig {
   position: relative;
@@ -1105,6 +1107,7 @@
   }
 }
 .reviews .slide {
+  height: 100%;
   padding: 15% 10% 0 10%;
   text-align: center;
   font-size: 2rem;
@@ -1503,12 +1506,26 @@
 
 .game-design {
   position: relative;
-  padding: 5% 5% 0 5%;
+}
+@media (max-width: 1024px) {
+  .game-design .mars__spacer {
+    width: 100%;
+    padding-top: 5%;
+  }
+}
+.game-design .mars__title2 {
+  max-width: 60%;
+}
+.game-design .mars__body-themes_title * {
+  padding-bottom: 1%;
 }
 @media (max-width: 480px) {
-  .game-design {
-    padding: 0;
+  .game-design .mars__body-themes_title * {
+    text-align: center !important;
   }
+}
+.game-design .mars__body-themes_title h4 {
+  text-align: start;
 }
 .game-design__background {
   position: absolute;
@@ -1524,6 +1541,16 @@
   }
 }
 
+.codeAcademy__footer {
+  white-space: nowrap;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  margin-top: 5%;
+}
+.codeAcademy__footer * {
+  padding-right: 1rem;
+}
 .codeAcademy__video {
   position: relative;
   flex: 1.5;
@@ -1540,7 +1567,6 @@
 }
 .codeAcademy__video h4 {
   position: relative;
-  width: 80%;
   vertical-align: middle;
   text-align: center;
   margin: auto;
@@ -1561,8 +1587,17 @@
   }
 }
 .codeAcademy__card-collapsible {
-  width: 60%;
+  width: 80%;
+  max-width: 600px;
   margin-bottom: 10%;
+}
+.codeAcademy__card-collapsible .collapsible {
+  justify-content: space-between;
+}
+.codeAcademy__card-collapsible .collapsible h4 {
+  font-size: 1.6rem;
+  font-weight: 500;
+  margin: 0 auto;
 }
 .codeAcademy__card-collapsible button {
   align-items: center;
@@ -1593,7 +1628,6 @@
 }
 .skillSet__bottom-title {
   text-align: center;
-  padding-top: 5%;
 }
 .skillSet__bottom-body {
   background: url(../../assets/nonformal/skillBG.png) no-repeat center;
@@ -2281,7 +2315,6 @@
   }
 }
 .projectsExtraR__sponsorship img {
-  width: 100%;
   max-height: 70px;
 }
 .projectsExtraR__sponsorship-container {

@@ -1,6 +1,6 @@
 @use "../abstracts" as *;
 .footer {
-  height: 30vh;
+  // height: 30vh;
   min-height: 300px;
   justify-content: space-around;
   @include mq1024 {
@@ -20,8 +20,10 @@
   }
   .container {
     height: calc(30vh - 80px);
+    max-height: 300px;
     @include mq1024 {
       height: unset;
+      max-height: unset;
       flex-direction: column;
     }
     @include mq480 {
@@ -100,8 +102,8 @@
       flex: 1;
       display: flex;
       @include mq1024 {
-        text-align: center;
-        padding: 2% 0;
+        // text-align: center;
+        padding: 5% 0 2% 0;
       }
       @include mq480 {
         padding: 2% 0 4% 0;
@@ -112,7 +114,7 @@
         width: 70%;
         @include mq1024 {
           grid-template-rows: repeat(5, 0.5fr);
-          width: 50%;
+          width: unset;
         }
         @include mq480 {
           grid-template-rows: repeat(4, 0.5fr);
