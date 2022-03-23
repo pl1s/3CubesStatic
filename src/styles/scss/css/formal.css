@@ -1933,12 +1933,12 @@
 }
 @media (max-width: 480px) {
   .projectsLeft__main-body .splide {
-    margin-top: 75vw;
+    margin-top: 72%;
   }
 }
 @media (max-width: 480px) {
   .projectsLeft__main-body .splide03 {
-    margin-top: 69vw;
+    margin-top: 72%;
   }
 }
 .projectsLeft__main-body img {
@@ -1965,7 +1965,7 @@
 }
 @media (max-width: 480px) {
   .projectsLeft__aside {
-    top: 80px;
+    top: 100px;
     right: 0;
     left: 0;
     margin: 0 auto;
@@ -2134,7 +2134,7 @@
 }
 @media (max-width: 480px) {
   .projectsRight__main-body .splide02 {
-    margin-top: 68vw;
+    margin-top: 69%;
   }
 }
 .projectsRight__aside {
@@ -2153,7 +2153,7 @@
 }
 @media (max-width: 480px) {
   .projectsRight__aside {
-    top: 45px;
+    top: 55px;
     right: 0;
     left: 0;
     margin: 0 auto;
@@ -2557,7 +2557,7 @@
 }
 @media (max-width: 480px) {
   .projectsExtraL__main-body .splide05 {
-    margin-top: 65vw;
+    margin-top: 54%;
   }
 }
 .projectsExtraL__aside {

@@ -1783,12 +1783,12 @@
       }
       .splide {
         @include mq480 {
-          margin-top: 75vw;
+          margin-top: 72%;
         }
       }
       .splide03 {
         @include mq480 {
-          margin-top: 69vw;
+          margin-top: 72%;
         }
       }
       img {
@@ -1811,7 +1811,7 @@
       right: 5%;
     }
     @include mq480 {
-      top: 80px;
+      top: 100px;
       right: 0;
       left: 0;
       margin: 0 auto;
@@ -1955,7 +1955,7 @@
       }
       .splide02 {
         @include mq480 {
-          margin-top: 68vw;
+          margin-top: 69%;
         }
       }
     }
@@ -1972,7 +1972,7 @@
       left: 18%;
     }
     @include mq480 {
-      top: 45px;
+      top: 55px;
       right: 0;
       left: 0;
       margin: 0 auto;
@@ -2323,7 +2323,7 @@
       }
       .splide05 {
         @include mq480 {
-          margin-top: 65vw;
+          margin-top: 54%;
         }
       }
     }
