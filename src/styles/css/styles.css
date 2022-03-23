@@ -3288,9 +3288,10 @@ button {
 }
 .footer .container__right-input button {
   height: 100%;
+  width: 100%;
   padding: 0 1rem;
 }
-@media (max-width: 1500px) {
+@media (max-width: 480px) {
   .footer .container__right-input button {
     width: unset;
   }

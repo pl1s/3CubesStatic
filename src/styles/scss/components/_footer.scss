@@ -178,8 +178,9 @@
         }
         button {
           height: 100%;
+          width: 100%;
           padding: 0 1rem;
-          @include mq1500 {
+          @include mq480 {
             width: unset;
           }
           h5 {
