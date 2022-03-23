@@ -22,6 +22,10 @@
       "btn": "Prenumeruoti",
       "checkBox": "Sutinku su privatumo politika",
       "cc": "&copy;2022 Edukraftas. Visos teisės saugomos."
+    },
+    "follow":
+    {
+      "main": "Sekite mus"
     }
   },
   "main": {

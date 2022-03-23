@@ -22,6 +22,10 @@
       "btn": "Subscribe",
       "checkBox": "I agree to privacy policy.",
       "cc": "&copy;2022 \"Edukraftas\". All rights reserved."
+    },
+    "follow":
+    {
+      "main": "Follow us"
     }
   },
   "main": {

@@ -22,8 +22,8 @@ function getLangCookie() {
 //toggle logo LT->EN
 function toggleLogo(cookie) {
   cookie === "en"
-    ? (logo.src = "/src/assets/header_footer/logo_en.png")
-    : (logo.src = "/src/assets/header_footer/logo_en.png");
+    ? (logo.src = "/res/img/header_footer/logo_en.png")
+    : (logo.src = "/res/img/header_footer/logo_en.png");
 }
 
 function updateContent() {
@@ -41,7 +41,7 @@ function toggleClass() {
 async function i18Loader() {
   const langs = ["en", "lt"];
   const jsons = await Promise.all(
-    langs.map((l) => fetch("/src/lang/" + l + ".json").then((r) => r.json()))
+    langs.map((l) => fetch("/res/lang/" + l + ".json").then((r) => r.json()))
   );
   const res = langs.reduce((acc, l, idx) => {
     acc[l] = { translation: jsons[idx] };
