@@ -26,7 +26,9 @@ html {
     font-size: 60%;
   }
 }
-
+button:hover {
+  filter: invert(0.5);
+}
 h1,
 h2,
 h3,

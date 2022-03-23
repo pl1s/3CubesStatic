@@ -1696,10 +1696,22 @@
 @media (max-width: 480px) {
   .skillSet__bottom-body_box:nth-child(1) {
     margin-bottom: 15%;
+    margin-left: 10%;
   }
 }
 .skillSet__bottom-body_box:nth-child(2) {
   margin-top: 15%;
+}
+@media (max-width: 480px) {
+  .skillSet__bottom-body_box:nth-child(2) {
+    margin-top: 20%;
+  }
+}
+@media (max-width: 480px) {
+  .skillSet__bottom-body_box:nth-child(3) {
+    margin-top: 5%;
+    margin-right: 15%;
+  }
 }
 .skillSet__bottom-body_box:nth-child(4) {
   margin-bottom: 15%;
@@ -1707,12 +1719,24 @@
 .skillSet__bottom-body_box:nth-child(5) {
   margin-right: 5%;
 }
+@media (max-width: 480px) {
+  .skillSet__bottom-body_box:nth-child(5) {
+    margin-bottom: 40%;
+  }
+}
 .skillSet__bottom-body_box:nth-child(6) {
   margin-top: 15%;
 }
 @media (max-width: 480px) {
+  .skillSet__bottom-body_box:nth-child(6) {
+    margin-top: 15%;
+    margin-right: 10%;
+  }
+}
+@media (max-width: 480px) {
   .skillSet__bottom-body_box:nth-child(7) {
     margin-bottom: 15%;
+    margin-right: 10%;
   }
 }
 
