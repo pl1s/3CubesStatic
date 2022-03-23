@@ -295,17 +295,16 @@
   top: 40%;
   box-shadow: 0px 3px 1px -2px rgba(0, 0, 0, 0.2), 0px 2px 2px 0px rgba(0, 0, 0, 0.14), 0px 1px 5px 0px rgba(0, 0, 0, 0.12);
 }
-@media (max-width: 1500px) {
-  .community__card {
-    top: 50%;
-  }
-}
 @media (max-width: 1024px) {
   .community__card {
     top: 45%;
+    margin: 0 auto;
+  }
+}
+@media (max-width: 767px) {
+  .community__card {
     left: 0;
     right: 0;
-    margin: 0 auto;
   }
 }
 @media (max-width: 767px) {
@@ -351,6 +350,12 @@
 }
 .community .slide {
   padding: 10% 10% 0 10%;
+  height: 100%;
+}
+@media (max-width: 1500px) {
+  .community .slide {
+    padding: 7% 5% 0 5%;
+  }
 }
 @media (max-width: 480px) {
   .community .slide {
@@ -358,6 +363,9 @@
   }
 }
 .community .slide__title {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   flex: 2;
   width: 90%;
   min-height: 200px;
@@ -365,7 +373,8 @@
 }
 @media (max-width: 1500px) {
   .community .slide__title {
-    min-height: 150px;
+    min-height: unset;
+    padding-top: unset;
   }
 }
 @media (max-width: 480px) {
@@ -403,7 +412,7 @@
 .community__topWrapper {
   background: url(../../assets/main/Group433.png) no-repeat center center;
   background-size: cover;
-  padding: 10%;
+  padding: 5% 10%;
 }
 @media (max-width: 1500px) {
   .community__topWrapper {
@@ -435,7 +444,7 @@
   }
 }
 .community__bottomWrapper {
-  padding: 10%;
+  padding: 5%;
   min-height: 430px;
 }
 @media (max-width: 1024px) {
@@ -1230,7 +1239,6 @@
 }
 @media (max-width: 1024px) {
   .reviews__bottomWrapper .left h2 {
-    font-size: 2rem;
     text-align: center;
   }
 }
@@ -1611,6 +1619,7 @@
 }
 .codeAcademy__card {
   flex: 1;
+  z-index: 99;
 }
 @media (max-width: 767px) {
   .codeAcademy__card {
@@ -1924,12 +1933,12 @@
 }
 @media (max-width: 480px) {
   .projectsLeft__main-body .splide {
-    margin-top: 74vw;
+    margin-top: 69vw;
   }
 }
 @media (max-width: 480px) {
   .projectsLeft__main-body .splide03 {
-    margin-top: 69vw;
+    margin-top: 72vw;
   }
 }
 .projectsLeft__main-body img {
@@ -2125,7 +2134,7 @@
 }
 @media (max-width: 480px) {
   .projectsRight__main-body .splide02 {
-    margin-top: 70vw;
+    margin-top: 68vw;
   }
 }
 .projectsRight__aside {
@@ -2311,7 +2320,7 @@
   align-items: center;
   left: 25%;
   width: 30%;
-  height: 85%;
+  height: 90%;
   bottom: 4.2%;
 }
 @media (max-width: 1024px) {
@@ -2548,7 +2557,7 @@
 }
 @media (max-width: 480px) {
   .projectsExtraL__main-body .splide05 {
-    margin-top: 65vw;
+    margin-top: 53vw;
   }
 }
 .projectsExtraL__aside {

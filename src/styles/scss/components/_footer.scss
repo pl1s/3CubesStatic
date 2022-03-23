@@ -1,13 +1,13 @@
 @use "../abstracts" as *;
 .footer {
   // height: 30vh;
-  min-height: 300px;
+  // min-height: 300px;
   justify-content: space-around;
   @include mq1024 {
     height: unset;
   }
   @include mq480 {
-    padding: 1rem 10%;
+    padding: 1rem 10% 0 10%;
   }
   h5 {
     margin-bottom: 10px;

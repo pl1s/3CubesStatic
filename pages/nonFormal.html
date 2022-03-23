@@ -9,7 +9,21 @@
   <link rel="stylesheet" href="../src/styles/css/splide.min.css">
   <link rel="stylesheet" href="../src/styles/css/splide-core.min.css">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Edukraftas</title>
+  <title>Three Cubes</title>
+  <!-- NewsLetters Universal -->
+  <script>
+    (function (m, a, i, l, e, r) {
+      m['MailerLiteObject'] = e; function f() {
+        var c = { a: arguments, q: [] }; var r = this.push(c); return "number" != typeof r ? r : f.bind(c.q);
+      }
+      f.q = f.q || []; m[e] = m[e] || f.bind(f.q); m[e].q = m[e].q || f.q; r = a.createElement(i);
+      var _ = a.getElementsByTagName(i)[0]; r.async = 1; r.src = l + '?v' + (~~(new Date().getTime() / 1000000));
+      _.parentNode.insertBefore(r, _);
+    })(window, document, 'script', 'https://static.mailerlite.com/js/universal.js', 'ml');
+
+    var ml_account = ml('accounts', '1928266', 'y4a6p1v7u9', 'load');
+  </script>
+  <!-- NewsLetters Universal -->
 </head>
 
 <body>
@@ -324,7 +338,7 @@
           <div class="container__right-input">
             <!-- <input class="email" type="email" placeholder="El.paštas"> -->
             <button>
-              <a href="javascript:;" onclick="ml_webform_5619112('show')">
+              <a class="subscribeBtn" href="javascript:;">
                 <h5 class="element" data="footer.subs.btn">Subscribe</h5>
               </a>
             </button>
@@ -376,6 +390,19 @@
         }
       },
     }).mount();
+  </script>
+
+  <script>
+    var ml_webform_5619112 = ml_account('webforms', '5619112', 'r5m8i8', 'load');
+    ml_webform_5619112('animation', 'fadeIn');
+    var ml_webform_5620600 = ml_account('webforms', '5620600', 'q9p0w4', 'load');
+    ml_webform_5620600('animation', 'fadeIn');
+    const btn = document.querySelector(".subscribeBtn");
+
+    btn.addEventListener("click", () => {
+      cookie === "lt" ? ml_webform_5620600("show") : ml_webform_5619112("show");
+      cookie = document.cookie;
+    })
   </script>
 </body>
 
