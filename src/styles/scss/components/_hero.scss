@@ -1,9 +1,9 @@
 @use "../abstracts" as *;
 .project-background {
-  background: url(../../assets/projects/hero.png) no-repeat 100%;
+  background: url(src/assets/projects/hero.png) no-repeat 100%;
   background-size: cover;
   @include mq1500 {
-    background: url(../../assets/projects/hero.png) no-repeat 100% 70px;
+    background: url(src/assets/projects/hero.png) no-repeat 100% 70px;
     background-size: cover;
     min-height: 60vh;
     display: flex;

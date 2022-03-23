@@ -7,7 +7,7 @@
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  background: url(../../assets/main/Rectangle203.png) no-repeat center center;
+  background: url(src/assets/main/Rectangle203.png) no-repeat center center;
   background-size: 70%;
 }
 
@@ -76,7 +76,7 @@
   display: flex;
   flex-direction: column;
   // height: 120vh;
-  background: url(../../assets/main/Group432.png) no-repeat center center;
+  background: url(src/assets/main/Group432.png) no-repeat center center;
   background-size: cover;
 
   &__topWrapper {
@@ -377,7 +377,7 @@
   }
 
   &__topWrapper {
-    background: url(../../assets/main/Group433.png) no-repeat center center;
+    background: url(src/assets/main/Group433.png) no-repeat center center;
     background-size: cover;
     padding: 5% 10%;
     @include mq1500 {
@@ -427,10 +427,10 @@
 }
 .achievements {
   justify-content: space-between;
-  background: url(../../assets/main/Component17.png) no-repeat center 150px;
+  background: url(src/assets/main/Component17.png) no-repeat center 150px;
   background-size: 100%;
   @include mq1024 {
-    background: url(../../assets/main/Group\ 512.png) no-repeat center 75px;
+    background: url(src/assets/main/Group\ 512.png) no-repeat center 75px;
     background-size: 100%;
     z-index: -1;
   }
@@ -479,7 +479,7 @@
 
 .services {
   justify-content: space-between;
-  background: url(../../assets/main/pilis2.png) no-repeat center;
+  background: url(src/assets/main/pilis2.png) no-repeat center;
   background-size: cover;
   &__title {
     justify-content: center;
@@ -1026,7 +1026,7 @@
 
   &__topWrapper {
     flex: 1.5;
-    background: url(../../assets/formal/Group431.png) no-repeat center center;
+    background: url(src/assets/formal/Group431.png) no-repeat center center;
     background-size: cover;
 
     &-title {
@@ -1274,7 +1274,7 @@
       padding-top: 5%;
     }
     &-body {
-      background: url(../../assets/formal/Group429.png) no-repeat center;
+      background: url(src/assets/formal/Group429.png) no-repeat center;
       background-size: 100%;
       width: 100%;
       justify-content: space-around;
@@ -1551,7 +1551,7 @@
       // padding-top: 5%;
     }
     &-body {
-      background: url(../../assets/nonformal/skillBG.png) no-repeat center;
+      background: url(src/assets/nonformal/skillBG.png) no-repeat center;
       background-size: 100%;
       width: 100%;
       justify-content: space-around;

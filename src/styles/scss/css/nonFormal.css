@@ -6,7 +6,7 @@
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  background: url(../../assets/main/Rectangle203.png) no-repeat center center;
+  background: url(src/assets/main/Rectangle203.png) no-repeat center center;
   background-size: 70%;
 }
 
@@ -86,7 +86,7 @@
 .research {
   display: flex;
   flex-direction: column;
-  background: url(../../assets/main/Group432.png) no-repeat center center;
+  background: url(src/assets/main/Group432.png) no-repeat center center;
   background-size: cover;
 }
 .research__topWrapper {
@@ -410,7 +410,7 @@
   font-weight: 600;
 }
 .community__topWrapper {
-  background: url(../../assets/main/Group433.png) no-repeat center center;
+  background: url(src/assets/main/Group433.png) no-repeat center center;
   background-size: cover;
   padding: 5% 10%;
 }
@@ -469,12 +469,12 @@
 
 .achievements {
   justify-content: space-between;
-  background: url(../../assets/main/Component17.png) no-repeat center 150px;
+  background: url(src/assets/main/Component17.png) no-repeat center 150px;
   background-size: 100%;
 }
 @media (max-width: 1024px) {
   .achievements {
-    background: url(../../assets/main/Group\ 512.png) no-repeat center 75px;
+    background: url(src/assets/main/Group\ 512.png) no-repeat center 75px;
     background-size: 100%;
     z-index: -1;
   }
@@ -526,7 +526,7 @@
 
 .services {
   justify-content: space-between;
-  background: url(../../assets/main/pilis2.png) no-repeat center;
+  background: url(src/assets/main/pilis2.png) no-repeat center;
   background-size: cover;
 }
 .services__title {
@@ -1124,7 +1124,7 @@
 }
 .reviews__topWrapper {
   flex: 1.5;
-  background: url(../../assets/formal/Group431.png) no-repeat center center;
+  background: url(src/assets/formal/Group431.png) no-repeat center center;
   background-size: cover;
 }
 .reviews__topWrapper-title {
@@ -1391,7 +1391,7 @@
   padding-top: 5%;
 }
 .payments__bottom-body {
-  background: url(../../assets/formal/Group429.png) no-repeat center;
+  background: url(src/assets/formal/Group429.png) no-repeat center;
   background-size: 100%;
   width: 100%;
   justify-content: space-around;
@@ -1675,7 +1675,7 @@
   text-align: center;
 }
 .skillSet__bottom-body {
-  background: url(../../assets/nonformal/skillBG.png) no-repeat center;
+  background: url(src/assets/nonformal/skillBG.png) no-repeat center;
   background-size: 100%;
   width: 100%;
   justify-content: space-around;
@@ -2917,7 +2917,7 @@
 }
 
 .marsPackage {
-  background: url(../../assets/nonformal/rocket.png) no-repeat center center;
+  background: url(src/assets/nonformal/rocket.png) no-repeat center center;
   background-size: cover;
 }
 .marsPackage__title {
