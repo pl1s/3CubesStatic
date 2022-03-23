@@ -14,7 +14,7 @@
 
 <body>
   <header class="side-padding darkHeader">
-    <div class="logo"><a href="../pages/main.html"><img class="logoImg" src="/src/assets/header_footer/logo.png"
+    <div class="logo"><a href="../pages/main.html"><img class="logoImg" src="/src/assets/header_footer/logo_en.png"
           alt="logo" /></a>
     </div>
     <div class="hamburger">
@@ -27,8 +27,8 @@
         <h5><a class="element nav" data="nav.formal" href="./formal.html">Formal education</a></h5>
         <h5><a class="element nav" data="nav.nonformal" href="./nonFormal.html">Informal education</a></h5>
         <h5><a class="element nav" data="nav.projects" href="./projects.html">Projects</a></h5>
-        <h5><a class="element nav" data="nav.news" href="./news.html">News</a></h5>
-        <h5><a class="element nav" data="nav.contacts" href="./contacts.html">Contacts</a></h5>
+        <!-- <h5><a class="element nav" data="nav.news" href="./news.html">News</a></h5>
+        <h5><a class="element nav" data="nav.contacts" href="./contacts.html">Contacts</a></h5> -->
         <div class="right-side__language flex-row">
           <button class="lt" value="en" id="langSelector">
             <h5>LT</h5>
@@ -47,7 +47,7 @@
         <div class="hero-main__cta-topLeft">
           <h1 class="title element" data="nonFormal.hero.title">Interactive educational adventures!</h1>
           <h3 class="element" data="nonFormal.hero.sub">Informal education with "Minecraft: Education Edition"!</h3>
-          <button>
+          <button id="contactBtn">
             <h4 class="element" data="nonFormal.hero.btn">Contact Us!</h4>
           </button>
         </div>
@@ -120,7 +120,7 @@
             </div>
           </div>
         </div>
-        <div class="mars__body-themes flex-column">
+        <div class="mars__body-themes side-half-padding flex-column">
           <div class="mars__body-themes_title flex center">
             <h3 class="element" data="nonFormal.mars.themes.title">Topics of lessons</h3>
           </div>
@@ -163,6 +163,9 @@
             <p class="element" data="nonFormal.mars.themes.sub">There is no individual registration for lessons.
           </div>
         </div>
+        <div class="mars__bot">
+          <img src="../src/assets/nonformal/bot.png" alt="player">
+        </div>
       </div>
     </section>
     <section class="game-design">
@@ -170,7 +173,7 @@
 
       </div>
       <div class="mars__body flex-row">
-        <div class="mars__body-themes flex-column center" style="padding:0 0 0 5%;">
+        <div class="mars__body-themes side-half-padding flex-column center">
           <div class="mars__spacer"></div>
           <div class="mars__body-themes_title" style="padding:0;">
             <h2 class="element mars__title2" data="nonFormal.gameDesign.title">Game design with "Minecraft"</h2>
@@ -189,12 +192,12 @@
                 <div class="splide__list">
                   <li class="splide__slide slide01">
                     <div class="mars__body-slider_container-item" style="padding:0;">
-                      <img src="../src/assets/nonformal/Rectangle -1.png" alt="mars">
+                      <img src="../src/assets/nonformal/Rectangle 250.png" alt="mars">
                     </div>
                   </li>
                   <li class="splide__slide slide02">
                     <div class="mars__body-slider_container-item">
-                      <img src="../src/assets/nonformal/Rectangle -2.png" alt="mars">
+                      <img src="../src/assets/nonformal/Rectangle 251.png" alt="mars">
                     </div>
                   </li>
                 </div>
@@ -206,9 +209,9 @@
     </section>
     <section class="codeAcademy flex-row">
       <div class="codeAcademy__video">
-        <video src="../src/assets/formal/video.mp4" poster="../src/assets/formal/videoPoster.png" controls></video>
+        <video src="../src/assets/nonformal/nonFormal.mp4" poster="../src/assets/nonformal/poster.png" controls></video>
         <h4 class="element" data="nonFormal.codeAcademy.sub.text">For individual registration visit "CodeAcademy Kids"
-          <a href="http://codeacademy.com">here.</a>
+          <a href="http://codeacademy.com" target="_blank">here.</a>
         </h4>
       </div>
       <div class="codeAcademy__card flex-column center ">
@@ -300,30 +303,6 @@
         </div>
       </div>
     </section>
-    <!-- <section class="contact-form full-padding flex-column center">
-      <h2>Susisiekite su mumis!</h2>
-      <h4>Palikite savo kontaktus ir mes su Jumis susisieksime artimiasiu metu</h4>
-      <form action="mailto:suppor@edukraft.lt" method="post" enctype="multipart/form-data" class="form flex-column">
-        <div class="flex-row top flex-full ">
-          <input class="fullw" type="text" placeholder="Vardas">
-          <input class="fullw" type="text" placeholder="El.paštas">
-          <input class="fullw" type="text" placeholder="Tel.nr">
-        </div>
-        <div class="flex-row bottom flex-full">
-          <input class="fullw" type="textarea" placeholder="Žinutė">
-        </div>
-        <div class="flex-row privacy ">
-          <input class="flex-row" type="checkbox">
-          <h5 class="flex-row text">Sutinku su privatumo politika</h5>
-        </div>
-        <div class="flex-row submit ">
-          <button>
-            <h5>Siųsti</h5>
-          </button>
-        </div>
-        </table>
-      </form>
-    </section> -->
   </main>
   <footer class="footer flex-column side-padding">
     <div class="container flex-row">
@@ -337,26 +316,20 @@
               LT-09301, Vilnius</a>
           </h5>
         </div>
-        <div class="container__left-info">
-          <h3 class="element" data="footer.info.main">Information</h3>
-          <h5 class="sub1"><a href="" class="element" data="footer.info.knowHow">How to become a partner?</a></h5>
-          <h5 class="sub2"><a href="" class="element" data="footer.info.privacy">Privacy Policy</a></h5>
-          <h5 class="sub3"><a href="" class="element" data="footer.info.carrer">Career</a>
-          </h5>
-        </div>
       </div>
       <div class="container__right">
         <div class="container__right-subsrc">
           <h3 class="element" data="footer.subs.main">Newsletters</h3>
           <h5 class="sub1"><a href="" class="element" data="footer.subs.desc">Be the first to get all news!</a></h5>
           <div class="container__right-input">
-            <input class="email" type="email" placeholder="El.paštas"><button>
-              <h5 class="element" data="footer.subs.btn">Subscribe</h5>
+            <!-- <input class="email" type="email" placeholder="El.paštas"> -->
+            <button>
+              <a href="javascript:;" onclick="ml_webform_5619112('show')">
+                <h5 class="element" data="footer.subs.btn">Subscribe</h5>
+              </a>
             </button>
           </div>
           <div class="container__right-privacy flex-row">
-            <input class="flex-row" type="checkbox">
-            <h5 class="flex-row text element" data="footer.subs.checkBox">I agree to privacy policy.</h5>
           </div>
         </div>
       </div>
@@ -366,6 +339,7 @@
     </div>
   </footer>
   <!-- script loading -->
+  <script src="../src/js/main.js"></script>
   <script src="../src/js/navtoggle.js"></script>
   <script src="../src/js/i18next.min.js"></script>
   <script src="../src/js/splide.min.js"></script>

@@ -29,6 +29,20 @@ header {
     }
   }
 
+  .hamburger {
+    .line {
+      visibility: visible;
+      &:nth-child(1) {
+        transition: all 0.2s ease 0.5s;
+      }
+      &:nth-child(2) {
+        transition: all 0s ease 0.5s;
+      }
+      &:nth-child(3) {
+        transition: all 0.2s ease 0.5s;
+      }
+    }
+  }
   .right-side {
     display: flex;
     justify-content: flex-end;
@@ -83,7 +97,8 @@ header {
           transition: all 0.2s ease 0.9s;
         }
         .right-side__language {
-          transition: all 0.2s ease 1.1s;
+          // transition: all 0.2s ease 1.1s;
+          transition: all 0.2s ease 0.7s;
         }
 
         h5.fade,
@@ -107,6 +122,21 @@ header {
       }
     }
   }
+}
+//hamburger transition classes
+.line.hide {
+  visibility: hidden !important;
+}
+.line.topLine {
+  transform: rotate(45deg);
+  transform-origin: 13px 0;
+  @include mq480 {
+    transform-origin: 8px 0;
+  }
+}
+.line.bottomLine {
+  transform: rotate(-45deg);
+  transform-origin: 0px 0px;
 }
 
 //DESIGN

@@ -48,7 +48,7 @@
       "card": {
         "left": "Developing <label>knowledge and competencies</label>",
         "middle": "Improving students' <label>engagement and results!</label>",
-        "right": "Learning to<label>solve problems by collaborating</label>"
+        "right": "Learning to <label>solve problems by collaborating</label>"
       },
       "btn": "Research",
       "bottomWrapper": {
@@ -157,20 +157,20 @@
       "slide04": "Lesson \"Solar System\""
     },
     "reviews": {
-      "title": "\"Trys kubai\" interaktyvios pamokos - suteikia patogų būdą ugdyti ne tik žinias, bet ir kompetencijas",
+      "title": "\"Three Cubes\" interactive lessons - provide a convenient way to develop not only knowledge but also competencies",
       "title2": "Teacher observations on students' experiences, using \"Minecraft\" while learning",
       "inter-card": {
-        "title": "Nacionalinės švietimo agentūros puslapyje <br> www.mokykla2030.lt teigiama, jog:",
-        "desc": "\"Atnaujinant ugdymo turinį laikomasi 2008 m. programose pradėtos kompoetencijų prieigos, tačiau išplėtota ir patikslinta pati kompetencijos samprata. Taip pat siekama atskleisti ryšius tarp dalykinio turinio ir kompetencijų ir iliustruoti, kaip kompetencijos ugdomas dalykiniu turiniu\""
+        "title": "National Education Agency website: <br> www.mokykla2030.lt states following:",
+        "desc": "\"Curriculum update follows the approach launched in the 2008 programs, but the concept of competence itself has been developed and refined. It also seeks to reveal the links between subject content and competences and to illustrate how competencies are developed through subject content\""
       },
       "cardLeft": {
-        "desc": "Kuriamos pagal atnaujinama bendrojo ugdymo programą"
+        "desc": "Developed following updated general education curriculum"
       },
       "cardMiddle": {
-        "desc": "Interaktyvumas suteikia galimybę gauti žinių įvairiomis formomis"
+        "desc": "Interactivity provides access to knowledge in a variety of forms"
       },
       "cardRight": {
-        "desc": "Dėmesys kreipiamas į mokinių kompetencijų plėtojimą"
+        "desc": "Attention is focused on the development of students' competencies"
       },
       "slide01": {
         "desc": "The shortage of abilieties to work in teams, patience and achieving results really came to light during exercises. The experience of \"Three Cubes\" lessons are very useful for developing these competencies."
@@ -240,12 +240,12 @@
     },
     "gameDesign": {
       "title": "Game design with \"Minecraft\"",
-      "sub": "Kursas vaikams apie žaidimų dizainą",
-      "desc": "Vaikai tampa kolonijos erdvėlaivio įgula, kuri sprendžia įvairias užduotis kartu su laivo valdymo robotu ir taip mokosi apie žaidimų dizainą!"
+      "sub": "Lessons focused on game design",
+      "desc": "The kids become the crew of the colony spaceship, solving various tasks together with the ship control robot and thus learning about game design!"
     },
     "codeAcademy": {
       "sub": {
-        "text": "For individual registration visit \"CodeAcademy Kids\" <a href=\"http://codeacademy.com\">here.</a>",
+        "text": "For individual registration visit \"CodeAcademy Kids\" <a href=\"http://codeacademy.com\" target=\"_blank\">here.</a>",
         "link": "here."
       },
       "footer": "Working in collaboration with",
@@ -330,7 +330,7 @@
       "text5": "The video of the project gained over 40,000 views on \"Youtube\" platformoje."
     },
     "3kids": {
-      "title": "\"Trys pradinukai\"",
+      "title": "Three students",
       "text1": "3 educational adventures for improving knowledge on Lithuania's history.",
       "text2": "Educational adventure themes: \"Rescuing Vytis\", \"The Teasure of the Dukes\" ir \"The Act of Independence\".",
       "text3": "Some voices of the characters' are recorded by well-known people in Lithuania - Gabrielius Liaudanskas-Svaras and Liudas Mažylis.",

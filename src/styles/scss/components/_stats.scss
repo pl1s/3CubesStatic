@@ -25,6 +25,9 @@
     }
     h3 {
       align-self: center;
+      @include mq480 {
+        font-size: 1.75rem;
+      }
     }
   }
 }

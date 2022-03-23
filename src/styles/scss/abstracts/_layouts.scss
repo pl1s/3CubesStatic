@@ -121,16 +121,16 @@
         }
         @include mq1024 {
           display: flex;
-          width: 50%;
+          // width: 70%;
         }
-        @include mq767 {
-          width: 60%;
-        }
+        // @include mq767 {
+        //   width: 60%;
+        // }
         @include mq480 {
-          width: unset;
+          width: 100%;
           max-height: 100px;
           min-height: unset;
-          min-width: 266px;
+          min-width: 226px;
           // margin: 2% 20%;
           // grid-template-columns: unset;
         }
@@ -143,7 +143,7 @@
             transform: scale(0.7);
           }
           @include mq480 {
-            transform: scale(0.5);
+            width: 30%;
           }
         }
         h4 {
@@ -472,14 +472,15 @@
 
 .services {
   justify-content: space-between;
-  background: url(../../assets/main/pilis3.png) no-repeat center;
-  // background-size: 100%;
+  background: url(../../assets/main/pilis2.png) no-repeat center;
+  background-size: cover;
   &__title {
     justify-content: center;
     align-items: flex-start;
-    @include mq1500 {
-      margin: 0 0 7% 0 !important;
-    }
+    padding: 2% 0 5% 0;
+    // @include mq1500 {
+    //   margin: 0 0 7% 0 !important;
+    // }
     @include mq480 {
       height: unset;
     }
@@ -803,6 +804,8 @@
     h3 {
       @include mq480 {
         text-align: center;
+        font-size: 1.5rem;
+        font-weight: 400;
       }
     }
     button {
@@ -824,10 +827,10 @@
   position: absolute;
   right: 0;
   width: 30%;
-  min-width: 300px;
+  min-width: 400px;
   max-width: 600px;
   padding: 3% 2%;
-  margin-top: -6%;
+  margin-top: -8%;
   margin-right: 10%;
   z-index: 99;
   @include mq480 {
@@ -879,6 +882,9 @@
       width: 50%;
       margin: 0 auto;
     }
+    @include mq1024plus {
+      padding: 0 5% !important;
+    }
     @include mq767 {
       width: 60%;
       margin: 0 auto;
@@ -912,7 +918,8 @@
   &__inter-card {
     position: absolute;
     text-align: center;
-    width: 700px;
+    width: 50vw;
+    max-width: 600px;
     top: -15%;
     left: 5%;
     right: 60%;
@@ -920,6 +927,7 @@
     @include mq1500 {
       padding: 3rem;
       width: 500px;
+      max-width: unset;
     }
     @include mq1500 {
       position: unset;
@@ -1016,7 +1024,7 @@
 
     &-title {
       width: 80%;
-      margin: 10% auto 5% auto;
+      margin: 300px auto 5% auto;
       text-align: center;
       @include mq1500 {
         margin: 5% auto;
@@ -1025,7 +1033,7 @@
 
     &-container {
       justify-content: space-between;
-      padding: 0 5% 5% 5%;
+      padding: 0 5% 250px 5%;
       @include mq1024 {
         flex-wrap: wrap;
         justify-content: space-around;
@@ -1250,7 +1258,10 @@
     height: 30vw;
   }
   &__bottom {
-    padding: 10% 5% 5% 5%;
+    padding: 5% 5% 5% 5%;
+    @include mq767 {
+      padding: 10% 5% 5% 5%;
+    }
     &-title {
       text-align: center;
       padding-top: 5%;
@@ -1308,11 +1319,27 @@
     * {
       padding-bottom: 1%;
     }
-    h4 {
+    h4,
+    h2 {
       text-align: center;
     }
   }
+  &__bot {
+    position: absolute;
+    bottom: -10%;
+    left: 30%;
+    @include mq1500 {
+      bottom: -5%;
+    }
+    @include mq1024 {
+      display: none;
+    }
+    img {
+      width: 80%;
+    }
+  }
   &__body {
+    position: relative;
     @include mq1024 {
       flex-direction: column !important;
     }
@@ -1341,7 +1368,7 @@
     }
     &-themes {
       flex: 3;
-      padding: 0 0 0 10%;
+      // padding: 0 10% 0 10%;
       @include mq1024 {
         align-items: flex-start;
       }
@@ -1386,6 +1413,9 @@
   // @include mq480 {
   //   padding: 0;
   // }
+  .mars__body {
+    padding-top: 5%;
+  }
   .mars__spacer {
     @include mq1024 {
       width: 100%;
@@ -1393,7 +1423,12 @@
     }
   }
   .mars__title2 {
-    max-width: 60%;
+    @include mq1024 {
+      max-width: 60%;
+    }
+    @include mq480 {
+      max-width: unset;
+    }
   }
   .mars__body-themes_title {
     * {
@@ -1434,8 +1469,8 @@
     position: relative;
     flex: 1.5;
     padding: 5% 0;
-    @include mq767 {
-      padding: 10% 0 0 0;
+    @include mq1024 {
+      padding: 115px 0 0 0;
     }
 
     video {
@@ -1449,6 +1484,7 @@
       text-align: center;
       margin: auto;
       padding: 2%;
+      z-index: 999;
     }
   }
   &__card {
@@ -1456,7 +1492,7 @@
     @include mq767 {
       display: none !important;
     }
-    margin-bottom: 10%;
+    // margin-bottom: 10%;
     @include mq1024 {
       margin-bottom: -10%;
     }
@@ -1659,13 +1695,18 @@
   }
   @include mq480 {
     padding: 0 !important;
+    margin: 5% 0 10% 0 !important;
   }
   h2 {
     margin-bottom: 5%;
+    @include mq480 {
+      justify-content: flex-start;
+      margin-left: 5%;
+    }
   }
   h3 {
     @include mq480 {
-      font-size: 1.5rem;
+      font-size: 1.75rem;
       font-weight: 500;
     }
   }
@@ -1674,7 +1715,7 @@
   }
   &__main {
     &-title {
-      justify-content: space-around;
+      // justify-content: space-around;
       align-items: center;
       width: 40%;
       margin-left: 2%;
@@ -1683,8 +1724,8 @@
         width: 60%;
       }
       @include mq480 {
+        justify-content: center;
         width: 100%;
-
         padding: 0 5% 2% 5%;
         text-align: center;
       }
@@ -1694,6 +1735,10 @@
         @include mq1024 {
           padding-bottom: 7px;
         }
+        @include mq480 {
+          width: 100%;
+          padding-bottom: unset;
+        }
       }
       &_img {
         justify-content: flex-start;
@@ -1701,13 +1746,20 @@
         max-width: 150px;
         text-align: center;
         padding: 0 15% 0 0;
+        @include mq480 {
+          justify-content: space-between;
+        }
         img {
           width: 100%;
+          @include mq480 {
+            width: 90%;
+          }
         }
       }
       &_imgWrapper {
         @include mq480 {
-          display: none !important;
+          position: absolute;
+          bottom: -85px;
         }
       }
     }
@@ -1719,16 +1771,16 @@
       }
       @include mq480 {
         width: 100%;
-        height: 200vw;
+        height: 190vw;
       }
       .splide {
         @include mq480 {
-          margin-top: 80vw;
+          margin-top: 74vw;
         }
       }
       .splide03 {
         @include mq480 {
-          margin-top: 77vw;
+          margin-top: 69vw;
         }
       }
       img {
@@ -1751,7 +1803,7 @@
       right: 5%;
     }
     @include mq480 {
-      top: 10%;
+      top: 80px;
       right: 0;
       left: 0;
       margin: 0 auto;
@@ -1781,7 +1833,7 @@
       }
       @include mq480 {
         min-height: 30vw;
-        width: 70vw;
+        width: 80vw;
       }
     }
   }
@@ -1795,6 +1847,7 @@
   @include mq480 {
     padding: 0 !important;
     width: 100% !important;
+    margin: 120px 0 10% 0 !important;
   }
   .paginator__wrapper {
     width: 50%;
@@ -1815,9 +1868,14 @@
       justify-content: flex-end;
       width: 100%;
       padding-bottom: 2%;
+      @include mq1024 {
+        width: 100%;
+        margin-left: 42%;
+      }
       @include mq480 {
         padding: 0 5% 2% 5%;
         text-align: center;
+        margin-left: unset;
       }
       &_wrapper {
         justify-content: space-between;
@@ -1825,8 +1883,11 @@
         width: 40%;
         margin-right: 2%;
         @include mq1024 {
-          width: 50%;
-          margin-right: 15%;
+          width: 80%;
+          margin-right: 10%;
+        }
+        @include mq767 {
+          margin-right: unset;
         }
         @include mq480 {
           width: 100%;
@@ -1835,7 +1896,7 @@
         }
         h3 {
           @include mq480 {
-            font-size: 1.5rem;
+            font-size: 1.75rem;
             font-weight: 500;
           }
         }
@@ -1859,7 +1920,8 @@
       }
       &_imgWrapper {
         @include mq480 {
-          display: none !important;
+          position: absolute;
+          bottom: -85px;
         }
       }
     }
@@ -1870,7 +1932,7 @@
       margin-left: 50%;
       @include mq1024 {
         width: 100% !important;
-        margin-left: 38%;
+        margin-left: 43%;
       }
       @include mq480 {
         height: 190vw;
@@ -1885,7 +1947,7 @@
       }
       .splide02 {
         @include mq480 {
-          margin-top: 72vw;
+          margin-top: 70vw;
         }
       }
     }
@@ -1899,10 +1961,10 @@
     height: 100%;
     bottom: 0;
     @include mq1024 {
-      left: 10%;
+      left: 18%;
     }
     @include mq480 {
-      top: 5%;
+      top: 45px;
       right: 0;
       left: 0;
       margin: 0 auto;
@@ -1911,15 +1973,13 @@
     &-card {
       align-items: center;
       width: 20vw;
-      //??
       min-height: 23%;
-      //?
       @include mq1024 {
         width: 25vw;
       }
-      // @include mq767 {
-      //   width: 2vw;
-      // }
+      @include mq767 {
+        width: 30vw;
+      }
       &:nth-child(2) {
         @include mq480 {
           position: relative;
@@ -1934,7 +1994,7 @@
       }
       @include mq480 {
         min-height: 30vw;
-        width: 70vw;
+        width: 80vw;
       }
     }
   }
@@ -1954,6 +2014,10 @@
   h2 {
     // margin-bottom: 5%;
     margin: unset;
+    @include mq480 {
+      justify-content: flex-start;
+      margin-left: 5%;
+    }
   }
   .right {
     width: 100%;
@@ -1976,10 +2040,10 @@
       &_wrapper {
         justify-content: space-between;
         align-items: center;
-        width: 40%;
+        width: 45%;
         margin-right: 2%;
         @include mq1024 {
-          width: 65%;
+          width: 55%;
         }
         @include mq767 {
           margin-right: unset;
@@ -1990,7 +2054,7 @@
         }
         h3 {
           @include mq480 {
-            font-size: 1.5rem;
+            font-size: 1.75rem;
             font-weight: 500;
           }
         }
@@ -2018,10 +2082,10 @@
       margin-left: 50%;
       @include mq1024 {
         width: 70% !important;
-        margin-left: 30%;
+        margin-left: 38%;
       }
       @include mq480 {
-        height: 230vw;
+        height: 225vw;
         width: 100% !important;
         margin-left: unset;
       }
@@ -2033,12 +2097,12 @@
       }
       .splide04 {
         @include mq480 {
-          margin-top: 85vw;
+          margin-top: 74vw;
         }
       }
       .splide06 {
         @include mq480 {
-          margin-top: 77vw;
+          margin-top: 68vw;
         }
       }
     }
@@ -2047,18 +2111,18 @@
     position: absolute;
     justify-content: space-between;
     align-items: center;
-    left: 30%;
+    left: 25%;
     width: 30%;
     height: 85%;
     bottom: 4.2%;
     @include mq1024 {
-      left: 3%;
+      left: 13%;
     }
-    @include mq767 {
-      left: 2%;
-    }
+    // @include mq767 {
+    //   left: 2%;
+    // }
     @include mq480 {
-      top: 5%;
+      top: 55px;
       right: 0;
       left: 0;
       margin: 0 auto;
@@ -2077,29 +2141,29 @@
       &:nth-child(2) {
         @include mq480 {
           position: relative;
-          bottom: 5%;
+          bottom: 6%;
         }
       }
       &:nth-child(3) {
         @include mq480 {
           position: relative;
-          top: 10%;
+          top: 11%;
         }
       }
       &:nth-child(4) {
         @include mq480 {
           position: relative;
-          top: 5%;
+          top: 5.5%;
         }
       }
       @include mq480 {
-        min-height: 120px;
-        width: 70vw;
+        min-height: unset;
+        width: 80vw;
       }
       &_text-wrapper {
         align-items: center;
         img {
-          width: 10%;
+          width: 11%;
           margin-left: 5%;
         }
       }
@@ -2107,40 +2171,79 @@
   }
   &__sponsorship {
     justify-content: space-between;
-    margin: 2% 0 0 56%;
+    margin: 2% 0 0 50%;
     @include mq1500 {
       flex-direction: column !important;
       justify-content: center;
     }
     @include mq1024 {
-      margin: 2% 25% 0 33%;
+      margin: 2% 5% 0 40%;
     }
     @include mq767 {
-      margin: 2% 25% 0 35%;
+      margin: 2% 5% 0 45%;
+    }
+    @include mq480 {
+      flex-direction: column-reverse !important;
+      margin: unset;
     }
     img {
-      // width: 100%;
       max-height: 70px;
+      @include mq480 {
+        max-height: 57px;
+        max-width: 80px;
+        margin: auto;
+      }
     }
     &-container {
       justify-content: space-between;
       text-align: center;
+      @include mq1500 {
+        justify-content: flex-start;
+      }
+      @include mq480 {
+        position: absolute;
+        justify-content: center;
+        bottom: -50px;
+        left: 0;
+        right: 0;
+        width: 80%;
+        margin: 0 auto;
+      }
       &_brand {
         justify-content: space-between;
         align-items: center;
         margin-left: 5%;
+        @include mq480 {
+          margin-left: unset;
+          padding: 0 2%;
+        }
       }
     }
     //TODO info box mq 1.8k column
     &-info {
       justify-content: center;
       align-items: center;
+      padding: 0 5vw;
       @include mq1500 {
         justify-content: flex-start;
         margin-top: 10px;
       }
+      @include mq480 {
+        justify-content: flex-end;
+        margin-right: 10%;
+      }
     }
   }
+}
+//spacer
+.spacer {
+  margin-top: 160px;
+}
+.spacer2 {
+  margin-top: 90px;
+}
+.spacer3 {
+  margin-top: 115px;
 }
 
 .projectsExtraL {
@@ -2148,6 +2251,9 @@
     padding: 0 !important;
     width: 100% !important;
     margin: 5% 0 15% 0 !important;
+    @include mq480 {
+    }
+    margin: 100px 0 15% 0 !important;
   }
   h2 {
     margin-bottom: 5%;
@@ -2158,7 +2264,7 @@
   &__main {
     position: relative;
     &-title {
-      justify-content: space-around;
+      // justify-content: space-around;
       align-items: center;
       width: 40%;
       margin-left: 2%;
@@ -2187,7 +2293,7 @@
       }
       h3 {
         @include mq480 {
-          font-size: 1.5rem;
+          font-size: 1.75rem;
           font-weight: 500;
         }
       }
@@ -2209,7 +2315,7 @@
       }
       .splide05 {
         @include mq480 {
-          margin-top: 62vw;
+          margin-top: 65vw;
         }
       }
     }
@@ -2223,7 +2329,7 @@
     right: 30%;
     bottom: 0;
     @include mq1024 {
-      right: 3%;
+      right: 5%;
     }
     @include mq767 {
       right: 2%;
@@ -2265,7 +2371,7 @@
       }
       @include mq480 {
         min-height: unset;
-        width: 70vw;
+        width: 80vw;
       }
       &_text-wrapper {
         align-items: center;
@@ -2291,7 +2397,12 @@
       margin: 2% 35% 0 0;
     }
     @include mq480 {
-      display: none !important;
+      flex-direction: column-reverse !important;
+      position: absolute;
+      bottom: -135px;
+      left: 0;
+      right: 0;
+      margin: 0 auto;
     }
     img {
       width: 100%;
@@ -2306,19 +2417,34 @@
       @include mq1500 {
         justify-content: flex-end;
       }
+      @include mq480 {
+        justify-content: center;
+        margin-top: 15px;
+        margin-right: 10%;
+      }
       &_brand {
         justify-content: space-between;
         align-items: center;
         margin-left: 5%;
+        @include mq480 {
+          margin-left: unset;
+        }
       }
     }
     //TODO info box mq 1.8k column
     &-info {
       justify-content: center;
       align-items: center;
+      padding: 0 5vw;
       @include mq1500 {
         justify-content: flex-end;
         margin-top: 10px;
+      }
+      @include mq480 {
+        margin-right: 10%;
+        // position: absolute;
+        // top: 5px;
+        // left: 20%;
       }
     }
   }

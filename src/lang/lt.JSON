@@ -245,7 +245,7 @@
     },
     "codeAcademy": {
       "sub": {
-        "text": "Į būrelį galite individualiai registruotis \"CodeAcademy Kids\" svetainėje <a href=\"http://codeacademy.com\">čia.</a>",
+        "text": "Į būrelį galite individualiai registruotis \"CodeAcademy Kids\" svetainėje <a href=\"http://codeacademy.com\" target=\"_blank\">čia.</a>",
         "link": "čia."
       },
       "footer": "Būrelis kurtas bendradarbiaujant su",
@@ -330,7 +330,7 @@
       "text5": "Projekto vaizdo įrašas surinko virš 40,000 peržiūrų \"Youtube\" platformoje."
     },
     "3kids": {
-      "title": "\"Trys pradinukai\"",
+      "title": "Trys pradinukai",
       "text1": "3 edukaciniai nuotykiai skirti geriau paŽinti Lietuvos istorija.",
       "text2": "Edukacinių nuotykių temos: \"Gelbstint Vytį\", \"Kunigaikščių lobiai\" ir \"Nepriklausomybės Aktas\".",
       "text3": "Kai kurie veikėjai įgarsinti ir žinomų valstybingumo puoselėtojų kaip atlikėjas Gabrielius Liaudanskas-Svaras, mokslininkas Liudas.",

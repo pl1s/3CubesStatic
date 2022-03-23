@@ -1,10 +1,8 @@
 document.addEventListener("DOMContentLoaded", function () {
   //activeClass on active path
   const navContainer = document.querySelector(".right-side__navigation");
-
   let navs = navContainer.getElementsByClassName("nav");
 
-  console.log(navs);
   for (let i = 0; i < navs.length; i++) {
     if (document.location.href.indexOf(navs[i].href) >= 0) {
       navs[i].className = "element active";
@@ -35,13 +33,18 @@ document.addEventListener("DOMContentLoaded", function () {
     }
   };
 
-  //toggle navmenu on smaller screens
+  //toggle navmenu on smaller screens & hamburger toggle
   const hambuger = document.querySelector(".hamburger");
   const navLinks = document.querySelector(".right-side__navigation");
   const links = document.querySelectorAll(
     ".right-side__navigation h5, .right-side__language"
   );
+  const lines = document.querySelectorAll(".line");
+
   hambuger.addEventListener("click", () => {
+    lines[0].classList.toggle("topLine");
+    lines[1].classList.toggle("hide");
+    lines[2].classList.toggle("bottomLine");
     navLinks.classList.toggle("open");
     links.forEach((link) => {
       link.classList.toggle("fade");

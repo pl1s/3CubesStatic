@@ -28,7 +28,7 @@
 
 <body>
   <header class="side-padding darkHeader">
-    <div class="logo"><a href="../pages/main.html"><img class="logoImg" src="/src/assets/header_footer/logo.png"
+    <div class="logo"><a href="../pages/main.html"><img class="logoImg" src="/src/assets/header_footer/logo_en.png"
           alt="logo" /></a>
     </div>
     <div class="hamburger">
@@ -41,8 +41,8 @@
         <h5><a class="element nav" data="nav.formal" href="./formal.html">Formal education</a></h5>
         <h5><a class="element nav" data="nav.nonformal" href="./nonFormal.html">Informal education</a></h5>
         <h5><a class="element nav" data="nav.projects" href="./projects.html">Projects</a></h5>
-        <h5><a class="element nav" data="nav.news" href="./news.html">News</a></h5>
-        <h5><a class="element nav" data="nav.contacts" href="./contacts.html">Contacts</a></h5>
+        <!-- <h5><a class="element nav" data="nav.news" href="./news.html">News</a></h5>
+        <h5><a class="element nav" data="nav.contacts" href="./contacts.html">Contacts</a></h5> -->
         <div class="right-side__language flex-row">
           <button class="lt" value="en" id="langSelector">
             <h5>LT</h5>
@@ -61,7 +61,7 @@
         <div class="hero-main__cta-topLeft">
           <h1 class="element" data="main.hero.title">Level-up in education!</h1>
           <h3 class="element" data="main.hero.sub">Game-based learning with "Minecraft: Education Edition"</h3>
-          <button>
+          <button id="contactBtn">
             <h4 class="element" data="main.hero.btn">Contact us!</h4>
           </button>
         </div>
@@ -289,10 +289,9 @@
       </div>
     </section>
     <section class="services flex-column">
-      <div class="services__title bottom-margin flex-row">
+      <div class="services__title flex-row">
         <h2 class="element" data="main.services.title">Our products</h2>
       </div>
-      <!-- <img src="../src/assets/" alt=""> -->
       <div class="services__container full-padding">
         <div class="services__cardLeft">
           <div class="services__card flex-column center">
@@ -357,13 +356,13 @@
               LT-09301, Vilnius</a>
           </h5>
         </div>
-        <div class="container__left-info">
-          <h3 class="element" data="footer.info.main">Information</h3>
+        <!-- <div class="container__left-info"> -->
+        <!-- <h3 class="element" data="footer.info.main">Information</h3>
           <h5 class="sub1"><a href="" class="element" data="footer.info.knowHow">How to become a partner?</a></h5>
           <h5 class="sub2"><a href="" class="element" data="footer.info.privacy">Privacy Policy</a></h5>
           <h5 class="sub3"><a href="" class="element" data="footer.info.carrer">Career</a>
-          </h5>
-        </div>
+          </h5> -->
+        <!-- </div> -->
       </div>
       <div class="container__right">
         <div class="container__right-subsrc">
@@ -375,7 +374,6 @@
               <a href="javascript:;" onclick="ml_webform_5619112('show')">
                 <h5 class="element" data="footer.subs.btn">Subscribe</h5>
               </a>
-
             </button>
           </div>
           <div class="container__right-privacy flex-row">
@@ -388,9 +386,9 @@
     <div class="copyright flex center">
       <h5 class="flex-row text element" data="footer.subs.cc">&copy;2022 "Edukraftas". All rights reserved.</h5>
     </div>
-
   </footer>
   <!-- script loading -->
+  <script src="../src/js/main.js"></script>
   <script src="../src/js/navtoggle.js"></script>
   <script src="../src/js/i18next.min.js"></script>
   <script src="../src/js/splide.min.js"></script>

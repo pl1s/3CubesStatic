@@ -5,10 +5,15 @@ let cookie = "";
 //get ONLY lang Cookie
 function getLangCookie() {
   let cookies = {};
+  let lang = navigator.language || navigator.userLanguage;
   document.cookie.split(";").map(function (el) {
     let [k, v] = el.split("=");
     if (el.length == 2) {
       cookie = el;
+    }
+    //language change on default browser lang
+    if (!cookie && lang === "lt") {
+      cookie = "lt";
     }
   });
   return cookie;
@@ -18,7 +23,7 @@ function getLangCookie() {
 function toggleLogo(cookie) {
   cookie === "en"
     ? (logo.src = "/src/assets/header_footer/logo_en.png")
-    : (logo.src = "/src/assets/header_footer/logo.png");
+    : (logo.src = "/src/assets/header_footer/logo_en.png");
 }
 
 function updateContent() {

@@ -14,7 +14,7 @@
 
 <body>
   <header class="side-padding darkHeader">
-    <div class="logo"><a href="../pages/main.html"><img class="logoImg" src="/src/assets/header_footer/logo.png"
+    <div class="logo"><a href="../pages/main.html"><img class="logoImg" src="/src/assets/header_footer/logo_en.png"
           alt="logo" /></a>
     </div>
     <div class="hamburger">
@@ -27,8 +27,8 @@
         <h5><a class="element nav" data="nav.formal" href="./formal.html">Formal education</a></h5>
         <h5><a class="element nav" data="nav.nonformal" href="./nonFormal.html">Informal education</a></h5>
         <h5><a class="element nav" data="nav.projects" href="./projects.html">Projects</a></h5>
-        <h5><a class="element nav" data="nav.news" href="./news.html">News</a></h5>
-        <h5><a class="element nav" data="nav.contacts" href="./contacts.html">Contacts</a></h5>
+        <!-- <h5><a class="element nav" data="nav.news" href="./news.html">News</a></h5>
+        <h5><a class="element nav" data="nav.contacts" href="./contacts.html">Contacts</a></h5> -->
         <div class="right-side__language flex-row">
           <button class="lt" value="en" id="langSelector">
             <h5>LT</h5>
@@ -47,7 +47,7 @@
         <div class="hero-main__cta-topLeft">
           <h1 class="title element" data="formal.hero.title">Interactive lessons in schools!</h1>
           <h3 class="element" data="formal.hero.sub">Formal education with "Minecraft: Education edition"</h3>
-          <button>
+          <button id="contactBtn">
             <h4 class="element" data="formal.hero.btn">Contact us!</h4>
           </button>
         </div>
@@ -135,13 +135,11 @@
           <h5 class="element" data="formal.orderNow.main">US schools are using "First Humans on Mars" course in their
             formal education!</h5>
         </div>
-        <div class="orderNow__card-btn flex center">
-          <button>
-            <a href="../pages/contacts.html">
-              <h5 class="element" data="formal.orderNow.btn">Contact us!</h5>
-            </a>
-          </button>
-        </div>
+        <button id="contactBtn">
+          <div class="orderNow__card-btn flex center">
+            <h5 class="element" data="formal.orderNow.btn">Contact us!</h5>
+          </div>
+        </button>
       </div>
     </section>
     <section class="lessons flex-column">
@@ -222,8 +220,10 @@
     </section>
     <section class="reviews">
       <div class="reviews__inter-card flex-column center">
-        <h4>Nacionalinės švietimo agentūros puslapyje <br> www.mokykla2030.lt teigiama, jog:</h4>
-        <p>"Atnaujinant ugdymo turinį laikomasi 2008 m. programose pradėtos kompoetencijų prieigos, tačiau išplėtota ir
+        <h4 class="element" data="formal.reviews.inter-card.title">Nacionalinės švietimo agentūros puslapyje <br>
+          www.mokykla2030.lt teigiama, jog:</h4>
+        <p class="element" data="formal.reviews.inter-card.desc">"Atnaujinant ugdymo turinį laikomasi 2008 m. programose
+          pradėtos kompoetencijų prieigos, tačiau išplėtota ir
           patikslinta pati kompetencijos samprata. Taip pat siekama atskleisti ryšius tarp dalykinio turinio ir
           kompetencijų ir iliustruoti, kaip kompetencijos ugdomas dalykiniu turiniu"</p>
       </div>
@@ -390,30 +390,6 @@
         </div>
       </div>
     </section>
-    <!-- <section class="contact-form full-padding flex-column center">
-      <h2>Susisiekite su mumis!</h2>
-      <h4>Palikite savo kontaktus ir mes su Jumis susisieksime artimiasiu metu</h4>
-      <form action="mailto:suppor@edukraft.lt" method="post" enctype="multipart/form-data" class="form flex-column">
-        <div class="flex-row top flex-full ">
-          <input class="fullw" type="text" placeholder="Vardas">
-          <input class="fullw" type="text" placeholder="El.paštas">
-          <input class="fullw" type="text" placeholder="Tel.nr">
-        </div>
-        <div class="flex-row bottom flex-full">
-          <input class="fullw" type="textarea" placeholder="Žinutė">
-        </div>
-        <div class="flex-row privacy ">
-          <input class="flex-row" type="checkbox">
-          <h5 class="flex-row text">Sutinku su privatumo politika</h5>
-        </div>
-        <div class="flex-row submit ">
-          <button>
-            <h5>Siųsti</h5>
-          </button>
-        </div>
-        </table>
-      </form>
-    </section> -->
   </main>
   <footer class="footer flex-column side-padding">
     <div class="container flex-row">
@@ -427,26 +403,20 @@
               LT-09301, Vilnius</a>
           </h5>
         </div>
-        <div class="container__left-info">
-          <h3 class="element" data="footer.info.main">Information</h3>
-          <h5 class="sub1"><a href="" class="element" data="footer.info.knowHow">How to become a partner?</a></h5>
-          <h5 class="sub2"><a href="" class="element" data="footer.info.privacy">Privacy Policy</a></h5>
-          <h5 class="sub3"><a href="" class="element" data="footer.info.carrer">Career</a>
-          </h5>
-        </div>
       </div>
       <div class="container__right">
         <div class="container__right-subsrc">
           <h3 class="element" data="footer.subs.main">Newsletters</h3>
           <h5 class="sub1"><a href="" class="element" data="footer.subs.desc">Be the first to get all news!</a></h5>
           <div class="container__right-input">
-            <input class="email" type="email" placeholder="El.paštas"><button>
-              <h5 class="element" data="footer.subs.btn">Subscribe</h5>
+            <!-- <input class="email" type="email" placeholder="El.paštas"> -->
+            <button>
+              <a href="javascript:;" onclick="ml_webform_5619112('show')">
+                <h5 class="element" data="footer.subs.btn">Subscribe</h5>
+              </a>
             </button>
           </div>
           <div class="container__right-privacy flex-row">
-            <input class="flex-row" type="checkbox">
-            <h5 class="flex-row text element" data="footer.subs.checkBox">I agree to privacy policy.</h5>
           </div>
         </div>
       </div>
@@ -457,6 +427,7 @@
   </footer>
 
   <!-- script loading -->
+  <script src="../src/js/main.js"></script>
   <script src="../src/js/navtoggle.js"></script>
   <script src="../src/js/i18next.min.js"></script>
   <script src="../src/js/splide.min.js"></script>

@@ -22,9 +22,10 @@
     height: calc(30vh - 80px);
     max-height: 300px;
     @include mq1024 {
+      flex-direction: row;
       height: unset;
       max-height: unset;
-      flex-direction: column;
+      // /w information  flex-direction: column;
     }
     @include mq480 {
       flex-direction: column-reverse;
@@ -41,9 +42,11 @@
     }
     //TODO mq ipad left right p 5% 0
     &__left {
-      flex: 1;
+      @include mq767 {
+        flex: 1;
+      }
       @include mq1024 {
-        padding: 2% 0 0 0;
+        padding: 2% 5% 0 0;
       }
       @include mq480 {
         flex-direction: column;
@@ -99,11 +102,13 @@
     }
 
     &__right {
-      flex: 1;
       display: flex;
       @include mq1024 {
-        // text-align: center;
-        padding: 5% 0 2% 0;
+        padding: 2% 0 0 0;
+        // /w information padding: 5% 0 2% 0;
+      }
+      @include mq767 {
+        flex: 1;
       }
       @include mq480 {
         padding: 2% 0 4% 0;
@@ -117,7 +122,9 @@
           width: unset;
         }
         @include mq480 {
-          grid-template-rows: repeat(4, 0.5fr);
+          // w/ information
+          // grid-template-rows: repeat(4, 0.5fr);
+          grid-template-rows: repeat(3, 0.5fr);
           width: 80%;
           text-align: start;
         }
@@ -125,10 +132,6 @@
 
       h3 {
         grid-row: 2/3;
-        // @include mq1500 {
-        //   grid-row: 3/4;
-        //   padding-bottom: unset;
-        // }
         @include mq1024 {
           grid-row: 1/2;
           padding-bottom: unset;
@@ -139,6 +142,7 @@
       }
       .sub1 {
         grid-row: 3/4;
+        white-space: nowrap;
         @include mq1024 {
           grid-row: 3/4;
         }
@@ -160,9 +164,6 @@
       &-input {
         grid-row: 4/5;
         display: flex;
-        // @include mq1500 {
-        //   grid-row: 5/6;
-        // }
         @include mq1024 {
           grid-row: 4/5;
         }
@@ -176,7 +177,6 @@
           font-size: 1rem;
         }
         button {
-          // width: 30%;
           height: 100%;
           padding: 0 1rem;
           @include mq1500 {
@@ -192,9 +192,6 @@
         grid-row: 5/6;
         align-items: center;
         margin: 5px 0 0 3px;
-        // @include mq1500 {
-        //   grid-row: 6/7;
-        // }
         @include mq1024 {
           grid-row: 5/7;
         }

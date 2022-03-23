@@ -105,10 +105,13 @@
     bottom: 0;
     // bottom: -5%;
     margin-bottom: 50px;
-    left: 15%;
+    left: 0;
     top: unset;
     @include mq1024 {
-      left: 10%;
+      left: 5%;
+    }
+    @include mq767 {
+      left: 15%;
     }
     @include mq480 {
       display: none;
@@ -118,10 +121,13 @@
     bottom: 0;
     // bottom: -5%;
     margin-bottom: 50px;
-    left: calc(15% + 50px);
+    left: 50px;
     top: unset;
     @include mq1024 {
-      left: calc(10% + 35px);
+      left: 10%;
+    }
+    @include mq767 {
+      left: calc(15% + 35px);
     }
     @include mq480 {
       display: none;
