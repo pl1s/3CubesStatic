@@ -1933,12 +1933,12 @@
 }
 @media (max-width: 480px) {
   .projectsLeft__main-body .splide {
-    margin-top: 69vw;
+    margin-top: 75vw;
   }
 }
 @media (max-width: 480px) {
   .projectsLeft__main-body .splide03 {
-    margin-top: 72vw;
+    margin-top: 69vw;
   }
 }
 .projectsLeft__main-body img {
@@ -2557,7 +2557,7 @@
 }
 @media (max-width: 480px) {
   .projectsExtraL__main-body .splide05 {
-    margin-top: 53vw;
+    margin-top: 65vw;
   }
 }
 .projectsExtraL__aside {
