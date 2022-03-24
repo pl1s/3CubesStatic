@@ -148,7 +148,7 @@
         </div>
         <!-- TODO No link provided -->
         <!-- this div is a spacer to help realign with missing element -->
-        <div style="height: 70px;"></div>
+        <div style="height: 7vw;"></div>
         <!-- <button style="visibility: hidden;">
           <h4 class="element"  data="main.research.btn">Research</h4>
         </button> -->
@@ -397,7 +397,11 @@
   </footer>
   <!-- GDPR popup -->
   <div class="popup" id="gdprPopup">
-    <p class="popuptext element" data="gdpr.text" >This site only uses what is strictly necessary to provide services. To provide services the websites host (GitHub Inc.) loggs and stores your IP adress (<a href=\"https://docs.github.com/en/site-policy/privacy-policies/github-privacy-statement\">their privacy policy</a>). A cookie to save your language selection is created, this data can not be used to identify you.  Three Cubes does not store any data of this sites visitors.</p>
+    <p class="popuptext element" data="gdpr.text">This site only uses what is strictly necessary to provide services. To
+      provide services the websites host (GitHub Inc.) loggs and stores your IP adress (<a
+        href=\"https://docs.github.com/en/site-policy/privacy-policies/github-privacy-statement\">their privacy
+        policy</a>). A cookie to save your language selection is created, this data can not be used to identify you.
+      Three Cubes does not store any data of this sites visitors.</p>
     <button class="popupBtn element" onclick="confirmGDPR()" data="gdpr.confirm">I Understand</button>
   </div>
   <!-- script loading -->
@@ -424,11 +428,11 @@
   <script>
     const btn = document.querySelector(".subscribeBtn");
 
-    btn.addEventListener("click", 
-    () => 
-    {
-      getLocalizationLanguage() === "lt" ? ml_account('webforms', '5622661', 'g9f1k6', 'show') : ml_account('webforms', '5622651', 'p5g7s4', 'show');
-    })
+    btn.addEventListener("click",
+      () => {
+        getLocalizationLanguage() === "lt" ? ml_account('webforms', '5622661', 'g9f1k6', 'show') : ml_account('webforms', '5622651', 'p5g7s4', 'show');
+      })
   </script>
 </body>
+
 </html>
