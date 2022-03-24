@@ -10,6 +10,9 @@
   <link rel="stylesheet" href="/res/css/splide-core.min.css">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Three Cubes</title>
+  <!-- Popup stuff TODO - replace with long term solution -->
+  <script defer="true" src="./res/js/popup.js"></script>
+  <link rel="stylesheet" href="popup-style.css">
   <!-- NewsLetters Universal -->
   <script>
     (function (m, a, i, l, e, r) {
@@ -551,6 +554,11 @@
       <h5 class="flex-row text element" data="footer.subs.cc">&copy;2022 "Edukraftas". All rights reserved.</h5>
     </div>
   </footer>
+  <!-- GDPR popup -->
+  <div class="popup" id="gdprPopup">
+    <p class="popuptext element" data="gdpr.text" >This site only uses what is strictly necessary to provide services. To provide services the websites host (GitHub Inc.) loggs and stores your IP adress (<a href=\"https://docs.github.com/en/site-policy/privacy-policies/github-privacy-statement\">their privacy policy</a>). A cookie to save your language selection is created, this data can not be used to identify you.  Three Cubes does not store any data of this sites visitors.</p>
+    <button class="popupBtn element" onclick="confirmGDPR()" data="gdpr.confirm">I Understand</button>
+  </div>
   <!-- script loading -->
   <script src="/res/js/main.js"></script>
   <script src="/res/js/navtoggle.js"></script>

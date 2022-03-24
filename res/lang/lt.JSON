@@ -379,5 +379,10 @@
     "cardAll7": "\"Trys kubai\" stendas su \"Minecraft\" edukaciniais nuotykiais parodoje \"Mokykla 2019\"",
     "cardAll8": "\"Hour of Code\" renginys rengtas kartu su \"Microsoft\" ir MO muziejumi",
     "cardAll9": "\"Women Go Tech\" konferencija"
+  },
+  "gdpr":
+  {
+    "text": "Šis puslapis naudoja tik tai ko griežtai reikia teikti paslaugoms. Kad teiktų paslaugas svetainės talpinimo paslaugų tiekėjas (GitHub Inc.) išsaugo jūsų IP adresą (<a href=\"https://docs.github.com/en/site-policy/privacy-policies/github-privacy-statement\">jų privatumo politika</a>). Saugoti kalbos informacijai naudojamas slapukas, ši informacija negali būti panaudota jus identifikuoti. Trys Kubai nekaupia jokių svetainės lankytojų duomenų.",
+    "confirm": "Supratau"
   }
 }
