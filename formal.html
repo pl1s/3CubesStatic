@@ -495,18 +495,15 @@
     }).mount();
   </script>
 
+  <!-- Add popup summon to click events on subscribe button elements -->
   <script>
-    var ml_webform_5619112 = ml_account('webforms', '5619112', 'r5m8i8', 'load');
-    ml_webform_5619112('animation', 'fadeIn');
-    var ml_webform_5620600 = ml_account('webforms', '5620600', 'q9p0w4', 'load');
-    ml_webform_5620600('animation', 'fadeIn');
     const btn = document.querySelector(".subscribeBtn");
 
-    btn.addEventListener("click", () => {
-      cookie === "lt" ? ml_webform_5620600("show") : ml_webform_5619112("show");
-      cookie = document.cookie;
+    btn.addEventListener("click", 
+    () => 
+    {
+      getLocalizationLanguage() === "lt" ? ml_account('webforms', '5622661', 'g9f1k6', 'show') : ml_account('webforms', '5622651', 'p5g7s4', 'show');
     })
-    console.log(cookie, btn.onclick);
   </script>
 </body>
 
