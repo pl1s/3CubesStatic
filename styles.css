@@ -3140,7 +3140,6 @@ button {
   }
 }
 .footer .container {
-  height: calc(30vh - 80px);
   max-height: 300px;
 }
 @media (max-width: 1024px) {

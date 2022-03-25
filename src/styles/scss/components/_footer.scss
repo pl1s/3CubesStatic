@@ -19,7 +19,7 @@
     }
   }
   .container {
-    height: calc(30vh - 80px);
+    // height: calc(30vh - 80px);
     max-height: 300px;
     @include mq1024 {
       flex-direction: row;
