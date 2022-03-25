@@ -16,6 +16,7 @@ html::-webkit-scrollbar {
 html {
   font-size: 100%;
   scroll-behavior: smooth;
+  -webkit-scroll-behavior: smooth;
   @include mq1024 {
     font-size: 80%;
   }
@@ -197,11 +198,10 @@ a {
   display: none !important;
 }
 
+.hide {
+  display: none !important;
+}
+
 button {
   cursor: pointer;
-  // &:hover {
-  //   box-shadow: 0 0 10px 2px black;
-  //   font-weight: bolder;
-  //   transform: scale(1.1);
-  // }
 }

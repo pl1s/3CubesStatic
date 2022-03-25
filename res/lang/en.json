@@ -23,8 +23,7 @@
       "checkBox": "I agree to privacy policy.",
       "cc": "&copy;2022 \"Edukraftas\". All rights reserved."
     },
-    "follow":
-    {
+    "follow": {
       "main": "Follow us"
     }
   },
@@ -272,13 +271,13 @@
     },
     "skillSet": {
       "title": "Improving skills",
-      "skill1": "programming",
-      "skill2": "sciences",
-      "skill3": "teamwork",
+      "skill1": "Programming",
+      "skill2": "Sciences",
+      "skill3": "Teamwork",
       "skill4": "English",
-      "skill5": "economy",
-      "skill6": "individual work",
-      "skill7": "mathematics"
+      "skill5": "Economy",
+      "skill6": "Individual work",
+      "skill7": "Mathematics"
     },
     "marsPackage": {
       "title": "Organizations that get interactive \"Three Cubes\" lessons are provided with",
@@ -374,8 +373,7 @@
     "cardAll8": "\"Hour of Code\" renginys rengtas kartu su \"Microsoft\" ir MO muziejumi",
     "cardAll9": "\"Women Go Tech\" konferencija"
   },
-  "gdpr":
-  {
+  "gdpr": {
     "text": "This site only uses what is strictly necessary to provide services. To provide services the websites host (GitHub Inc.) loggs and stores your IP adress (<a href=\"https://docs.github.com/en/site-policy/privacy-policies/github-privacy-statement\">their privacy policy</a>). A cookie is used to save language information, this data can not be used to identify you.  Three Cubes does not store any data of this sites visitors.",
     "confirm": "I Understand"
   }

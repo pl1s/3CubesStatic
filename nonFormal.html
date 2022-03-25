@@ -237,13 +237,13 @@
       </div>
     </section>
     <section class="codeAcademy flex-row">
-      <div class="codeAcademy__video">
+      <div class="codeAcademy__video no_En">
         <video src="./res/video/nonFormal.mp4" poster="./res/img/nonformal/poster.png" controls></video>
         <h4 class="element" data="nonFormal.codeAcademy.sub.text">For individual registration visit "CodeAcademy Kids"
           <a href="http://codeacademy.com" target="_blank">here.</a>
         </h4>
       </div>
-      <div class="codeAcademy__card flex-column center ">
+      <div class="codeAcademy__card flex-column center no_En">
         <div class="codeAcademy__card-title bottom-padding">
           <h3 class="element" data="nonFormal.codeAcademy.themes.title">Topics of lessons</h3>
         </div>
@@ -369,7 +369,11 @@
   </footer>
   <!-- GDPR popup -->
   <div class="popup" id="gdprPopup">
-    <p class="popuptext element" data="gdpr.text" >This site only uses what is strictly necessary to provide services. To provide services the websites host (GitHub Inc.) loggs and stores your IP adress (<a href=\"https://docs.github.com/en/site-policy/privacy-policies/github-privacy-statement\">their privacy policy</a>). A cookie to save your language selection is created, this data can not be used to identify you.  Three Cubes does not store any data of this sites visitors.</p>
+    <p class="popuptext element" data="gdpr.text">This site only uses what is strictly necessary to provide services. To
+      provide services the websites host (GitHub Inc.) loggs and stores your IP adress (<a
+        href=\"https://docs.github.com/en/site-policy/privacy-policies/github-privacy-statement\">their privacy
+        policy</a>). A cookie to save your language selection is created, this data can not be used to identify you.
+      Three Cubes does not store any data of this sites visitors.</p>
     <button class="popupBtn element" onclick="confirmGDPR()" data="gdpr.confirm">I Understand</button>
   </div>
   <!-- script loading -->
@@ -416,11 +420,10 @@
   <script>
     const btn = document.querySelector(".subscribeBtn");
 
-    btn.addEventListener("click", 
-    () => 
-    {
-      getLocalizationLanguage() === "lt" ? ml_account('webforms', '5622661', 'g9f1k6', 'show') : ml_account('webforms', '5622651', 'p5g7s4', 'show');
-    })
+    btn.addEventListener("click",
+      () => {
+        getLocalizationLanguage() === "lt" ? ml_account('webforms', '5622661', 'g9f1k6', 'show') : ml_account('webforms', '5622651', 'p5g7s4', 'show');
+      })
   </script>
 </body>
 

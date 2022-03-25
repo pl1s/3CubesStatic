@@ -43,7 +43,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
   hambuger.addEventListener("click", () => {
     lines[0].classList.toggle("topLine");
-    lines[1].classList.toggle("hide");
+    lines[1].classList.toggle("invisible");
     lines[2].classList.toggle("bottomLine");
     navLinks.classList.toggle("open");
     links.forEach((link) => {

@@ -271,13 +271,13 @@
     },
     "skillSet": {
       "title": "Būrelių metu tobulinami šie įgūdžiai",
-      "skill1": "programavimo",
-      "skill2": "gamtos mokslų",
-      "skill3": "lietuvių kalbos",
-      "skill4": "anglų kalbos",
-      "skill5": "ekonomikos",
-      "skill6": "darbas savarankiškai ir grupėse",
-      "skill7": "matematikos"
+      "skill1": "Programavimo",
+      "skill2": "Gamtos mokslų",
+      "skill3": "Lietuvių kalbos",
+      "skill4": "Anglų kalbos",
+      "skill5": "Ekonomikos",
+      "skill6": "Darbas savarankiškai ir grupėse",
+      "skill7": "Matematikos"
     },
     "marsPackage": {
       "title": "Būrelį \"Pirmieji Marso gyventojai\" įsigijusioms švietimo įstaigoms suteikiame",

@@ -9,6 +9,12 @@
   align-items: center;
   background: url(res/img/main/Rectangle203.png) no-repeat center center;
   background-size: 70%;
+  @include mq1024 {
+    height: 6vh;
+  }
+  @include mq480 {
+    background-size: 85%;
+  }
 }
 
 .game-learning {
@@ -176,7 +182,9 @@
   justify-content: space-around;
   min-height: 500px;
   padding: 5% 10% 5% 10%;
-
+  @include mq1500 {
+    margin-bottom: unset !important;
+  }
   @include mq1024 {
     flex-direction: column;
     align-items: center;
@@ -286,13 +294,13 @@
       margin: 0 auto;
     }
     @include mq767 {
+      top: unset;
+      bottom: 5%;
       left: 0;
       right: 0;
-    }
-
-    @include mq767 {
       width: 50%;
     }
+
     .splide__pagination__page.is-active {
       background-color: yellow;
     }
@@ -430,7 +438,7 @@
   background: url(res/img/main/Component17.png) no-repeat center 150px;
   background-size: 100%;
   @include mq1024 {
-    background: url(res/img/main/Group\ 512.png) no-repeat center 75px;
+    background: url(res/img/main/Group\ 512.png) no-repeat center 45px;
     background-size: 100%;
     z-index: -1;
   }
@@ -479,7 +487,7 @@
 
 .services {
   justify-content: space-between;
-  background: url(res/img/main/pilis2.png) no-repeat center;
+  background: url(res/img/main/Pilis2.png) no-repeat center;
   background-size: cover;
   &__title {
     justify-content: center;
@@ -493,10 +501,11 @@
     }
   }
   &__container {
+    position: relative;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 80%;
+    width: 100%;
     height: 100%;
     margin: 0 auto;
     @include mq1500 {
@@ -637,9 +646,10 @@
     margin-top: -20%;
     @include mq767 {
       position: absolute;
+      top: 25%;
       left: 0;
       right: 0;
-      margin-top: -45%;
+      // margin-top: -45%;
     }
     // @include mq1024 {
     //   margin: 0 0 10% 0;
@@ -686,13 +696,14 @@
       position: absolute;
       width: 30vw;
       height: 20vw;
+      min-height: 250px;
       padding: 0 5%;
       top: 0;
       right: 0;
       bottom: 0;
       left: 0;
       margin: auto;
-      @include mq1500 {
+      @include mq1024 {
         min-height: 200px;
       }
       @include mq767 {
@@ -724,13 +735,13 @@
     &-container {
       justify-content: space-between;
       width: 100%;
-      margin: 0 15%;
+      margin: 0 10%;
       @include mq1500 {
-        margin: 0 10% !important;
-      }
-      @include mq1024 {
         margin: 0 5% !important;
       }
+      // @include mq1024 {
+      //   margin: 0 5% !important;
+      // }
       @include mq767 {
         position: relative;
         flex-direction: column !important;
@@ -776,7 +787,7 @@
         }
         .right {
           margin-left: 18vw;
-          margin-top: 18vw;
+          bottom: -25%;
           @include mq1500 {
             right: -15%;
           }
@@ -790,12 +801,13 @@
           margin-right: 18vw;
           margin-top: 18vw;
           @include mq1500 {
-            left: -15%;
+            left: -25%;
           }
           @include mq767 {
-            margin-right: unset;
             right: -20%;
+            bottom: -20%;
             left: unset;
+            margin-right: unset;
           }
         }
       }
@@ -805,6 +817,9 @@
 
 .download {
   padding: 10% 5% 12% 5%;
+  @include mq480 {
+    padding: 10% 5% 20% 5%;
+  }
   &__container {
     justify-content: center;
     align-items: center;
@@ -1569,20 +1584,20 @@
 
         &:nth-child(1) {
           @include mq480 {
-            margin-bottom: 15%;
+            margin-bottom: 30%;
             margin-left: 10%;
           }
         }
         &:nth-child(2) {
           margin-top: 15%;
           @include mq480 {
-            margin-top: 20%;
+            margin-top: 35%;
           }
         }
         &:nth-child(3) {
           @include mq480 {
             margin-top: 5%;
-            margin-right: 15%;
+            margin-right: 20%;
           }
         }
         &:nth-child(4) {
@@ -1599,7 +1614,7 @@
         &:nth-child(6) {
           margin-top: 15%;
           @include mq480 {
-            margin-top: 15%;
+            margin-top: 25%;
             margin-right: 10%;
           }
         }
@@ -1625,6 +1640,10 @@
     @include mq1024 {
       flex-direction: column !important;
       align-items: center;
+    }
+    @include mq767 {
+      flex-wrap: wrap;
+      flex-direction: unset !important;
     }
     &-box {
       position: relative;
@@ -1803,12 +1822,12 @@
       }
       .splide {
         @include mq480 {
-          margin-top: 72%;
+          margin-top: 78%;
         }
       }
       .splide03 {
         @include mq480 {
-          margin-top: 72%;
+          margin-top: 70%;
         }
       }
       img {
@@ -1860,7 +1879,7 @@
         width: 30vw;
       }
       @include mq480 {
-        min-height: 30vw;
+        min-height: 25vw;
         width: 80vw;
       }
     }
@@ -1975,7 +1994,7 @@
       }
       .splide02 {
         @include mq480 {
-          margin-top: 69%;
+          margin-top: 72%;
         }
       }
     }
@@ -2125,12 +2144,12 @@
       }
       .splide04 {
         @include mq480 {
-          margin-top: 74vw;
+          margin-top: 75%;
         }
       }
       .splide06 {
         @include mq480 {
-          margin-top: 68vw;
+          margin-top: 68%;
         }
       }
     }
@@ -2343,7 +2362,7 @@
       }
       .splide05 {
         @include mq480 {
-          margin-top: 54%;
+          margin-top: 63%;
         }
       }
     }
