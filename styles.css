@@ -2907,7 +2907,19 @@ html {
 }
 
 button:hover {
-  filter: invert(0.5);
+  filter: brightness(80%);
+  transform: scale(1.035);
+  color: black;
+  transition: all 0.5s ease-in-out;
+}
+
+a:hover {
+  color: #f14b00 !important;
+  font-weight: 500 !important;
+}
+
+a > img:hover {
+  filter: brightness(70%);
 }
 
 h1,
