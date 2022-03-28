@@ -7,8 +7,8 @@
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  background: url(res/img/main/Rectangle203.png) no-repeat center center;
-  background-size: 70%;
+  // background: url(res/img/main/Rectangle203.png) no-repeat center center;
+  // background-size: 70%;
   @include mq1024 {
     height: 6vh;
   }

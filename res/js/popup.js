@@ -1,17 +1,9 @@
 const gdprPopup = document.getElementById("gdprPopup");
 const gdprConfirmed = document.cookie.includes("GDPRConfirmed=true");
 
-function confirmGDPR()
-{
-    gdprPopup.classList.remove("showPopup");
-    document.cookie = "GDPRConfirmed=true; path=/;";
+function confirmGDPR() {
+  gdprPopup.classList.remove("showPopup");
+  document.cookie = "GDPRConfirmed=true; path=/;";
 }
 
-console.log(`GDPR Confirmed: ${gdprConfirmed}`);
-
-if(!gdprConfirmed) 
-    gdprPopup.classList.toggle("showPopup");
-
-
-
-
+if (!gdprConfirmed) gdprPopup.classList.toggle("showPopup");

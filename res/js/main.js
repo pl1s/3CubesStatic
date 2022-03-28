@@ -8,7 +8,7 @@ document.addEventListener("DOMContentLoaded", function () {
       scrollingElement.scrollTop = scrollingElement.scrollHeight;
     });
   });
-  console.log(localizationLanguage);
+
   // HIDE/SHOW sections depending on lang
   // first-auto hide application
   window.onload = () => {

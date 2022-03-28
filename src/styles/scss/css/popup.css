@@ -2869,152 +2869,79 @@
   }
 }
 
-.package__title h2 {
-  text-align: center;
-}
-.package__card-container_small {
-  background-color: #eaf2ff;
-  box-shadow: 0px 3px 1px -2px rgba(0, 0, 0, 0.2), 0px 2px 2px 0px rgba(0, 0, 0, 0.14), 0px 1px 5px 0px rgba(0, 0, 0, 0.12);
-  z-index: 999;
-}
-.package__card-big {
-  background-color: #a3c1f6;
-  box-shadow: 0px 3px 1px -2px rgba(0, 0, 0, 0.2), 0px 2px 2px 0px rgba(0, 0, 0, 0.14), 0px 1px 5px 0px rgba(0, 0, 0, 0.12);
-}
-
-.download button {
-  background-color: transparent;
-  border: 1px solid #f14b00;
-}
-.download button * {
-  color: #f14b00;
-}
-
-.orderNow {
-  background-color: #3963dd;
-}
-.orderNow__card * {
-  color: white;
-}
-.orderNow__card-btn {
-  background-color: #f14b00;
-}
-.orderNow__card-btn button {
-  background-color: transparent;
-  width: 100%;
-}
-
-.lessons__background {
-  background-color: #a3c1f6;
-}
-.lessons__slider-card {
-  box-shadow: 0px 3px 1px -2px rgba(0, 0, 0, 0.2), 0px 2px 2px 0px rgba(0, 0, 0, 0.14), 0px 1px 5px 0px rgba(0, 0, 0, 0.12);
-}
-.lessons__slider-card_txt {
-  background-color: #eaf2ff;
-}
-.lessons__slider-card_txt h5 {
-  text-align: center;
-}
-.lessons button.splide__arrow {
-  box-shadow: 0px 3px 1px -2px rgba(0, 0, 0, 0.2), 0px 2px 2px 0px rgba(0, 0, 0, 0.14), 0px 1px 5px 0px rgba(0, 0, 0, 0.12);
-  cursor: pointer;
-  background-color: #fdd306 !important;
-  margin: 0 1rem !important;
-  border-radius: 0 !important;
-}
-.lessons button.splide__arrow--prev {
-  top: 50% !important;
+/* This is temporary. We just need a quick item for a demo. */
+.popup {
+  display: none;
+  position: fixed;
+  bottom: 0;
   left: 0;
-}
-@media (max-width: 1024px) {
-  .lessons button.splide__arrow--prev {
-    left: -5vw;
-  }
-}
-@media (max-width: 767px) {
-  .lessons button.splide__arrow--prev {
-    left: -10vw;
-  }
-}
-@media (max-width: 480px) {
-  .lessons button.splide__arrow--prev {
-    display: none;
-  }
-}
-.lessons button.splide__arrow--next {
-  top: 50% !important;
   right: 0;
-}
-@media (max-width: 1024px) {
-  .lessons button.splide__arrow--next {
-    right: -5vw;
-  }
-}
-@media (max-width: 767px) {
-  .lessons button.splide__arrow--next {
-    right: -10vw;
-  }
-}
-@media (max-width: 480px) {
-  .lessons button.splide__arrow--next {
-    display: none;
-  }
+  background-color: #555;
+  opacity: 0.98;
+  text-align: center;
+  justify-content: center;
 }
 
-.reviews__card {
-  background-color: #eaf2ff;
-}
-.reviews__topWrapper-container_card {
-  background-color: rgba(255, 255, 255, 0.8);
-}
-.reviews__bottomWrapper {
-  background-color: #eaf2ff;
-}
-.reviews__inter-card {
-  background-color: #a3c1f6;
-  box-shadow: 0px 3px 1px -2px rgba(0, 0, 0, 0.2), 0px 2px 2px 0px rgba(0, 0, 0, 0.14), 0px 1px 5px 0px rgba(0, 0, 0, 0.12);
-}
-.reviews__inter-card :first-child {
-  margin-bottom: 1rem;
-  font-weight: 500;
+/* The actual popup (appears on top) */
+.popup .popuptext {
+  color: #fff;
+  text-align: center;
+  border-radius: 3px;
+  padding: 8px 5px;
+  margin: 2px 5px;
+  position: relative;
+  z-index: 1;
+  bottom: 125%;
+  font-size: 14px;
 }
 
-.keyBenefits__box {
-  background-color: #eaf2ff;
-  box-shadow: 0px 3px 1px -2px rgba(0, 0, 0, 0.2), 0px 2px 2px 0px rgba(0, 0, 0, 0.14), 0px 1px 5px 0px rgba(0, 0, 0, 0.12);
-}
-.keyBenefits .overlay {
-  background-color: #f9ecb4;
-  box-shadow: 0px 3px 1px -2px rgba(0, 0, 0, 0.2), 0px 2px 2px 0px rgba(0, 0, 0, 0.14), 0px 1px 5px 0px rgba(0, 0, 0, 0.12);
-}
-
-.payments__bottom {
-  background-color: #a3c1f6;
+.popupBtn {
+  margin: 2px 5px 8px 5px;
+  padding: 10px;
+  background-color: #f14b00;
+  color: #fff;
+  opacity: 1;
 }
 
-.mars__body-themes_title :nth-child(2) {
-  font-weight: 500;
-  margin: 2% 0 5% 0;
+.popuptext a {
+  display: contents;
+  font-size: unset;
+  color: #f78049;
 }
-@media (max-width: 1024px) {
-  .mars__body-themes_title :nth-child(2) {
-    padding-bottom: 2%;
-    margin: 0;
+
+/* Popup arrow
+.popup .popuptext::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: #555 transparent transparent transparent;
+  } */
+/* Toggle this class when clicking on the popup container (hide and show the popup) */
+.showPopup {
+  display: block;
+  /* visibility: visible; */
+  -webkit-animation: fadeIn 0.5s;
+  animation: fadeIn 0.5s;
+}
+
+/* Add animation (fade in the popup) */
+@-webkit-keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
   }
 }
-@media (max-width: 1024px) {
-  .mars__body-themes_title :nth-child(3) {
-    padding-bottom: 2%;
-    margin: 0;
-    max-width: 55%;
+@keyframes fadeIn {
+  from {
+    opacity: 0;
   }
-}
-@media (max-width: 767px) {
-  .mars__body-themes_title :nth-child(3) {
-    max-width: unset;
+  to {
+    opacity: 1;
   }
-}
-.mars__body-slider_paginator button {
-  background: transparent;
-}/*# sourceMappingURL=formal.css.map */
+}/*# sourceMappingURL=popup.css.map */
