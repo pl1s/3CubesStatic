@@ -7,8 +7,6 @@
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  // background: url(res/img/main/Rectangle203.png) no-repeat center center;
-  // background-size: 70%;
   @include mq1024 {
     height: 6vh;
   }
@@ -22,7 +20,6 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  // padding: 5% !important;
   &__title {
     flex: 1;
     max-width: 60%;
@@ -81,7 +78,6 @@
 .research {
   display: flex;
   flex-direction: column;
-  // height: 120vh;
   background: url(res/img/main/Group432.png) no-repeat center center;
   background-size: cover;
 
@@ -127,18 +123,13 @@
         }
         @include mq1024 {
           display: flex;
-          // width: 70%;
         }
-        // @include mq767 {
-        //   width: 60%;
-        // }
+
         @include mq480 {
           width: 100%;
           max-height: 100px;
           min-height: unset;
           min-width: 226px;
-          // margin: 2% 20%;
-          // grid-template-columns: unset;
         }
         * {
           align-self: center;
@@ -190,13 +181,8 @@
     align-items: center;
     padding: 5% 10% 10% 10%;
   }
-  // @include mq767 {
-  //   min-height: 670px;
-  //   padding: 0 5% 5% 5%;
-  // }
   @include mq480 {
     min-height: 500px;
-    // padding: 0;
   }
 
   img {
@@ -227,7 +213,6 @@
   }
 
   .text {
-    // width: 80%;
     position: relative;
     padding-right: 1rem;
     margin: 0 10%;
@@ -238,18 +223,13 @@
 
   &__wrapper1 {
     justify-content: flex-start;
-    // max-width: 30%;
     @include mq1024 {
       margin-right: 10vw;
       max-width: 60%;
     }
-    // @include mq767 {
-    //   margin-right: unset;
-    // }
   }
   &__wrapper2 {
     align-items: center;
-    // max-width: 30%;
 
     @include mq1500 {
       margin-bottom: 50px;
@@ -260,20 +240,14 @@
       max-width: 60%;
       margin-bottom: unset;
     }
-    // @include mq767 {
-    //   margin-left: unset;
-    // }
   }
   &__wrapper3 {
     align-items: flex-end;
-    // max-width: 20vw;
+
     @include mq1024 {
       margin-right: 50%;
       max-width: 60%;
     }
-    // @include mq767 {
-    //   margin-right: unset;
-    // }
   }
 }
 
@@ -457,7 +431,6 @@
     @include mq1024 {
       max-width: 400px;
       height: 200px;
-      // margin-bottom: 5%;
     }
     @include mq480 {
       grid-template-rows: unset;
@@ -493,9 +466,6 @@
     justify-content: center;
     align-items: flex-start;
     padding: 2% 0 5% 0;
-    // @include mq1500 {
-    //   margin: 0 0 7% 0 !important;
-    // }
     @include mq480 {
       height: unset;
     }
@@ -511,10 +481,6 @@
     @include mq1500 {
       width: 100%;
     }
-    // @include mq1024 {
-    //   flex-direction: column;
-    //   padding: unset !important;
-    // }
   }
   img {
     position: absolute;
@@ -557,27 +523,17 @@
       @include mq1024 {
         height: 30vw;
         width: 30vw;
-        // min-width: 20vw;
-        // min-height: 20vw;
       }
       @include mq767 {
         height: 45vw;
         width: 40vw;
       }
       @include mq480 {
-        // height: 65vw;
-        // width: 65vw;
       }
     }
     a {
       z-index: 999;
     }
-    // a {
-    //   @include mq1500 {
-    //     position: absolute;
-    //     bottom: 15%;
-    //   }
-    // }
   }
   &__cardBig {
     position: relative;
@@ -603,11 +559,7 @@
       height: 30vw;
       max-width: 430px;
       max-height: 430px;
-      // min-width: 450px;
-      // min-height: 450px;
       @include mq1024 {
-        // height: 30vw;
-        // width: 30vw;
         min-width: 260px;
         min-height: unset;
       }
@@ -616,27 +568,18 @@
         width: 43vw;
       }
       @include mq480 {
-        // height: 65vw;
-        // width: 65vw;
         min-width: unset;
         min-height: unset;
       }
     }
-
-    // a {
-    //   @include mq1500 {
-    //     position: absolute;
-    //     bottom: 20%;
-    //   }
-    // }
+    a {
+      z-index: 999;
+    }
   }
 
   &__cardLeft {
     flex: 1;
     margin-top: 10%;
-    // @include mq1024 {
-    //   margin: 0 50% 10% 0;
-    // }
     @include mq767 {
       margin-top: 40%;
     }
@@ -649,30 +592,18 @@
       top: 25%;
       left: 0;
       right: 0;
-      // margin-top: -45%;
     }
-    // @include mq1024 {
-    //   margin: 0 0 10% 0;
-    // }
-    // @include mq767 {
-    //   margin: 0 0 10% 0;
-
-    // }
   }
   &__cardRight {
     flex: 1;
     margin-top: 10%;
-    // @include mq1024 {
-    //   position: absolute;
-    //   margin: 0 0 10% 50%;
-    // }
     @include mq767 {
       margin-top: 40%;
     }
   }
 }
+////////////////////////////////
 //FORMAL PAGE
-///
 ////////////////////////////////
 .package {
   justify-content: center;
@@ -867,8 +798,6 @@
       justify-content: center;
       align-items: center;
       text-align: center;
-    }
-    &-text {
     }
     &-btn {
       padding: 1rem 2rem;
@@ -1139,7 +1068,6 @@
       align-items: center;
       h2 {
         @include mq1024 {
-          // font-size: 2rem;
           text-align: center;
         }
       }
@@ -1159,18 +1087,13 @@
     width: 0;
     height: 100%;
     transition: 0.5s ease-in-out;
-    // h4 {
-    //   width: 50%;
-    // }
   }
   &__box {
     position: relative;
 
     text-align: center;
-    // height: 200px;
     height: 200px;
     width: 200px;
-    // width: 20vw;
     margin: 1rem;
     padding: 1rem;
     @include mq1500 {
@@ -1216,13 +1139,11 @@
 
     &-sideL {
       left: 0;
-      // margin: auto 0 auto 5%;
+
       @include mq767 {
         flex: 1;
         margin: 0;
         align-items: center;
-      }
-      .left1 {
       }
       .left2 {
         left: 5vw;
@@ -1233,13 +1154,10 @@
     }
     &-sideR {
       right: 0;
-      // margin: auto 5% auto 0;
       @include mq767 {
         flex: 1;
         margin: 0;
         align-items: center;
-      }
-      .right1 {
       }
       .right2 {
         right: 5vw;
@@ -1334,8 +1252,9 @@
     }
   }
 }
-////////
+///////////////////////////
 //NONFORMAL page
+//////////////////////////
 .mars {
   &__title {
     * {
@@ -1390,7 +1309,6 @@
     }
     &-themes {
       flex: 3;
-      // padding: 0 10% 0 10%;
       @include mq1024 {
         align-items: flex-start;
       }
@@ -1431,10 +1349,6 @@
 
 .game-design {
   position: relative;
-  // padding: 5% 5% 0 5%;
-  // @include mq480 {
-  //   padding: 0;
-  // }
   .mars__body {
     padding-top: 5%;
   }
@@ -1501,7 +1415,6 @@
     }
     h4 {
       position: relative;
-      // width: 80%;
       vertical-align: middle;
       text-align: center;
       margin: auto;
@@ -1515,7 +1428,6 @@
     @include mq767 {
       display: none !important;
     }
-    // margin-bottom: 10%;
     @include mq1024 {
       margin-bottom: -10%;
     }
@@ -1535,8 +1447,6 @@
         align-items: center;
         width: 100%;
         margin-bottom: 5px;
-      }
-      img {
       }
       &_content {
         display: none;
@@ -1563,7 +1473,6 @@
     padding: 5%;
     &-title {
       text-align: center;
-      // padding-top: 5%;
     }
     &-body {
       background: url(res/img/nonformal/skillBG.png) no-repeat center;
@@ -1579,7 +1488,6 @@
         text-align: center;
         h4 {
           position: absolute;
-          // width: 100%;
         }
 
         &:nth-child(1) {
@@ -1634,7 +1542,6 @@
     width: 70vw;
   }
   &__body {
-    // padding: 0 0 20% 0;
     width: 100%;
     justify-content: space-around;
     @include mq1024 {
@@ -1714,8 +1621,6 @@
 .bgC {
   position: absolute;
   width: 50%;
-  // width: 100%;
-  // bottom: 0;
 }
 .bg5 {
   right: 20%;
@@ -1730,8 +1635,6 @@
 .bgC {
   top: 20%;
   right: 0;
-}
-.bg123 {
 }
 //BACKGROUND ELEMENTS
 
@@ -1762,7 +1665,6 @@
   }
   &__main {
     &-title {
-      // justify-content: space-around;
       align-items: center;
       width: 40%;
       margin-left: 2%;
@@ -2059,7 +1961,6 @@
     text-align: start;
   }
   h2 {
-    // margin-bottom: 5%;
     margin: unset;
     @include mq480 {
       justify-content: flex-start;
@@ -2165,9 +2066,6 @@
     @include mq1024 {
       left: 13%;
     }
-    // @include mq767 {
-    //   left: 2%;
-    // }
     @include mq480 {
       top: 55px;
       right: 0;
@@ -2266,7 +2164,6 @@
         }
       }
     }
-    //TODO info box mq 1.8k column
     &-info {
       justify-content: center;
       align-items: center;
@@ -2282,7 +2179,7 @@
     }
   }
 }
-//spacer
+//spacers
 .spacer {
   margin-top: 160px;
 }
@@ -2311,7 +2208,6 @@
   &__main {
     position: relative;
     &-title {
-      // justify-content: space-around;
       align-items: center;
       width: 40%;
       margin-left: 2%;
@@ -2453,7 +2349,6 @@
     }
     img {
       width: 100%;
-      // max-height: 70px;
       @include mq1024 {
         width: 70%;
       }
@@ -2478,7 +2373,6 @@
         }
       }
     }
-    //TODO info box mq 1.8k column
     &-info {
       justify-content: center;
       align-items: center;
@@ -2489,9 +2383,6 @@
       }
       @include mq480 {
         margin-right: 10%;
-        // position: absolute;
-        // top: 5px;
-        // left: 20%;
       }
     }
   }
@@ -2578,9 +2469,6 @@
     ul {
       @include mq1500 {
         display: flex;
-        //   display: grid;
-        //   grid-template-columns: repeat(1fr, 2);
-        //   grid-template-rows: repeat(1fr, 2);
       }
     }
     button {
