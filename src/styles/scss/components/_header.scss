@@ -129,7 +129,7 @@ header {
 }
 .line.topLine {
   transform: rotate(45deg);
-  transform-origin: 13px 0;
+  transform-origin: 14px 0;
   @include mq480 {
     transform-origin: 8px 0;
   }

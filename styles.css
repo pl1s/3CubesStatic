@@ -1686,7 +1686,7 @@
   height: 30vw;
 }
 .skillSet__bottom {
-  padding: 5%;
+  padding: 5% 5% 0 5%;
 }
 .skillSet__bottom-title {
   text-align: center;
@@ -1710,7 +1710,7 @@
 .skillSet__bottom-body_box h4 {
   position: absolute;
 }
-@media (max-width: 480px) {
+@media (max-width: 767px) {
   .skillSet__bottom-body_box:nth-child(1) {
     margin-bottom: 30%;
     margin-left: 10%;
@@ -1719,12 +1719,12 @@
 .skillSet__bottom-body_box:nth-child(2) {
   margin-top: 15%;
 }
-@media (max-width: 480px) {
+@media (max-width: 767px) {
   .skillSet__bottom-body_box:nth-child(2) {
     margin-top: 35%;
   }
 }
-@media (max-width: 480px) {
+@media (max-width: 767px) {
   .skillSet__bottom-body_box:nth-child(3) {
     margin-top: 5%;
     margin-right: 20%;
@@ -1736,7 +1736,7 @@
 .skillSet__bottom-body_box:nth-child(5) {
   margin-right: 5%;
 }
-@media (max-width: 480px) {
+@media (max-width: 767px) {
   .skillSet__bottom-body_box:nth-child(5) {
     margin-bottom: 40%;
   }
@@ -1744,13 +1744,13 @@
 .skillSet__bottom-body_box:nth-child(6) {
   margin-top: 15%;
 }
-@media (max-width: 480px) {
+@media (max-width: 767px) {
   .skillSet__bottom-body_box:nth-child(6) {
     margin-top: 25%;
     margin-right: 10%;
   }
 }
-@media (max-width: 480px) {
+@media (max-width: 767px) {
   .skillSet__bottom-body_box:nth-child(7) {
     margin-bottom: 15%;
     margin-right: 10%;
@@ -1806,6 +1806,7 @@
 }
 .marsPackage__body-box img {
   position: absolute;
+  width: 10vw;
 }
 @media (max-width: 1024px) {
   .marsPackage__body-box img {
@@ -1815,6 +1816,7 @@
   }
 }
 .marsPackage__body-box h4 {
+  text-align: center;
   padding: 1rem;
 }
 .marsPackage__body-box .imgIdea {
@@ -3468,7 +3470,7 @@ header .right-side__language button h5 {
 
 .line.topLine {
   transform: rotate(45deg);
-  transform-origin: 13px 0;
+  transform-origin: 14px 0;
 }
 @media (max-width: 480px) {
   .line.topLine {
@@ -4142,7 +4144,7 @@ footer {
 }
 
 .marsPackage {
-  background: url(src/assets/nonformal/rocket.png) no-repeat center center;
+  background: url(res/img/nonformal/rocket.png) no-repeat center center;
   background-size: cover;
 }
 .marsPackage__title {

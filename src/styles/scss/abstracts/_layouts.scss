@@ -1470,7 +1470,7 @@
     height: 30vw;
   }
   &__bottom {
-    padding: 5%;
+    padding: 5% 5% 0 5%;
     &-title {
       text-align: center;
     }
@@ -1491,43 +1491,43 @@
         }
 
         &:nth-child(1) {
-          @include mq480 {
+          @include mq767 {
             margin-bottom: 30%;
             margin-left: 10%;
           }
         }
         &:nth-child(2) {
           margin-top: 15%;
-          @include mq480 {
+          @include mq767 {
             margin-top: 35%;
           }
         }
         &:nth-child(3) {
-          @include mq480 {
+          @include mq767 {
             margin-top: 5%;
             margin-right: 20%;
           }
         }
         &:nth-child(4) {
           margin-bottom: 15%;
-          @include mq480 {
+          @include mq767 {
           }
         }
         &:nth-child(5) {
           margin-right: 5%;
-          @include mq480 {
+          @include mq767 {
             margin-bottom: 40%;
           }
         }
         &:nth-child(6) {
           margin-top: 15%;
-          @include mq480 {
+          @include mq767 {
             margin-top: 25%;
             margin-right: 10%;
           }
         }
         &:nth-child(7) {
-          @include mq480 {
+          @include mq767 {
             margin-bottom: 15%;
             margin-right: 10%;
           }
@@ -1579,6 +1579,7 @@
       }
       img {
         position: absolute;
+        width: 10vw;
         @include mq1024 {
           position: unset;
           width: 40%;
@@ -1586,6 +1587,7 @@
         }
       }
       h4 {
+        text-align: center;
         padding: 1rem;
       }
       .imgIdea {
