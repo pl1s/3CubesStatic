@@ -216,3 +216,9 @@ a {
 button {
   cursor: pointer;
 }
+
+.transparent {
+  background-color: transparent !important;
+  outline: none;
+  border: none;
+}

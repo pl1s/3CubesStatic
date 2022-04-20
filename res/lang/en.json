@@ -250,8 +250,8 @@
     },
     "codeAcademy": {
       "sub": {
-        "text": "For individual registration visit \"CodeAcademy Kids\" <a href=\"http://codeacademy.com\" target=\"_blank\">here.</a>",
-        "link": "here."
+        "text": "For individual registration visit \"CodeAcademy Kids\"<button class=\"element transparent\" data=\"nonFormal.codeAcademy.sub.href\" onclick=\"gtag('event','outbound',{ 'event-category':'redirecting_links', event_label':'redirecting_2_codeAcad' });\"><a href=\"http://codeacademy.com\" target=\"_blank\">here.</a></button>",
+        "href": "<a href=\"http://codeacademy.com\" target=\"_blank\">here.</a>"
       },
       "footer": "Working in collaboration with",
       "themes": {
@@ -375,7 +375,51 @@
     "cardAll9": "\"Women Go Tech\" konferencija"
   },
   "gdpr": {
-    "text": "This site only uses what is strictly necessary to provide services. To provide services the websites host (GitHub Inc.) loggs and stores your IP adress (<a href=\"https://docs.github.com/en/site-policy/privacy-policies/github-privacy-statement\">their privacy policy</a>). A cookie is used to save language information, this data can not be used to identify you.  Three Cubes does not store any data of this sites visitors.",
-    "confirm": "I Understand"
+    "title": "We value your privacy",
+    "desc": "We use cookies to enhance your browsing experience and analyze our traffic. By clicking \"Accept All\", you consent to our use of cookies.",
+    "customize": "Customize",
+    "reject": "Reject All",
+    "accept": "Accept All",
+    "savePref": "Save My Preferences",
+    "cookie": {
+      "title": "Cookie",
+      "lang": "loc_lang",
+      "github": "No cookie",
+      "mailer": "mailerlite:webform:shown",
+      "ga": "_ga",
+      "gaID": "_ga_container-ID"
+    },
+    "duration": {
+      "title": "Duration",
+      "month": "1 month",
+      "2y": "2 years",
+      "NA": "N/A"
+    },
+    "info": {
+      "title": "Description",
+      "lang": "This site use this cookie to remember a user's language settings.",
+      "github": "The websites host (GitHub Inc.) loggs and stores your IP adress. (<a href=\"https://docs.github.com/en/site-policy/privacy-policies/github-privacy-statement\">their privacy policy</a>).",
+      "mailer": "This site use this cookie to determine if a website visitor has seen newsletter pop-up or not, and whether or not to show the pop-up again according to your behavior settings.",
+      "ga": "The _ga cookie, installed by Google Analytics, calculates visitor, session, and also keeps track of site usage for the site's analytics report. The cookie stores information anonymously and assigns a randomly generated number to recognize unique visitors..",
+      "gaID": "The _ga_container-ID cookie, installed by Google Analytics is used to persist session state."
+    },
+    "preference": {
+      "title": "Customize Consent Preferences",
+      "desc1": "We use cookies to help you navigate efficiently and perform certain functions. You will find detailed information about all cookies under each consent category below.",
+      "desc2": "The cookies that are categorized as \"Necessary\" are stored on your browser as they are essential for enabling the basic functionalities of the site"
+    },
+    "necessary": {
+      "title": "Necessary",
+      "span": "Always Active",
+      "desc": "Necessary cookies are required to enable the basic features of this site, such as providing services or saving visitor's language preference. These cookies do not store any personally identifiabl data."
+    },
+    "functional": {
+      "title": "Functional",
+      "desc": "Functional cookie help perform functionality of third-party feature."
+    },
+    "analytics": {
+      "title": "Analytics",
+      "desc": " Analytical cookies are used to understand how visitors interact with the website. These cookies help provide information on metrics such as the number of visitors, traffic source, etc."
+    }
   }
 }
