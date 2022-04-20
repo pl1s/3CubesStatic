@@ -8,13 +8,20 @@ const accept = document.getElementById("acceptBtn");
 const switchers = document.querySelectorAll(
   "input[type=checkbox][name=cookieGroupToggle]"
 );
+const subContainer = document.querySelector(".container__newsletter");
 
 let consentCookieValue = "";
 
-//GDPR check/toggle
+//GDPR check/toggle display
 gdprConfirmed
   ? (gdprPopup.style.display = "none")
   : (gdprPopup.style.display = "block");
+
+//CHECKING functional cookie status and HIDDING it
+console.log(document.cookie.indexOf("functi-false") > -1);
+if (document.cookie.indexOf("functi-false") > -1) {
+  subContainer.style.display = "none";
+}
 
 const expandPreference = () => {
   customize.classList.toggle("rotate-arrow");
@@ -43,17 +50,6 @@ const switchToggle = (switcher) => {
   return !switcher.checked;
 };
 
-// const disableAnalytics = () => {
-//   if (
-//     document.cookie.includes("GDPRConfirmed") &&
-//     document.cookie.indexOf("analyt-false")
-//   ) {
-//     window["ga-disable-GA_MEASUREMENT_ID"] = true;
-//   } else {
-//     window["ga-disable-GA_MEASUREMENT_ID"] = false;
-//   }
-// };
-
 //submiting PREFERENCE OPTIONS
 const saveConsent = (btn) => {
   consentCookieValue = "";
@@ -61,6 +57,7 @@ const saveConsent = (btn) => {
     //setting options to FALSE
     if (btn.id === "rejectBtn") {
       switcher.checked = false;
+      subContainer.style.display = "none";
     }
     if (btn.id === "acceptBtn") {
       switcher.checked = true;
