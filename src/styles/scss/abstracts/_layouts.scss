@@ -161,10 +161,8 @@
         img {
           justify-self: center;
           @include mq1024 {
-            transform: scale(0.7);
-          }
-          @include mq480 {
-            width: 30%;
+            width: 25%;
+            margin-left: 5%;
           }
         }
         h4 {
