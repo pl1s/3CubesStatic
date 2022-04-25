@@ -32,3 +32,8 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   });
 });
+
+//btn sends gtag event and plays vid
+const play = (video) => {
+  video[0].play = true;
+};

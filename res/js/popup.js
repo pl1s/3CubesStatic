@@ -18,7 +18,6 @@ gdprConfirmed
   : (gdprPopup.style.display = "block");
 
 //CHECKING functional cookie status and HIDDING it
-console.log(document.cookie.indexOf("functi-false") > -1);
 if (document.cookie.indexOf("functi-false") > -1) {
   subContainer.style.display = "none";
 }
@@ -59,9 +58,18 @@ const saveConsent = (btn) => {
       switcher.checked = false;
       subContainer.style.display = "none";
     }
+    //toggle newsletter display
+    if (
+      btn.id === "saveMyPreference" &&
+      !document.cookie.includes("GDPRConfirmed=functi-true")
+    ) {
+      subContainer.style.display = "none";
+    }
+    //setting all options as true
     if (btn.id === "acceptBtn") {
       switcher.checked = true;
     }
+    //setting cookie value
     consentCookieValue += `${switcher.id.slice(0, 6)}-${switcher.checked}/`;
   });
   toggleDisplay(gdprPopup);

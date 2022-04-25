@@ -64,7 +64,7 @@
     "teacherSupport": {
       "cardLeft": {
         "main": "Asmeninis konsultantas",
-        "desc": "Pirmąsias pamokas Jums vesti padeda „Trys kubai“ mokytojai!"
+        "desc": "Pirmąsias pamokas Jums vesti padeda „Trys kubai“ mokytojas!"
       },
       "cardMiddle": {
         "main": "Naudojimosi gidas",
@@ -82,17 +82,17 @@
       },
       "sub": "mokytojų „Trys kubai“ formalaus švietimo pamokų edukacinį turinį įvertina „gerai“ ir „labai gerai“ !",
       "slide01": {
-        "review": "“Geros mokyklos koncepcijoje yra kalbama apie nuotykius mokykloje. Žaidimu paremtas mokymasis yra puikus metodas siekti akademinių rezultatų!”",
+        "review": "Geros mokyklos koncepcijoje yra kalbama apie nuotykius mokykloje. Žaidimu paremtas mokymasis yra puikus metodas siekti akademinių rezultatų!",
         "userName": "Vaidas Bacys",
         "userLocation": "Dubysos aukštupio” mokyklos direktorius"
       },
       "slide02": {
-        "review": "“Mokiniai įtraukiami į praktinę, kūrybinę veiklą – taip stiprėja jų motyvacija mokytis”",
+        "review": "Mokiniai įtraukiami į praktinę, kūrybinę veiklą – taip stiprėja jų motyvacija mokytis",
         "userName": "Dainora Šešetienė",
         "userLocation": "Mokyklos „Velžys“ pradinių kl. mokytoja"
       },
       "slide03": {
-        "review": "“Pamokos padeda lavinti kūrybiškumą, technologinė intuicija, kritinį mąstymą, gebėjimą spręsti problemas individualiai ir komandose”",
+        "review": "Pamokos padeda lavinti kūrybiškumą, technologinė intuicija, kritinį mąstymą, gebėjimą spręsti problemas individualiai ir komandose",
         "userName": "Jurgita Navikienė",
         "userLocation": "„Gražiškiai” gimnazijos pradinių kl. mokytoja"
       },
@@ -114,7 +114,7 @@
       "title": "Paslaugos",
       "cardLeft": {
         "main": "Neformalus turinys",
-        "desc": "mokyklos,ugdymo centrams",
+        "desc": "mokykloms, ugdymo centrams",
         "link": "daugiau informacijos >"
       },
       "cardMiddle": {
@@ -134,7 +134,7 @@
       "btn": "Susisiekite"
     },
     "package": {
-      "title": "3 - 4 kl. formalaus švietimo pasaulio pažinimo pamokų paketas!",
+      "title": "3-4 kl. formalaus švietimo pasaulio pažinimo pamokų paketas!",
       "cardLeft": {
         "desc": "Jį sudaro 18 skirtingų temų iš atnaujinamų bendrojo ugdymo programų"
       },
@@ -229,7 +229,7 @@
       "title": "Pirmieji Marso gyventojai",
       "sub": "Užsiėmimų metu mokiniai kuria pirmąją kosminę gyvenvietę Marso planetoje!",
       "themes": {
-        "title": "Būrėlio temos",
+        "title": "Būrelio temos",
         "theme1": "Marso planetos tyrinėjimas;",
         "theme2": "kosminių bazių ir raketų statymas;",
         "theme3": "saulės ir vėjo jėgainių kūrimas;",
@@ -240,7 +240,7 @@
         "theme8": "kelionės su marsaeigiais;",
         "theme9": "robotukų programavimas",
         "theme10": "ir dar daugiau!",
-        "sub": "Individuali registracija į burelį nevyksta. <br> Būrelį gali įsigyti švietimo įstaigos."
+        "sub": "Individuali registracija į būrelį nevyksta. <br> Būrelį gali įsigyti švietimo įstaigos."
       }
     },
     "gameDesign": {

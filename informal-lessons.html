@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <link rel='icon' href='./res/img/edu_icon.svg' type='image/svg' />
+  <link rel='icon' href='./res/img/favicon.ico' />
   <link href='./styles.css' rel="stylesheet">
   <link rel="stylesheet" href="./res/css/splide.min.css">
   <link rel="stylesheet" href="./res/css/splide-core.min.css">
@@ -288,7 +288,12 @@
     </section>
     <section class="codeAcademy flex-row">
       <div class="codeAcademy__video no_En">
-        <video src="./res/video/nonFormal.mp4" poster="./res/img/nonformal/poster.png" controls></video>
+        <button class="transparent" onclick="gtag('event','video-tracker',{
+          'event-category':'video',
+          'event_label':'darius_video_played'
+        }); play(this.children)">
+          <video src="./res/video/nonFormal.mp4" poster="./res/img/nonformal/poster.png" controls></video>
+        </button>
         <h4 class="element" data="nonFormal.codeAcademy.sub.text">For individual registration visit "CodeAcademy Kids"
           <button class="element transparent" data="nonFormal.codeAcademy.sub.href" onclick="gtag('event','outbound',{
             'event-category':'redirecting_links',
@@ -391,49 +396,70 @@
       <div class="container__contact flex-row">
         <div class="container__contact-wrapper">
           <h3 class="element" data="footer.contact.main">Contacts</h3>
-          <h5 class="sub1"><a href="tel:+370 (602) 91 919">+370 (602) 91
+          <h5 class="sub1 flex-row"><img src="./res/img/header_footer/phone.png" alt="phone icon"><a
+              href="tel:+370 (602) 91 919">+370
+              (602) 91
               919</a></h5>
-          <h5 class="sub2">info@edukraftas.lt</h5>
-          <h5 class="sub3"><a href="htthp://mahps.google.com/?q=Žalgirio g. 88, LT-09301, Vilnius">Žalgirio g. 88,<br>
+          <h5 class="sub2 flex-row"><img src="./res/img/header_footer/mail.png" alt="mail icon">info@edukraftas.lt
+          </h5>
+          <h5 class="sub3 flex-row"><img src="./res/img/header_footer/pin.png" alt="location icon"><a
+              href="htthp://mahps.google.com/?q=Žalgirio g. 88, LT-09301, Vilnius">Žalgirio g. 88,
               LT-09301, Vilnius</a>
           </h5>
         </div>
+        <!-- <div class="container__left-info"> -->
+        <!-- <h3 class="element" data="footer.info.main">Information</h3>
+          <h5 class="sub1"><a href="" class="element" data="footer.info.knowHow">How to become a partner?</a></h5>
+          <h5 class="sub2"><a href="" class="element" data="footer.info.privacy">Privacy Policy</a></h5>
+          <h5 class="sub3"><a href="" class="element" data="footer.info.carrer">Career</a>
+          </h5> -->
+        <!-- </div> -->
       </div>
       <div class="container__newsletter">
         <div class="container__newsletter-wrapper">
           <h3 class="element" data="footer.subs.main">Newsletters</h3>
           <h5 class="sub1 element" data="footer.subs.desc">Be the first to get all news!</h5>
           <div class="container__newsletter-wrapper_input">
+            <!-- <input class="email" type="email" placeholder="El.paštas"> -->
             <button onclick="gtag('event','subscribe',{
-              'event-category':'subscribtions',
-              'event_label':'subscribtion_btn_pressed'
+              'event-category':'subscriptions',
+              'event_label':'subscription_btn_pressed'
             });">
               <a class=" subscribeBtn" href="javascript:;">
                 <h5 class="element" data="footer.subs.btn">Subscribe</h5>
               </a>
             </button>
           </div>
+          <!-- <div class="container__newsletter-wrapper_privacy flex-row"> -->
+          <!-- <input class="flex-row" type="checkbox">
+            <h5 class="flex-row text element" data="footer.subs.checkBox">I agree to privacy policy.</h5> -->
+          <!-- </div> -->
         </div>
       </div>
       <div class="container__follow flex">
         <div class="container__follow-wrapper">
           <h3 class="element" data="footer.follow.main">Follow Us</h3>
-          <div class="container__follow-wrapper_linksContainer flex-row">
-            <button class="transparent" onclick="gtag('event','socialMedia_redirection',{
-              'event-category':'redirection',
-              'event_label':'redirected_2_IG'
-            });"><a href="https://www.instagram.com/threecubescompany/" target="_blank"><img
-                  src="./res/img/header_footer/instagram.png" alt="instagram"></a></button>
-            <button class="transparent" onclick="gtag('event','socialMedia_redirection',{
+          <div class="container__follow-wrapper_linksContainer">
+            <button class="transparent side-gap5" onclick="gtag('event','socialMedia_redirection',{
               'event-category':'redirection',
               'event_label':'redirected_2_FB'
             });" class="container__follow-wrapper_facebook"><a href="https://www.facebook.com/threecubesEN/"
                 target="_blank"><img src="./res/img/header_footer/facebook.png" alt="facebook"></a></button>
-            <button class="transparent" onclick="gtag('event','socialMedia_redirection',{
+            <button class="transparent side-gap5" onclick="gtag('event','socialMedia_redirection',{
               'event-category':'redirection',
               'event_label':'redirected_2_LinkedIn'
             });" class="container__follow-wrapper_linkedin"><a href="https://www.linkedin.com/company/three-cubes/"
                 target="_blank"><img src="./res/img/header_footer/linkedin.png" alt="linkedin"></a></button>
+            <button class="transparent side-gap5" onclick="gtag('event','socialMedia_redirection',{
+              'event-category':'redirection',
+              'event_label':'redirected_2_IG'
+            });"><a href="https://www.instagram.com/threecubescompany/" target="_blank"><img
+                  src="./res/img/header_footer/instagram.png" alt="instagram"></a></button>
+            <button class="transparent side-gap5" onclick="gtag('event','socialMedia_redirection',{
+              'event-category':'redirection',
+              'event_label':'redirected_2_YT'
+            });"><a href="https://www.youtube.com/channel/UCSn6CIVI84aCMJabe7ypWeg" target="_blank"><img
+                  src="./res/img/header_footer/YT.png" alt="youtube"></a></button>
           </div>
         </div>
       </div>
@@ -661,7 +687,8 @@
 
         </div>
         <div class="popup__container-preference_body-btn">
-          <button class="btn outlined element" data="gdpr.savePref" onclick="saveConsent(this)">
+          <button class="btn outlined element" id="saveMyPreference" data="gdpr.savePref"
+            onclick="saveConsent(this); consentOptions();">
             Save My Preferences</button>
         </div>
       </div>
@@ -710,10 +737,11 @@
   <!-- Add popup summon to click events on subscribe button elements -->
   <script>
     const btn = document.querySelector(".subscribeBtn");
-
     btn.addEventListener("click",
       () => {
-        getLocalizationLanguage() === "lt" ? ml_account('webforms', '5622661', 'g9f1k6', 'show') : ml_account('webforms', '5622651', 'p5g7s4', 'show');
+        if (document.cookie.includes("GDPRConfirmed=functi-true")) {
+          getLocalizationLanguage() === "lt" ? ml_account('webforms', '5622661', 'g9f1k6', 'show') : ml_account('webforms', '5622651', 'p5g7s4', 'show');
+        }
       })
   </script>
 </body>

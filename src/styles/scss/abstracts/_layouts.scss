@@ -32,6 +32,12 @@
       content: url(res/img/main/edukacijos_sistema_noname.png);
     }
   }
+  .knygnesys {
+    content: url(res/img/main/knygnesys.png);
+    @include mq767 {
+      content: url(res/img/main/knygnesys_noname.png);
+    }
+  }
   .microsoft {
     @include mq767 {
       max-height: 3vh;
@@ -54,16 +60,15 @@
   &__benefits {
     display: flex;
     flex-wrap: nowrap;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
     width: 100%;
     @include mq480 {
       flex-direction: column !important;
     }
-
-    p {
+    h6 {
       flex: 1;
-      max-width: 380px;
+      max-width: 320px;
       padding: 2%;
       @include mq480 {
         max-width: 200px;
@@ -104,7 +109,10 @@
   flex-direction: column;
   background: url(res/img/reusable/gediminas-tower.png) no-repeat center center;
   background-size: cover;
-
+  @include mq480 {
+    background: url(res/img/reusable/gediminas-tower.png) no-repeat -540px 100%;
+    background-size: cover;
+  }
   &__topWrapper {
     flex: 1;
     display: flex;
@@ -135,7 +143,7 @@
       }
       .box {
         display: grid;
-        grid-template-columns: 0.5fr 1fr;
+        grid-template-columns: 0.4fr 1fr;
         flex: 1;
         width: 30%;
         max-width: 500px;
@@ -160,13 +168,15 @@
         }
         img {
           justify-self: center;
+          width: 100%;
           @include mq1024 {
             width: 25%;
             margin-left: 5%;
           }
         }
         h4 {
-          padding: 1rem;
+          padding: 1rem 1rem 1rem 0;
+          text-align: start;
         }
       }
     }
@@ -186,6 +196,18 @@
     @include mq1500 {
       width: unset;
     }
+    @include mq480 {
+      margin-right: 115px;
+      h4 {
+        width: 70%;
+      }
+    }
+  }
+  &__spacer {
+    height: 7vw;
+    @include mq480 {
+      height: 150px;
+    }
   }
 }
 
@@ -204,7 +226,8 @@
     padding: 5% 10% 10% 10%;
   }
   @include mq480 {
-    min-height: 500px;
+    min-height: 420px;
+    padding: 0 10%;
   }
 
   img {
@@ -231,15 +254,31 @@
   .right2 {
     left: 0;
     top: 50%;
-    margin-left: 85%;
+    margin-left: 65%;
+    @include mq1500 {
+      margin-left: 72%;
+    }
+    @include mq767 {
+      margin-left: 85%;
+    }
   }
 
   .text {
     position: relative;
-    padding-right: 1rem;
+    // padding-right: 1rem;
     margin: 0 10%;
-    @include mq480 {
-      margin: 0;
+    // @include mq767 {
+    //   padding-right: unset !important;
+    // }
+    h4 {
+      padding-bottom: 3px;
+    }
+    h5 {
+      font-weight: 400;
+      color: black;
+    }
+    @include mq767 {
+      margin: 0 !important;
     }
   }
 
@@ -265,7 +304,12 @@
   }
   &__wrapper3 {
     align-items: flex-end;
-
+    h5 {
+      width: 80%;
+      @include mq767 {
+        width: unset;
+      }
+    }
     @include mq1024 {
       margin-right: 50%;
       max-width: 60%;
@@ -473,6 +517,16 @@
     }
     &__bottom {
       align-self: start;
+      h4 {
+        font-weight: 500;
+        padding-bottom: 7px;
+      }
+      h5 {
+        font-weight: 400;
+        @include mq480 {
+          width: 200px;
+        }
+      }
     }
   }
   h2 {
@@ -1032,15 +1086,15 @@
           margin: 0;
         }
         .cardLeft {
-          left: -2.5vh;
+          left: -3.5vh;
           bottom: -20%;
         }
         .cardMiddle {
-          right: -3.5vh;
+          right: -6vh;
           bottom: -20%;
         }
         .cardRight {
-          right: -3.5vh;
+          right: -5.5vh;
           top: -2.5vh;
           @include mq480 {
             right: -6vh;
@@ -1207,6 +1261,10 @@
     @include mq1500 {
       margin: unset;
       left: unset;
+      right: 10%;
+    }
+    @include mq1024 {
+      right: 0;
     }
     @include mq767 {
       display: none;
