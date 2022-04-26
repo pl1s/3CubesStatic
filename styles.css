@@ -881,7 +881,7 @@
 .package__card-container {
   justify-content: space-between;
   width: 100%;
-  margin: 0 10%;
+  margin: 0 45px;
 }
 @media (max-width: 1500px) {
   .package__card-container {
@@ -903,7 +903,7 @@
 .package__card-container_small {
   position: relative;
   min-height: 15vw;
-  width: 18vw;
+  width: 25vw;
   padding: 1rem 5%;
 }
 @media (max-width: 1500px) {
