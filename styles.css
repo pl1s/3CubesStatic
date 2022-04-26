@@ -3304,11 +3304,6 @@ button {
     padding: 2% 0 0 0;
   }
 }
-@media (max-width: 767px) {
-  .footer .container__newsletter, .footer .container__contact, .footer .container__follow {
-    flex: 1;
-  }
-}
 @media (max-width: 480px) {
   .footer .container__newsletter, .footer .container__contact, .footer .container__follow {
     justify-content: flex-start;

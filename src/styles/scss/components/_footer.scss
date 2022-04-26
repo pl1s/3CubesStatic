@@ -38,9 +38,9 @@
       @include mq1024 {
         padding: 2% 0 0 0;
       }
-      @include mq767 {
-        flex: 1;
-      }
+      // @include mq767 {
+      //   flex: 1;
+      // }
       @include mq480 {
         justify-content: flex-start;
         padding: 0 0 4% 0;

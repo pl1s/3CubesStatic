@@ -1088,7 +1088,7 @@
         .cardLeft {
           left: -40px;
           bottom: -20%;
-          @include mq480{
+          @include mq480 {
             left: -30px;
           }
         }
