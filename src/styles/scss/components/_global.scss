@@ -216,3 +216,13 @@ a {
 button {
   cursor: pointer;
 }
+
+.transparent {
+  background-color: transparent !important;
+  outline: none;
+  border: none;
+}
+
+.side-gap5 {
+  padding: 0 5px 0 0;
+}

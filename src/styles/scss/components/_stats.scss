@@ -15,6 +15,12 @@
     margin: 0 3%;
     text-align: center;
     max-width: 250px;
+    @include mq480 {
+      flex: 1;
+      &:last-child {
+        flex: 0.7;
+      }
+    }
     &__wrapper {
       img {
         transform: scale(0.75);

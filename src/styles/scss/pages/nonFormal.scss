@@ -42,6 +42,7 @@
 .codeAcademy {
   &__video {
     background-color: $bgDarkSection;
+    z-index: 9999;
     a {
       color: $aColor;
       font-weight: 500;

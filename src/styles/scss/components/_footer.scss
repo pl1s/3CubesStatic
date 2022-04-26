@@ -5,7 +5,12 @@
     padding: 1rem 10% 0 10%;
   }
   h5 {
+    align-items: center;
     margin-bottom: 10px;
+    pointer-events: none;
+    img {
+      padding-right: 1rem;
+    }
   }
   .copyright {
     @include mq480 {
@@ -16,6 +21,9 @@
     max-height: 300px;
     @include mq1024 {
       flex-direction: row;
+    }
+    @include mq767 {
+      flex-wrap: wrap;
     }
     @include mq480 {
       flex-direction: column;
@@ -30,9 +38,9 @@
       @include mq1024 {
         padding: 2% 0 0 0;
       }
-      @include mq767 {
-        flex: 1;
-      }
+      // @include mq767 {
+      //   flex: 1;
+      // }
       @include mq480 {
         justify-content: flex-start;
         padding: 0 0 4% 0;
@@ -47,6 +55,7 @@
       h3 {
         grid-row: 2/3;
         padding-bottom: 30px;
+        white-space: nowrap;
         @include mq1024 {
           grid-row: 1/2;
           padding-bottom: unset;
@@ -57,6 +66,7 @@
       }
       .sub1 {
         grid-row: 3/4;
+        white-space: nowrap;
         @include mq1024 {
           grid-row: 3/4;
         }
@@ -82,7 +92,7 @@
         }
       }
       .sub3 {
-        grid-row: 5/7;
+        grid-row: 5/6;
         @include mq1024 {
           grid-row: 5/7;
         }
@@ -165,6 +175,7 @@
         &_linksContainer {
           grid-row: 3/4;
           justify-content: space-around;
+          white-space: nowrap;
           @include mq480 {
             grid-row: 2/3;
           }

@@ -1,6 +1,6 @@
 const langSelector = document.querySelectorAll("#langSelector");
 const logo = document.querySelector(".logoImg");
-var localizationLanguage
+var localizationLanguage;
 
 // Parameter hiding to the next level - EVERYTHING is name cookie...
 // //get ONLY lang Cookie
@@ -21,26 +21,24 @@ var localizationLanguage
 // }
 
 // Get localization language from current memory or load it from cookie;
-function getLocalizationLanguage()
-{
-  if(!localizationLanguage)
-  {
-    let localizationParameter = document.cookie.split(";").find(s => s.includes("loc_lang"));
-    if(!localizationParameter)
-    {
+function getLocalizationLanguage() {
+  if (!localizationLanguage) {
+    let localizationParameter = document.cookie
+      .split(";")
+      .find((s) => s.includes("loc_lang"));
+    if (!localizationParameter) {
       setLocalizationLanguage("en");
-      localizationParameter="loc_lang=en";
+      localizationParameter = "loc_lang=en";
       return "en";
     }
-    localizationLanguage = localizationParameter.split('=')[1];
-  }  
+    localizationLanguage = localizationParameter.split("=")[1];
+  }
 
-  return localizationLanguage; 
+  return localizationLanguage;
 }
 
 // Set the localization language parameter in the cookie to the given value
-function setLocalizationLanguage(value, expiration=2592000)
-{
+function setLocalizationLanguage(value, expiration = 2592000) {
   document.cookie = `loc_lang=${value}; max-age=${expiration}; path=/;`;
   localizationLanguage = value;
 }
@@ -49,7 +47,7 @@ function setLocalizationLanguage(value, expiration=2592000)
 function toggleLogo(lang) {
   lang === "en"
     ? (logo.src = "./res/img/header_footer/logo_en.png")
-    : (logo.src = "./res/img/header_footer/logo_en.png");
+    : (logo.src = "./res/img/header_footer/logo.png");
 }
 
 function updateContent() {
@@ -87,7 +85,7 @@ async function i18Loader() {
   langSelector.forEach((s) => {
     s.addEventListener("click", (e) => {
       i18next.changeLanguage(e.target.innerText.toLowerCase());
-      setLocalizationLanguage(e.target.innerText.toLowerCase()); // NOTE: Not a very good practice to use visual elements as values; 
+      setLocalizationLanguage(e.target.innerText.toLowerCase()); // NOTE: Not a very good practice to use visual elements as values;
       // active class Switcher
       localizationLanguage === "en"
         ? s.classList.add("active")
@@ -101,7 +99,7 @@ async function i18Loader() {
     });
   });
   toggleClass();
-  toggleLogo();
+  toggleLogo(localizationLanguage);
 }
 
 getLocalizationLanguage();

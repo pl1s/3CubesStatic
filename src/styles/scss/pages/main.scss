@@ -6,8 +6,9 @@
     text-align: center;
   }
   &__benefits {
-    p {
+    h6 {
       text-align: center;
+      font-weight: 400;
     }
   }
   &__img {
@@ -70,7 +71,7 @@ footer {
       // }
     }
   }
-  h4 {
+  h5 {
     padding: 0 0 10% 0;
     @include mq480 {
       font-size: 1.25rem;
@@ -85,17 +86,32 @@ footer {
 }
 
 .community {
+  .user {
+    color: $fontColor;
+  }
   &__card {
     background-color: $bgSection;
     .slide {
       h4 {
         text-align: center;
       }
+      &__title {
+        * {
+          color: black;
+        }
+      }
     }
   }
   &__topWrapper {
+    h3 {
+      font-weight: 400;
+    }
     .title {
       text-align: end;
+      h2 {
+        font-size: 6rem;
+        font-weight: 400;
+      }
       * {
         display: inline-block;
       }
@@ -108,6 +124,23 @@ footer {
     background-color: $bgSection;
     &-right {
       text-align: center;
+    }
+  }
+}
+
+.services {
+  &__cardLeft,
+  &__cardRight {
+    h3 {
+      font-size: 1.6rem;
+      @include mq1024 {
+        padding: 0 10px 0 10px;
+      }
+    }
+  }
+  &__container {
+    * {
+      font-weight: 400 !important;
     }
   }
 }

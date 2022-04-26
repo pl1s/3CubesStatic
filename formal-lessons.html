@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <link rel='icon' href='./res/img/edu_icon.svg' type='image/svg' />
+  <link rel='icon' href='./res/img/favicon.ico' />
   <link href='./styles.css' rel="stylesheet">
   <link rel="stylesheet" href="./res/css/splide.min.css">
   <link rel="stylesheet" href="./res/css/splide-core.min.css">
@@ -15,20 +15,66 @@
   <meta name="description"
     content="Effective and fun lessons have gained new opportunities, and the word “classroom” is now expanding! Three Cubes makes formal education Minecraft lessons which are great way to improve not only knowledge, but also competencies!" />
   <title>Formal Education Lessons with Minecraft | Three Cubes</title>
-  <!-- Popup stuff TODO - replace with long term solution -->
-  <script defer="true" src="./res/js/popup.js"></script>
+  <script defer src="./res/js/popup.js"></script>
+  <!-- GOOGLE ANALYTICS -->
+  <script>
+    // Define dataLayer and the gtag function.
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+
+    // Default ad_storage to 'denied'.
+    gtag('consent', 'default', {
+      ad_storage: 'denied',
+      analytics_storage: 'denied',
+      wait_for_update: 5000
+    });
+
+
+    let gaProperty = 'G-78KBBN7H92'
+    let disableStr = 'ga-disable-' + gaProperty;
+
+    const consentOptions = () => {
+      console.log(document.cookie.includes("GDPRConfirmed"));
+      if (document.cookie.indexOf("analyt-true") > -1) {
+        gtag('consent', 'update', {
+          'ad_storage': 'granted',
+          'analytics_storage': 'granted'
+        });
+        window[disableStr] = false;
+      } else {
+        gtag('consent', 'update', {
+          'ad_storage': 'denied',
+          'analytics_storage': 'denied'
+        });
+        window[disableStr] = true;
+      }
+    }
+  </script>
+  <!-- Global site tag (gtag.js) - Google Ads: CONVERSION_ID  -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=AW-YYYYYY"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+
+    gtag('js', new Date());
+    gtag('config', gaProperty);
+  </script>
+
   <!-- NewsLetters Universal -->
   <script>
-    (function (m, a, i, l, e, r) {
-      m['MailerLiteObject'] = e; function f() {
-        var c = { a: arguments, q: [] }; var r = this.push(c); return "number" != typeof r ? r : f.bind(c.q);
-      }
-      f.q = f.q || []; m[e] = m[e] || f.bind(f.q); m[e].q = m[e].q || f.q; r = a.createElement(i);
-      var _ = a.getElementsByTagName(i)[0]; r.async = 1; r.src = l + '?v' + (~~(new Date().getTime() / 1000000));
-      _.parentNode.insertBefore(r, _);
-    })(window, document, 'script', 'https://static.mailerlite.com/js/universal.js', 'ml');
+    // CHECKING for GDPR COOKIE & functional preference STATUS
+    if (document.cookie.includes("GDPRConfirmed=functi-true")) {
+      (function (m, a, i, l, e, r) {
+        m['MailerLiteObject'] = e; function f() {
+          var c = { a: arguments, q: [] }; var r = this.push(c); return "number" != typeof r ? r : f.bind(c.q);
+        }
+        f.q = f.q || []; m[e] = m[e] || f.bind(f.q); m[e].q = m[e].q || f.q; r = a.createElement(i);
+        var _ = a.getElementsByTagName(i)[0]; r.async = 1; r.src = l + '?v' + (~~(new Date().getTime() / 1000000));
+        _.parentNode.insertBefore(r, _);
+      })(window, document, 'script', 'https://static.mailerlite.com/js/universal.js', 'ml');
 
-    var ml_account = ml('accounts', '1928266', 'y4a6p1v7u9', 'load');
+      var ml_account = ml('accounts', '1928266', 'y4a6p1v7u9', 'load');
+    }
   </script>
   <!-- NewsLetters Universal -->
 </head>
@@ -84,8 +130,7 @@
       <div class="stats__container">
         <div class="box">
           <div class="box__wrapper flex-row center">
-            <h3>8,000
-            </h3>
+            <h3>115,000</h3>
             <img src="./res/img/reusable/pliusas.png" alt="plus">
           </div>
           <h6 class="element" data="main.stats.left">Children had our game-based lessons</h6>
@@ -100,8 +145,7 @@
         </div>
         <div class="box">
           <div class="box__wrapper flex-row center">
-            <h3>20,000
-            </h3>
+            <h3>300</h3>
             <img src="./res/img/reusable/pliusas.png" alt="plus">
           </div>
           <h6 class="element" data="main.stats.right">Members in our community
@@ -119,24 +163,24 @@
         <div class="package__card-container flex-row">
           <div class="package__card-container_small flex center">
             <div class="package__card-container_small_text">
-              <h4 class="element" data="formal.package.cardLeft.desc">
-                Interactivity provides possibilities to gain knowledge in various ways</h4>
+              <h5 class="element" data="formal.package.cardLeft.desc">
+                Interactivity provides possibilities to gain knowledge in various ways</h5>
             </div>
             <img class="left" src="./res/img/reusable/Open Book.png" alt="book">
           </div>
           <div class="package__card-container_small flex center">
             <div class="package__card-container_small_text">
-              <h4 class="element" data="formal.package.cardMiddle.desc">
-                The attention is directed on improving students' compotencies</h4>
+              <h5 class="element" data="formal.package.cardMiddle.desc">
+                The attention is directed on improving students' compotencies</h5>
             </div>
             <img class="right" src="./res/img/reusable/Deadline.png" alt="calendar">
           </div>
         </div>
         <div class="package__card-big flex center">
           <div class="package__card-big_text">
-            <h4 class="element" data="formal.package.cardRight.desc">
+            <h5 class="element" data="formal.package.cardRight.desc">
               Lessons's topics chosen to correlate with formal education programs
-            </h4>
+            </h5>
           </div>
           <img src="./res/img/reusable/Graduation Hat.png" alt="graduation hat">
         </div>
@@ -145,7 +189,10 @@
     <section class="download">
       <div class="download__container flex-row ">
         <h3 class="element" data="formal.download.title">Topics of lessons <small>(LT)</small></h3>
-        <button class="flex center">
+        <button class="flex center transparent" onclick="gtag('event','downloads',{
+          'event-category':'download',
+          'event_label':'downloaded_topics'
+        });">
           <a href="./res/assets/themes.pdf" download="3Cubes themes list">
             <h4 class="element" data="formal.download.btn">Download</h4>
           </a><img src="./res/img/reusable/arrowR.png" alt="download arrow">
@@ -226,25 +273,26 @@
         <div class="teacherSupport__wrapper1 flex">
           <div class="text">
             <h4 class="element" data="main.teacherSupport.cardLeft.main">Asmeninis konsultantas</h4>
-            <p class="element" data="main.teacherSupport.cardLeft.desc">Pirmąsias pamokas Jums vesti padeda "Trys kubai"
-              mokytojai!</p>
+            <h5 class="element" data="main.teacherSupport.cardLeft.desc">Pirmąsias pamokas Jums vesti padeda "Trys
+              kubai"
+              mokytojai!</h5>
             <img class="left" src="./res/img/reusable/Ideation.png" alt="light bulb">
           </div>
         </div>
         <div class="teacherSupport__wrapper2 flex">
           <div class="text">
             <h4 class="element" data="main.teacherSupport.cardMiddle.main">Naudojimosi gidas</h4>
-            <p class="element" data="main.teacherSupport.cardMiddle.desc">Pamokų planai ir bet kada pasiekiami mokymai
-              vaizdo įrašų forma.</p>
+            <h5 class="element" data="main.teacherSupport.cardMiddle.desc">Pamokų planai ir bet kada pasiekiami mokymai
+              vaizdo įrašų forma.</h5>
             <img class="right mb150" src="./res/img/reusable/Chalkboard.png" alt="board">
           </div>
         </div>
         <div class="teacherSupport__wrapper3 flex">
           <div class="text ">
             <h4 class="element" data="main.teacherSupport.cardRight.main">Pilnai paruoštos pamokos</h4>
-            <p class="element" data="main.teacherSupport.cardRight.desc">Užduočių komplektai ir virtualūs pasauliai
+            <h5 class="element" data="main.teacherSupport.cardRight.desc">Užduočių komplektai ir virtualūs pasauliai
               pagal
-              skirtingas pamokos temas.</p>
+              skirtingas pamokos temas.</h5>
             <img class=" right2" src="./res/img/reusable/Certificate.png" alt="certification">
           </div>
         </div>
@@ -403,7 +451,12 @@
     <section class="payments flex-column">
       <div class="payments__top no_En"></div>
       <div class="payments__video no_En">
-        <video src="./res/video/formal.mp4" poster="./res/img/formal/videoPoster.png" controls></video>
+        <button class="transparent" onclick="gtag('event','video-tracker',{
+        'event-category':'video',
+        'event_label':'edu_video_played'
+      }); play(this)">
+          <video src="./res/video/formal.mp4" poster="./res/img/formal/videoPoster.png" controls></video>
+        </button>
       </div>
       <div class="payments__bottom no_En">
         <div class="payments__bottom-title">
@@ -431,37 +484,70 @@
       <div class="container__contact flex-row">
         <div class="container__contact-wrapper">
           <h3 class="element" data="footer.contact.main">Contacts</h3>
-          <h5 class="sub1"><a href="tel:+370 (602) 91 919">+370 (602) 91
+          <h5 class="sub1 flex-row"><img src="./res/img/header_footer/phone.png" alt="phone icon"><a
+              href="tel:+370 (602) 91 919">+370
+              (602) 91
               919</a></h5>
-          <h5 class="sub2">info@edukraftas.lt</h5>
-          <h5 class="sub3"><a href="htthp://mahps.google.com/?q=Žalgirio g. 88, LT-09301, Vilnius">Žalgirio g. 88,<br>
+          <h5 class="sub2 flex-row"><img src="./res/img/header_footer/mail.png" alt="mail icon">info@edukraftas.lt
+          </h5>
+          <h5 class="sub3 flex-row"><img src="./res/img/header_footer/pin.png" alt="location icon"><a
+              href="htthp://mahps.google.com/?q=Žalgirio g. 88, LT-09301, Vilnius">Žalgirio g. 88,
               LT-09301, Vilnius</a>
           </h5>
         </div>
+        <!-- <div class="container__left-info"> -->
+        <!-- <h3 class="element" data="footer.info.main">Information</h3>
+          <h5 class="sub1"><a href="" class="element" data="footer.info.knowHow">How to become a partner?</a></h5>
+          <h5 class="sub2"><a href="" class="element" data="footer.info.privacy">Privacy Policy</a></h5>
+          <h5 class="sub3"><a href="" class="element" data="footer.info.carrer">Career</a>
+          </h5> -->
+        <!-- </div> -->
       </div>
       <div class="container__newsletter">
         <div class="container__newsletter-wrapper">
           <h3 class="element" data="footer.subs.main">Newsletters</h3>
           <h5 class="sub1 element" data="footer.subs.desc">Be the first to get all news!</h5>
           <div class="container__newsletter-wrapper_input">
-            <button>
-              <a class="subscribeBtn" href="javascript:;">
+            <!-- <input class="email" type="email" placeholder="El.paštas"> -->
+            <button onclick="gtag('event','subscribe',{
+              'event-category':'subscribtions',
+              'event_label':'subscribtion_btn_pressed'
+            });">
+              <a class=" subscribeBtn" href="javascript:;">
                 <h5 class="element" data="footer.subs.btn">Subscribe</h5>
               </a>
             </button>
           </div>
+          <!-- <div class="container__newsletter-wrapper_privacy flex-row"> -->
+          <!-- <input class="flex-row" type="checkbox">
+            <h5 class="flex-row text element" data="footer.subs.checkBox">I agree to privacy policy.</h5> -->
+          <!-- </div> -->
         </div>
       </div>
       <div class="container__follow flex">
         <div class="container__follow-wrapper">
           <h3 class="element" data="footer.follow.main">Follow Us</h3>
-          <div class="container__follow-wrapper_linksContainer flex-row">
-            <div class="container__follow-wrapper_ig"><a href="https://www.instagram.com/threecubescompany/"
-                target="_blank"><img src="./res/img/header_footer/instagram.png" alt="instagram"></a></div>
-            <div class="container__follow-wrapper_facebook"><a href="https://www.facebook.com/threecubesEN/"
-                target="_blank"><img src="./res/img/header_footer/facebook.png" alt="facebook"></a></div>
-            <div class="container__follow-wrapper_linkedin"><a href="https://www.linkedin.com/company/three-cubes/"
-                target="_blank"><img src="./res/img/header_footer/linkedin.png" alt="linkedin"></a></div>
+          <div class="container__follow-wrapper_linksContainer">
+            <button class="transparent side-gap5" onclick="gtag('event','socialMedia_redirection',{
+              'event-category':'redirection',
+              'event_label':'redirected_2_FB'
+            });" class="container__follow-wrapper_facebook"><a href="https://www.facebook.com/threecubesEN/"
+                target="_blank"><img src="./res/img/header_footer/facebook.png" alt="facebook"></a></button>
+            <button class="transparent side-gap5" onclick="gtag('event','socialMedia_redirection',{
+              'event-category':'redirection',
+              'event_label':'redirected_2_LinkedIn'
+            });" class="container__follow-wrapper_linkedin"><a href="https://www.linkedin.com/company/three-cubes/"
+                target="_blank"><img src="./res/img/header_footer/linkedin.png" alt="linkedin"></a></button>
+            <button class="transparent side-gap5" onclick="gtag('event','socialMedia_redirection',{
+              'event-category':'redirection',
+              'event_label':'redirected_2_IG'
+            });"><a href="https://www.instagram.com/threecubescompany/" target="_blank"><img
+                  src="./res/img/header_footer/instagram.png" alt="instagram"></a></button>
+            <button class="transparent side-gap5" onclick="gtag('event','socialMedia_redirection',{
+              'event-category':'redirection',
+              'event_label':'redirected_2_YT'
+            });"><a href="https://www.youtube.com/channel/UCSn6CIVI84aCMJabe7ypWeg" target="_blank"><img
+                  src="./res/img/header_footer/YT.png" alt="youtube"></a></button>
           </div>
         </div>
       </div>
@@ -472,12 +558,229 @@
   </footer>
   <!-- GDPR popup -->
   <div class="popup" id="gdprPopup">
-    <p class="popuptext element" data="gdpr.text">This site only uses what is strictly necessary to provide services. To
-      provide services the websites host (GitHub Inc.) loggs and stores your IP adress (<a
-        href=\"https://docs.github.com/en/site-policy/privacy-policies/github-privacy-statement\">their privacy
-        policy</a>). A cookie to save your language selection is created, this data can not be used to identify you.
-      Three Cubes does not store any data of this sites visitors.</p>
-    <button class="popupBtn element" onclick="confirmGDPR()" data="gdpr.confirm">I Understand</button>
+    <div class="popup__container">
+      <div class="popup__container-bar">
+        <div class="popup__container-bar_title">
+          <h5 class="element" data="gdpr.title">We value your privacy</h5>
+        </div>
+        <div class="popup__container-bar_noticeGroup flex-row">
+          <div class="popup__container-bar_noticeGroup-desc">
+            <h6 class="element" data="gdpr.desc">We use cookies to enhance your browsing experience and analyze our
+              traffic. By clicking "Accept All",
+              you consent to our use of cookies.</h6>
+          </div>
+          <div class="popup__container-bar_noticeGroup-btnWrapper flex-row">
+            <button class="popup__container-bar_noticeGroup-btnWrapper-customize btn outlined element"
+              data="gdpr.customize" id="customizeBtn" onclick="expandPreference()">Customize</button>
+            <button class="popup__container-bar_noticeGroup-btnWrapper-rejectAll btn outlined element"
+              data="gdpr.reject" id="rejectBtn" onclick="saveConsent(this); consentOptions();">Reject All</button>
+            <button class="popup__container-bar_noticeGroup-btnWrapper-acceptAll btn solid element" data="gdpr.accept"
+              id="acceptBtn" onclick="saveConsent(this); consentOptions();">Accept All</button>
+          </div>
+        </div>
+      </div>
+      <!-- CUSTOMIZE PREFERENCE section -->
+      <div class="popup__container-preference" id="preferenceContainer">
+        <div class="popup__container-preference_header">
+          <div class="popup__container-preference_header-title">
+            <h5 class="element" data="gdpr.preference.title">Customize Consent Preferences</h5>
+          </div>
+          <div class="popup__container-preference_header-desc">
+            <h6 class="element" data="gdpr.preference.desc1">We use cookies to help you navigate efficiently and perform
+              certain functions. You will find detailed
+              information about all cookies under each consent category below.
+            </h6>
+            <h6 class="element" data="gdpr.preference.desc2">
+              The cookies that are categorized as "Necessary" are stored on your browser as they are essential for
+              enabling the basic functionalities of the site</h6>
+          </div>
+        </div>
+        <div class="popup__container-preference_body">
+          <div class="popup__container-preference_body-wrapper">
+            <!-- NECESSARY cookies -->
+            <div class="popup__container-preference_body-wrapper_accordion top-bottom-border">
+              <div class="popup__container-preference_body-wrapper_accordion-item flex-row">
+                <button class="popup__container-preference_body-wrapper_accordion-item_chevron" id="necessary"
+                  onclick="expandCookieGroup(this.id)"></button>
+                <div class="popup__container-preference_body-wrapper_accordion-item_headerWrapper flex-column">
+                  <div class="popup__container-preference_body-wrapper_accordion-item_headerWrapper-header flex-row">
+                    <button
+                      class="popup__container-preference_body-wrapper_accordion-item_headerWrapper-header_title element"
+                      data="gdpr.necessary.title" id="necessary" onclick="expandCookieGroup(this.id)">
+                      Necessary
+                    </button>
+                    <span class="always-active element" data="gdpr.necessary.span">Always Active</span>
+                  </div>
+                  <div class="popup__container-preference_body-wrapper_accordion-item_headerWrapper-desc element"
+                    data="gdpr.necessary.desc">
+                    Necessary cookies are required to enable the basic features of this site, such as providing secure
+                    log-in or adjusting your consent preferences. These cookies do not store any personally identifiable
+                    data.
+                  </div>
+                </div>
+              </div>
+              <div class="popup__container-preference_body-wrapper_accordion-body" id="necessaryCookieTable">
+                <div class="popup__container-preference_body-wrapper_accordion-body_table">
+                  <ul class="popup__container-preference_body-wrapper_accordion-body_table-item">
+                    <li>
+                      <div class="element" data="gdpr.cookie.title">Cookie</div>
+                      <div class="element" data="gdpr.cookie.lang">loc_lang</div>
+                    </li>
+                    <li>
+                      <div class="element" data="gdpr.duration.title">Duration</div>
+                      <div class="element" data="gdpr.duration.month">1 month</div>
+                    </li>
+                    <li>
+                      <div class="element" data="gdpr.info.title">Description</div>
+                      <div class="element" data="gdpr.info.lang">This site use this cookie to remember a user's language
+                        settings.</div>
+                    </li>
+                  </ul>
+                  <ul class="popup__container-preference_body-wrapper_accordion-body_table-item">
+                    <li>
+                      <div class="element" data="gdpr.cookie.title">Cookie</div>
+                      <div class="element" data="gdpr.cookie.github">No cookie</div>
+                    </li>
+                    <li>
+                      <div class="element" data="gdpr.duration.title">Duration</div>
+                      <div>N/A</div>
+                    </li>
+                    <li>
+                      <div class="element" data="gdpr.info.title">Description</div>
+                      <div class="element" data="gdpr.info.github">
+                        The websites host (GitHub Inc.) loggs and stores your IP adress. (<a
+                          href=\"https://docs.github.com/en/site-policy/privacy-policies/github-privacy-statement\">their
+                          privacy
+                          policy</a>).</div>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <!-- FUNCTIONAL cookies -->
+            <div class="popup__container-preference_body-wrapper_accordion top-bottom-border">
+              <div class="popup__container-preference_body-wrapper_accordion-item flex-row">
+                <button class="popup__container-preference_body-wrapper_accordion-item_chevron" id="functional"
+                  onclick="expandCookieGroup(this.id)"></button>
+                <div class="popup__container-preference_body-wrapper_accordion-item_headerWrapper flex-column">
+                  <div class="popup__container-preference_body-wrapper_accordion-item_headerWrapper-header flex-row">
+                    <button
+                      class="popup__container-preference_body-wrapper_accordion-item_headerWrapper-header_title element"
+                      data="gdpr.functional.title" id="functional" onclick="expandCookieGroup(this.id)">
+                      Functional
+                    </button>
+                    <label class="switch">
+                      <input type="checkbox" id="functional" name="cookieGroupToggle" onclick="switchToggle(this)"
+                        checked>
+                      <span class="slider round"></span>
+                    </label>
+                  </div>
+                  <div class="popup__container-preference_body-wrapper_accordion-item_headerWrapper-desc element"
+                    data="gdpr.functional.desc">
+                    Functional cookie help perform functionality of third-party feature.
+                  </div>
+                </div>
+              </div>
+              <div class="popup__container-preference_body-wrapper_accordion-body" id="functionalCookieTable">
+                <div class="popup__container-preference_body-wrapper_accordion-body_table">
+                  <ul class="popup__container-preference_body-wrapper_accordion-body_table-item">
+                    <li>
+                      <div class="element" data="gdpr.cookie.title">Cookie</div>
+                      <div class="element" data="gdpr.cookie.mailer">mailerlite:webform:shown</div>
+                    </li>
+                    <li>
+                      <div class="element" data="gdpr.duration.title">Duration</div>
+                      <div>&#8734;</div>
+                    </li>
+                    <li>
+                      <div class="element" data="gdpr.info.title">Description</div>
+                      <div class="element" data="gdpr.info.mailer">This site use this cookie to determine if a website
+                        visitor has
+                        seen newsletter pop-up or not,
+                        and whether or not to show the pop-up again according to your behavior settings.</div>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <!-- ANALYTICS cookies -->
+            <div class="popup__container-preference_body-wrapper_accordion top-bottom-border">
+              <div class="popup__container-preference_body-wrapper_accordion-item flex-row">
+                <button class="popup__container-preference_body-wrapper_accordion-item_chevron" id="analytical"
+                  onclick="expandCookieGroup(this.id)"></button>
+                <div class="popup__container-preference_body-wrapper_accordion-item_headerWrapper flex-column">
+                  <div class="popup__container-preference_body-wrapper_accordion-item_headerWrapper-header flex-row">
+                    <button
+                      class="popup__container-preference_body-wrapper_accordion-item_headerWrapper-header_title element"
+                      data="gdpr.analytics.title" id="analytical" onclick="expandCookieGroup(this.id)">
+                      Analytics
+                    </button>
+                    <label class="switch">
+                      <input type="checkbox" id="analytical" name="cookieGroupToggle" onclick="switchToggle(this)"
+                        checked>
+                      <span class="slider round"></span>
+                    </label>
+                  </div>
+                  <div class="popup__container-preference_body-wrapper_accordion-item_headerWrapper-desc element"
+                    data="gdpr.analytics.desc">
+                    Analytical cookies are used to understand how visitors interact with the website. These cookies help
+                    provide information on metrics such as the number of visitors, traffic source, etc.
+                  </div>
+                </div>
+              </div>
+              <div class="popup__container-preference_body-wrapper_accordion-body" id="analyticalCookieTable">
+                <div class="popup__container-preference_body-wrapper_accordion-body_table">
+                  <ul class="popup__container-preference_body-wrapper_accordion-body_table-item">
+                    <li>
+                      <div class="element" data="gdpr.cookie.title">Cookie</div>
+                      <div class="element" data="gdpr.cookie.ga">_ga</div>
+                    </li>
+                    <li>
+                      <div class="element" data="gdpr.duration.title">Duration</div>
+                      <div class="element" data="gdpr.duration.2y">2 years</div>
+                    </li>
+                    <li>
+                      <div class="element" data="gdpr.info.title">Description</div>
+                      <div class="element" data="gdpr.info.ga">The _ga cookie, installed by Google Analytics, calculates
+                        visitor, session, campaign data,
+                        and also keeps track of site usage for the site's analytics report. The cookie stores
+                        information anonymously and assigns a randomly generated number to recognize unique visitors..
+                      </div>
+                    </li>
+                  </ul>
+                  <ul class="popup__container-preference_body-wrapper_accordion-body_table-item">
+                    <li>
+                      <div class="element" data="gdpr.cookie.title">Cookie</div>
+                      <div class="element" data="gdpr.cookie.gaID">_ga_container-ID</div>
+                    </li>
+                    <li>
+                      <div class="element" data="gdpr.duration.title">Duration</div>
+                      <div class="element" data="gdpr.duration.2y">2 years</div>
+                    </li>
+                    <li>
+                      <div class="element" data="gdpr.info.title">Description</div>
+                      <div class="element" data="gdpr.info.gaID">The _ga_container-ID cookie, installed by Google
+                        Analytics is used to persist session state.
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- OVERLAY element -->
+          <div class="fadeOver">
+            <div class="fade__element"></div>
+          </div>
+
+        </div>
+        <div class="popup__container-preference_body-btn">
+          <button class="btn outlined element" id="saveMyPreference" data="gdpr.savePref"
+            onclick="saveConsent(this); consentOptions();">
+            Save My Preferences</button>
+        </div>
+      </div>
+    </div>
   </div>
 
   <!-- script loading -->
@@ -521,10 +824,11 @@
   <!-- Add popup summon to click events on subscribe button elements -->
   <script>
     const btn = document.querySelector(".subscribeBtn");
-
     btn.addEventListener("click",
       () => {
-        getLocalizationLanguage() === "lt" ? ml_account('webforms', '5622661', 'g9f1k6', 'show') : ml_account('webforms', '5622651', 'p5g7s4', 'show');
+        if (document.cookie.includes("GDPRConfirmed=functi-true")) {
+          getLocalizationLanguage() === "lt" ? ml_account('webforms', '5622661', 'g9f1k6', 'show') : ml_account('webforms', '5622651', 'p5g7s4', 'show');
+        }
       })
   </script>
 </body>

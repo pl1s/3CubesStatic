@@ -32,3 +32,11 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   });
 });
+
+//btn sends gtag event and plays vid
+const play = (video) => {
+  video.children[0].play = true;
+  //removing attribute if video clicked > 1 per visit (e.g.:paused..)
+  video.removeAttribute("onclick");
+  console.log(video);
+};
