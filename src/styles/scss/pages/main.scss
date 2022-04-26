@@ -133,6 +133,9 @@ footer {
   &__cardRight {
     h3 {
       font-size: 1.6rem;
+      @include mq1024 {
+        padding: 0 10px 0 10px;
+      }
     }
   }
   &__container {
