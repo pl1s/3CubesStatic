@@ -113,7 +113,7 @@
                   border-color: inherit;
                   height: 6px;
                   width: 6px;
-                  transform: rotate(45deg);
+                  transform: rotate(-45deg);
                   transition: all 0.2s ease-in-out;
                   top: 18px;
                 }
@@ -200,7 +200,7 @@
     transform: rotate(180deg);
   }
   &::before {
-    transform: rotate(-45deg);
+    transform: rotate(45deg);
   }
 }
 .top-shadow {

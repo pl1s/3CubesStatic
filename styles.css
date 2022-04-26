@@ -2941,8 +2941,7 @@
 .news__body-card_image img {
   width: 100%;
   height: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
 }
 .news__body-card_text {
   flex: 1;
@@ -3505,8 +3504,7 @@ header .active * {
 }
 header .logo {
   display: flex;
-  -o-object-fit: contain;
-     object-fit: contain;
+  object-fit: contain;
   z-index: 2;
   padding: 1rem;
 }
@@ -3539,8 +3537,7 @@ header .right-side__navigation {
   width: 100%;
 }
 header .right-side__navigation.open {
-  -webkit-clip-path: circle(2500px at 90% -5%);
-          clip-path: circle(2500px at 90% -5%);
+  clip-path: circle(2500px at 90% -5%);
 }
 @media (max-width: 1024px) {
   header .right-side__navigation {
@@ -3556,8 +3553,7 @@ header .right-side__navigation.open {
     height: 100vh;
     width: 100%;
     background: #273f52;
-    -webkit-clip-path: circle(100px at 100% -10%);
-            clip-path: circle(100px at 100% -10%);
+    clip-path: circle(100px at 100% -10%);
     transition: all 1s ease-out;
   }
   header .right-side__navigation * {
@@ -3674,8 +3670,7 @@ header a {
 
 .shadow {
   box-shadow: 0 2px 4px -1px rgba(0, 0, 0, 0.25);
-  -webkit-backdrop-filter: blur(6px);
-          backdrop-filter: blur(6px);
+  backdrop-filter: blur(6px);
 }
 
 .blurHeader * {
@@ -3830,8 +3825,7 @@ header a {
 .hero-main__cta-topRight .book {
   height: 100%;
   width: 100%;
-  -o-object-fit: contain;
-     object-fit: contain;
+  object-fit: contain;
 }
 @media (max-width: 1024px) {
   .hero-main__cta-topRight .book {
@@ -3917,7 +3911,7 @@ header a {
 }
 .popup__container {
   padding: 1rem 1.5rem;
-  box-shadow: 0 -1px 10px 0 rgba(172, 171, 171, 0.3019607843);
+  box-shadow: 0 -1px 10px 0 #acabab4d;
 }
 .popup__container-bar {
   padding: 1rem;
@@ -4023,7 +4017,7 @@ header a {
   border-color: inherit;
   height: 6px;
   width: 6px;
-  transform: rotate(45deg);
+  transform: rotate(-45deg);
   transition: all 0.2s ease-in-out;
   top: 18px;
 }
@@ -4042,7 +4036,7 @@ header a {
   flex-direction: column;
   list-style: none;
   padding: 15px 10px;
-  border-bottom: 1px solid rgba(172, 171, 171, 0.3019607843);
+  border-bottom: 1px solid #acabab4d;
 }
 .popup__container-preference_body-wrapper_accordion-body_table-item li {
   display: flex;
@@ -4107,11 +4101,11 @@ header a {
   transform: rotate(180deg);
 }
 .rotate-arrow::before {
-  transform: rotate(-45deg);
+  transform: rotate(45deg);
 }
 
 .top-shadow {
-  box-shadow: 0 -1px 10px 0 rgba(172, 171, 171, 0.3019607843);
+  box-shadow: 0 -1px 10px 0 #acabab4d;
 }
 
 .always-active {
@@ -4124,8 +4118,8 @@ header a {
 }
 
 .top-bottom-border {
-  border-top: 1px solid rgb(244, 244, 244);
-  border-bottom: 1px solid rgb(244, 244, 244);
+  border-top: 1px solid #f4f4f4;
+  border-bottom: 1px solid #f4f4f4;
 }
 
 .fadeOver {
@@ -4171,6 +4165,7 @@ header a {
   right: 0;
   bottom: 0;
   background-color: #ccc;
+  -webkit-transition: 0.4s;
   transition: 0.4s;
 }
 
@@ -4182,6 +4177,7 @@ header a {
   left: 4px;
   bottom: 4px;
   background-color: white;
+  -webkit-transition: 0.4s;
   transition: 0.4s;
 }
 @media (max-width: 767px) {
@@ -4230,8 +4226,7 @@ input:checked + .slider:before {
   font-weight: 400;
 }
 .game-learning__img img {
-  -o-object-fit: contain;
-     object-fit: contain;
+  object-fit: contain;
 }
 
 .research * {
@@ -4840,4 +4835,6 @@ footer {
 
 .show {
   display: flex !important;
-}/*# sourceMappingURL=styles.css.map */
+}
+
+/*# sourceMappingURL=styles.css.map */
