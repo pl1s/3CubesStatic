@@ -110,7 +110,7 @@
   background: url(res/img/reusable/gediminas-tower.png) no-repeat center center;
   background-size: cover;
   @include mq480 {
-    background: url(res/img/reusable/gediminas-tower.png) no-repeat -540px 100%;
+    background: url(res/img/reusable/gediminas-tower.png) no-repeat -406px 100%;
     background-size: cover;
   }
   &__topWrapper {
@@ -1086,18 +1086,24 @@
           margin: 0;
         }
         .cardLeft {
-          left: -3.5vh;
+          left: -40px;
           bottom: -20%;
+          @include mq480{
+            left: -30px;
+          }
         }
         .cardMiddle {
-          right: -6vh;
+          right: -35px;
           bottom: -20%;
+          @include mq480 {
+            right: -23px;
+          }
         }
         .cardRight {
-          right: -5.5vh;
+          right: -10%;
           top: -2.5vh;
           @include mq480 {
-            right: -6vh;
+            right: -17%;
           }
         }
 

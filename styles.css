@@ -139,7 +139,7 @@
 }
 @media (max-width: 480px) {
   .research {
-    background: url(res/img/reusable/gediminas-tower.png) no-repeat -540px 100%;
+    background: url(res/img/reusable/gediminas-tower.png) no-repeat -406px 100%;
     background-size: cover;
   }
 }
@@ -1289,20 +1289,30 @@
   }
 }
 .reviews__topWrapper-container_card .cardLeft {
-  left: -3.5vh;
+  left: -40px;
   bottom: -20%;
+}
+@media (max-width: 480px) {
+  .reviews__topWrapper-container_card .cardLeft {
+    left: -30px;
+  }
 }
 .reviews__topWrapper-container_card .cardMiddle {
-  right: -6vh;
+  right: -35px;
   bottom: -20%;
 }
+@media (max-width: 480px) {
+  .reviews__topWrapper-container_card .cardMiddle {
+    right: -23px;
+  }
+}
 .reviews__topWrapper-container_card .cardRight {
-  right: -5.5vh;
+  right: -10%;
   top: -2.5vh;
 }
 @media (max-width: 480px) {
   .reviews__topWrapper-container_card .cardRight {
-    right: -6vh;
+    right: -17%;
   }
 }
 .reviews__topWrapper-container_card img {
