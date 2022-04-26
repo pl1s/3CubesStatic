@@ -99,7 +99,7 @@ async function i18Loader() {
     });
   });
   toggleClass();
-  toggleLogo();
+  toggleLogo(localizationLanguage);
 }
 
 getLocalizationLanguage();
