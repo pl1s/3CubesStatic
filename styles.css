@@ -1503,6 +1503,7 @@
 @media (max-width: 1024px) {
   .keyBenefits img {
     right: 0;
+    z-index: -1;
   }
 }
 @media (max-width: 767px) {
@@ -1562,21 +1563,23 @@
 }
 .payments__video {
   position: absolute;
-  margin: 0 15%;
+  justify-content: center;
+  display: flex;
+  padding: 0 15%;
   top: 5vw;
   left: 0;
   right: 0;
-  display: flex;
 }
-.payments__video video {
-  height: 80%;
+.payments__video button {
   width: 80%;
-  margin: 0 auto;
 }
 @media (max-width: 767px) {
-  .payments__video video {
+  .payments__video button {
     width: 90%;
   }
+}
+.payments__video video {
+  width: 100%;
 }
 
 .mars__title * {

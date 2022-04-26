@@ -1282,6 +1282,7 @@
     }
     @include mq1024 {
       right: 0;
+      z-index: -1;
     }
     @include mq767 {
       display: none;
@@ -1333,19 +1334,20 @@
   }
   &__video {
     position: absolute;
-    margin: 0 15%;
+    justify-content: center;
+    display: flex;
+    padding: 0 15%;
     top: 5vw;
     left: 0;
     right: 0;
-    display: flex;
-
-    video {
-      height: 80%;
+    button {
       width: 80%;
-      margin: 0 auto;
       @include mq767 {
         width: 90%;
       }
+    }
+    video {
+      width: 100%;
     }
   }
 }

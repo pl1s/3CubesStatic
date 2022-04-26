@@ -450,12 +450,14 @@
     </section>
     <section class="payments flex-column">
       <div class="payments__top no_En"></div>
-      <button class="payments__video no_En transparent" onclick="gtag('event','video-tracker',{
+      <div class="payments__video no_En">
+        <button class="transparent" onclick="gtag('event','video-tracker',{
         'event-category':'video',
         'event_label':'edu_video_played'
-      }); play(this.children)">
-        <video src="./res/video/formal.mp4" poster="./res/img/formal/videoPoster.png" controls></video>
-      </button>
+      }); play(this)">
+          <video src="./res/video/formal.mp4" poster="./res/img/formal/videoPoster.png" controls></video>
+        </button>
+      </div>
       <div class="payments__bottom no_En">
         <div class="payments__bottom-title">
           <h2>Lankstūs finansavimo būdai</h2>
