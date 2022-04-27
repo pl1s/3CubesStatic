@@ -250,7 +250,7 @@
     },
     "codeAcademy": {
       "sub": {
-        "text": "For individual registration visit \"CodeAcademy Kids\"<button class=\"element transparent\" data=\"nonFormal.codeAcademy.sub.href\" onclick=\"gtag('event','outbound',{ 'event-category':'redirecting_links', event_label':'redirecting_2_codeAcad' });\"><a href=\"http://codeacademy.com\" target=\"_blank\">here.</a></button>",
+        "text": "For individual registration visit \"CodeAcademy Kids\"<button class=\"element transparent\" data=\"nonFormal.codeAcademy.sub.href\" onclick=\"gtag('event','outbound',{ 'event_category':'redirecting_links', event_label':'redirecting_2_codeAcad' });\"><a href=\"http://codeacademy.com\" target=\"_blank\">here.</a></button>",
         "href": "<a href=\"http://codeacademy.com\" target=\"_blank\">here.</a>"
       },
       "footer": "Working in collaboration with",

@@ -250,7 +250,7 @@
     },
     "codeAcademy": {
       "sub": {
-        "text": "Į būrelį galite individualiai registruotis „CodeAcademy Kids“ svetainėje <button class=\"element transparent\" data=\"nonFormal.codeAcademy.sub.href\" onclick=\"gtag('event','outbound',{ 'event-category':'click', event_label':'redirecting_2_codeAcad' });\"><a href=\"http://codeacademy.com\" target=\"_blank\">čia.</a></button>",
+        "text": "Į būrelį galite individualiai registruotis „CodeAcademy Kids“ svetainėje <button class=\"element transparent\" data=\"nonFormal.codeAcademy.sub.href\" onclick=\"gtag('event','outbound',{ 'event_category':'click', event_label':'redirecting_2_codeAcad' });\"><a href=\"http://codeacademy.com\" target=\"_blank\">čia.</a></button>",
         "href": "<a href=\"http://codeacademy.com\" target=\"_blank\">čia.</a>"
       },
       "footer": "Būrelis kurtas bendradarbiaujant su",
