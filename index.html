@@ -19,6 +19,9 @@
   <script src="./components/gdpr-popup/gdprPopup.js"></script>
   <!-- GOOGLE ANALYTICS -->
   <script>
+    let gaProperty = 'G-78KBBN7H92'
+    let disableStr = 'ga-disable-' + gaProperty;
+
     // Define dataLayer and the gtag function.
     window.dataLayer = window.dataLayer || [];
     function gtag() { dataLayer.push(arguments); }
@@ -29,27 +32,6 @@
       analytics_storage: 'denied',
       wait_for_update: 5000
     });
-
-
-    let gaProperty = 'G-78KBBN7H92'
-    let disableStr = 'ga-disable-' + gaProperty;
-
-    const consentOptions = () => {
-      console.log(document.cookie.includes("GDPRConfirmed"));
-      if (document.cookie.indexOf("analyt-true") > -1) {
-        gtag('consent', 'update', {
-          'ad_storage': 'granted',
-          'analytics_storage': 'granted'
-        });
-        window[disableStr] = false;
-      } else {
-        gtag('consent', 'update', {
-          'ad_storage': 'denied',
-          'analytics_storage': 'denied'
-        });
-        window[disableStr] = true;
-      }
-    }
   </script>
   <!-- Global site tag (gtag.js) - Google Ads: CONVERSION_ID  -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=AW-YYYYYY"></script>
@@ -59,7 +41,6 @@
     gtag('js', new Date());
     gtag('config', gaProperty);
   </script>
-
   <!-- NewsLetters Universal -->
   <script>
     // CHECKING for GDPR COOKIE & functional preference STATUS

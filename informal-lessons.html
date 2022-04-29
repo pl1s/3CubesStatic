@@ -18,6 +18,8 @@
   <script src="./components/gdpr-popup/gdprPopup.js"></script>
   <!-- GOOGLE ANALYTICS -->
   <script>
+    let gaProperty = 'G-78KBBN7H92'
+    let disableStr = 'ga-disable-' + gaProperty;
     // Define dataLayer and the gtag function.
     window.dataLayer = window.dataLayer || [];
     function gtag() { dataLayer.push(arguments); }
@@ -28,27 +30,6 @@
       analytics_storage: 'denied',
       wait_for_update: 5000
     });
-
-
-    let gaProperty = 'G-78KBBN7H92'
-    let disableStr = 'ga-disable-' + gaProperty;
-
-    const consentOptions = () => {
-      console.log(document.cookie.includes("GDPRConfirmed"));
-      if (document.cookie.indexOf("analyt-true") > -1) {
-        gtag('consent', 'update', {
-          'ad_storage': 'granted',
-          'analytics_storage': 'granted'
-        });
-        window[disableStr] = false;
-      } else {
-        gtag('consent', 'update', {
-          'ad_storage': 'denied',
-          'analytics_storage': 'denied'
-        });
-        window[disableStr] = true;
-      }
-    }
   </script>
   <!-- Global site tag (gtag.js) - Google Ads: CONVERSION_ID  -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=AW-YYYYYY"></script>
@@ -97,13 +78,10 @@
         <h5><a class="element nav" data="nav.formal" href="./formal-lessons.html">Formal education</a></h5>
         <h5><a class="element nav" data="nav.nonformal" href="./informal-lessons.html">Informal education</a></h5>
         <h5><a class="element nav" data="nav.projects" href="./projects.html">Projects</a></h5>
-        <!-- <h5><a class="element nav" data="nav.news" href="./news.html">News</a></h5>
-        <h5><a class="element nav" data="nav.contacts" href="./contacts.html">Contacts</a></h5> -->
         <div class="right-side__language flex-row">
           <button class="lt" value="en" id="langSelector">
             <h5>LT</h5>
           </button>
-          <!-- <h5>|</h5> -->
           <button class="en" value="lt" id="langSelector">
             <h5>EN</h5>
           </button>
@@ -467,7 +445,7 @@
       <h5 class="flex-row text element" data="footer.subs.cc">&copy;2022 "Edukraftas". All rights reserved.</h5>
     </div>
   </footer>
-  
+
   <gdpr-popup></gdpr-popup>
 
   <!-- script loading -->
