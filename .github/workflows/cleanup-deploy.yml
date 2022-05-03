@@ -37,5 +37,5 @@ jobs:
       - name: Push
         run: |
           git add .
-          git commit -m "Clean up"
+          git commit -m "Clean up and deployment"
           git push
