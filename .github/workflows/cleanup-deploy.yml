@@ -25,10 +25,10 @@ jobs:
         run: |
           echo File tree before cleanup:
           ls 
-          rm -f src
-          rm -f pages
-          rm -f temp
-          rm -f ./.github
+          rm -f -r src
+          rm -f -r pages
+          rm -f -r temp
+          rm -f -r .github
           echo ----------------
           echo File tree after cleanup:
           ls
