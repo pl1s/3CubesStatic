@@ -24,10 +24,14 @@ jobs:
       # Removing files if they are there. -f to avoid errors
       - name: Cleanup
         run: |
+          echo File tree before cleanup:
           ls 
           rm -f src
           rm -f pages
           rm -f temp
+          echo ----------------
+          echo File tree after cleanup:
+          ls
 
       # leaving this for testing weather other stuff works ok
       - name: Push
