@@ -38,4 +38,4 @@ jobs:
         run: |
           git add .
           git commit -m "Automated: clean up and deployment"
-          git push
+          git push -f
