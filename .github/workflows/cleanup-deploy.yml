@@ -18,15 +18,16 @@ jobs:
         run: |
           git config user.name github-actions
           git checkout prod
-          git merge staging 
+          git rebase staging 
           git push
         
+      # Removing files if they are there. -f to avoid errors
       - name: Cleanup
         run: |
           ls 
-          rm ./src
-          rm ./pages
-          rm ./temp
+          rm -f src
+          rm -f pages
+          rm -f temp
 
       # leaving this for testing weather other stuff works ok
       - name: Push
