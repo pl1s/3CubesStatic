@@ -23,9 +23,10 @@ jobs:
         
       - name: Cleanup
         run: |
-          rm src
-          rm pages
-          rm temp
+          ls 
+          rm ./src
+          rm ./pages
+          rm ./temp
 
       # leaving this for testing weather other stuff works ok
       - name: Push
