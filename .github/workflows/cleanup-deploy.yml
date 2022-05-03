@@ -28,7 +28,7 @@ jobs:
           rm -f src
           rm -f pages
           rm -f temp
-          rm -f .github
+          rm -f ./.github
           echo ----------------
           echo File tree after cleanup:
           ls
@@ -36,4 +36,6 @@ jobs:
       # leaving this for testing weather other stuff works ok
       - name: Push
         run: |
+          git add .
+          git commit -m "Clean up"
           git push
