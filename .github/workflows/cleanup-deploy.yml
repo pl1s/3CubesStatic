@@ -16,10 +16,8 @@ jobs:
       
       - name: Merge changes into prod
         run: |
-          git config user.name github-actions
           git checkout prod
           git merge staging 
-          git push
         
       # Removing files if they are there. -f to avoid errors
       - name: Cleanup
@@ -29,6 +27,7 @@ jobs:
           rm -f src
           rm -f pages
           rm -f temp
+          rm -f .github
           echo ----------------
           echo File tree after cleanup:
           ls
@@ -36,5 +35,5 @@ jobs:
       # leaving this for testing weather other stuff works ok
       - name: Push
         run: |
-          echo Add other actions to build,
-          echo test, and deploy your project.
+          git config user.name github-actions
+          git push
