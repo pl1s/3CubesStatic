@@ -1,0 +1,34 @@
+name: Cleanup and Deploy
+
+on:
+  push:
+    branches: [ staging ]
+
+# A workflow run is made up of one or more jobs that can run sequentially or in parallel
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v3
+        with:
+          fetch-depth: 0
+      
+      - name: Merge changes into prod
+        run: |
+          git config user.name github-actions
+          git checkout prod
+          git merge staging 
+          git push
+        
+      - name: Cleanup
+        run: |
+          rm src/
+          rm pages/
+          rm temp/
+
+      # leaving this for testing weather other stuff works ok
+      - name: Push
+        run: |
+          echo Add other actions to build,
+          echo test, and deploy your project.
