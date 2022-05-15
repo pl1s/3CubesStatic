@@ -1,9 +1,8 @@
-const langSelector = document.querySelectorAll("#langSelector");
-const logo = document.querySelector(".logoImg");
-var localizationLanguage;
+const headerComp = document.querySelector("header-comp");
 
+var localizationLanguage;
 // Parameter hiding to the next level - EVERYTHING is name cookie...
-// //get ONLY lang Cookie
+//get ONLY lang Cookie
 // function getLangCookie() {
 //   let cookies = {};
 //   let lang = navigator.language || navigator.userLanguage;
@@ -46,8 +45,8 @@ function setLocalizationLanguage(value, expiration = 2592000) {
 //toggle logo LT->EN
 function toggleLogo(lang) {
   lang === "en"
-    ? (logo.src = "./res/img/header_footer/logo_en.png")
-    : (logo.src = "./res/img/header_footer/logo.png");
+    ? (headerComp.logo.src = "./res/img/header_footer/logo_en.png")
+    : (headerComp.logo.src = "./res/img/header_footer/logo.png");
 }
 
 function updateContent() {
@@ -82,18 +81,18 @@ async function i18Loader() {
     updateContent();
   });
 
-  langSelector.forEach((s) => {
+  headerComp.langSelector.forEach((s) => {
     s.addEventListener("click", (e) => {
       i18next.changeLanguage(e.target.innerText.toLowerCase());
       setLocalizationLanguage(e.target.innerText.toLowerCase()); // NOTE: Not a very good practice to use visual elements as values;
       // active class Switcher
       localizationLanguage === "en"
         ? s.classList.add("active")
-        : langSelector[1].classList.remove("active");
+        : headerComp.langSelector[1].classList.remove("active");
 
       localizationLanguage === "lt"
         ? s.classList.add("active")
-        : langSelector[0].classList.remove("active");
+        : headerComp.langSelector[0].classList.remove("active");
 
       toggleLogo(localizationLanguage);
     });

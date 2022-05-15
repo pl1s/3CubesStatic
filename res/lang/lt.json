@@ -428,5 +428,10 @@
       "title": "Analitiniai",
       "desc": "Analitiniai slapukai naudojami siekiant suprasti, kaip lankytojai sąveikauja su svetaine. Šie slapukai padeda teikti informaciją apie tokius rodiklius kaip lankytojų skaičius, srauto šaltinis ir kt."
     }
+  },
+  "notice": {
+    "title": "<b>Spalukų nustatymų valdymas</b>",
+    "info": "Norėdami užsiprenumeruoti mūsų naujienlaiškį, pirmiausia turite pakeisti slapukų nustatymus.<br>",
+    "desc": "Spauskite <b>mirksinčią ikonelę</b>, tada atidatykite <b>\"Leisti pasirinkimą\"</b> ir įgalinkite <b>\"Functiniai\"</b> slapukus arba galite <b>\"Priimti Visus\"</b>."
   }
 }

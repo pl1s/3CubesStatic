@@ -2,6 +2,14 @@ document.addEventListener("DOMContentLoaded", function () {
   const btn = document.querySelectorAll("#contactBtn");
   const scrollingElement = document.scrollingElement || document.body;
   const invisibleElements = document.querySelectorAll(".no_En");
+  const footer = document.querySelector("footer-comp");
+  const gdpr = document.querySelector("gdpr-popup");
+  const notice = document.querySelector("notice-overlay");
+
+  //listening child custom events from parent component
+  footer.addEventListener("showNotice", () => notice.show());
+  gdpr.addEventListener("hideNotice", () => notice.hide());
+  notice.addEventListener("showGDPR", () => gdpr.show());
 
   btn.forEach((x) => {
     x.addEventListener("click", () => {
@@ -17,20 +25,20 @@ document.addEventListener("DOMContentLoaded", function () {
         x.classList.add("hide");
       });
     }
-  };
 
-  //clicking case
-  langSelector.forEach((s) => {
-    s.addEventListener("click", (e) => {
-      invisibleElements.forEach((x) => {
-        if (localizationLanguage === "en") {
-          x.classList.remove("hide");
-        } else {
-          x.classList.add("hide");
-        }
+    //clicking case
+    headerComp.langSelector.forEach((s) => {
+      s.addEventListener("click", (e) => {
+        invisibleElements.forEach((x) => {
+          if (localizationLanguage === "en") {
+            x.classList.remove("hide");
+          } else {
+            x.classList.add("hide");
+          }
+        });
       });
     });
-  });
+  };
 });
 
 //btn sends gtag event and plays vid
