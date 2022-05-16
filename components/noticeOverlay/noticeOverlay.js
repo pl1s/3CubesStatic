@@ -45,11 +45,12 @@ function defineOverlay(template) {
       this.cookieImg.classList.remove("blink");
     }
     //function triggered on  custom event
-    assignAttribute() {
+    assignAttribute = async () => {
+      await getLocalizationLanguage();
       localizationLanguage === "en"
         ? this.cookieContainer.setAttribute("value", "Cookie Settings")
         : this.cookieContainer.setAttribute("value", "Slapukų Nustatymai");
-    }
+    };
   }
   window.customElements.define("notice-overlay", noticeOverlay);
 }
