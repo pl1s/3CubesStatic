@@ -9,7 +9,8 @@
   background-color: white;
   text-align: center;
   justify-content: center;
-  z-index: 9999;
+  z-index: 99998;
+  pointer-events: all !important;
   &__container {
     padding: 1rem 1.5rem;
     box-shadow: 0 -1px 10px 0 #acabab4d;
@@ -79,7 +80,9 @@
       }
       &_body {
         position: relative;
+        pointer-events: all;
         overflow-y: scroll;
+        -webkit-overflow-scrolling: touch;
         max-height: 20vh;
         &-wrapper {
           &_accordion {
@@ -202,6 +205,10 @@
   &::before {
     transform: rotate(45deg);
   }
+}
+.inactive {
+  overflow: hidden;
+  pointer-events: none;
 }
 .top-shadow {
   box-shadow: 0 -1px 10px 0 #acabab4d;

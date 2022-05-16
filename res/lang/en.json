@@ -421,5 +421,10 @@
       "title": "Analytics",
       "desc": " Analytical cookies are used to understand how visitors interact with the website. These cookies help provide information on metrics such as the number of visitors, traffic source, etc."
     }
+  },
+  "notice": {
+    "title": "<b>Here's your cookies settings</b>",
+    "info": "In order to subscribe to our newsletter, you need to customize your cookies settings first.<br>",
+    "desc": "Press <b>Blinking Cookie</b>, then <b>\"Customize\"</b> and Enable <b>\"Functional\"</b> cookie or you can <b>\"Accept All\"</b> settings."
   }
 }
