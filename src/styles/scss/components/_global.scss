@@ -9,8 +9,20 @@
   border: none;
 }
 //scrollbar delete
+// html::-webkit-scrollbar {
+//   width: 0 !important;
+// }
 html::-webkit-scrollbar {
-  width: 0 !important;
+  width: 0.75em !important;
+}
+
+html::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 6px $bgHero;
+}
+
+html::-webkit-scrollbar-thumb {
+  background-color: $bgHero;
+  outline: 1px solid slategrey;
 }
 
 html {

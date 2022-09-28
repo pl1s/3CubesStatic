@@ -3010,7 +3010,16 @@
 }
 
 html::-webkit-scrollbar {
-  width: 0 !important;
+  width: 0.75em !important;
+}
+
+html::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 6px #273f52;
+}
+
+html::-webkit-scrollbar-thumb {
+  background-color: #273f52;
+  outline: 1px solid slategrey;
 }
 
 html {
