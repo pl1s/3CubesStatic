@@ -3,6 +3,7 @@
     "home": "Pagrindinis",
     "formal": "Formalus švietimas",
     "nonformal": "Neformalus švietimas",
+    "products": "Pasiūlymai",
     "projects": "Projektai",
     "news": "Naujienos",
     "contacts": "Kontaktai"
@@ -379,6 +380,75 @@
     "cardAll7": "„Trys kubai“ stendas su „Minecraft“ edukaciniais nuotykiais parodoje „Mokykla 2019“",
     "cardAll8": "„Hour of Code“ renginys rengtas kartu su „Microsoft“ ir MO muziejumi",
     "cardAll9": "„Women Go Tech“ konferencija"
+  },
+  "products": {
+    "title": "Individualūs mokymo moduliai!",
+    "title2": "Pasirinkite pamokas individualiai arba išbandykite „Trijų kūbų“ paruoštus modulius",
+    "packages": {
+      "title": "Išbandykite mūsų paruoštus mokymo modulius arba susikurkite savo",
+      "option": "Variantas",
+      "option1": "1 Variantas",
+      "option2": "2 Variantas",
+      "titleA": "Efektyvūs mokymo moduliai 3 ir 4 klasėms",
+      "titleB": "Susikurkite savo modulį",
+      "descA": "Paruoštos atsižvelgiant į ugdymo programą ",
+      "descB": "Pasirink - Nutepk - Paleisk <br> 11 bet kokios klasės pamokų",
+      "custom": { "title": "Moduliai" },
+      "3grade": {
+        "title": "3-ia klasė",
+        "lessons": [
+          "„Minecraft“ edu. platformos",
+          "Mokytojo įrankiai",
+          "Lietuvos gyvūnai",
+          "Sugedęs telefonas",
+          "Valstybės simboliai",
+          "Sausio 13-oji",
+          "Žalgirio mūšis",
+          "Gamtos objektai",
+          "Vandens ciklas",
+          "Žemynai ir jų ypatybės",
+          "Miesto planavimas"
+        ]
+      },
+      "4grade": {
+        "title": "4-a klasė",
+        "lessons": [
+          "Mokytojo įrankiai",
+          "Ūkinės veiklos",
+          "Gamtos ištekliai",
+          "Matavimo vienetai",
+          "Mokesčiai ir pinigai",
+          "Tarptautiniai ryšiai",
+          "Mindaugo karūnavimas",
+          "Saulės sistema",
+          "Žmogaus kūnas",
+          "Elektra ir magnetizmas",
+          "Ekologinės problemos"
+        ]
+      }
+    },
+    "plans": {
+      "title": "Patys pasirinkite norimas pamokas",
+      "title2": "Pasiūlymai",
+      "classic": {
+        "name": "Classic",
+        "price": "17&euro;"
+      },
+      "period": "1-iems Mokslo metams/mokiniui",
+      "gold": {
+        "name": "Gold",
+        "price": "49&euro;"
+      },
+      "benefits": [
+        "1 Modulis (11 pamokų)",
+        "Mokytojo knyga ",
+        "Mokinio pratybos ",
+        "Savaitiniai susitikimai ",
+        "Techninė pagalba ",
+        "Kvalifikacijos mokymai (40 val.)",
+        "„Trys kubai“ konsultanto pagalba"
+      ]
+    }
   },
   "gdpr": {
     "title": "Mes vertiname jūsų privatumą",

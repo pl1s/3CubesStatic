@@ -17,12 +17,14 @@ html::-webkit-scrollbar {
 }
 
 html::-webkit-scrollbar-track {
-  -webkit-box-shadow: inset 0 0 6px $bgHero;
+  background: lightgrey;
+  // border: 1px solid grey;
+  // -webkit-box-shadow: inset 0 0 6px $bgHero;
+  // -webkit-box-shadow: inset 0 black;
 }
 
 html::-webkit-scrollbar-thumb {
-  background-color: $bgHero;
-  outline: 1px solid slategrey;
+  background-color: $aColor;
 }
 
 html {
