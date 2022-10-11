@@ -50,23 +50,24 @@ var sortable = Sortable.create(C, {
 });
 
 //Style corrections
-let customModule = document.getElementById("Xgrade");
-let defaultModuleHeight = document.getElementById("3grade").clientHeight;
-let defaultModuleWidth = document.getElementById("3grade").clientWidth;
+let defaultModuleHeight = A.clientHeight;
+let defaultModuleWidth = A.clientWidth;
+console.log(A);
 // Title
 let customTitle = document.getElementById("customTitle");
 let defaultTitleHeight = document.getElementById("defaultTitle").clientHeight;
+// if(document.cookie.)
 B.setAttribute(
   "style",
-  `height:${defaultModuleHeight}px;width:${defaultModuleWidth}px;`
+  `height:${defaultModuleHeight}px;width:${defaultModuleWidth + 22}px;`
 );
-A.setAttribute(
+// A.setAttribute(
+//   "style",
+//   `height:${defaultModuleHeight}px;width:${defaultModuleWidth}px;`
+// );
+C.setAttribute(
   "style",
-  `height:${defaultModuleHeight}px;width:${defaultModuleWidth}px;`
-);
-customModule.setAttribute(
-  "style",
-  `height:${defaultModuleHeight}px;width:${defaultModuleWidth}px;`
+  `height:${defaultModuleHeight}px;width:${defaultModuleWidth + 22}px;`
 );
 if (window.scrollX >= 767)
   customTitle.setAttribute("style", `height:${defaultTitleHeight}px;`);

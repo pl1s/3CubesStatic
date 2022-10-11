@@ -395,7 +395,7 @@
       "descB": "Pasirink - Nutepk - Paleisk <br> 11 bet kokios klasės pamokų",
       "custom": { "title": "Moduliai" },
       "3grade": {
-        "title": "3-ia klasė",
+        "title": "Trečia klasė",
         "lessons": [
           "„Minecraft“ edu. platformos",
           "Mokytojo įrankiai",
@@ -411,7 +411,7 @@
         ]
       },
       "4grade": {
-        "title": "4-a klasė",
+        "title": "Ketvirta klasė",
         "lessons": [
           "Mokytojo įrankiai",
           "Ūkinės veiklos",
