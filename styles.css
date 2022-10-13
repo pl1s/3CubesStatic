@@ -229,6 +229,11 @@
 .modules__container_title * {
   white-space: nowrap;
 }
+@media (max-width: 480px) {
+  .modules__container_title * {
+    white-space: unset;
+  }
+}
 .modules__container_title > h5 {
   position: relative;
   margin-bottom: 0.5rem;
@@ -3936,8 +3941,11 @@ header .right-side__navigation .right-side__language {
   header .right-side__navigation h5:nth-child(5) {
     transition: all 0.2s ease 0.9s;
   }
+  header .right-side__navigation h5:nth-child(6) {
+    transition: all 0.2s ease 1s;
+  }
   header .right-side__navigation .right-side__language {
-    transition: all 0.2s ease 0.7s;
+    transition: all 0.2s ease 1s;
   }
   header .right-side__navigation h5.fade,
 header .right-side__navigation .right-side__language.fade {

@@ -131,6 +131,9 @@
     &_title {
       * {
         white-space: nowrap;
+        @include mq480 {
+          white-space: unset;
+        }
       }
       & > h5 {
         position: relative;

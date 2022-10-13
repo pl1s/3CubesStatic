@@ -52,7 +52,7 @@ var sortable = Sortable.create(C, {
 //Style corrections
 let defaultModuleHeight = A.clientHeight;
 let defaultModuleWidth = A.clientWidth;
-console.log(A);
+
 // Title
 let customTitle = document.getElementById("customTitle");
 let defaultTitleHeight = document.getElementById("defaultTitle").clientHeight;
