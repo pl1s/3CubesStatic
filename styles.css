@@ -111,15 +111,16 @@
   font-weight: 400;
   line-height: 1.5rem;
   letter-spacing: -1px;
+  text-align: center;
 }
 @media (max-width: 1024px) {
   .packages .list-item {
-    padding: 5px 0 5px 2rem;
+    padding: 5px 0 5px 0;
   }
 }
 @media (max-width: 480px) {
   .packages .list-item {
-    padding: 5px 0 0 2rem;
+    padding: 5px 0 0 0;
     font-size: 12px;
     line-height: 12px;
   }
@@ -187,6 +188,9 @@
 }
 .packages__container1-display_card, .packages__container2-display_card {
   padding: 1rem;
+}
+.packages__container1-display_card .highlighted, .packages__container2-display_card .highlighted {
+  font-weight: 500;
 }
 .packages__container1 {
   background: rgba(253, 211, 6, 0.4);
