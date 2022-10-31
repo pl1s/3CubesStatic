@@ -3,6 +3,7 @@
     "home": "Home",
     "formal": "Formal education",
     "nonformal": "Informal education",
+    "products": "Package Offers",
     "projects": "Projects",
     "news": "News",
     "contacts": "Contacts"
@@ -373,6 +374,74 @@
     "cardAll7": "\"Trys kubai\" stendas su \"Minecraft\" edukaciniais nuotykiais parodoje \"Mokykla 2019\"",
     "cardAll8": "\"Hour of Code\" renginys rengtas kartu su \"Microsoft\" ir MO muziejumi",
     "cardAll9": "\"Women Go Tech\" konferencija"
+  },
+  "products": {
+    "title": "Customizable learning Packages!",
+    "title2": "Choose lessons to accurately target goals or experience \"Three Cubes\" learning modules",
+    "packages": {
+      "title": "Select our learning packages or build your own",
+      "option1": "1 Option",
+      "option2": "2 Option",
+      "titleA": "Well-crafted learning packages for 3rd & 4th Grades",
+      "titleB": "Build your own package",
+      "descA": "Chosen to correlate with formal education programs",
+      "descB": "Choose - Drag - Drop <br> 11 lessons from any grade to Package",
+      "custom": { "title": "Package" },
+      "3grade": {
+        "title": "Third Grade",
+        "lessons": [
+          "Minecraft edu. platforms",
+          "Teacher's tools",
+          "Wildlife in Lithuania",
+          "Broken phone",
+          "National Symbols",
+          "January 13th",
+          "Battle of Grunwald",
+          "Objects of nature",
+          "Water cycle",
+          "Continents",
+          "Urban planning"
+        ]
+      },
+      "4grade": {
+        "title": "Fourth Grade",
+        "lessons": [
+          "Teacher's tools",
+          "Economic activities",
+          "Nature resources",
+          "Units of measurement",
+          "Taxes and money",
+          "International affairs",
+          "King Mindaugas' coronation",
+          "Solar system",
+          "Human anatomy",
+          "Electricity and magnetism",
+          "Environmental problems"
+        ]
+      }
+    },
+    "plans": {
+      "title": "Pay for what you need",
+      "title2": "Plans",
+      "classic": {
+        "name": "Standart",
+        "price": "17&euro;"
+      },
+      "gold": {
+        "name": "Premium",
+        "price": "49&euro;"
+      },
+      "period": "1 Academic year/student",
+      "benefits": [
+        "1 Package (11 lessons)",
+        "Teacher's guidebook",
+        "Student's exercise book",
+        "Weekly meetings",
+        "Technical help",
+        "Training course 40 h",
+        "Individual help"
+      ]
+    }
   },
   "gdpr": {
     "title": "We value your privacy",

@@ -1,6 +1,9 @@
+@use "./breaks" as *;
 //font
+@import url("https://fonts.googleapis.com/css2?family=Volkhov:wght@700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Work+Sans:wght@300;400;500;700&display=swap");
 $font: "Work Sans", sans-serif;
+$fontNum: "Volkhov";
 
 @mixin splide__arrow {
   button.splide__arrow {
@@ -13,4 +16,53 @@ $font: "Work Sans", sans-serif;
     // width: 38px !important;
     border-radius: 0 !important;
   }
+}
+
+@keyframes fade-in {
+  0% {
+    transform: translateX(0px);
+    opacity: 0;
+  }
+  50% {
+    transform: translateX(10vw);
+    opacity: 0.8;
+  }
+  75% {
+    opacity: 0.8;
+  }
+  100% {
+    transform: translateX(50vw);
+    opacity: 0;
+    display: none;
+  }
+}
+@keyframes fade-in-Y {
+  0% {
+    transform: translateY(0px);
+    opacity: 0;
+  }
+  50% {
+    transform: translateY(10vh);
+    opacity: 0.8;
+  }
+  75% {
+    opacity: 0.8;
+  }
+  100% {
+    transform: translateY(50vh);
+    opacity: 0;
+    display: none;
+  }
+}
+
+.play-animation {
+  animation-name: fade-in;
+  @include mq767 {
+    animation-name: fade-in-Y !important;
+  }
+  animation-duration: 6000ms;
+  animation-timing-function: ease-in-out;
+  animation-fill-mode: both;
+  animation-delay: 100ms;
+  animation-play-state: running;
 }

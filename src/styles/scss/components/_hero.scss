@@ -13,12 +13,14 @@
 }
 .hero-main {
   padding-top: 10vh !important;
+
   @include mq1500 {
     height: unset;
   }
   &__cta {
     height: 90vh;
     display: flex;
+    width: 100%;
     flex-direction: row;
     @include mq1500 {
       padding: 0 0 5% 0;

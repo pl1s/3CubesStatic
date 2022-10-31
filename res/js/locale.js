@@ -1,5 +1,5 @@
 const headerComp = document.querySelector("header-comp");
-
+const productTutElement = document.querySelector("#helper");
 var localizationLanguage;
 // Parameter hiding to the next level - EVERYTHING is name cookie...
 //get ONLY lang Cookie
@@ -44,9 +44,13 @@ function setLocalizationLanguage(value, expiration = 2592000) {
 
 //toggle logo LT->EN
 function toggleLogo(lang) {
-  lang === "en"
-    ? (headerComp.logo.src = "./res/img/header_footer/logo_en.png")
-    : (headerComp.logo.src = "./res/img/header_footer/logo.png");
+  if (lang === "en") {
+    headerComp.logo.src = "./res/img/header_footer/logo_en.png";
+    productTutElement.src = "./res/img/products/tutorial_en.png";
+  } else {
+    headerComp.logo.src = "./res/img/header_footer/logo.png";
+    productTutElement.src = "./res/img/products/tutorial.png";
+  }
 }
 
 function updateContent() {

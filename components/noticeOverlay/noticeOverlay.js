@@ -44,7 +44,7 @@ function defineOverlay(template) {
       this.dialogBox.style.display = "none";
       this.cookieImg.classList.remove("blink");
     }
-    //function triggered on  custom event
+    //function triggered on custom event
     assignAttribute = async () => {
       await getLocalizationLanguage();
       localizationLanguage === "en"
