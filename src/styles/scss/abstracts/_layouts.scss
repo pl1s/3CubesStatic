@@ -11,19 +11,23 @@
   .list-item {
     position: relative;
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
-    padding: 7.5px 0 7.5px 0;
+    padding-bottom: 2px;
+    padding-left: 5px;
+    // padding: 7.5px 0 7.5px 0;
+    font-size: 1.1rem;
     font-weight: 400;
-    line-height: 1.5rem;
+    line-height: 1.2rem;
     letter-spacing: -1px;
-    text-align: center;
-
+    text-align: start;
+    &:before {
+      content: "•";
+      margin-right: 5px;
+    }
     @include mq1024 {
-      padding: 5px 0 5px 0;
     }
     @include mq480 {
-      padding: 5px 0 0 0;
       font-size: 12px;
       line-height: 12px;
     }
@@ -52,14 +56,14 @@
   &__container1,
   &__container2 {
     @include mq1024 {
-      max-width: 300px;
+      max-width: 250px;
     }
     @include mq480 {
       margin: 0 10px;
     }
-    flex: 1;
     justify-content: flex-start;
-    max-width: 420px;
+    width: 100%;
+    max-width: 300px;
     margin: 0 5%;
     position: relative;
     // border: 1px solid grey;
@@ -69,10 +73,21 @@
   }
   &__container1-display,
   &__container2-display {
-    h3 {
-      padding-top: 1rem;
+    &_title {
+      padding: 1rem 10%;
+      h3 {
+        padding-top: 1rem;
+        font-weight: 800;
+      }
+      h6 {
+        font-weight: 200;
+        font-size: 0.85rem;
+        line-height: 0.5rem;
+      }
     }
     &_price {
+      padding: 1rem 10%;
+      text-align: center;
       h1 {
         position: relative;
         font-family: $fontNum;
@@ -85,24 +100,23 @@
           pointer-events: none;
         }
       }
-      h6 {
-        font-weight: 200;
-        font-size: 1rem;
-        line-height: 0.5rem;
-      }
     }
     &_card {
       padding: 1rem;
+      margin-bottom: 3.2rem;
+      background: rgb(251 244 244);
       & .highlighted {
         font-weight: 500;
       }
     }
   }
   &__container1 {
-    background: rgba($bgStats, 0.4);
+    // background: rgba($bgStats, 0.4);
+    background: white;
   }
   &__container2 {
-    background: rgba($bgStats, 0.8);
+    // background: rgba($bgStats, 0.8);
+    background: white;
   }
 }
 
@@ -233,12 +247,27 @@
             }
           }
           & .card {
+            position: relative;
             display: flex;
             justify-content: center;
             align-items: center;
-            // border-radius: 5px;
             background: $bgBtn !important;
             color: white;
+            cursor: pointer;
+            // &:hover {
+            //   background: lightgrey !important;
+            //   color:black;
+            // }
+            & .overlay {
+              position: absolute;
+              margin: auto;
+              width: 100%;
+              height: 100%;
+              background: lightgrey !important;
+              color: black;
+              font-size: 1rem;
+              font-weight: 500;
+            }
           }
         }
       }

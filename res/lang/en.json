@@ -424,11 +424,11 @@
       "title": "Pay for what you need",
       "title2": "Plans",
       "classic": {
-        "name": "Classic",
+        "name": "Standart",
         "price": "17&euro;"
       },
       "gold": {
-        "name": "Gold",
+        "name": "Premium",
         "price": "49&euro;"
       },
       "period": "1 Academic year/student",
@@ -438,8 +438,8 @@
         "Student's exercise book",
         "Weekly meetings",
         "Technical help",
-        "Training course (40 hours)",
-        "\"Three Cubes\" individual help"
+        "Training course 40 h",
+        "Individual help"
       ]
     }
   },

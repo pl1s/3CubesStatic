@@ -71,3 +71,28 @@ C.setAttribute(
 );
 if (window.scrollX >= 767)
   customTitle.setAttribute("style", `height:${defaultTitleHeight}px;`);
+
+//Deleting custom Module inner cards
+C.addEventListener("mouseenter", () => {
+  let customModuleCards = document.querySelectorAll(
+    ".modules__container-custom_card-list .card"
+  );
+  customModuleCards.forEach((card) => {
+    card.addEventListener("mouseenter", () => {
+      let overlay;
+      overlay = document.createElement("button");
+      overlay.innerText = "Delete ?";
+      overlay.classList.add("overlay");
+      card.append(overlay);
+      overlay.addEventListener("click", () => {
+        overlay.parentElement.remove();
+      });
+    });
+    card.addEventListener("mouseleave", () => {
+      const btn = document.querySelector(
+        " .modules__container-custom_card-list .card button"
+      );
+      card.removeChild(btn);
+    });
+  });
+});
