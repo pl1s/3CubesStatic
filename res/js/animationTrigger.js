@@ -81,7 +81,7 @@ C.addEventListener("mouseenter", () => {
     card.addEventListener("mouseenter", () => {
       let overlay;
       overlay = document.createElement("button");
-      overlay.innerText = "Delete ?";
+      // overlay.innerText = "Delete ?";
       overlay.classList.add("overlay");
       card.append(overlay);
       overlay.addEventListener("click", () => {

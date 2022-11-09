@@ -108,13 +108,14 @@
   display: flex;
   justify-content: flex-start;
   align-items: center;
-  padding-bottom: 2px;
+  padding-bottom: 4px;
   padding-left: 5px;
   font-size: 1.1rem;
   font-weight: 400;
   line-height: 1.2rem;
   letter-spacing: -1px;
   text-align: start;
+  color: white;
 }
 .packages .list-item:before {
   content: "•";
@@ -170,6 +171,9 @@
 .packages__container1-display_title, .packages__container2-display_title {
   padding: 1rem 10%;
 }
+.packages__container1-display_title *, .packages__container2-display_title * {
+  color: white;
+}
 .packages__container1-display_title h3, .packages__container2-display_title h3 {
   padding-top: 1rem;
   font-weight: 800;
@@ -188,6 +192,7 @@
   font-family: "Volkhov";
   font-weight: 800;
   font-size: 3rem;
+  color: white !important;
 }
 .packages__container1-display_price h1 a, .packages__container2-display_price h1 a {
   position: absolute;
@@ -198,16 +203,17 @@
 .packages__container1-display_card, .packages__container2-display_card {
   padding: 1rem;
   margin-bottom: 3.2rem;
-  background: rgb(251, 244, 244);
+  background: rgb(77, 91, 121);
 }
 .packages__container1-display_card .highlighted, .packages__container2-display_card .highlighted {
   font-weight: 500;
+  font-size: 1.15rem;
 }
 .packages__container1 {
-  background: white;
+  background: #273f52;
 }
 .packages__container2 {
-  background: white;
+  background: #273f52;
 }
 
 .modules__title {
@@ -347,13 +353,19 @@
 }
 .modules__container-custom_card-list .card .overlay {
   position: absolute;
+  right: -8px;
+  top: -12px;
   margin: auto;
-  width: 100%;
-  height: 100%;
-  background: lightgrey !important;
+  width: 20px;
+  height: 20px;
+  background: transparent !important;
   color: black;
-  font-size: 1rem;
-  font-weight: 500;
+}
+.modules__container-custom_card-list .card .overlay:after {
+  content: "🗙";
+  height: 100%;
+  width: 100%;
+  font-size: 1.1rem;
 }
 .modules__container .card {
   padding: 5px 10px;
