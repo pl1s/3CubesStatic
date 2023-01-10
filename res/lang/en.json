@@ -6,7 +6,8 @@
     "products": "Package Offers",
     "projects": "Projects",
     "news": "News",
-    "contacts": "Contacts"
+    "contacts": "Contacts",
+    "sample": "Sample"
   },
   "footer": {
     "contact": {
@@ -441,6 +442,29 @@
         "Training course 40 h",
         "Individual help"
       ]
+    }
+  },
+  "sample": {
+    "hero": {
+      "title": "Interactive lessons in schools!",
+      "sub": "Special offer — we invite you to download \"Trys cubes\" and \"January 13th\" and \"Humanitarian Aid for Ukraine\" lessons for FREE",
+      "btn": "Contact us!"
+    },
+    "jan13": {
+      "title": "\"January 13th\"",
+      "sub": "Explore Vilnius TV tower and get to know what happened on January 13",
+      "lesson": {
+        "desc": "Critical thinking, social and citizenship competences, respect for human rights and freedoms are developed. Students perform tasks individually and in groups.",
+        "topics": [
+          "exploring Vilnius TV tower",
+          "completing tasks",
+          "sharing tea with others",
+          "building barricades",
+          "singing national songs",
+          "burning bonfires",
+          "and more!"
+        ]
+      }
     }
   },
   "gdpr": {
