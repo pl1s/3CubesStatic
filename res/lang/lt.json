@@ -451,6 +451,56 @@
       ]
     }
   },
+  "sample": {
+    "banner": "Specialus pasiūlymas — kviečiame nemokamai atsisiųsti „Trys kubai“ pamoką „Sausio 13-oji“.",
+    "hero": {
+      "title": "Nemokamos pamokos!",
+      "sub": "Siūlome išbandyti mūsų nemokamus pamokų paketus!",
+      "btn": "Susisiekite"
+    },
+    "jan13": {
+      "title": "„Sausio 13-oji“",
+      "sub": "Susipažinti su istoriniais įvykiais, TV bokštu, Sausio 13-osios dienos eiga",
+      "lesson": {
+        "desc": "Ugdomos kritinio mąstymo, socialinės, pilietiškumo kompetencijos, pagarba žmogaus teisėms ir laisvėms.       ",
+        "topics": [
+          "tyrinėti Vilniaus TV bokštą",
+          "vykdyti užduotis",
+          "dalintis arbata su kitais",
+          "stato barikadas",
+          "dainuoja tautines dainas",
+          "kūrena laužus",
+          "ir dar daugiau!"
+        ]
+      }
+    },
+    "ukraine": {
+      "title": "„Humanitarinės pagalbos tiekimas Ukrainai“",
+      "sub": " Išmokstama kaip bendradarbiaujant tarpusavyje galima greitai tiekti humanitarinę pagalbą Ukrainai",
+      "lesson": {
+        "desc": "Pamokos tikslas – išmokyti jaunimą, kaip kartu dirbdami galime paremti Ukrainą.",
+        "topics": [
+          "renkant išteklius",
+          "komplektuojant pagalbos rinkinius",
+          "bendradarbiaujant ir atliekant užduotis",
+          "statydami objektus, kurie simbolizuoja palaikymą",
+          "skatinamas kūrybiškumas",
+          "ir dar daugiau!"
+        ]
+      }
+    },
+    "instructions": {
+      "lt": "LIETUVIŲ",
+      "en": "ANGLŲ",
+      "title": "Pasirengimo gidas",
+      "desc": "Žemiau rasite hiperlinkus į instrukcijas. Pasirinkite kalbą, paspaudę pasirinkite operacinę sistemą ir Minecraft edition "
+    },
+    "info": [
+      "Nemokamas pamokos paketas sukurtas taip, kad mokytojas klasei gali pats savarankiškai pravesti pamoką.",
+      "Jeigu kyla klausimų įsirašant programėles, kreipkitės į <b>gabriele@tryskubai.lt</b>",
+      "Jeigu norite, kad pamoką Jūsų klasei pravestų Trys kubai edukatorius, šių metų kaina — 3 eur/mokiniui, dėl pasiūlymo kreipkitės akvile@tryskubai.lt, +370 (602) 91 919"
+    ]
+  },
   "gdpr": {
     "title": "Mes vertiname jūsų privatumą",
     "desc": "Naudodami slapukus mes siekame pagerinti jūsų naršymo patirtį, taip pat jie reikalingi analizuoti lankytojų srautą. Paspaudus „Priimti Visus“ jūs sutinkate su mūsų slapukų naudojimu.",

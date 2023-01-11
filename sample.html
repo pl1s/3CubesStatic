@@ -36,6 +36,7 @@
   </script>
   <!-- Global site tag (gtag.js) - Google Ads: CONVERSION_ID  -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=AW-YYYYYY"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/3.1.2/rollups/aes.js"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
     function gtag() { dataLayer.push(arguments); }
@@ -83,11 +84,13 @@
     </section>
     <section class="banner">
       <div class="banner__wrapper">
-        <h5>Special offer — we invite you to download "Trys cubes" "January 13th" and "Humanitarian Aid for Ukraine"
+        <h5 class="element" data="sample.banner">Special offer — we invite you to download "Trys cubes" "January 13th"
+          and "Humanitarian Aid
+          for Ukraine"
           lessons for FREE</h5>
       </div>
     </section>
-    <section class="sample flex-column">
+    <section class="sample flex-column ">
       <div class="sample__title flex-column  ">
         <h2 class="element" data="sample.jan13.title">January 13th</h2>
         <h4 class="element" data="sample.jan13.sub">Explore Vilnius TV tower and get to know what happened on January 13
@@ -96,7 +99,7 @@
       <div class="sample__body flex-row">
         <div class="sample__body-container">
           <div class="sample__body-container_video">
-            <video src="./res/video/nonFormal.mp4" controls></video>
+            <video class="video" src="./res/video/jan13.mp4" controls></video>
           </div>
           <!-- <div class="sample__body-container_container flex-row"> -->
           <div class="splide">
@@ -104,22 +107,22 @@
               <div class="splide__list">
                 <li class="splide__slide slide01">
                   <div class="sample__body-container-item">
-                    <img src="./res/img/nonformal/Mars_1.png" alt="mars">
+                    <img src="./res/img/jan13/1.png" alt="january 13">
                   </div>
                 </li>
                 <li class="splide__slide slide02">
                   <div class="sample__body-container-item">
-                    <img src="./res/img/nonformal/Mars_2.png" alt="mars">
+                    <img src="./res/img/jan13/2.png" alt="january 13">
                   </div>
                 </li>
                 <li class="splide__slide slide03">
                   <div class="sample__body-container-item">
-                    <img src="./res/img/nonformal/Mars_3.png" alt="mars">
+                    <img src="./res/img/jan13/3.png" alt="january 13">
                   </div>
                 </li>
                 <li class="splide__slide slide04">
                   <div class="sample__body-container-item">
-                    <img src="./res/img/nonformal/Mars_4.png" alt="mars">
+                    <img src="./res/img/jan13/4.png" alt="january 13">
                   </div>
                 </li>
               </div>
@@ -158,55 +161,51 @@
               </li>
               </li>
             </ul>
-            <section class="download">
-              <div class="download__container">
-                <button class="flex center transparent" onclick="gtag('event','downloads',{
-                  'event_category':'download',
-                  'event_label':'downloaded_topics'
-                });">
-                  <a href="./res/assets/themes.pdf" download="3Cubes themes list">
-                  </a><img class="arrow" src="./res/img/reusable/arrowR.png" alt="download arrow">
-                  <h4 class="element" data="formal.download.btn">Download</h4>
-                </button>
-              </div>
-            </section>
           </div>
+          <section class="download">
+            <div class="download__container">
+              <button id="showDialog" class="flex center transparent S13">
+                </a><img class="arrow" src="./res/img/reusable/arrowR.png" alt="download arrow">
+                <h4 class="element" data="formal.download.btn">Download</h4>
+              </button>
+            </div>
+          </section>
         </div>
       </div>
     </section>
-    <section class="sample flex-column">
-      <div class="sample__title flex-column  ">
-        <h2 class="element" data="sample.jan13.title">Humanitarian Aid for Ukraine</h2>
-        <h4 class="element" data="sample.jan13.sub">Learn how to quickly deliver humanitarian aid to Ukraine through
+    <section class="sample flex-column top-bottom-padding">
+      <div class="sample__title flex-column">
+        <h2 class="element" data="sample.ukraine.title">Humanitarian Aid for Ukraine</h2>
+        <h4 class="element" data="sample.ukraine.sub">Learn how to quickly deliver humanitarian aid to Ukraine through
           cooperation</h4>
       </div>
-      <div class="sample__body flex-row">
+      <div class="sample__body flex-row-reverse">
         <div class="sample__body-container">
-          <!-- <div class="sample__body-container_container flex-row"> -->
           <div class="sample__body-container_video">
-            <video src="./res/video/nonFormal.mp4" poster="./res/img/nonformal/poster.png" controls></video>
+            <video class="video" src="./res/video/ua.mp4" controls></video>
           </div>
-          <div class="splide">
+          <!-- <div class="sample__body-container_container flex-row"> -->
+          <div class="splide02">
             <div class="splide__track">
               <div class="splide__list">
                 <li class="splide__slide slide01">
-                  <div class="sample__body-container_container-item">
-                    <img src="./res/img/nonformal/Mars_1.png" alt="mars">
+                  <div class="sample__body-container-item">
+                    <img src="./res/img/products/intl_affairs/1.png" alt="ukraine lesson">
                   </div>
                 </li>
                 <li class="splide__slide slide02">
-                  <div class="sample__body-container_container-item">
-                    <img src="./res/img/nonformal/Mars_2.png" alt="mars">
+                  <div class="sample__body-container-item">
+                    <img src="./res/img/products/intl_affairs/2.png" alt="ukraine lesson">
                   </div>
                 </li>
                 <li class="splide__slide slide03">
-                  <div class="sample__body-container_container-item">
-                    <img src="./res/img/nonformal/Mars_3.png" alt="mars">
+                  <div class="sample__body-container-item">
+                    <img src="./res/img/products/intl_affairs/3.png" alt="ukraine lesson">
                   </div>
                 </li>
                 <li class="splide__slide slide04">
-                  <div class="sample__body-container_container-item">
-                    <img src="./res/img/nonformal/Mars_4.png" alt="mars">
+                  <div class="sample__body-container-item">
+                    <img src="./res/img/products/intl_affairs/4.png" alt="ukraine lesson">
                   </div>
                 </li>
               </div>
@@ -215,53 +214,153 @@
         </div>
         <div class="sample__body-themes side-half-padding flex-column">
           <div class="sample__body-themes_title flex center">
-            <h3 class="element" data="sample.jan13.lesson.desc">The goal of the lesson is to teach the youth how we can
+            <h3 class="element" data="sample.ukraine.lesson.desc">The goal of the lesson is to teach the youth how we
+              can
               support Ukraine by working together.</h3>
           </div>
           <div class="sample__body-themes_list">
             <ul>
               <li><img src="./res/img/nonformal/Rectangle 237.png" alt="list icon">
-                <h4 class="element" data="sample.jan13.lesson.topics.0">gathering resources</h4>
+                <h4 class="element" data="sample.ukraine.lesson.topics.0">gathering resources</h4>
               </li>
               <li><img src="./res/img/nonformal/Rectangle 237.png" alt="list icon">
-                <h4 class="element" data="sample.jan13.lesson.topics.1">making aid packages</h4>
+                <h4 class="element" data="sample.ukraine.lesson.topics.1">making aid packages</h4>
               </li>
               <li><img src="./res/img/nonformal/Rectangle 237.png" alt="list icon">
-                <h4 class="element" data="sample.jan13.lesson.topics.2">collaborate and perform tasks
+                <h4 class="element" data="sample.ukraine.lesson.topics.2">collaborate and perform tasks
                 </h4>
               </li>
               <li><img src="./res/img/nonformal/Rectangle 237.png" alt="list icon">
-                <h4 class="element" data="sample.jan13.lesson.topics.3">building object which symbolize support</h4>
+                <h4 class="element" data="sample.ukraine.lesson.topics.3">building object which symbolize support</h4>
               </li>
               <li><img src="./res/img/nonformal/Rectangle 237.png" alt="list icon">
-                <h4 class="element" data="sample.jan13.lesson.topics.4">creativity</h4>
+                <h4 class="element" data="sample.ukraine.lesson.topics.4">creativity</h4>
               </li>
               <li><img src="./res/img/nonformal/Rectangle 237.png" alt="list icon">
-                <h4 class="element" data="sample.jan13.lesson.topics.6">and more!;</h4>
+                <h4 class="element" data="sample.ukraine.lesson.topics.5">and more!;</h4>
               </li>
               </li>
             </ul>
-            <section class="download">
-              <div class="download__container">
-                <button class="flex center transparent" onclick="gtag('event','downloads',{
-                  'event_category':'download',
-                  'event_label':'downloaded_topics'
-                });">
-                  <a href="./res/assets/themes.pdf" download="3Cubes themes list">
-                    <h4 class="element" data="formal.download.btn">Download</h4>
-                  </a><img class="arrow" src="./res/img/reusable/arrowR.png" alt="download arrow">
-                </button>
-              </div>
-            </section>
           </div>
+          <section class="download">
+            <div class="download__container">
+              <button id="showDialog" class="flex center transparent UA">
+                </a><img class="arrow" src="./res/img/reusable/arrowR.png" alt="download arrow">
+                <h4 class="element" data="formal.download.btn">Download</h4>
+              </button>
+            </div>
+          </section>
         </div>
       </div>
     </section>
+    <section class="instructions side-padding">
+      <div class="instructions__container">
+        <h2 class="element" data="sample.instructions.title">Getting Started Guides</h2>
+        <h3 class="element" data="sample.instructions.desc">Bellow are hyperlinks to instructions. Select preferable
+          language, then option of your operating
+          system and Minecraft edition</h3>
+        <div class="instructions__container-list">
+          <ul>
+            <li><a class="element" data="sample.instructions.en"
+                href="https://sites.google.com/three-cubes.net/guide/en" target="_blank">ENGLISH</a> </li>
+            <li><a class="element" data="sample.instructions.lt" href="https://gidas.three-cubes.net/lt"
+                target="_blank">LITHUANIAN</a></li>
+          </ul>
+        </div>
+        <div class="instructions__container-hyperlinks">
+        </div>
+      </div>
+    </section>
+    <section class="info full-padding">
+      <div class="info__container flex-column">
+        <h4 class="element" data="sample.info.0">Our free lesson packages are designed in a way that the teacher could
+          go along with material and teach class
+          on his own. </h4>
+        <h4 class=" element" data="sample.info.1">For any questions feel free to contact <b>gabriele@tryskubai.lt</b>
+        </h4>
+        <h4 class=" element" data="sample.info.2">"Trys kubai educator could teach your class, this year's price is 3
+          eur/student, contact
+          <b>akvile@tryskubai.lt</b>, +370 (602) 91 919 for an offer.
+        </h4 class=" element" data="sample.info.3">
+      </div>
+    </section>
+    <!-- A modal dialog containing a form -->
+    <dialog id="favDialog">
+      <section style="display: flex;justify-content: center;algn-items: center;">
+        <div
+          style="display: flex; flex-direction: column; align-items: center; justify-content: center; max-width: 800px;">
+          <div style="min-height: 260px; padding: 2rem; border-radius: 10px; box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+       ">
+            <div style="display: flex; flex-direction: column; align-items: center; justify-content: center;">
+              <div style="display: flex; justify-content: center;">
+                <h2 style="margin-top: 0;
+                  font-weight: 400; padding:1.2rem 0;">Pamokos parsisiuntimo forma</h2>
+              </div>
+              <div style="padding-bottom:1rem;">
+                <h4 style="margin: 0; padding-bottom: .5rem; font-weight: 400;">Mums svarbi Jūsų nuomonė!
+                </h4>
+                <h4 class="desc-details" style="margin: 0; font-weight: 300;">Galite pasirinkti, ar norite gauti
+                  užklausas
+                  apie kitus mūsų
+                  produktus į savo el. paštą
+                  susisiekimo ir
+                  rinkodaros tikslais. Tai svarbu ir skirta tam, kad galėtume susisiekti su Jumis - išgirsti Jūsų
+                  nuomonę,
+                  kaip
+                  sekėsi savarankiškai vesti pamoką ir padėti iškilus klausimams.</h4>
+              </div>
+              <div style="padding-bottom:1rem;">
+                <div style="display:flex; flex-direction:column; align-items:flex-start; padding-bottom:5px;">
+                  <input
+                    style="height:30px; width: 100%; border:2px solid #aaa; border-radius:4px; box-sizing:border-box; outline:none; font-weight:400; transition:.3s;"
+                    id="email" type="email" placeholder="el.paštas@gmail.com" size="30" required autocomplete="off">
+                  <span id="valid-required" class="valid-error" style="padding-top:5px;">Ši reikšmė negali
+                    būti tuščia.</span>
+                  <span id="valid-symbols" class="valid-error" style="padding-top:5px;">Negalima naudoti
+                    (<b>“‘/$&\;</b>)</span>
+                </div>
+                <div
+                  style="display:flex; flex-direction:row; justify-content:flex-start; align-items:center; margin:10px 0; ">
+                  <div>
+                    <h6 style="margin-right:6px;">Pasirinkite kalbą</h6>
+                  </div>
+                  <select style="    border: 1px solid black; font-size: 1rem; padding-left:5px;">
+                    <option value="default">EN</option>
+                    <option>LT</option>
+                  </select>
+                </div>
+                <div class="checkbox">
+                  <div class="checkbox-container">
+                    <input id="checkbox" type="checkbox">
+                    <h5 class="checkbox-txt" style="padding:0 3px;">Pažymėti varnelę būtina.
+                      <span id="valid-box" class="valid-error"></span>
+                  </div>
+                </div>
+              </div>
+              <div style=" display: flex; justify-content: center; align-items: center;">
+                <button
+                  style="display: flex; align-items: center; justify-content: center; border-radius: 10px; width: 200px; height: 40px; background:#ff5722; border:none; outline:none; border-radius:5px;"
+                  onclick="submit()">
+                  <h3 style="font-size:1rem; font-weight:400; color:white;">Siųsti</h3>
+                </button>
+              </div>
+            </div>
+            <div id="overlay"
+              style="position:absolute; display:none; justify-content:center; align-items:center; top:0; bottom:0; margin: 0 auto; width: 100%; background:rgba(0, 0, 0, 0.3)">
+              <div
+                style="background:white; box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;">
+                <h2 style="padding:3rem;">Completed successfully !</h2>
+              </div>
+            </div>
+          </div>
+      </section>
+    </dialog>
     <footer-comp></footer-comp>
     <gdpr-popup></gdpr-popup>
     <notice-overlay></notice-overlay>
     <!-- script loading -->
     <script src="./res/js/main.js"></script>
+    <script src="./res/js/sendEmail.js"></script>
     <script src="./res/js/i18next.min.js"></script>
     <script src="./res/js/splide.min.js"></script>
     <!-- CONFIGS -->
@@ -294,6 +393,7 @@
         },
       }).mount();
     </script>
+
 </body>
 
 </html>

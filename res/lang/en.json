@@ -445,9 +445,10 @@
     }
   },
   "sample": {
+    "banner": "Special offer — we invite you to download \"Trys cubes\" \"January 13th\" and \"Humanitarian Aid for Ukraine\" lessons for FREE",
     "hero": {
-      "title": "Interactive lessons in schools!",
-      "sub": "Special offer — we invite you to download \"Trys cubes\" and \"January 13th\" and \"Humanitarian Aid for Ukraine\" lessons for FREE",
+      "title": "Free lessons!",
+      "sub": "We prepared lesson packages for anyone to try it out",
       "btn": "Contact us!"
     },
     "jan13": {
@@ -465,7 +466,33 @@
           "and more!"
         ]
       }
-    }
+    },
+    "ukraine": {
+      "title": "\"Humanitarian Aid for Ukraine\"",
+      "sub": "Learn how to quickly deliver humanitarian aid to Ukraine through cooperation",
+      "lesson": {
+        "desc": "The goal of the lesson is to teach the youth how we can support Ukraine by working together.",
+        "topics": [
+          "gathering resources",
+          "making aid packages",
+          "collaborate and perform tasks",
+          "building object which symbolize support",
+          "creativity",
+          "and more!"
+        ]
+      }
+    },
+    "instructions": {
+      "lt": "LITHUANIAN",
+      "en": "ENGLISH",
+      "title": "Getting Started Guides",
+      "desc": "Bellow are hyperlinks to instructions. Select preferable language, then option of your operating system and Minecraft edition"
+    },
+    "info": [
+      "Our free lesson packages are designed in a way that the teacher could go along with material and teach class on his own.",
+      "For any questions feel free to contact <b>gabriele@tryskubai.lt</b>",
+      "Trys kubai educator could teach your class, this year's price is 3 eur/student, contact <b>akvile@tryskubai.lt</b>, +370 (602) 91 919 for an offer."
+    ]
   },
   "gdpr": {
     "title": "We value your privacy",
