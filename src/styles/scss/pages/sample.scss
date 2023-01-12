@@ -1,0 +1,247 @@
+@use "../abstracts" as *;
+
+.banner {
+  background: $bgStats;
+  &__wrapper {
+    padding: 1rem;
+    h5 {
+      width: 100%;
+      text-align: center;
+    }
+  }
+}
+
+.sample {
+  @include mq1024 {
+    padding: unset !important;
+  }
+  &__title {
+    padding: 5% 10% 0 5%;
+    align-items: flex-start;
+    @include mq1024 {
+      padding: 5% !important;
+      justify-content: center;
+      align-items: center;
+    }
+    * {
+      padding-bottom: 1%;
+    }
+    h4,
+    h2 {
+      text-align: center;
+    }
+  }
+  &__body {
+    position: relative;
+    @include mq1024 {
+      flex-direction: column !important;
+    }
+    &-themes {
+      flex: 3;
+      justify-content: flex-start;
+      @include mq1024 {
+        align-items: flex-start;
+        margin-top: 100px;
+      }
+      @include mq480 {
+        margin-top: 5%;
+      }
+      &_title {
+        // padding: 0 0 10% 0;
+        @include mq1024 {
+          // padding: 2% 0 10px 0;
+        }
+      }
+      &_list {
+        margin: 5% 0;
+        li {
+          display: flex;
+          align-items: flex-start;
+          list-style-type: none;
+          padding-bottom: 2%;
+          @include mq1024 {
+            padding: 1% 0;
+          }
+          img {
+            padding: 0 5px;
+            @include mq767 {
+              width: 25px;
+              height: 14px;
+            }
+          }
+        }
+      }
+    }
+    &-container {
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      width: 50%;
+      padding-left: 5%;
+      @include mq1024 {
+        width: 100%;
+        padding: unset !important;
+      }
+      .paginator {
+        display: flex;
+        height: 100px;
+        list-style: none;
+        justify-content: center;
+        align-items: center;
+        * {
+          padding: 0 5px;
+        }
+      }
+      &_video {
+        flex: 1;
+        padding: 0 10%;
+        .video {
+          width: 100%;
+          height: 100%;
+        }
+      }
+      justify-content: space-between;
+      &-item {
+        flex: 1;
+        height: 100%;
+        width: 100%;
+        padding: 0 10%;
+        img {
+          height: 300px;
+          width: 100%;
+          object-fit: fill;
+          @include mq1024 {
+            height: 400px;
+          }
+          @include mq480 {
+            height: 200px;
+          }
+        }
+      }
+    }
+  }
+}
+
+.instructions {
+  @include mq1024 {
+    padding: 5% 5% 0 5%;
+  }
+  &__container {
+    &-list {
+      margin-top: 5%;
+      ul {
+        list-style: none;
+        li {
+          padding: 6px 0;
+          a {
+            font-weight: 600;
+            margin: 10px 0;
+          }
+        }
+      }
+    }
+  }
+}
+
+.info {
+  &__container {
+    background: rgba(205, 206, 250, 0.644);
+    padding: 2rem;
+    h4 {
+      margin: 4px 0;
+    }
+  }
+}
+//Dialog
+dialog {
+  margin: auto;
+  &::backdrop {
+    background: rgba(rgb(102, 102, 102), 0.3) !important;
+  }
+  form {
+  }
+}
+/* REUSABLE CLASSES */
+.checkbox {
+}
+
+.checkbox-txt {
+  font-weight: 400;
+  margin: 0;
+}
+
+.checkbox-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.valid-error {
+  display: none;
+  font-size: 0.75rem;
+  font-weight: 600;
+  color: #ff5722;
+  margin: 0 0 5px 5px;
+}
+
+/* EXTENDING STYLE ATTRIBUTE */
+input[type="email"]:focus {
+  border-color: #ff5722;
+  box-shadow: 0 0 8px 0 #ff5722;
+}
+
+/////////////////
+//Slides
+////////////////
+.splide {
+  &__list {
+    // max-height: 300px;
+  }
+}
+//////////////
+//OVERRIDES
+/////////////
+.download {
+  padding: 0.5rem 5% 0.5rem 0 !important;
+  @include mq1024 {
+    width: 100%;
+    font-size: 2.2rem;
+  }
+  &__container {
+    button {
+      width: 100%;
+      padding: 10px 0 !important;
+      margin: unset !important;
+    }
+    .arrow {
+      transform: rotate(90deg);
+    }
+    h4 {
+      @include mq1024 {
+        font-size: 2.2rem;
+      }
+    }
+  }
+}
+//JAN13
+.splide button.splide__arrow--prev {
+  right: calc(10% + 50px) !important;
+  top: 106% !important;
+}
+.splide button.splide__arrow--next {
+  right: calc(10% + 0px) !important;
+  top: 106% !important;
+}
+//UKRAINE
+.splide02 button.splide__arrow--prev {
+  right: unset;
+  left: 0;
+  top: 104% !important;
+}
+.splide02 button.splide__arrow--next {
+  right: unset;
+  top: 104% !important;
+}
+.splide02 button.splide__arrow {
+  margin: 0 11rem !important;
+}

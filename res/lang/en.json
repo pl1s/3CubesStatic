@@ -6,7 +6,8 @@
     "products": "Package Offers",
     "projects": "Projects",
     "news": "News",
-    "contacts": "Contacts"
+    "contacts": "Contacts",
+    "sample": "Sample"
   },
   "footer": {
     "contact": {
@@ -442,6 +443,56 @@
         "Individual help"
       ]
     }
+  },
+  "sample": {
+    "banner": "Special offer — we invite you to download \"Three Cubes\" \"January 13th\" and \"Humanitarian Aid for Ukraine\" lessons for FREE",
+    "hero": {
+      "title": "Free lessons!",
+      "sub": "We prepared lesson packages for anyone to try out",
+      "btn": "Contact us!"
+    },
+    "jan13": {
+      "title": "\"January 13th\"",
+      "sub": "Explore Vilnius TV tower and get to know what happened on January 13",
+      "lesson": {
+        "desc": "Critical thinking, social and citizenship competences, respect for human rights and freedoms are developed. Students perform tasks individually and in groups.",
+        "topics": [
+          "Exploring Vilnius TV tower",
+          "Completing tasks",
+          "Sharing tea with others",
+          "Building barricades",
+          "Singing national songs",
+          "Burning bonfires",
+          "and more!"
+        ]
+      }
+    },
+    "ukraine": {
+      "title": "\"Humanitarian Aid for Ukraine\"",
+      "sub": "Learn how to quickly deliver humanitarian aid to Ukraine through cooperation",
+      "lesson": {
+        "desc": "The goal of the lesson is to teach the students how we can support Ukraine by working together.",
+        "topics": [
+          "Gathering resources",
+          "Making aid packages",
+          "Collaborate and perform tasks",
+          "Building object which symbolize support",
+          "Creativity",
+          "and more!"
+        ]
+      }
+    },
+    "instructions": {
+      "lt": "LITHUANIAN",
+      "en": "ENGLISH",
+      "title": "Getting Started Guides",
+      "desc": "Bellow are hyperlinks to instructions. Select preferable language, then option of your operating system and Minecraft edition"
+    },
+    "info": [
+      "Our free lesson packages are designed in a way that the teacher could go along with material and teach class on his own.",
+      "For any questions feel free to contact <b>gabriele@tryskubai.lt</b>",
+      "Trys kubai educator could teach your class, this year's price is 3 eur/student, contact <b>akvile@tryskubai.lt</b>, +370 (602) 91 919 for an offer."
+    ]
   },
   "gdpr": {
     "title": "We value your privacy",
