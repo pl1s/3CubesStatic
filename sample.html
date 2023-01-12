@@ -19,6 +19,7 @@
   <script src="./components/gdprPopup/gdprPopup.js"></script>
   <script src="./components/footer/footer.js"></script>
   <script src="./components/noticeOverlay/noticeOverlay.js"></script>
+  <script src="./components/downloadForm/downloadForm.js"></script>
   <!-- GOOGLE ANALYTICS -->
   <script>
     let gaProperty = 'G-78KBBN7H92'
@@ -66,6 +67,7 @@
 
 <body>
   <header-comp></header-comp>
+  <download-form style="display: none;"></download-form>
   <main>
     <section class="hero-main side-padding">
       <div class="hero-main__cta">
@@ -164,7 +166,9 @@
           </div>
           <section class="download">
             <div class="download__container">
-              <button id="showDialog" class="flex center transparent S13">
+              <button id="showDialog" 
+                class="flex center transparent S13" 
+                onclick="onClickDownloadButton('S13')">
                 </a><img class="arrow" src="./res/img/reusable/arrowR.png" alt="download arrow">
                 <h4 class="element" data="formal.download.btn">Download</h4>
               </button>
@@ -244,7 +248,8 @@
           </div>
           <section class="download">
             <div class="download__container">
-              <button id="showDialog" class="flex center transparent UA">
+              <button id="showDialog" class="flex center transparent UA"
+                  onclick="onClickDownloadButton('UA')">
                 </a><img class="arrow" src="./res/img/reusable/arrowR.png" alt="download arrow">
                 <h4 class="element" data="formal.download.btn">Download</h4>
               </button>
@@ -284,116 +289,49 @@
         </h4 class=" element" data="sample.info.3">
       </div>
     </section>
-    <!-- A modal dialog containing a form -->
-    <dialog id="favDialog">
-      <section style="display: flex;justify-content: center;algn-items: center;">
-        <div
-          style="display: flex; flex-direction: column; align-items: center; justify-content: center; max-width: 800px;">
-          <div style="min-height: 260px; padding: 2rem; border-radius: 10px; box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
-       ">
-            <div style="display: flex; flex-direction: column; align-items: center; justify-content: center;">
-              <div style="display: flex; justify-content: center;">
-                <h2 style="margin-top: 0;
-                  font-weight: 400; padding:1.2rem 0;">Pamokos parsisiuntimo forma</h2>
-              </div>
-              <div style="padding-bottom:1rem;">
-                <h4 style="margin: 0; padding-bottom: .5rem; font-weight: 400;">Mums svarbi Jūsų nuomonė!
-                </h4>
-                <h4 class="desc-details" style="margin: 0; font-weight: 300;">Galite pasirinkti, ar norite gauti
-                  užklausas
-                  apie kitus mūsų
-                  produktus į savo el. paštą
-                  susisiekimo ir
-                  rinkodaros tikslais. Tai svarbu ir skirta tam, kad galėtume susisiekti su Jumis - išgirsti Jūsų
-                  nuomonę,
-                  kaip
-                  sekėsi savarankiškai vesti pamoką ir padėti iškilus klausimams.</h4>
-              </div>
-              <div style="padding-bottom:1rem;">
-                <div style="display:flex; flex-direction:column; align-items:flex-start; padding-bottom:5px;">
-                  <input
-                    style="height:30px; width: 100%; border:2px solid #aaa; border-radius:4px; box-sizing:border-box; outline:none; font-weight:400; transition:.3s;"
-                    id="email" type="email" placeholder="el.paštas@gmail.com" size="30" required autocomplete="off">
-                  <span id="valid-required" class="valid-error" style="padding-top:5px;">Ši reikšmė negali
-                    būti tuščia.</span>
-                  <span id="valid-symbols" class="valid-error" style="padding-top:5px;">Negalima naudoti
-                    (<b>“‘/$&\;</b>)</span>
-                </div>
-                <div
-                  style="display:flex; flex-direction:row; justify-content:flex-start; align-items:center; margin:10px 0; ">
-                  <div>
-                    <h6 style="margin-right:6px;">Pasirinkite kalbą</h6>
-                  </div>
-                  <select style="    border: 1px solid black; font-size: 1rem; padding-left:5px;">
-                    <option value="default">EN</option>
-                    <option>LT</option>
-                  </select>
-                </div>
-                <div class="checkbox">
-                  <div class="checkbox-container">
-                    <input id="checkbox" type="checkbox">
-                    <h5 class="checkbox-txt" style="padding:0 3px;">Pažymėti varnelę būtina.
-                      <span id="valid-box" class="valid-error"></span>
-                  </div>
-                </div>
-              </div>
-              <div style=" display: flex; justify-content: center; align-items: center;">
-                <button
-                  style="display: flex; align-items: center; justify-content: center; border-radius: 10px; width: 200px; height: 40px; background:#ff5722; border:none; outline:none; border-radius:5px;"
-                  onclick="submit()">
-                  <h3 style="font-size:1rem; font-weight:400; color:white;">Siųsti</h3>
-                </button>
-              </div>
-            </div>
-            <div id="overlay"
-              style="position:absolute; display:none; justify-content:center; align-items:center; top:0; bottom:0; margin: 0 auto; width: 100%; background:rgba(0, 0, 0, 0.3)">
-              <div
-                style="background:white; box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;">
-                <h2 style="padding:3rem;">Completed successfully !</h2>
-              </div>
-            </div>
-          </div>
-      </section>
-    </dialog>
-    <footer-comp></footer-comp>
-    <gdpr-popup></gdpr-popup>
-    <notice-overlay></notice-overlay>
-    <!-- script loading -->
-    <script src="./res/js/main.js"></script>
-    <script src="./res/js/sendEmail.js"></script>
-    <script src="./res/js/i18next.min.js"></script>
-    <script src="./res/js/splide.min.js"></script>
-    <!-- CONFIGS -->
-    <script src="./res/js/locale.js"></script>
-    <script type="text/javascript">
+    
+  </main>
+    
+  
+  <footer-comp></footer-comp>
+  <gdpr-popup></gdpr-popup>
+  <notice-overlay></notice-overlay>
+  <!-- script loading -->
+  <script src="./res/js/main.js"></script>
+  <!-- <script src="./res/js/sendEmail.js"></script> -->
+  <script src="./res/js/i18next.min.js"></script>
+  <script src="./res/js/splide.min.js"></script>
+  <!-- CONFIGS -->
+  <script src="./res/js/locale.js"></script>
+  <script type="text/javascript">
 
-      new Splide(".splide", {
-        type: "loop",
-        perPage: 1,
-        perMove: 1,
-        autoplay: true,
-        pagination: false,
-        breakpoints: {
-          480: {
+    new Splide(".splide", {
+      type: "loop",
+      perPage: 1,
+      perMove: 1,
+      autoplay: true,
+      pagination: false,
+      breakpoints: {
+        480: {
 
-          }
-        },
-      }).mount();
+        }
+      },
+    }).mount();
 
-      new Splide(".splide02", {
-        type: "loop",
-        perPage: 1,
-        perMove: 1,
-        autoplay: true,
-        pagination: false,
-        breakpoints: {
-          480: {
+    new Splide(".splide02", {
+      type: "loop",
+      perPage: 1,
+      perMove: 1,
+      autoplay: true,
+      pagination: false,
+      breakpoints: {
+        480: {
 
-          }
-        },
-      }).mount();
-    </script>
-
+        }
+      },
+    }).mount();
+  </script>
+    
 </body>
 
 </html>
