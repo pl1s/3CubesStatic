@@ -445,10 +445,10 @@
     }
   },
   "sample": {
-    "banner": "Special offer — we invite you to download \"Trys cubes\" \"January 13th\" and \"Humanitarian Aid for Ukraine\" lessons for FREE",
+    "banner": "Special offer — we invite you to download \"Three Cubes\" \"January 13th\" and \"Humanitarian Aid for Ukraine\" lessons for FREE",
     "hero": {
       "title": "Free lessons!",
-      "sub": "We prepared lesson packages for anyone to try it out",
+      "sub": "We prepared lesson packages for anyone to try out",
       "btn": "Contact us!"
     },
     "jan13": {
@@ -457,12 +457,12 @@
       "lesson": {
         "desc": "Critical thinking, social and citizenship competences, respect for human rights and freedoms are developed. Students perform tasks individually and in groups.",
         "topics": [
-          "exploring Vilnius TV tower",
-          "completing tasks",
-          "sharing tea with others",
-          "building barricades",
-          "singing national songs",
-          "burning bonfires",
+          "Exploring Vilnius TV tower",
+          "Completing tasks",
+          "Sharing tea with others",
+          "Building barricades",
+          "Singing national songs",
+          "Burning bonfires",
           "and more!"
         ]
       }
@@ -471,13 +471,13 @@
       "title": "\"Humanitarian Aid for Ukraine\"",
       "sub": "Learn how to quickly deliver humanitarian aid to Ukraine through cooperation",
       "lesson": {
-        "desc": "The goal of the lesson is to teach the youth how we can support Ukraine by working together.",
+        "desc": "The goal of the lesson is to teach the students how we can support Ukraine by working together.",
         "topics": [
-          "gathering resources",
-          "making aid packages",
-          "collaborate and perform tasks",
-          "building object which symbolize support",
-          "creativity",
+          "Gathering resources",
+          "Making aid packages",
+          "Collaborate and perform tasks",
+          "Building object which symbolize support",
+          "Creativity",
           "and more!"
         ]
       }

@@ -384,7 +384,7 @@
   },
   "products": {
     "title": "Individualūs mokymo moduliai!",
-    "title2": "Pasirinkite pamokas individualiai arba išbandykite „Trijų kūbų“ paruoštus modulius",
+    "title2": "Pasirinkite pamokas individualiai arba išbandykite „Trijų kubų“ paruoštus modulius",
     "packages": {
       "title": "Išbandykite mūsų paruoštus mokymo modulius arba susikurkite savo",
       "option": "Variantas",
@@ -393,12 +393,12 @@
       "titleA": "Efektyvūs mokymo moduliai 3 ir 4 klasėms",
       "titleB": "Susikurkite savo modulį",
       "descA": "Paruoštos atsižvelgiant į ugdymo programą ",
-      "descB": "Pasirink - Nutepk - Paleisk <br> 11 bet kokios klasės pamokų",
+      "descB": "Pasirink - Nutempk - Paleisk <br> 11 bet kokios klasės pamokų",
       "custom": { "title": "Moduliai" },
       "3grade": {
         "title": "Trečia klasė",
         "lessons": [
-          "„Minecraft“ edu. platformos",
+          "„Minecraft“ platforma",
           "Mokytojo įrankiai",
           "Lietuvos gyvūnai",
           "Sugedęs telefonas",
@@ -464,12 +464,12 @@
       "lesson": {
         "desc": "Ugdomos kritinio mąstymo, socialinės, pilietiškumo kompetencijos, pagarba žmogaus teisėms ir laisvėms.       ",
         "topics": [
-          "tyrinėti Vilniaus TV bokštą",
-          "vykdyti užduotis",
-          "dalintis arbata su kitais",
-          "stato barikadas",
-          "dainuoja tautines dainas",
-          "kūrena laužus",
+          "Tyrinėti Vilniaus TV bokštą",
+          "Vykdyti užduotis",
+          "Dalintis arbata su kitais",
+          "Stato barikadas",
+          "Dainuoja tautines dainas",
+          "Kūrena laužus",
           "ir dar daugiau!"
         ]
       }
@@ -480,11 +480,11 @@
       "lesson": {
         "desc": "Pamokos tikslas – išmokyti jaunimą, kaip kartu dirbdami galime paremti Ukrainą.",
         "topics": [
-          "renkant išteklius",
-          "komplektuojant pagalbos rinkinius",
-          "bendradarbiaujant ir atliekant užduotis",
-          "statydami objektus, kurie simbolizuoja palaikymą",
-          "skatinamas kūrybiškumas",
+          "Renkant išteklius",
+          "Komplektuojant pagalbos rinkinius",
+          "Bendradarbiaujant ir atliekant užduotis",
+          "Statydami objektus, kurie simbolizuoja palaikymą",
+          "Skatinamas kūrybiškumas",
           "ir dar daugiau!"
         ]
       }
@@ -493,7 +493,7 @@
       "lt": "LIETUVIŲ",
       "en": "ANGLŲ",
       "title": "Pasirengimo gidas",
-      "desc": "Žemiau rasite hiperlinkus į instrukcijas. Pasirinkite kalbą, paspaudę pasirinkite operacinę sistemą ir Minecraft edition "
+      "desc": "Žemiau rasite nuorodas į instrukcijas. Pasirinkite kalbą, paspaudę pasirinkite operacinę sistemą ir Minecraft versiją "
     },
     "info": [
       "Nemokamas pamokos paketas sukurtas taip, kad mokytojas klasei gali pats savarankiškai pravesti pamoką.",
