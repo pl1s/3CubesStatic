@@ -47,3 +47,4 @@ const play = (video) => {
   //removing attribute if video clicked > 1 per visit (e.g.:paused..)
   video.removeAttribute("onclick");
 };
+
