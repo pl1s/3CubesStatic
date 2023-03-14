@@ -3935,12 +3935,12 @@ header .right-side__navigation.open {
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
-    padding-top: 30%;
+    padding-top: calc((100vh - 210px) / 4);
     bottom: 0;
     top: 0;
     right: 0;
     left: 0;
-    height: 100vh;
+    height: 120vh;
     width: 100%;
     background: #273f52;
     clip-path: circle(100px at 100% -10%);
