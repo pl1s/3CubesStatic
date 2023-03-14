@@ -2345,6 +2345,21 @@
   right: 0;
 }
 
+@media (min-width: 1025px) {
+  .projectsRight {
+    right: 50px;
+  }
+  .projectsRight .projectsRight__aside {
+    left: 23%;
+  }
+  .projectsLeft {
+    left: 50px;
+    width: calc(100% - 50px);
+  }
+  .projectsLeft .projectsLeft__aside {
+    right: 23%;
+  }
+}
 .projectsLeft {
   position: relative;
 }
@@ -2715,6 +2730,21 @@
   }
 }
 
+@media (min-width: 1025px) {
+  .projectsExtraR__main {
+    right: 50px;
+  }
+  .projectsExtraR__main .projectsExtraR__aside {
+    left: 23%;
+  }
+  .projectsExtraL__main {
+    left: 50px;
+    width: calc(100% - 50px);
+  }
+  .projectsExtraL__main .projectsExtraL__aside {
+    right: 23%;
+  }
+}
 @media (max-width: 480px) {
   .projectsExtraR {
     padding: 0 !important;
