@@ -12,11 +12,43 @@ header {
   z-index: 99999;
 
   .active {
-    color: $aColor !important;
+
+    // color: $aColor !important;
 
     // transform: scale(1.2);
-    * {
-      color: $aColor !important;
+    // * {
+    //   color: $aColor !important;
+    // }
+
+    position: relative;
+
+    &::after {
+      position: absolute;
+      bottom: -5px;
+      left: 0;
+
+      content: '';
+      width: 100%;
+      border-bottom: solid 2px #fff;
+    }
+  }
+
+  .en,
+  .lt {
+    height: 1rem;
+    align-self: center;
+
+    padding-bottom: 18px !important;
+
+    &:hover {
+      * {
+        color: $aColor !important;
+      }
+    }
+
+    &::after {
+      width: 80%;
+      transform: translateX(10%);
     }
   }
 
