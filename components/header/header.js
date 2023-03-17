@@ -40,25 +40,29 @@ function defineHeader(template) {
       //toggle header style depending on window.width
       window.onscroll = () => {
         this.currentScrollPos = window.scrollY;
-        if (this.prevScrollpos > this.currentScrollPos) {
-          this.header.style.top = "0";
-          this.header.classList.add("shadow");
-        } else if (
-          window.innerWidth > 1024 &&
-          this.prevScrollpos <= this.currentScrollPos
-        ) {
-          this.header.style.top = "-15vh";
-        }
+        // if (this.prevScrollpos > this.currentScrollPos) {
+        //   this.header.style.top = "0";
+        //   this.header.classList.add("shadow");
+        // } else if (
+        //   window.innerWidth > 1024 &&
+        //   this.prevScrollpos <= this.currentScrollPos
+        // ) {
+        //   this.header.style.top = "-15vh";
+        // }
 
         if (this.currentScrollPos === 0) {
           this.header.classList.remove("shadow");
+        } else {
+          this.header.classList.add("shadow");
         }
+
         this.prevScrollpos = this.currentScrollPos;
 
         if (window.innerWidth < 1024 && this.currentScrollPos > 0) {
           this.header.classList.add("shadow");
         }
       };
+
       //attaching on click event for nav icon
       this.hamburger.onclick = () => {
         this.lines[0].classList.toggle("topLine");
