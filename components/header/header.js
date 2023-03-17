@@ -35,7 +35,7 @@ function defineHeader(template) {
       //checks for active href and adds class
       for (let i = 0; i < this.navs.length; i++) {
         if (document.location.href.indexOf(this.navs[i].href) >= 0) {
-          this.navs[i].className = "element active";
+          this.navs[i].classList.add('active');
 
           if (document.location.href.includes('lessons')) {
             this.dropdown[0].classList.add('active');
@@ -80,17 +80,17 @@ function defineHeader(template) {
         });
       };
       //collapsible navigation
-      for (let i = 0; i < this.coll.length; i++) {
-        this.coll[i].onclick = () => {
-          this.classList.toggle("active");
-          this.content = this.nextElementSibling;
-          if (this.content.style.display === "block") {
-            this.content.style.display = "none";
-          } else {
-            this.content.style.display = "block";
-          }
-        };
-      }
+      // for (let i = 0; i < this.coll.length; i++) {
+      //   this.coll[i].onclick = () => {
+      //     this.classList.toggle("active");
+      //     this.content = this.nextElementSibling;
+      //     if (this.content.style.display === "block") {
+      //       this.content.style.display = "none";
+      //     } else {
+      //       this.content.style.display = "block";
+      //     }
+      //   };
+      // }
     }
   }
   window.customElements.define("header-comp", Header);
