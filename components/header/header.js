@@ -26,6 +26,8 @@ function defineHeader(template) {
 
       this.logo = this.querySelector(".logoImg");
       this.langSelector = this.querySelectorAll("#langSelector");
+
+      this.dropdown = this.querySelectorAll('.dropdown');
     }
 
     connectedCallback() {
@@ -34,6 +36,10 @@ function defineHeader(template) {
       for (let i = 0; i < this.navs.length; i++) {
         if (document.location.href.indexOf(this.navs[i].href) >= 0) {
           this.navs[i].className = "element active";
+
+          if (document.location.href.includes('lessons')) {
+            this.dropdown[0].classList.add('active');
+          }
         }
       }
 
