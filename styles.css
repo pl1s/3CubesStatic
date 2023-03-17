@@ -3886,11 +3886,102 @@ header {
   top: 0;
   z-index: 99999;
 }
-header .active {
-  color: #f8743f !important;
+header h5:nth-child(2),
+header h5:nth-child(3),
+header h5:nth-child(4) {
+  order: -1;
 }
-header .active * {
-  color: #f8743f !important;
+header .nav-menu {
+  display: none;
+}
+@media (max-width: 1024px) {
+  header .nav-menu {
+    display: block;
+  }
+  header .dropdown {
+    display: none;
+  }
+  header .en,
+  header .lt {
+    height: 2.2rem !important;
+  }
+}
+header .dropdown {
+  position: relative;
+}
+header .dropdown button {
+  background-color: unset;
+  border: none;
+  outline: none;
+  font-size: 1rem;
+  line-height: 1.6em;
+}
+header .dropdown .dropdown-arrow {
+  margin: 2px;
+}
+header .dropdown .dropdown-invisible-space {
+  display: none;
+  position: absolute;
+  bottom: -50px;
+  width: 150px;
+  height: 50px;
+}
+header .dropdown .dropdown-content {
+  display: none;
+  position: absolute;
+  margin-top: 30px;
+  padding: 12px 22px;
+  background-color: #fff;
+}
+header .dropdown .dropdown-content .element {
+  color: #273f52 !important;
+  line-height: 2rem;
+}
+header .dropdown .dropdown-content .active {
+  color: #f14b00 !important;
+  font-weight: 500;
+}
+header .dropdown:hover button {
+  color: #f14b00 !important;
+  filter: none;
+  transition: none;
+}
+header .dropdown:hover .dropdown-arrow {
+  transform: rotate(180deg);
+}
+header .dropdown:hover .dropdown-invisible-space {
+  display: block;
+}
+header .dropdown:hover .dropdown-content {
+  display: block;
+}
+header .active {
+  position: relative;
+}
+header .active::after {
+  position: absolute;
+  bottom: -5px;
+  left: 0;
+  content: "";
+  width: 100%;
+  border-bottom: solid 2px #fff;
+}
+header .en,
+header .lt {
+  height: 1rem;
+  align-self: center;
+  padding-bottom: 18px !important;
+  filter: none;
+  transition: none;
+}
+header .en:hover *,
+header .lt:hover * {
+  color: #f14b00 !important;
+}
+header .en::after,
+header .lt::after {
+  width: 80%;
+  transform: translateX(10%);
 }
 header .logo {
   display: flex;
@@ -3944,7 +4035,7 @@ header .right-side__navigation.open {
     width: 100%;
     background: #273f52;
     clip-path: circle(100px at 100% -10%);
-    transition: all 1s ease-out;
+    transition: all 0.7s ease-out;
   }
   header .right-side__navigation * {
     margin: 2% 0;
@@ -3952,27 +4043,28 @@ header .right-side__navigation.open {
   header .right-side__navigation h5,
   header .right-side__navigation .right-side__language {
     opacity: 0;
-  }
-  header .right-side__navigation h5:nth-child(1) {
     transition: all 0.2s ease 0.1s;
   }
-  header .right-side__navigation h5:nth-child(2) {
+  header .right-side__navigation .fade:nth-child(2) {
     transition: all 0.2s ease 0.3s;
   }
-  header .right-side__navigation h5:nth-child(3) {
+  header .right-side__navigation .fade:nth-child(3) {
+    transition: all 0.2s ease 0.4s;
+  }
+  header .right-side__navigation .fade:nth-child(4) {
     transition: all 0.2s ease 0.5s;
   }
-  header .right-side__navigation h5:nth-child(4) {
+  header .right-side__navigation .fade:nth-child(5) {
+    transition: all 0.2s ease 0.6s;
+  }
+  header .right-side__navigation .fade:nth-child(6) {
     transition: all 0.2s ease 0.7s;
   }
-  header .right-side__navigation h5:nth-child(5) {
+  header .right-side__navigation .fade:nth-child(7) {
+    transition: all 0.2s ease 0.8s;
+  }
+  header .right-side__navigation .fade:nth-child(8) {
     transition: all 0.2s ease 0.9s;
-  }
-  header .right-side__navigation h5:nth-child(6) {
-    transition: all 0.2s ease 1s;
-  }
-  header .right-side__navigation .right-side__language {
-    transition: all 0.2s ease 1s;
   }
   header .right-side__navigation h5.fade,
   header .right-side__navigation .right-side__language.fade {
