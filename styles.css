@@ -4041,25 +4041,25 @@ header .right-side__navigation.open {
     transition: all 0.2s ease 0.1s;
   }
   header .right-side__navigation .fade:nth-child(2) {
-    transition: all 0.2s ease 0.1s;
-  }
-  header .right-side__navigation .fade:nth-child(3) {
-    transition: all 0.2s ease 0.2s;
-  }
-  header .right-side__navigation .fade:nth-child(4) {
     transition: all 0.2s ease 0.3s;
   }
-  header .right-side__navigation .fade:nth-child(5) {
+  header .right-side__navigation .fade:nth-child(3) {
     transition: all 0.2s ease 0.4s;
   }
-  header .right-side__navigation .fade:nth-child(6) {
+  header .right-side__navigation .fade:nth-child(4) {
     transition: all 0.2s ease 0.5s;
   }
-  header .right-side__navigation .fade:nth-child(7) {
+  header .right-side__navigation .fade:nth-child(5) {
     transition: all 0.2s ease 0.6s;
   }
-  header .right-side__navigation .fade:nth-child(8) {
+  header .right-side__navigation .fade:nth-child(6) {
     transition: all 0.2s ease 0.7s;
+  }
+  header .right-side__navigation .fade:nth-child(7) {
+    transition: all 0.2s ease 0.8s;
+  }
+  header .right-side__navigation .fade:nth-child(8) {
+    transition: all 0.2s ease 0.9s;
   }
   header .right-side__navigation h5.fade,
   header .right-side__navigation .right-side__language.fade {

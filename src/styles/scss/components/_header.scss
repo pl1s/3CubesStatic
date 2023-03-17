@@ -214,31 +214,31 @@ header {
         }
 
         .fade:nth-child(2) {
-          transition: all 0.2s ease 0.1s;
-        }
-
-        .fade:nth-child(3) {
-          transition: all 0.2s ease 0.2s;
-        }
-
-        .fade:nth-child(4) {
           transition: all 0.2s ease 0.3s;
         }
 
-        .fade:nth-child(5) {
+        .fade:nth-child(3) {
           transition: all 0.2s ease 0.4s;
         }
 
-        .fade:nth-child(6) {
+        .fade:nth-child(4) {
           transition: all 0.2s ease 0.5s;
         }
 
-        .fade:nth-child(7) {
+        .fade:nth-child(5) {
           transition: all 0.2s ease 0.6s;
         }
 
-        .fade:nth-child(8) {
+        .fade:nth-child(6) {
           transition: all 0.2s ease 0.7s;
+        }
+
+        .fade:nth-child(7) {
+          transition: all 0.2s ease 0.8s;
+        }
+
+        .fade:nth-child(8) {
+          transition: all 0.2s ease 0.9s;
         }
 
         h5.fade,
