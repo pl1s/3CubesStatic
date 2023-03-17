@@ -4030,7 +4030,7 @@ header .right-side__navigation.open {
     width: 100%;
     background: #273f52;
     clip-path: circle(100px at 100% -10%);
-    transition: all 1s ease-out;
+    transition: all 0.7s ease-out;
   }
   header .right-side__navigation * {
     margin: 2% 0;
@@ -4038,27 +4038,28 @@ header .right-side__navigation.open {
   header .right-side__navigation h5,
   header .right-side__navigation .right-side__language {
     opacity: 0;
-  }
-  header .right-side__navigation h5:nth-child(1) {
     transition: all 0.2s ease 0.1s;
   }
-  header .right-side__navigation h5:nth-child(2) {
+  header .right-side__navigation .fade:nth-child(2) {
+    transition: all 0.2s ease 0.1s;
+  }
+  header .right-side__navigation .fade:nth-child(3) {
+    transition: all 0.2s ease 0.2s;
+  }
+  header .right-side__navigation .fade:nth-child(4) {
     transition: all 0.2s ease 0.3s;
   }
-  header .right-side__navigation h5:nth-child(3) {
+  header .right-side__navigation .fade:nth-child(5) {
+    transition: all 0.2s ease 0.4s;
+  }
+  header .right-side__navigation .fade:nth-child(6) {
     transition: all 0.2s ease 0.5s;
   }
-  header .right-side__navigation h5:nth-child(4) {
+  header .right-side__navigation .fade:nth-child(7) {
+    transition: all 0.2s ease 0.6s;
+  }
+  header .right-side__navigation .fade:nth-child(8) {
     transition: all 0.2s ease 0.7s;
-  }
-  header .right-side__navigation h5:nth-child(5) {
-    transition: all 0.2s ease 0.9s;
-  }
-  header .right-side__navigation h5:nth-child(6) {
-    transition: all 0.2s ease 1s;
-  }
-  header .right-side__navigation .right-side__language {
-    transition: all 0.2s ease 1s;
   }
   header .right-side__navigation h5.fade,
   header .right-side__navigation .right-side__language.fade {
