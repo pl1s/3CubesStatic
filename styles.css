@@ -3886,6 +3886,21 @@ header {
   top: 0;
   z-index: 99999;
 }
+header .nav-menu {
+  display: none;
+}
+@media (max-width: 1024px) {
+  header .nav-menu {
+    display: block;
+  }
+  header .dropdown {
+    display: none;
+  }
+  header .en,
+  header .lt {
+    height: 2.2rem !important;
+  }
+}
 header .dropdown {
   position: relative;
 }

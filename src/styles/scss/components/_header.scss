@@ -1,6 +1,25 @@
 @use "../abstracts" as *;
 
 header {
+  .nav-menu {
+    display: none;
+  }
+
+  @media(max-width: 1024px) {
+    .nav-menu {
+      display: block;
+    }
+
+    .dropdown {
+      display: none;
+    }
+
+    .en,
+    .lt {
+      height: 2.2rem !important;
+    }
+  }
+
   position: fixed;
   display: flex;
   flex-direction: row;
@@ -46,7 +65,7 @@ header {
 
       .element {
         color: $fontColor !important;
-        line-height: 2rem;        
+        line-height: 2rem;
       }
 
       .active {
