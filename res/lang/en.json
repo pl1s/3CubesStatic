@@ -1,6 +1,7 @@
 {
   "nav": {
     "home": "Home",
+    "lessons": "Lessons",
     "formal": "Formal education",
     "nonformal": "Informal education",
     "products": "Package Offers",
@@ -387,7 +388,9 @@
       "titleB": "Build your own package",
       "descA": "Chosen to correlate with formal education programs",
       "descB": "Choose - Drag - Drop <br> 11 lessons from any grade to Package",
-      "custom": { "title": "Package" },
+      "custom": {
+        "title": "Package"
+      },
       "3grade": {
         "title": "Third Grade",
         "lessons": [
