@@ -1,6 +1,7 @@
 {
   "nav": {
     "home": "Pagrindinis",
+    "lessons": "Pamokos",
     "formal": "Formalus švietimas",
     "nonformal": "Neformalus švietimas",
     "products": "Pasiūlymai",
@@ -394,7 +395,9 @@
       "titleB": "Susikurkite savo modulį",
       "descA": "Paruoštos atsižvelgiant į ugdymo programą ",
       "descB": "Pasirink - Nutempk - Paleisk <br> 11 bet kokios klasės pamokų",
-      "custom": { "title": "Moduliai" },
+      "custom": {
+        "title": "Moduliai"
+      },
       "3grade": {
         "title": "Trečia klasė",
         "lessons": [
@@ -507,7 +510,6 @@
   "gdpr": {
     "title": "Mes vertiname jūsų privatumą",
     "desc": "Naudodami slapukus mes siekame pagerinti jūsų naršymo patirtį, taip pat jie reikalingi analizuoti lankytojų srautą. Paspaudus „Priimti Visus“ jūs sutinkate su mūsų slapukų naudojimu.",
-
     "customize": "Leisti pasirinkimą",
     "reject": "Atmesti Visus",
     "accept": "Priimti Visus",
@@ -562,7 +564,7 @@
     "no-empty": "Ši reikšmė negali būti tuščia",
     "no-symbols-email": "Negalima naudoti šių simbolių: (“‘/$&\\;)"
   },
-  "error":{
+  "error": {
     "500": "Kažkas nepavyko 🤕"
   }
 }

@@ -26,6 +26,8 @@ function defineHeader(template) {
 
       this.logo = this.querySelector(".logoImg");
       this.langSelector = this.querySelectorAll("#langSelector");
+
+      this.dropdown = this.querySelectorAll('.dropdown');
     }
 
     connectedCallback() {
@@ -33,32 +35,40 @@ function defineHeader(template) {
       //checks for active href and adds class
       for (let i = 0; i < this.navs.length; i++) {
         if (document.location.href.indexOf(this.navs[i].href) >= 0) {
-          this.navs[i].className = "element active";
+          this.navs[i].classList.add('active');
+
+          if (document.location.href.includes('lessons')) {
+            this.dropdown[0].classList.add('active');
+          }
         }
       }
 
       //toggle header style depending on window.width
       window.onscroll = () => {
         this.currentScrollPos = window.scrollY;
-        if (this.prevScrollpos > this.currentScrollPos) {
-          this.header.style.top = "0";
-          this.header.classList.add("shadow");
-        } else if (
-          window.innerWidth > 1024 &&
-          this.prevScrollpos <= this.currentScrollPos
-        ) {
-          this.header.style.top = "-15vh";
-        }
+        // if (this.prevScrollpos > this.currentScrollPos) {
+        //   this.header.style.top = "0";
+        //   this.header.classList.add("shadow");
+        // } else if (
+        //   window.innerWidth > 1024 &&
+        //   this.prevScrollpos <= this.currentScrollPos
+        // ) {
+        //   this.header.style.top = "-15vh";
+        // }
 
         if (this.currentScrollPos === 0) {
           this.header.classList.remove("shadow");
+        } else {
+          this.header.classList.add("shadow");
         }
+
         this.prevScrollpos = this.currentScrollPos;
 
         if (window.innerWidth < 1024 && this.currentScrollPos > 0) {
           this.header.classList.add("shadow");
         }
       };
+
       //attaching on click event for nav icon
       this.hamburger.onclick = () => {
         this.lines[0].classList.toggle("topLine");
@@ -70,17 +80,17 @@ function defineHeader(template) {
         });
       };
       //collapsible navigation
-      for (let i = 0; i < this.coll.length; i++) {
-        this.coll[i].onclick = () => {
-          this.classList.toggle("active");
-          this.content = this.nextElementSibling;
-          if (this.content.style.display === "block") {
-            this.content.style.display = "none";
-          } else {
-            this.content.style.display = "block";
-          }
-        };
-      }
+      // for (let i = 0; i < this.coll.length; i++) {
+      //   this.coll[i].onclick = () => {
+      //     this.classList.toggle("active");
+      //     this.content = this.nextElementSibling;
+      //     if (this.content.style.display === "block") {
+      //       this.content.style.display = "none";
+      //     } else {
+      //       this.content.style.display = "block";
+      //     }
+      //   };
+      // }
     }
   }
   window.customElements.define("header-comp", Header);
