@@ -1,341 +1,510 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <link rel="icon" href="./res/img/favicon.ico" />
+    <link href="./styles.css" rel="stylesheet" />
+    <link rel="stylesheet" href="./res/css/splide.min.css" />
+    <link rel="stylesheet" href="./res/css/splide-core.min.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="keywords"
+      content=" three-cubes, learning, minecraft, education edition, lessons, informal, formal, gamified, students, products"
+    />
+    <meta name="author" content="Three Cubes" />
+    <meta
+      name="description"
+      content="Three Cubes creates scalable and effective Minecraft educational lessons for schools, teachers, after-school activities. We combine the immersive nature of the “Minecraft” game and educational content, it brings out a new way of learning, which is so appealing to bright young minds."
+    />
+    <title>Three Cubes | Educational Lessons with Minecraft !</title>
+    <!-- Components -->
+    <script src="./components/header/header.js"></script>
+    <script src="./components/chaport-chat/chat.js"></script>
+    <script src="./components/gdprPopup/gdprPopup.js"></script>
+    <script src="./components/footer/footer.js"></script>
+    <script src="./components/noticeOverlay/noticeOverlay.js"></script>
+    <!-- GOOGLE ANALYTICS -->
+    <script>
+      let gaProperty = "G-78KBBN7H92";
+      let disableStr = "ga-disable-" + gaProperty;
 
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <link rel='icon' href='./res/img/favicon.ico' />
-  <link href='./styles.css' rel="stylesheet">
-  <link rel="stylesheet" href="./res/css/splide.min.css">
-  <link rel="stylesheet" href="./res/css/splide-core.min.css">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="keywords"
-    content=" three-cubes, learning, minecraft, education edition, lessons, informal, formal, gamified, students, products">
-  <meta name="author" content="Three Cubes">
-  <meta name="description"
-    content="Three Cubes creates scalable and effective Minecraft educational lessons for schools, teachers, after-school activities. We combine the immersive nature of the “Minecraft” game and educational content, it brings out a new way of learning, which is so appealing to bright young minds." />
-  <title>Three Cubes | Educational Lessons with Minecraft !</title>
-  <!-- Components -->
-  <script src="./components/header/header.js"></script>
-  <script src="./components/gdprPopup/gdprPopup.js"></script>
-  <script src="./components/footer/footer.js"></script>
-  <script src="./components/noticeOverlay/noticeOverlay.js"></script>
-  <!-- GOOGLE ANALYTICS -->
-  <script>
-    let gaProperty = 'G-78KBBN7H92'
-    let disableStr = 'ga-disable-' + gaProperty;
-
-    // Define dataLayer and the gtag function.
-    window.dataLayer = window.dataLayer || [];
-    function gtag() { dataLayer.push(arguments); }
-
-    // Default ad_storage to 'denied'.
-    gtag('consent', 'default', {
-      ad_storage: 'denied',
-      analytics_storage: 'denied',
-      wait_for_update: 5000
-    });
-  </script>
-  <!-- Global site tag (gtag.js) - Google Ads: CONVERSION_ID  -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=AW-YYYYYY"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag() { dataLayer.push(arguments); }
-    gtag('js', new Date());
-    gtag('config', gaProperty, { 'debug_mode': true });
-  </script>
-  <!-- NewsLetters Universal -->
-  <script>
-    // CHECKING for GDPR COOKIE & functional preference STATUS
-    (function (m, a, i, l, e, r) {
-      m['MailerLiteObject'] = e; function f() {
-        var c = { a: arguments, q: [] }; var r = this.push(c); return "number" != typeof r ? r : f.bind(c.q);
+      // Define dataLayer and the gtag function.
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
       }
-      f.q = f.q || []; m[e] = m[e] || f.bind(f.q); m[e].q = m[e].q || f.q; r = a.createElement(i);
-      var _ = a.getElementsByTagName(i)[0]; r.async = 1; r.src = l + '?v' + (~~(new Date().getTime() / 1000000));
-      _.parentNode.insertBefore(r, _);
-    })(window, document, 'script', 'https://static.mailerlite.com/js/universal.js', 'ml');
 
-    var ml_account = ml('accounts', '1928266', 'y4a6p1v7u9', 'load');
-  </script>
-  <!-- NewsLetters Universal -->
-</head>
+      // Default ad_storage to 'denied'.
+      gtag("consent", "default", {
+        ad_storage: "denied",
+        analytics_storage: "denied",
+        wait_for_update: 5000,
+      });
+    </script>
+    <!-- Global site tag (gtag.js) - Google Ads: CONVERSION_ID  -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=AW-YYYYYY"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+      gtag("config", gaProperty, { debug_mode: true });
+    </script>
+    <!-- NewsLetters Universal -->
+    <script>
+      // CHECKING for GDPR COOKIE & functional preference STATUS
+      (function (m, a, i, l, e, r) {
+        m["MailerLiteObject"] = e;
+        function f() {
+          var c = { a: arguments, q: [] };
+          var r = this.push(c);
+          return "number" != typeof r ? r : f.bind(c.q);
+        }
+        f.q = f.q || [];
+        m[e] = m[e] || f.bind(f.q);
+        m[e].q = m[e].q || f.q;
+        r = a.createElement(i);
+        var _ = a.getElementsByTagName(i)[0];
+        r.async = 1;
+        r.src = l + "?v" + ~~(new Date().getTime() / 1000000);
+        _.parentNode.insertBefore(r, _);
+      })(
+        window,
+        document,
+        "script",
+        "https://static.mailerlite.com/js/universal.js",
+        "ml"
+      );
 
-<body>
-  <header-comp></header-comp>
-  <main>
-    <section class="hero-main side-padding">
-      <div class="hero-main__cta">
-        <div class="hero-main__cta-topLeft">
-          <h1 class="element" data="main.hero.title">Level-up in education!</h1>
-          <h3 class="element" data="main.hero.sub">Game-based learning with "Minecraft: Education Edition"</h3>
-          <button id="contactBtn">
-            <h4 class="element" data="main.hero.btn">Contact us!</h4>
-          </button>
-        </div>
-        <div class="hero-main__cta-topRight">
-          <img class="book" src="./res/img/reusable/Group 107.png" alt="minecraft player">
-        </div>
-      </div>
-    </section>
-    <section class="stats">
-      <div class="stats__container">
-        <div class="box">
-          <div class="box__wrapper flex-row center">
-            <h3>115,000</h3>
-            <img src="./res/img/reusable/pliusas.png" alt="plus">
+      var ml_account = ml("accounts", "1928266", "y4a6p1v7u9", "load");
+    </script>
+    <!-- NewsLetters Universal -->
+  </head>
+
+  <body>
+    <header-comp></header-comp>
+    <main>
+      <section class="hero-main side-padding">
+        <div class="hero-main__cta">
+          <div class="hero-main__cta-topLeft">
+            <h1 class="element" data="main.hero.title">
+              Level-up in education!
+            </h1>
+            <h3 class="element" data="main.hero.sub">
+              Game-based learning with "Minecraft: Education Edition"
+            </h3>
+            <button id="contactBtn">
+              <h4 class="element" data="main.hero.btn">Contact us!</h4>
+            </button>
           </div>
-          <h6 class="element" data="main.stats.left">Children had our game-based lessons</h6>
-        </div>
-        <div class="box">
-          <div class="box__wrapper flex-row center">
-            <h3>30,000</h3>
-            <img src="./res/img/reusable/pliusas.png" alt="plus">
+          <div class="hero-main__cta-topRight">
+            <img
+              class="book"
+              src="./res/img/reusable/Group 107.png"
+              alt="minecraft player"
+            />
           </div>
-          <h6 class="element" data="main.stats.middle">Schools had our game-based lessons
-          </h6>
         </div>
-        <div class="box">
-          <div class="box__wrapper flex-row center">
-            <h3>300</h3>
-            <img src="./res/img/reusable/pliusas.png" alt="plus">
+      </section>
+      <section class="stats">
+        <div class="stats__container">
+          <div class="box">
+            <div class="box__wrapper flex-row center">
+              <h3>115,000</h3>
+              <img src="./res/img/reusable/pliusas.png" alt="plus" />
+            </div>
+            <h6 class="element" data="main.stats.left">
+              Children had our game-based lessons
+            </h6>
           </div>
-          <h6 class="element" data="main.stats.right">Members in our community
-          </h6>
+          <div class="box">
+            <div class="box__wrapper flex-row center">
+              <h3>30,000</h3>
+              <img src="./res/img/reusable/pliusas.png" alt="plus" />
+            </div>
+            <h6 class="element" data="main.stats.middle">
+              Schools had our game-based lessons
+            </h6>
+          </div>
+          <div class="box">
+            <div class="box__wrapper flex-row center">
+              <h3>300</h3>
+              <img src="./res/img/reusable/pliusas.png" alt="plus" />
+            </div>
+            <h6 class="element" data="main.stats.right">
+              Members in our community
+            </h6>
+          </div>
         </div>
-      </div>
-    </section>
-    <section class="companies side-padding flex-row">
-      <img class="lib" alt="Martynas Mažvydas National Library of Lithuania logo">
-      <img class="sys" alt="cultural education logo">
-      <img class="microsoft" src="./res/img/main/microsoft.png" alt="microsoft logo">
-      <img src="./res/img/main/vilnius.png" alt="Vilnius city logo">
-      <img class="knygnesys" alt="Naujasis knygnesys logo">
-    </section>
-    <section class="game-learning full-padding">
-      <div class="game-learning__title ">
-        <h2 class="title element" data="main.gameLearning.title">How game-based learning enriches overall education?
-        </h2>
-      </div>
-      <div class="game-learning__benefits flex-row">
-        <h6 class="element" data="main.gameLearning.txt.left">Lessons come alive with different worlds, characters and
-          exercises
-          programos</h6>
-        <img src="./res/img/reusable/arrowR.png" alt="arrow">
-        <h6 class="element" data="main.gameLearning.txt.middle">Students experience the results of their actions in
-          simulated situations</h6>
-        <img src="./res/img/reusable/arrowR.png" alt="arrow">
-        <h6 class="element" data="main.gameLearning.txt.right">Research based benefits for students</h6>
-      </div>
-      <div class="game-learning__img">
-        <img src="./res/img/main/Group423.png" alt="planets">
-      </div>
-    </section>
-    <section class="research">
-      <div class="research__topWrapper full-padding ">
-        <div class="title">
-          <h2 class="element" data="main.research.title">Educational benefits for students - based on research
+      </section>
+      <section class="companies side-padding flex-row">
+        <img
+          class="lib"
+          alt="Martynas Mažvydas National Library of Lithuania logo"
+        />
+        <img class="sys" alt="cultural education logo" />
+        <img
+          class="microsoft"
+          src="./res/img/main/microsoft.png"
+          alt="microsoft logo"
+        />
+        <img src="./res/img/main/vilnius.png" alt="Vilnius city logo" />
+        <img class="knygnesys" alt="Naujasis knygnesys logo" />
+      </section>
+      <section class="game-learning full-padding">
+        <div class="game-learning__title">
+          <h2 class="title element" data="main.gameLearning.title">
+            How game-based learning enriches overall education?
           </h2>
         </div>
-        <div class="container">
-          <div class="box"><img src="./res/img/reusable/Books.png" alt="books">
-            <h4 class="element" data="main.research.card.left">Developing <label>knowledge and competencies</label>
-            </h4>
-          </div>
-          <div class="box"><img src="./res/img/reusable/Trophy.png" alt="trophy">
-            <h4 class="element" data="main.research.card.middle">Improving students' <label>engagement and
-                results!</label>
-            </h4>
-          </div>
-          <div class="box"><img src="./res/img/reusable/Pencil _ Ruler.png" alt="pen">
-            <h4 class="element" data="main.research.card.right">Learning to<label>solve problems by
-                collaborating</label>
-            </h4>
-          </div>
+        <div class="game-learning__benefits flex-row">
+          <h6 class="element" data="main.gameLearning.txt.left">
+            Lessons come alive with different worlds, characters and exercises
+            programos
+          </h6>
+          <img src="./res/img/reusable/arrowR.png" alt="arrow" />
+          <h6 class="element" data="main.gameLearning.txt.middle">
+            Students experience the results of their actions in simulated
+            situations
+          </h6>
+          <img src="./res/img/reusable/arrowR.png" alt="arrow" />
+          <h6 class="element" data="main.gameLearning.txt.right">
+            Research based benefits for students
+          </h6>
         </div>
-        <!-- TODO No link provided -->
-        <!-- this div is a spacer to help realign with missing element -->
-        <div class="research__spacer"></div>
-        <!-- <button style="visibility: hidden;">
+        <div class="game-learning__img">
+          <img src="./res/img/main/Group423.png" alt="planets" />
+        </div>
+      </section>
+      <section class="research">
+        <div class="research__topWrapper full-padding">
+          <div class="title">
+            <h2 class="element" data="main.research.title">
+              Educational benefits for students - based on research
+            </h2>
+          </div>
+          <div class="container">
+            <div class="box">
+              <img src="./res/img/reusable/Books.png" alt="books" />
+              <h4 class="element" data="main.research.card.left">
+                Developing <label>knowledge and competencies</label>
+              </h4>
+            </div>
+            <div class="box">
+              <img src="./res/img/reusable/Trophy.png" alt="trophy" />
+              <h4 class="element" data="main.research.card.middle">
+                Improving students' <label>engagement and results!</label>
+              </h4>
+            </div>
+            <div class="box">
+              <img src="./res/img/reusable/Pencil _ Ruler.png" alt="pen" />
+              <h4 class="element" data="main.research.card.right">
+                Learning to<label>solve problems by collaborating</label>
+              </h4>
+            </div>
+          </div>
+          <!-- TODO No link provided -->
+          <!-- this div is a spacer to help realign with missing element -->
+          <div class="research__spacer"></div>
+          <!-- <button style="visibility: hidden;">
           <h4 class="element"  data="main.research.btn">Research</h4>
         </button> -->
-      </div>
-      <div class="research__bottomWrapper side-padding">
-        <h2 class="element" data="main.research.bottomWrapper.title">Teachers can manage lessons easily!</h2>
-        <h4 class="element" data="main.research.bottomWrapper.sub">We provide what is needed the most</h4>
-      </div>
-    </section>
-    <section class="teacherSupport">
-      <div class="teacherSupport__wrapper1 flex">
-        <div class="text">
-          <h4 class="element" data="main.teacherSupport.cardLeft.main">Personal consultant</h4>
-          <h5 class="element" data="main.teacherSupport.cardLeft.desc">"Three Cubes" consultant helps with the first
-            lessons!</h5>
-          <img class="left" src="./res/img/reusable/Ideation.png" alt="light bulb">
         </div>
-      </div>
-      <div class="teacherSupport__wrapper2 flex">
-        <div class="text">
-          <h4 class="element" data="main.teacherSupport.cardMiddle.main">Informational guides</h4>
-          <h5 class="element" data="main.teacherSupport.cardMiddle.desc">Plans for lessons, video trainings accessible
-            at
-            any time.</h5>
-          <img class="right mb150" src="./res/img/reusable/Chalkboard.png" alt="board">
+        <div class="research__bottomWrapper side-padding">
+          <h2 class="element" data="main.research.bottomWrapper.title">
+            Teachers can manage lessons easily!
+          </h2>
+          <h4 class="element" data="main.research.bottomWrapper.sub">
+            We provide what is needed the most
+          </h4>
         </div>
-      </div>
-      <div class="teacherSupport__wrapper3 flex">
-        <div class="text ">
-          <h4 class="element" data="main.teacherSupport.cardRight.main">Fully prepared lessons</h4>
-          <h5 class="element" data="main.teacherSupport.cardRight.desc">Exercises and virtual worlds based on different
-            topics.</h5>
-          <img class=" right2" src="./res/img/reusable/Certificate.png" alt="certification">
-        </div>
-      </div>
-    </section>
-    <section class="community">
-      <div class="community__topWrapper flex-row">
-        <div class="community__topWrapper-left"></div>
-        <div class="community__topWrapper-right flex-column">
-          <div class="title">
-            <h1 class="element" data="main.community.title.word"></h1>
-            <h2 class="element" data="main.community.title.num">95%</h2>
+      </section>
+      <section class="teacherSupport">
+        <div class="teacherSupport__wrapper1 flex">
+          <div class="text">
+            <h4 class="element" data="main.teacherSupport.cardLeft.main">
+              Personal consultant
+            </h4>
+            <h5 class="element" data="main.teacherSupport.cardLeft.desc">
+              "Three Cubes" consultant helps with the first lessons!
+            </h5>
+            <img
+              class="left"
+              src="./res/img/reusable/Ideation.png"
+              alt="light bulb"
+            />
           </div>
-          <h3 class="element" data="main.community.sub">teachers rate "Three Cubes" educational content for formal
-            education as "good" and "very good"!</h3>
         </div>
-      </div>
-      <div class="community__bottomWrapper flex-row">
-        <div class="community__bottomWrapper-left"></div>
-        <div class="community__bottomWrapper-right">
-          <h2 class="element" data="main.community.title2">Our "Three Cubes" Community</h2>
+        <div class="teacherSupport__wrapper2 flex">
+          <div class="text">
+            <h4 class="element" data="main.teacherSupport.cardMiddle.main">
+              Informational guides
+            </h4>
+            <h5 class="element" data="main.teacherSupport.cardMiddle.desc">
+              Plans for lessons, video trainings accessible at any time.
+            </h5>
+            <img
+              class="right mb150"
+              src="./res/img/reusable/Chalkboard.png"
+              alt="board"
+            />
+          </div>
         </div>
-      </div>
-      <div class="community__card">
-        <img class="Qmark" src="./res/img/reusable/Group 129.png" alt="quotation mark">
-        <div class="splide">
-          <div class="splide__track">
-            <div class="splide__list">
-              <li class="splide__slide slide01">
-                <div class="slide flex-column center">
-                  <div class="slide__title">
-                    <h4 class="element" data="main.community.slide01.review">“The Great School Concept points out
-                      adventures in school. Game-based learning is a great method to reach to academic results!”</h4>
-                  </div>
-                  <div class="slide__body flex-row">
-                    <img src="./res/img/main/vaidas.png" alt="School principal">
-                    <div class="user flex-column">
-                      <div class="user__name element" data="main.community.slide01.userName">Vaidas Bacys</div>
-                      <div class="user__location element" data="main.community.slide01.userLocation">The principal of
-                        “Dubysa Aukštupys” school</div>
+        <div class="teacherSupport__wrapper3 flex">
+          <div class="text">
+            <h4 class="element" data="main.teacherSupport.cardRight.main">
+              Fully prepared lessons
+            </h4>
+            <h5 class="element" data="main.teacherSupport.cardRight.desc">
+              Exercises and virtual worlds based on different topics.
+            </h5>
+            <img
+              class="right2"
+              src="./res/img/reusable/Certificate.png"
+              alt="certification"
+            />
+          </div>
+        </div>
+      </section>
+      <section class="community">
+        <div class="community__topWrapper flex-row">
+          <div class="community__topWrapper-left"></div>
+          <div class="community__topWrapper-right flex-column">
+            <div class="title">
+              <h1 class="element" data="main.community.title.word"></h1>
+              <h2 class="element" data="main.community.title.num">95%</h2>
+            </div>
+            <h3 class="element" data="main.community.sub">
+              teachers rate "Three Cubes" educational content for formal
+              education as "good" and "very good"!
+            </h3>
+          </div>
+        </div>
+        <div class="community__bottomWrapper flex-row">
+          <div class="community__bottomWrapper-left"></div>
+          <div class="community__bottomWrapper-right">
+            <h2 class="element" data="main.community.title2">
+              Our "Three Cubes" Community
+            </h2>
+          </div>
+        </div>
+        <div class="community__card">
+          <img
+            class="Qmark"
+            src="./res/img/reusable/Group 129.png"
+            alt="quotation mark"
+          />
+          <div class="splide">
+            <div class="splide__track">
+              <div class="splide__list">
+                <li class="splide__slide slide01">
+                  <div class="slide flex-column center">
+                    <div class="slide__title">
+                      <h4 class="element" data="main.community.slide01.review">
+                        “The Great School Concept points out adventures in
+                        school. Game-based learning is a great method to reach
+                        to academic results!”
+                      </h4>
+                    </div>
+                    <div class="slide__body flex-row">
+                      <img
+                        src="./res/img/main/vaidas.png"
+                        alt="School principal"
+                      />
+                      <div class="user flex-column">
+                        <div
+                          class="user__name element"
+                          data="main.community.slide01.userName"
+                        >
+                          Vaidas Bacys
+                        </div>
+                        <div
+                          class="user__location element"
+                          data="main.community.slide01.userLocation"
+                        >
+                          The principal of “Dubysa Aukštupys” school
+                        </div>
+                      </div>
                     </div>
                   </div>
-                </div>
-              </li>
-              <li class="splide__slide slide02">
-                <div class="slide flex-column center">
-                  <div class="slide__title">
-                    <h4 class="element" data="main.community.slide02.review">“The students are included in practical,
-                      creative activities – thus their motivation to learn is getting stronger”</h4>
-                  </div>
-                  <div class="slide__body flex-row">
-                    <img src="./res/img/main/dainora.png" alt="teacher">
-                    <div class="user flex-column">
-                      <div class="user__name element" data="main.community.slide02.userName">Dainora Šešetienė</div>
-                      <div class="user__location element" data="main.community.slide02.userLocation">Primary classes
-                        teacher, Velžys school</div>
+                </li>
+                <li class="splide__slide slide02">
+                  <div class="slide flex-column center">
+                    <div class="slide__title">
+                      <h4 class="element" data="main.community.slide02.review">
+                        “The students are included in practical, creative
+                        activities – thus their motivation to learn is getting
+                        stronger”
+                      </h4>
+                    </div>
+                    <div class="slide__body flex-row">
+                      <img src="./res/img/main/dainora.png" alt="teacher" />
+                      <div class="user flex-column">
+                        <div
+                          class="user__name element"
+                          data="main.community.slide02.userName"
+                        >
+                          Dainora Šešetienė
+                        </div>
+                        <div
+                          class="user__location element"
+                          data="main.community.slide02.userLocation"
+                        >
+                          Primary classes teacher, Velžys school
+                        </div>
+                      </div>
                     </div>
                   </div>
-                </div>
-              </li>
-              <li class="splide__slide slide03">
-                <div class="slide flex-column center">
-                  <div class="slide__title">
-                    <h4 class="element" data="main.community.slide03.review">“These lessons develop children’s
-                      competencies, like creativity, technological intuition, critical thinking, abilities to solve
-                      problems individually and in teams”</h4>
-                  </div>
-                  <div class="slide__body flex-row">
-                    <img src="./res/img/main/jurgita.png" alt="teacher">
-                    <div class="user flex-column">
-                      <div class="user__name element" data="main.community.slide03.userName">Jurgita Navikienė</div>
-                      <div class="user__location element" data="main.community.slide03.userLocation">
-                        Primary classes teacher, Gražiškiai Gymnasium</div>
+                </li>
+                <li class="splide__slide slide03">
+                  <div class="slide flex-column center">
+                    <div class="slide__title">
+                      <h4 class="element" data="main.community.slide03.review">
+                        “These lessons develop children’s competencies, like
+                        creativity, technological intuition, critical thinking,
+                        abilities to solve problems individually and in teams”
+                      </h4>
+                    </div>
+                    <div class="slide__body flex-row">
+                      <img src="./res/img/main/jurgita.png" alt="teacher" />
+                      <div class="user flex-column">
+                        <div
+                          class="user__name element"
+                          data="main.community.slide03.userName"
+                        >
+                          Jurgita Navikienė
+                        </div>
+                        <div
+                          class="user__location element"
+                          data="main.community.slide03.userLocation"
+                        >
+                          Primary classes teacher, Gražiškiai Gymnasium
+                        </div>
+                      </div>
                     </div>
                   </div>
-                </div>
-              </li>
+                </li>
+              </div>
             </div>
           </div>
         </div>
-      </div>
-    </section>
-    <section class="achievements full-padding flex-column">
-      <h2 class="element bottom-padding" data="main.achievements.title">Our achievements</h2>
-      <div class="achievements__container top-padding flex-between">
-        <div class="box flex-column center">
-          <div class="box__top">
-            <img src="./res/img/main/Rectangle 94.png" alt="naujasis knygnesys">
+      </section>
+      <section class="achievements full-padding flex-column">
+        <h2 class="element bottom-padding" data="main.achievements.title">
+          Our achievements
+        </h2>
+        <div class="achievements__container top-padding flex-between">
+          <div class="box flex-column center">
+            <div class="box__top">
+              <img
+                src="./res/img/main/Rectangle 94.png"
+                alt="naujasis knygnesys"
+              />
+            </div>
+            <div class="box__bottom">
+              <h4>Naujasis Knygnešys</h4>
+              <h5 class="element" data="main.achievements.cardLeft.desc">
+                In 2020 we won the 1st place in category "Learning and
+                education" in a national competition
+              </h5>
+            </div>
           </div>
-          <div class="box__bottom">
-            <h4>Naujasis Knygnešys</h4>
-            <h5 class="element" data="main.achievements.cardLeft.desc">In 2020 we won the 1st place in category
-              "Learning
-              and education" in a national competition</h5>
+          <div class="box flex-column center">
+            <div class="box__top">
+              <img src="./res/img/main/Rectangle -1.png" alt="microsoft" />
+            </div>
+            <div class="box__bottom">
+              <h4>Microsoft</h4>
+              <h5 class="element" data="main.achievements.cardMiddle.desc">
+                Certified "Microsoft" partners
+              </h5>
+              <br />
+            </div>
           </div>
-        </div>
-        <div class="box flex-column center">
-          <div class="box__top">
-            <img src="./res/img/main/Rectangle -1.png" alt="microsoft">
-          </div>
-          <div class="box__bottom">
-            <h4>Microsoft</h4>
-            <h5 class="element" data="main.achievements.cardMiddle.desc">Certified "Microsoft" partners</h5><br>
-          </div>
-        </div>
-        <div class="box flex-column center">
-          <div class="box__top">
-            <img src="./res/img/main/WSA.png" alt="WSA">
-          </div>
-          <div class="box__bottom">
-            <h4>WSA</h4>
-            <h5 class="element" data="main.achievements.cardRight.desc">In 2020 we were selected as one of the 16 best
-              digital solutions in Europe</h5>
-          </div>
-        </div>
-      </div>
-    </section>
-    <section class="services flex-column">
-      <div class="services__title flex-row">
-        <h2 class="element" data="main.services.title">Our products</h2>
-      </div>
-      <div class="services__container full-padding">
-        <div class="services__cardLeft">
-          <div class="services__card flex-column center">
-            <img class="frame" src="./res/img/main/Group 421.png" alt="card frame">
-            <h3 class="element" data="main.services.cardLeft.main">Informal education</h3>
-            <h5 class="element" data="main.services.cardLeft.desc"></h5>
-            <a href="./informal-lessons.html" class="element" data="main.services.cardLeft.link">More information ></a>
+          <div class="box flex-column center">
+            <div class="box__top">
+              <img src="./res/img/main/WSA.png" alt="WSA" />
+            </div>
+            <div class="box__bottom">
+              <h4>WSA</h4>
+              <h5 class="element" data="main.achievements.cardRight.desc">
+                In 2020 we were selected as one of the 16 best digital solutions
+                in Europe
+              </h5>
+            </div>
           </div>
         </div>
-        <div class="services__cardMiddle">
-          <div class="services__cardBig flex-column center">
-            <img class="frame" src="./res/img/main/Group 425.png" alt="card frame">
-            <h3 class="element" data="main.services.cardMiddle.main">Formal education</h3>
-            <h5 class="element" data="main.services.cardMiddle.desc"></h5>
-            <a href="./formal-lessons.html" class="element" data="main.services.cardLeft.link">More information ></a>
+      </section>
+      <section class="services flex-column">
+        <div class="services__title flex-row">
+          <h2 class="element" data="main.services.title">Our products</h2>
+        </div>
+        <div class="services__container full-padding">
+          <div class="services__cardLeft">
+            <div class="services__card flex-column center">
+              <img
+                class="frame"
+                src="./res/img/main/Group 421.png"
+                alt="card frame"
+              />
+              <h3 class="element" data="main.services.cardLeft.main">
+                Informal education
+              </h3>
+              <h5 class="element" data="main.services.cardLeft.desc"></h5>
+              <a
+                href="./informal-lessons.html"
+                class="element"
+                data="main.services.cardLeft.link"
+                >More information ></a
+              >
+            </div>
+          </div>
+          <div class="services__cardMiddle">
+            <div class="services__cardBig flex-column center">
+              <img
+                class="frame"
+                src="./res/img/main/Group 425.png"
+                alt="card frame"
+              />
+              <h3 class="element" data="main.services.cardMiddle.main">
+                Formal education
+              </h3>
+              <h5 class="element" data="main.services.cardMiddle.desc"></h5>
+              <a
+                href="./formal-lessons.html"
+                class="element"
+                data="main.services.cardLeft.link"
+                >More information ></a
+              >
+            </div>
+          </div>
+          <div class="services__cardRight">
+            <div class="services__card flex-column center">
+              <img
+                class="frame"
+                src="./res/img/main/Group 422.png"
+                alt="card frame"
+              />
+              <h3 class="element" data="main.services.cardRight.main">
+                Projects
+              </h3>
+              <h5 class="element" data="main.services.cardRight.desc"></h5>
+              <a
+                href="./projects.html"
+                class="element"
+                data="main.services.cardLeft.link"
+                >More information ></a
+              >
+            </div>
           </div>
         </div>
-        <div class="services__cardRight">
-          <div class="services__card flex-column center">
-            <img class="frame" src="./res/img/main/Group 422.png" alt="card frame">
-            <h3 class="element" data="main.services.cardRight.main">Projects</h3>
-            <h5 class="element" data="main.services.cardRight.desc"></h5>
-            <a href="./projects.html" class="element" data="main.services.cardLeft.link">More information ></a>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-- <section class="contact-form full-padding flex-column center">
+      </section>
+      <!-- <section class="contact-form full-padding flex-column center">
       <h2>Susisiekite su mumis!</h2>
       <h4>Palikite savo kontaktus ir mes su Jumis susisieksime artimiasiu metu</h4>
       <form action="mailto:suppor@edukraft.lt" method="post" enctype="multipart/form-data" class="form flex-column">
@@ -359,40 +528,39 @@
         </table>
       </form>
     </section> -->
-  </main>
-  <footer-comp></footer-comp>
-  <gdpr-popup></gdpr-popup>
-  <notice-overlay></notice-overlay>
-  <!-- script loading -->
-  <script src="./res/js/main.js"></script>
-  <!-- <script src="./res/js/navtoggle.js"></script> -->
-  <script src="./res/js/i18next.min.js"></script>
-  <script src="./res/js/splide.min.js"></script>
-  <!-- CONFIGS -->
-  <script src="./res/js/locale.js"></script>
-  <script type="text/javascript">
+    </main>
+    <chat-comp></chat-comp>
+    <footer-comp></footer-comp>
+    <gdpr-popup></gdpr-popup>
+    <notice-overlay></notice-overlay>
+    <!-- script loading -->
+    <script src="./res/js/main.js"></script>
+    <!-- <script src="./res/js/navtoggle.js"></script> -->
+    <script src="./res/js/i18next.min.js"></script>
+    <script src="./res/js/splide.min.js"></script>
+    <!-- CONFIGS -->
+    <script src="./res/js/locale.js"></script>
+    <script type="text/javascript">
+      new Splide(".splide", {
+        type: "loop",
+        perPage: 1,
+        autoplay: true,
+        arrows: false,
+        pauseOnFocus: true,
+        classes: {
+          pagination: "paginator",
+        },
+      }).mount();
+    </script>
 
-    new Splide(".splide", {
-      type: "loop",
-      perPage: 1,
-      autoplay: true,
-      arrows: false,
-      pauseOnFocus: true,
-      classes: {
-        pagination: 'paginator',
-      }
-    }).mount();
-  </script>
+    <script type="text/javascript">
+      const footer = document.querySelector("footer-comp");
+      const gdpr = document.querySelector("gdpr-popup");
+      const notice = document.querySelector("notice-overlay");
 
-  <script type="text/javascript">
-    const footer = document.querySelector("footer-comp");
-    const gdpr = document.querySelector("gdpr-popup");
-    const notice = document.querySelector("notice-overlay");
-
-    footer.addEventListener('showNotice', () => notice.show());
-    gdpr.addEventListener('hideNotice', () => notice.hide());
-    notice.addEventListener('showGDPR', () => gdpr.show())
-  </script>
-</body>
-
+      footer.addEventListener("showNotice", () => notice.show());
+      gdpr.addEventListener("hideNotice", () => notice.hide());
+      notice.addEventListener("showGDPR", () => gdpr.show());
+    </script>
+  </body>
 </html>

@@ -1,390 +1,596 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <link rel="icon" href="./res/img/favicon.ico" />
+    <link href="./styles.css" rel="stylesheet" />
+    <link rel="stylesheet" href="./res/css/splide.min.css" />
+    <link rel="stylesheet" href="./res/css/splide-core.min.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="keywords"
+      content=" three-cubes, learning, minecraft, education edition, lessons, informal, formal, gamified, students, products"
+    />
+    <meta name="author" content="Three Cubes" />
+    <meta
+      name="description"
+      content="It benefit informal education experience !"
+    />
+    <title>Informal Education Lessons with Minecraft | Three Cubes</title>
+    <!-- Components -->
+    <script src="./components/header/header.js"></script>
+    <script src="./components/chaport-chat/chat.js"></script>
+    <script src="./components/gdprPopup/gdprPopup.js"></script>
+    <script src="./components/footer/footer.js"></script>
+    <script src="./components/noticeOverlay/noticeOverlay.js"></script>
+    <!-- GOOGLE ANALYTICS -->
+    <script>
+      let gaProperty = "G-78KBBN7H92";
+      let disableStr = "ga-disable-" + gaProperty;
+      // Define dataLayer and the gtag function.
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
 
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <link rel='icon' href='./res/img/favicon.ico' />
-  <link href='./styles.css' rel="stylesheet">
-  <link rel="stylesheet" href="./res/css/splide.min.css">
-  <link rel="stylesheet" href="./res/css/splide-core.min.css">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="keywords"
-    content=" three-cubes, learning, minecraft, education edition, lessons, informal, formal, gamified, students, products">
-  <meta name="author" content="Three Cubes">
-  <meta name="description" content="It benefit informal education experience !" />
-  <title>Informal Education Lessons with Minecraft | Three Cubes</title>
-  <!-- Components -->
-  <script src="./components/header/header.js"></script>
-  <script src="./components/gdprPopup/gdprPopup.js"></script>
-  <script src="./components/footer/footer.js"></script>
-  <script src="./components/noticeOverlay/noticeOverlay.js"></script>
-  <!-- GOOGLE ANALYTICS -->
-  <script>
-    let gaProperty = 'G-78KBBN7H92'
-    let disableStr = 'ga-disable-' + gaProperty;
-    // Define dataLayer and the gtag function.
-    window.dataLayer = window.dataLayer || [];
-    function gtag() { dataLayer.push(arguments); }
+      // Default ad_storage to 'denied'.
+      gtag("consent", "default", {
+        ad_storage: "denied",
+        analytics_storage: "denied",
+        wait_for_update: 5000,
+      });
+    </script>
+    <!-- Global site tag (gtag.js) - Google Ads: CONVERSION_ID  -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=AW-YYYYYY"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
 
-    // Default ad_storage to 'denied'.
-    gtag('consent', 'default', {
-      ad_storage: 'denied',
-      analytics_storage: 'denied',
-      wait_for_update: 5000
-    });
-  </script>
-  <!-- Global site tag (gtag.js) - Google Ads: CONVERSION_ID  -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=AW-YYYYYY"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag() { dataLayer.push(arguments); }
+      gtag("js", new Date());
+      gtag("config", gaProperty);
+    </script>
 
-    gtag('js', new Date());
-    gtag('config', gaProperty);
-  </script>
+    <!-- NewsLetters Universal -->
+    <script>
+      // CHECKING for GDPR COOKIE & functional preference STATUS
+      if (document.cookie.includes("GDPRConfirmed=functi-true")) {
+        (function (m, a, i, l, e, r) {
+          m["MailerLiteObject"] = e;
+          function f() {
+            var c = { a: arguments, q: [] };
+            var r = this.push(c);
+            return "number" != typeof r ? r : f.bind(c.q);
+          }
+          f.q = f.q || [];
+          m[e] = m[e] || f.bind(f.q);
+          m[e].q = m[e].q || f.q;
+          r = a.createElement(i);
+          var _ = a.getElementsByTagName(i)[0];
+          r.async = 1;
+          r.src = l + "?v" + ~~(new Date().getTime() / 1000000);
+          _.parentNode.insertBefore(r, _);
+        })(
+          window,
+          document,
+          "script",
+          "https://static.mailerlite.com/js/universal.js",
+          "ml"
+        );
 
-  <!-- NewsLetters Universal -->
-  <script>
-    // CHECKING for GDPR COOKIE & functional preference STATUS
-    if (document.cookie.includes("GDPRConfirmed=functi-true")) {
-      (function (m, a, i, l, e, r) {
-        m['MailerLiteObject'] = e; function f() {
-          var c = { a: arguments, q: [] }; var r = this.push(c); return "number" != typeof r ? r : f.bind(c.q);
-        }
-        f.q = f.q || []; m[e] = m[e] || f.bind(f.q); m[e].q = m[e].q || f.q; r = a.createElement(i);
-        var _ = a.getElementsByTagName(i)[0]; r.async = 1; r.src = l + '?v' + (~~(new Date().getTime() / 1000000));
-        _.parentNode.insertBefore(r, _);
-      })(window, document, 'script', 'https://static.mailerlite.com/js/universal.js', 'ml');
+        var ml_account = ml("accounts", "1928266", "y4a6p1v7u9", "load");
+      }
+    </script>
+    <!-- NewsLetters Universal -->
+  </head>
 
-      var ml_account = ml('accounts', '1928266', 'y4a6p1v7u9', 'load');
-    }
-  </script>
-  <!-- NewsLetters Universal -->
-</head>
-
-<body>
-  <header-comp></header-comp>
-  <main>
-    <section class="hero-main side-padding">
-      <div class="hero-main__cta">
-        <div class="hero-main__cta-topLeft">
-          <h1 class="title element" data="nonFormal.hero.title">Interactive educational adventures!</h1>
-          <h3 class="element" data="nonFormal.hero.sub">Informal education with "Minecraft: Education Edition"!</h3>
-          <button id="contactBtn">
-            <h4 class="element" data="nonFormal.hero.btn">Contact Us!</h4>
-          </button>
-        </div>
-        <div class="hero-main__cta-topRight">
-          <img class="book" src="./res/img/nonformal/rover_v08_t.png" alt="rover" class="book">
-        </div>
-      </div>
-    </section>
-    <section class="stats">
-      <div class="stats__container">
-        <div class="box">
-          <div class="box__wrapper flex-row center">
-            <h3>115,000</h3>
-            <img src="./res/img/reusable/pliusas.png" alt="plus">
+  <body>
+    <header-comp></header-comp>
+    <main>
+      <section class="hero-main side-padding">
+        <div class="hero-main__cta">
+          <div class="hero-main__cta-topLeft">
+            <h1 class="title element" data="nonFormal.hero.title">
+              Interactive educational adventures!
+            </h1>
+            <h3 class="element" data="nonFormal.hero.sub">
+              Informal education with "Minecraft: Education Edition"!
+            </h3>
+            <button id="contactBtn">
+              <h4 class="element" data="nonFormal.hero.btn">Contact Us!</h4>
+            </button>
           </div>
-          <h6 class="element" data="main.stats.left">Children had our game-based lessons</h6>
-        </div>
-        <div class="box">
-          <div class="box__wrapper flex-row center">
-            <h3>30,000</h3>
-            <img src="./res/img/reusable/pliusas.png" alt="plus">
+          <div class="hero-main__cta-topRight">
+            <img
+              class="book"
+              src="./res/img/nonformal/rover_v08_t.png"
+              alt="rover"
+              class="book"
+            />
           </div>
-          <h6 class="element" data="main.stats.middle">Schools had our game-based lessons
-          </h6>
         </div>
-        <div class="box">
-          <div class="box__wrapper flex-row center">
-            <h3>300</h3>
-            <img src="./res/img/reusable/pliusas.png" alt="plus">
-          </div>
-          <h6 class="element" data="main.stats.right">Members in our community
-          </h6>
-        </div>
-      </div>
-    </section>
-    <section class="mars flex-column">
-      <div class="mars__title flex-column center full-padding">
-        <h2 class="element" data="nonFormal.mars.title">"The First Humans on Mars"</h2>
-        <h4 class="element" data="nonFormal.mars.sub">Create the first cosmic base on planet Mars!</h4>
-      </div>
-      <div class="mars__body flex-row">
-        <div class="mars__body-slider">
-          <!-- <div class="mars__body-slider_container flex-row"> -->
-          <div class="splide">
-            <div class="splide__track">
-              <div class="splide__list">
-                <li class="splide__slide slide01">
-                  <div class="mars__body-slider_container-item">
-                    <img src="./res/img/nonformal/Mars_1.png" alt="mars">
-                  </div>
-                </li>
-                <li class="splide__slide slide02">
-                  <div class="mars__body-slider_container-item">
-                    <img src="./res/img/nonformal/Mars_2.png" alt="mars">
-                  </div>
-                </li>
-                <li class="splide__slide slide03">
-                  <div class="mars__body-slider_container-item">
-                    <img src="./res/img/nonformal/Mars_3.png" alt="mars">
-                  </div>
-                </li>
-                <li class="splide__slide slide04">
-                  <div class="mars__body-slider_container-item">
-                    <img src="./res/img/nonformal/Mars_4.png" alt="mars">
-                  </div>
-                </li>
-              </div>
+      </section>
+      <section class="stats">
+        <div class="stats__container">
+          <div class="box">
+            <div class="box__wrapper flex-row center">
+              <h3>115,000</h3>
+              <img src="./res/img/reusable/pliusas.png" alt="plus" />
             </div>
+            <h6 class="element" data="main.stats.left">
+              Children had our game-based lessons
+            </h6>
+          </div>
+          <div class="box">
+            <div class="box__wrapper flex-row center">
+              <h3>30,000</h3>
+              <img src="./res/img/reusable/pliusas.png" alt="plus" />
+            </div>
+            <h6 class="element" data="main.stats.middle">
+              Schools had our game-based lessons
+            </h6>
+          </div>
+          <div class="box">
+            <div class="box__wrapper flex-row center">
+              <h3>300</h3>
+              <img src="./res/img/reusable/pliusas.png" alt="plus" />
+            </div>
+            <h6 class="element" data="main.stats.right">
+              Members in our community
+            </h6>
           </div>
         </div>
-        <div class="mars__body-themes side-half-padding flex-column">
-          <div class="mars__body-themes_title flex center">
-            <h3 class="element" data="nonFormal.mars.themes.title">Topics of lessons</h3>
-          </div>
-          <div class="mars__body-themes_list">
-            <ul>
-              <li><img src="./res/img/nonformal/Rectangle 237.png" alt="list icon">
-                <h4 class="element" data="nonFormal.mars.themes.theme1">exploring the planet Mars;</h4>
-              </li>
-              <li><img src="./res/img/nonformal/Rectangle 237.png" alt="list icon">
-                <h4 class="element" data="nonFormal.mars.themes.theme2">building cosmic bases and rockets;</h4>
-              </li>
-              <li><img src="./res/img/nonformal/Rectangle 237.png" alt="list icon">
-                <h4 class="element" data="nonFormal.mars.themes.theme3">supplying the bases with energy, by using sun
-                  and wind power stations;</h4>
-              </li>
-              <li><img src="./res/img/nonformal/Rectangle 237.png" alt="list icon">
-                <h4 class="element" data="nonFormal.mars.themes.theme4">learning how to obtain fertilizers and grow
-                  food;</h4>
-              </li>
-              <li><img src="./res/img/nonformal/Rectangle 237.png" alt="list icon">
-                <h4 class="element" data="nonFormal.mars.themes.theme5">creating new stories, myths and legends for the
-                  people generation in Mars;</h4>
-              </li>
-              <li><img src="./res/img/nonformal/Rectangle 237.png" alt="list icon">
-                <h4 class="element" data="nonFormal.mars.themes.theme6">visiting the asteroid belt;</h4>
-              </li>
-              <li><img src="./res/img/nonformal/Rectangle 237.png" alt="list icon">
-                <h4 class="element" data="nonFormal.mars.themes.theme7">trading Mars resources;</h4>
-              </li>
-              <li><img src="./res/img/nonformal/Rectangle 237.png" alt="list icon">
-                <h4 class="element" data="nonFormal.mars.themes.theme8">driving with rovers;</h4>
-              </li>
-              <li><img src="./res/img/nonformal/Rectangle 237.png" alt="list icon">
-                <h4 class="element" data="nonFormal.mars.themes.theme9">programming</h4>
-              </li>
-              <li><img src="./res/img/nonformal/Rectangle 237.png" alt="list icon">
-                <h4 class="element" data="nonFormal.mars.themes.theme10">and more!</h4>
-              </li>
-            </ul>
-            <p class="element" data="nonFormal.mars.themes.sub">There is no individual registration for lessons.
-          </div>
+      </section>
+      <section class="mars flex-column">
+        <div class="mars__title flex-column center full-padding">
+          <h2 class="element" data="nonFormal.mars.title">
+            "The First Humans on Mars"
+          </h2>
+          <h4 class="element" data="nonFormal.mars.sub">
+            Create the first cosmic base on planet Mars!
+          </h4>
         </div>
-        <div class="mars__bot">
-          <img src="./res/img/nonformal/bot.png" alt="player">
-        </div>
-      </div>
-    </section>
-    <section class="game-design">
-      <div class="game-design__background">
-
-      </div>
-      <div class="mars__body flex-row">
-        <div class="mars__body-themes side-half-padding flex-column center">
-          <div class="mars__spacer"></div>
-          <div class="mars__body-themes_title" style="padding:0;">
-            <h2 class="element mars__title2" data="nonFormal.gameDesign.title">Game design with "Minecraft"</h2>
-            <h4 class="element" data="nonFormal.gameDesign.sub">Kursas vaikams apie žaidimų dizainą</h4>
-            <h4 class="element" data="nonFormal.gameDesign.desc">Vaikai tampa kolonijos erdvėlaivio įgula, kuri
-              sprendžia įvairias užduotis kartu su laivo valdymo robotu
-              ir
-              taip mokosi apie žaidimų dizainą!</h4>
-          </div>
-          <div class="mars__spacer"></div>
-        </div>
-        <div class="mars__body-slider">
-          <div class="mars__body-slider_container flex-row">
-            <div class="splide02">
+        <div class="mars__body flex-row">
+          <div class="mars__body-slider">
+            <!-- <div class="mars__body-slider_container flex-row"> -->
+            <div class="splide">
               <div class="splide__track">
                 <div class="splide__list">
                   <li class="splide__slide slide01">
-                    <div class="mars__body-slider_container-item" style="padding:0;">
-                      <img src="./res/img/nonformal/Design_1.png" alt="design">
+                    <div class="mars__body-slider_container-item">
+                      <img src="./res/img/nonformal/Mars_1.png" alt="mars" />
                     </div>
                   </li>
                   <li class="splide__slide slide02">
                     <div class="mars__body-slider_container-item">
-                      <img src="./res/img/nonformal/Design_2.png" alt="design">
+                      <img src="./res/img/nonformal/Mars_2.png" alt="mars" />
                     </div>
                   </li>
                   <li class="splide__slide slide03">
                     <div class="mars__body-slider_container-item">
-                      <img src="./res/img/nonformal/Design_3.png" alt="design">
+                      <img src="./res/img/nonformal/Mars_3.png" alt="mars" />
                     </div>
                   </li>
                   <li class="splide__slide slide04">
                     <div class="mars__body-slider_container-item">
-                      <img src="./res/img/nonformal/Design_4.png" alt="design">
+                      <img src="./res/img/nonformal/Mars_4.png" alt="mars" />
                     </div>
                   </li>
                 </div>
               </div>
             </div>
           </div>
+          <div class="mars__body-themes side-half-padding flex-column">
+            <div class="mars__body-themes_title flex center">
+              <h3 class="element" data="nonFormal.mars.themes.title">
+                Topics of lessons
+              </h3>
+            </div>
+            <div class="mars__body-themes_list">
+              <ul>
+                <li>
+                  <img
+                    src="./res/img/nonformal/Rectangle 237.png"
+                    alt="list icon"
+                  />
+                  <h4 class="element" data="nonFormal.mars.themes.theme1">
+                    exploring the planet Mars;
+                  </h4>
+                </li>
+                <li>
+                  <img
+                    src="./res/img/nonformal/Rectangle 237.png"
+                    alt="list icon"
+                  />
+                  <h4 class="element" data="nonFormal.mars.themes.theme2">
+                    building cosmic bases and rockets;
+                  </h4>
+                </li>
+                <li>
+                  <img
+                    src="./res/img/nonformal/Rectangle 237.png"
+                    alt="list icon"
+                  />
+                  <h4 class="element" data="nonFormal.mars.themes.theme3">
+                    supplying the bases with energy, by using sun and wind power
+                    stations;
+                  </h4>
+                </li>
+                <li>
+                  <img
+                    src="./res/img/nonformal/Rectangle 237.png"
+                    alt="list icon"
+                  />
+                  <h4 class="element" data="nonFormal.mars.themes.theme4">
+                    learning how to obtain fertilizers and grow food;
+                  </h4>
+                </li>
+                <li>
+                  <img
+                    src="./res/img/nonformal/Rectangle 237.png"
+                    alt="list icon"
+                  />
+                  <h4 class="element" data="nonFormal.mars.themes.theme5">
+                    creating new stories, myths and legends for the people
+                    generation in Mars;
+                  </h4>
+                </li>
+                <li>
+                  <img
+                    src="./res/img/nonformal/Rectangle 237.png"
+                    alt="list icon"
+                  />
+                  <h4 class="element" data="nonFormal.mars.themes.theme6">
+                    visiting the asteroid belt;
+                  </h4>
+                </li>
+                <li>
+                  <img
+                    src="./res/img/nonformal/Rectangle 237.png"
+                    alt="list icon"
+                  />
+                  <h4 class="element" data="nonFormal.mars.themes.theme7">
+                    trading Mars resources;
+                  </h4>
+                </li>
+                <li>
+                  <img
+                    src="./res/img/nonformal/Rectangle 237.png"
+                    alt="list icon"
+                  />
+                  <h4 class="element" data="nonFormal.mars.themes.theme8">
+                    driving with rovers;
+                  </h4>
+                </li>
+                <li>
+                  <img
+                    src="./res/img/nonformal/Rectangle 237.png"
+                    alt="list icon"
+                  />
+                  <h4 class="element" data="nonFormal.mars.themes.theme9">
+                    programming
+                  </h4>
+                </li>
+                <li>
+                  <img
+                    src="./res/img/nonformal/Rectangle 237.png"
+                    alt="list icon"
+                  />
+                  <h4 class="element" data="nonFormal.mars.themes.theme10">
+                    and more!
+                  </h4>
+                </li>
+              </ul>
+              <p class="element" data="nonFormal.mars.themes.sub">
+                There is no individual registration for lessons.
+              </p>
+            </div>
+          </div>
+          <div class="mars__bot">
+            <img src="./res/img/nonformal/bot.png" alt="player" />
+          </div>
         </div>
-      </div>
-    </section>
-    <section class="codeAcademy flex-row">
-      <div class="codeAcademy__video no_En">
-        <button class="transparent" onclick="gtag('event','video_tracker',{
+      </section>
+      <section class="game-design">
+        <div class="game-design__background"></div>
+        <div class="mars__body flex-row">
+          <div class="mars__body-themes side-half-padding flex-column center">
+            <div class="mars__spacer"></div>
+            <div class="mars__body-themes_title" style="padding: 0">
+              <h2
+                class="element mars__title2"
+                data="nonFormal.gameDesign.title"
+              >
+                Game design with "Minecraft"
+              </h2>
+              <h4 class="element" data="nonFormal.gameDesign.sub">
+                Kursas vaikams apie žaidimų dizainą
+              </h4>
+              <h4 class="element" data="nonFormal.gameDesign.desc">
+                Vaikai tampa kolonijos erdvėlaivio įgula, kuri sprendžia
+                įvairias užduotis kartu su laivo valdymo robotu ir taip mokosi
+                apie žaidimų dizainą!
+              </h4>
+            </div>
+            <div class="mars__spacer"></div>
+          </div>
+          <div class="mars__body-slider">
+            <div class="mars__body-slider_container flex-row">
+              <div class="splide02">
+                <div class="splide__track">
+                  <div class="splide__list">
+                    <li class="splide__slide slide01">
+                      <div
+                        class="mars__body-slider_container-item"
+                        style="padding: 0"
+                      >
+                        <img
+                          src="./res/img/nonformal/Design_1.png"
+                          alt="design"
+                        />
+                      </div>
+                    </li>
+                    <li class="splide__slide slide02">
+                      <div class="mars__body-slider_container-item">
+                        <img
+                          src="./res/img/nonformal/Design_2.png"
+                          alt="design"
+                        />
+                      </div>
+                    </li>
+                    <li class="splide__slide slide03">
+                      <div class="mars__body-slider_container-item">
+                        <img
+                          src="./res/img/nonformal/Design_3.png"
+                          alt="design"
+                        />
+                      </div>
+                    </li>
+                    <li class="splide__slide slide04">
+                      <div class="mars__body-slider_container-item">
+                        <img
+                          src="./res/img/nonformal/Design_4.png"
+                          alt="design"
+                        />
+                      </div>
+                    </li>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="codeAcademy flex-row">
+        <div class="codeAcademy__video no_En">
+          <button
+            class="transparent"
+            onclick="gtag('event','video_tracker',{
           'event_category':'video',
           'event_label':'darius_video_played'
-        }); play(this)">
-          <video src="./res/video/nonFormal.mp4" poster="./res/img/nonformal/poster.png" controls></video>
-        </button>
-        <h4 class="element" data="nonFormal.codeAcademy.sub.text">For individual registration visit "CodeAcademy Kids"
-          <button class="element transparent" data="nonFormal.codeAcademy.sub.href" onclick="gtag('event','outbound',{
+        }); play(this)"
+          >
+            <video
+              src="./res/video/nonFormal.mp4"
+              poster="./res/img/nonformal/poster.png"
+              controls
+            ></video>
+          </button>
+          <h4 class="element" data="nonFormal.codeAcademy.sub.text">
+            For individual registration visit "CodeAcademy Kids"
+            <button
+              class="element transparent"
+              data="nonFormal.codeAcademy.sub.href"
+              onclick="gtag('event','outbound',{
             'event_category':'redirecting_links',
             'event_label':'redirecting_2_codeAcad'
-          });"><a href="http://codeacademy.com" target="_blank">here.</a></button>
-        </h4>
-      </div>
-      <div class="codeAcademy__card flex-column center no_En">
-        <div class="codeAcademy__card-title bottom-padding">
-          <h3 class="element" data="nonFormal.codeAcademy.themes.title">Topics of lessons</h3>
+          });"
+            >
+              <a href="http://codeacademy.com" target="_blank">here.</a>
+            </button>
+          </h4>
         </div>
-        <div class="codeAcademy__card-collapsible">
-          <button class="collapsible flex-row ">
-            <img src="./res/img/nonformal/1.png" alt="number 1">
-            <h4 class="element" data="nonFormal.codeAcademy.themes.first.main">First semester</h4>
-          </button>
-          <div class="codeAcademy__card-collapsible_content" style="display:block;">
-            <h4 class="element" data="nonFormal.codeAcademy.themes.first.desc">Game design and game development basics
+        <div class="codeAcademy__card flex-column center no_En">
+          <div class="codeAcademy__card-title bottom-padding">
+            <h3 class="element" data="nonFormal.codeAcademy.themes.title">
+              Topics of lessons
+            </h3>
+          </div>
+          <div class="codeAcademy__card-collapsible">
+            <button class="collapsible flex-row">
+              <img src="./res/img/nonformal/1.png" alt="number 1" />
+              <h4
+                class="element"
+                data="nonFormal.codeAcademy.themes.first.main"
+              >
+                First semester
+              </h4>
+            </button>
+            <div
+              class="codeAcademy__card-collapsible_content"
+              style="display: block"
+            >
+              <h4
+                class="element"
+                data="nonFormal.codeAcademy.themes.first.desc"
+              >
+                Game design and game development basics
+              </h4>
+            </div>
+            <button class="collapsible flex-row">
+              <img src="./res/img/nonformal/2.png" alt="number 2" />
+              <h4
+                class="element"
+                data="nonFormal.codeAcademy.themes.second.main"
+              >
+                Second semester
+              </h4>
+            </button>
+            <div class="codeAcademy__card-collapsible_content">
+              <h4
+                class="element"
+                data="nonFormal.codeAcademy.themes.second.desc"
+              >
+                Game planning and prototyping
+              </h4>
+            </div>
+            <button class="collapsible flex-row">
+              <img src="./res/img/nonformal/3.png" alt="number 3" />
+              <h4
+                class="element"
+                data="nonFormal.codeAcademy.themes.third.main"
+              >
+                Third semester
+              </h4>
+            </button>
+            <div class="codeAcademy__card-collapsible_content">
+              <h4
+                class="element"
+                data="nonFormal.codeAcademy.themes.third.desc"
+              >
+                Applying learned theoretical and practical knowledge by
+                developing a game
+              </h4>
+            </div>
+            <div class="codeAcademy__footer">
+              <h7 class="element" data="nonFormal.codeAcademy.footer"
+                >Working in collaboration with</h7
+              >
+              <img
+                src="./res/img/nonformal/codeAcademy.png"
+                alt="code Academy kids logo"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="skillSet flex-column">
+        <img class="bg123" src="./res/img/nonformal/123.png" alt="123" />
+        <img class="bg5" src="./res/img/nonformal/5.png" alt="5" />
+        <img class="bgAB" src="./res/img/nonformal/AB.png" alt="AB" />
+        <img class="bgC" src="./res/img/nonformal/C.png" alt="C" />
+        <div class="skillSet__bottom">
+          <div class="skillSet__bottom-title">
+            <h2 class="element" data="nonFormal.skillSet.title">
+              Improving skills
+            </h2>
+          </div>
+          <div class="skillSet__bottom-body flex-row top-bottom-padding">
+            <div class="skillSet__bottom-body_box flex center">
+              <h4 class="element" data="nonFormal.skillSet.skill1">
+                programming
+              </h4>
+            </div>
+            <div class="skillSet__bottom-body_box flex center">
+              <h4 class="element" data="nonFormal.skillSet.skill2">sciences</h4>
+            </div>
+            <div class="skillSet__bottom-body_box flex center">
+              <h4 class="element" data="nonFormal.skillSet.skill3">teamwork</h4>
+            </div>
+            <div class="skillSet__bottom-body_box flex center">
+              <h4 class="element" data="nonFormal.skillSet.skill4">English</h4>
+            </div>
+            <div class="skillSet__bottom-body_box flex center">
+              <h4 class="element" data="nonFormal.skillSet.skill5">economy</h4>
+            </div>
+            <div class="skillSet__bottom-body_box flex center">
+              <h4 class="element" data="nonFormal.skillSet.skill6">
+                individual work
+              </h4>
+            </div>
+            <div class="skillSet__bottom-body_box flex center">
+              <h4 class="element" data="nonFormal.skillSet.skill7">
+                mathematics
+              </h4>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="marsPackage flex-column center full-padding">
+        <div class="marsPackage__title bottom-padding">
+          <h2 class="element" data="nonFormal.marsPackage.title">
+            Organizations that get interactive "Three Cubes" lessons are
+            provided with
+          </h2>
+        </div>
+        <div class="marsPackage__body flex-row">
+          <div class="marsPackage__body-box flex center">
+            <img
+              class="imgIdea"
+              src="./res/img/reusable/Ideation.png"
+              alt="idea"
+            />
+            <h4 class="element" data="nonFormal.marsPackage.box1">
+              Personal consultant
             </h4>
           </div>
-          <button class="collapsible flex-row ">
-            <img src="./res/img/nonformal/2.png" alt="number 2">
-            <h4 class="element" data="nonFormal.codeAcademy.themes.second.main">Second semester</h4>
-          </button>
-          <div class="codeAcademy__card-collapsible_content">
-            <h4 class="element" data="nonFormal.codeAcademy.themes.second.desc">Game planning and prototyping</h4>
+          <div class="marsPackage__body-box flex center">
+            <img
+              class="imgBoard"
+              src="./res/img/reusable/Chalkboard.png"
+              alt="board"
+            />
+            <h4 class="element" data="nonFormal.marsPackage.box2">
+              Informational guides
+            </h4>
           </div>
-          <button class="collapsible flex-row ">
-            <img src="./res/img/nonformal/3.png" alt="number 3">
-            <h4 class="element" data="nonFormal.codeAcademy.themes.third.main">Third semester</h4>
-          </button>
-          <div class="codeAcademy__card-collapsible_content">
-            <h4 class="element" data="nonFormal.codeAcademy.themes.third.desc">Applying learned theoretical and
-              practical knowledge by developing a game</h4>
-          </div>
-          <div class="codeAcademy__footer">
-            <h7 class="element" data="nonFormal.codeAcademy.footer">Working in collaboration with</h7>
-            <img src="./res/img/nonformal/codeAcademy.png" alt="code Academy kids logo">
-          </div>
-        </div>
-      </div>
-    </section>
-    <section class="skillSet flex-column">
-      <img class="bg123" src="./res/img/nonformal/123.png" alt="123">
-      <img class="bg5" src="./res/img/nonformal/5.png" alt="5">
-      <img class="bgAB" src="./res/img/nonformal/AB.png" alt="AB">
-      <img class="bgC" src="./res/img/nonformal/C.png" alt="C">
-      <div class="skillSet__bottom">
-        <div class="skillSet__bottom-title">
-          <h2 class="element" data="nonFormal.skillSet.title">Improving skills</h2>
-        </div>
-        <div class="skillSet__bottom-body flex-row top-bottom-padding">
-          <div class="skillSet__bottom-body_box flex center">
-            <h4 class="element" data="nonFormal.skillSet.skill1">programming</h4>
-          </div>
-          <div class="skillSet__bottom-body_box flex center">
-            <h4 class="element" data="nonFormal.skillSet.skill2">sciences</h4>
-          </div>
-          <div class="skillSet__bottom-body_box flex center">
-            <h4 class="element" data="nonFormal.skillSet.skill3">teamwork</h4>
-          </div>
-          <div class="skillSet__bottom-body_box flex center">
-            <h4 class="element" data="nonFormal.skillSet.skill4">English</h4>
-          </div>
-          <div class="skillSet__bottom-body_box flex center">
-            <h4 class="element" data="nonFormal.skillSet.skill5">economy</h4>
-          </div>
-          <div class="skillSet__bottom-body_box flex center">
-            <h4 class="element" data="nonFormal.skillSet.skill6">individual work</h4>
-          </div>
-          <div class="skillSet__bottom-body_box flex center">
-            <h4 class="element" data="nonFormal.skillSet.skill7">mathematics</h4>
+          <div class="marsPackage__body-box flex center">
+            <img
+              class="imgCertificate"
+              src="./res/img/reusable/Certificate.png"
+              alt="certificate"
+            />
+            <h4 class="element" data="nonFormal.marsPackage.box3">
+              Fully prepared lessons
+            </h4>
           </div>
         </div>
-      </div>
-    </section>
-    <section class="marsPackage flex-column center full-padding">
-      <div class="marsPackage__title bottom-padding">
-        <h2 class="element" data="nonFormal.marsPackage.title">Organizations that get interactive "Three Cubes" lessons
-          are provided with</h2>
-      </div>
-      <div class="marsPackage__body flex-row">
-        <div class="marsPackage__body-box flex center">
-          <img class="imgIdea" src="./res/img/reusable/Ideation.png" alt="idea">
-          <h4 class="element" data="nonFormal.marsPackage.box1">Personal consultant</h4>
-        </div>
-        <div class="marsPackage__body-box flex center">
-          <img class="imgBoard" src="./res/img/reusable/Chalkboard.png" alt="board">
-          <h4 class="element" data="nonFormal.marsPackage.box2">Informational guides</h4>
-        </div>
-        <div class="marsPackage__body-box flex center">
-          <img class="imgCertificate" src="./res/img/reusable/Certificate.png" alt="certificate">
-          <h4 class="element" data="nonFormal.marsPackage.box3">Fully prepared lessons</h4>
-        </div>
-      </div>
-    </section>
-  </main>
-  <footer-comp></footer-comp>
-  <gdpr-popup></gdpr-popup>
-  <notice-overlay></notice-overlay>
-  <!-- script loading -->
-  <script src="./res/js/main.js"></script>
-  <script src="./res/js/i18next.min.js"></script>
-  <script src="./res/js/splide.min.js"></script>
-  <!-- CONFIGS -->
-  <script src="./res/js/locale.js"></script>
-  <script type="text/javascript">
+      </section>
+    </main>
+    <footer-comp></footer-comp>
+    <gdpr-popup></gdpr-popup>
+    <notice-overlay></notice-overlay>
+    <!-- script loading -->
+    <script src="./res/js/main.js"></script>
+    <script src="./res/js/i18next.min.js"></script>
+    <script src="./res/js/splide.min.js"></script>
+    <!-- CONFIGS -->
+    <script src="./res/js/locale.js"></script>
+    <script type="text/javascript">
+      new Splide(".splide", {
+        type: "loop",
+        perPage: 2,
+        perMove: 1,
+        gap: "1rem",
+        autoplay: true,
+        pagination: false,
+        breakpoints: {
+          480: {
+            perPage: 1,
+            gap: false,
+          },
+        },
+      }).mount();
 
-    new Splide(".splide", {
-      type: "loop",
-      perPage: 2,
-      perMove: 1,
-      gap: "1rem",
-      autoplay: true,
-      pagination: false,
-      breakpoints: {
-        480: {
-          perPage: 1,
-          gap: false,
-        }
-      },
-    }).mount();
-
-    new Splide(".splide02", {
-      type: "loop",
-      perPage: 2,
-      perMove: 1,
-      gap: "1rem",
-      autoplay: true,
-      pagination: false,
-      breakpoints: {
-        480: {
-          perPage: 1,
-          gap: false,
-        }
-      },
-    }).mount();
-  </script>
-</body>
-
+      new Splide(".splide02", {
+        type: "loop",
+        perPage: 2,
+        perMove: 1,
+        gap: "1rem",
+        autoplay: true,
+        pagination: false,
+        breakpoints: {
+          480: {
+            perPage: 1,
+            gap: false,
+          },
+        },
+      }).mount();
+    </script>
+  </body>
 </html>
