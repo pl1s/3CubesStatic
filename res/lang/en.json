@@ -29,6 +29,13 @@
     },
     "follow": {
       "main": "Follow us"
+    },
+    "policy": {
+      "sub": [
+        "Terms & Conditions",
+        "Privacy Policy",
+        "Cookies Policy"
+      ]
     }
   },
   "main": {
@@ -454,6 +461,15 @@
       "sub": "We prepared lesson packages for anyone to try out",
       "btn": "Contact us!"
     },
+    "king&queen": {
+      "title": "„Karalius Mindaugas ir karalienė Morta“",
+      "sub": "Mokiniai atlieka užduotis bendradarbiaujant ir sužino apie karūnavimo ceremoniją!",
+      "topics": [
+        "Lankomasi istorinių šaltinių bibliotekoje ir pilyje",
+        "Bendraujama su veikėjais",
+        "Atliekamas žinių testas labirinte"
+      ]
+    },
     "jan13": {
       "title": "\"January 13th\"",
       "sub": "Explore Vilnius TV tower and get to know what happened on January 13",
@@ -491,13 +507,26 @@
     ],
     "downloadForm": {
       "title": "Lesson download form",
-      "instructions": "Please enter your email address so that we could send you the lesson map and the instructions for it.",
-      "note": "We care about your opinion!",
+      "instructions": "Receive the lesson package to your email!",
+      "notes": [
+        "The lesson package is designed in a way that the teacher can conduct the lesson for the class on his own.",
+        "The lesson package includes: program installation instructions, lesson plan and preparation files, virtual lesson world file.",
+        "SUBSCRIBE TO THE NEWSLETTER IS NOT NECESSARY, you can download this lesson pack by entering your email. below",
+        "By downloading the lesson package, you agree that your email adress will be registered for statistical and feedback gathering purposes. More about this:",
+        "Privacy Policy",
+        "and",
+        "Cookie Policy"
+      ],
       "desc": "You can choose to receive news about our products and other communications for direct marketing purposes. This is important and is intended for us to be able to contact you - to hear your opinion, how you managed to conduct the lesson on your own and help in case of questions.",
       "gdpr": "By downloading lesson you agree that your email will be stored for statistical and feedback collecting purposes.",
-      "newsletter": "I agree to signup for newsletter",
+      "newsletter": "Check, if you also want to subscribe to our newsletters.",
       "send": "Send",
-      "sent": "Sent!"
+      "sent": "Sent!",
+      "error": [
+        "This value cannot be empty.",
+        "Do not use (<b>“‘/$&\\;</b>)",
+        "Something went wrong 🤕"
+      ]
     }
   },
   "gdpr": {
@@ -559,5 +588,410 @@
   },
   "error": {
     "500": "Something went wrong 🤕"
+  },
+  "termsConditions": {
+    "title": "Terms and conditions for using website",
+    "list": {
+      "title1": "1. Application and interpretation of the Terms",
+      "msg1": {
+        "1": "1.1. The following terms and conditions (“Terms”) apply to your use of the website www.threecubes.gg (“Website”), including any content, functionality, products, and services offered on or through Website, whether as a guest or a registered user.",
+        "2": "1.2. The Website is managed, administered and services provided by UAB „3 cubes investment“ (hereinafter referred to as “Three Cubes”), legal entity code 304843104, registered office address at Krivių str. 42-3, LT-01209, Vilnius, Lithuania, e-mail address info@tryskubai.lt.",
+        "3": "1.3. The Terms constitute a contract between you (\"you\" or \"visitor\") and Three Cubes. By using the Website, you agree to be bound by these Terms. If you do not agree to the Terms, please do not use the Website.",
+        "4": "1.4. To enter into contract created by these terms, you must be an adult of the legal age of majority in your country of residence. You are legally and financially responsible for all actions using or accessing our software, including the actions of anyone you allow to access to your account. You affirm that You have reached the legal age of majority, understand and accept these Terms. If You are under the legal age of majority, Your parent or legal guardian must consent to these Terms.",
+        "5": "1.5. For the purposes of these Terms, the Services (\"Services\") include all of the activities that You may perform on the Website, including, but not limited to reading, viewing, asking questions, submitting, sending and receiving information and/or data of any kind on the Website.",
+        "6": "1.6. In addition to these Terms, software or services that are included in or otherwise made available to you through the Services may be subject to separate agreement between you and Three Cubes, such as end user license agreements. If these Terms are inconsistent with any such agreements, those agreements will control.",
+        "7": "1.7. Three Cubes may amend the Terms. Amendments and/or additions to the Terms shall become effective upon their publication in any form on the Website. If you continue to use the Website after the posting of amendments and/or additions to the Terms, you shall be deemed to have accepted all amendments and/or additions to the Terms. If you do not agree to the amended and/or supplemented Terms, you must immediately stop using the Website."
+      },
+      "title2": "2. Your rights and obligations",
+      "msg2": {
+        "1": "2.1. You have the right to use the Website and the Services in accordance with the Terms. You must act lawfully and not violate the requirements of the law, the rights of Three Cubes, other users of the Website and/or other persons. You are solely responsible for any actions you take while using the Website and the consequences thereof.",
+        "2": {
+          "0": "2.2. When using the Website and/or the Services, you may not:",
+          "1": "2.2.1. take any action that jeopardizes or may jeopardize the proper functioning, security or integrity of the Website and/or the Services, or restricts the ability of Three Cubes to properly provide the Services and/or the ability of others to use the Website and/or the Services;",
+          "2": "2.2.2. take any action that could harm Three Cubes, other persons, their property or legitimate interests, including but not limited to illegal transactions or fraud;",
+          "3": "2.2.3. use the Website and/or any of its content to carry out and develop activities that compete with the Website and/or Three Cubes, including advertising that mentions third parties that compete directly or indirectly with Three Cubes, or the goods and/or services of such third parties, as well as references to such third parties and/or their products;",
+          "4": "2.2.4. to use the Website to transmit, send, upload, post, etc. unsolicited information, including but not limited to information prohibited by law (defamatory, offensive, discriminatory, pornographic, etc.).",
+          "5": "2.2.5. send by email, other electronic means or otherwise transmit or send any information and/or links to information with the intent to affect, or with the understanding that it will affect, the operation of the computer networks or computer equipment owned by the owners of the computer networks, or to distribute malicious software, or to distribute any unsolicited e-mails, notices, messages, communications or other information;",
+          "6": "2.2.6. use automated means, including but not limited to additional computer hardware and/or software, to process, copy, edit, review, decompile, encrypt, reprogram, reverse engineer, relocate, reassign, or redirect the data, content, and Services on the Website, in a manner other than that which is permitted by the standard Website functionality;",
+          "7": "2.2.7. remove copyright or trademarks from any copies of the Website content, create an electronic or manually reproduced database based on the Website content, host the Website content on other websites, and modify the content of a document downloaded from the Website;",
+          "8": "2.2.8. collect, store, transfer to other media, make publicly available, publish, and distribute the data of other users of the Website or data about any actions of users of the Website."
+        },
+        "3": {
+          "0": "2.3. By using the Website and/or the Services, you confirm that:",
+          "1": "2.3.1. you are a natural person of legal capacity;",
+          "2": "2.3.2. you understand that if you take advantage of the paid offers on the Website, you may be obliged to pay for the services you purchase and any other obligations arising from your use of such offer;",
+          "3": "2.3.3. you understand and agree that in the event that your login credentials become known to third parties, such third parties may enter into obligations which will be binding on you and you undertake to comply with such obligations and Three Cubes shall not be under any obligation to verify your identity in any manner whatsoever, other than by verifying the validity of your login ID and password."
+        }
+      },
+      "title3": "3. Rights and obligations of Three Cubes",
+      "msg3": {
+        "1": {
+          "0": "3.1. Three Cubes may at any time without notice to you:",
+          "1": "3.1.1. change the Website and/or the Services or (parts thereof), all or part of the Website content, the Website functions, any information, including Visitor Content. Three Cubes shall not be held liable for any adverse consequences caused to you by such and other similar actions;",
+          "2": "3.1.2. restrict or suspend access to and/or use of the Website and/or the Services for an indefinite period of time without giving any reason;",
+          "3": "3.1.3. unilaterally decide, in its sole discretion, on the truthfulness, completeness and accuracy of the login data provided by you. In the event that you provide any data that is untrue, incomplete, inaccurate, misleading, or that does not comply with the Terms and/or the law, Three Cubes shall have the right to immediately, and without notice to you, unregister you, delete your registration, block or edit such data, and/or take any other actions;",
+          "4": "3.1.4. to restrict or terminate access to the Website, the Visitor Content and/or the Services for an indefinite period of time during preventive and/or maintenance work. In this case, you may be informed by means of a general notice published on the Website;",
+          "5": "3.1.5. discontinue the operation of the Website and the provision of the Services."
+        },
+        "2": "3.2. Three Cubes has the right (but not the obligation) to monitor your activities on the Website, including monitoring of Visitor Content. These actions may be taken to prevent a violation of the Terms or the law, as well as to detect and remove or block unwanted information."
+      },
+      "title4": "4. Suspension, restriction, and termination of services",
+      "msg4": {
+        "1": {
+          "0": "4.1. Three Cubes shall have the right, in its sole discretion, to restrict or terminate your right or ability to use the Website and/or the Services, to delete or modify the Visitor Content and the login credentials, to prohibit you from re-registering on the Website, and to take any other action in its sole discretion, if:",
+          "1": "4.1.1. you are in breach of these Terms;",
+          "2": "4.1.2. you provide fraudulent, untrue, incomplete and/or misleading information when registering or using the Website;",
+          "3": "4.1.3. you do not comply with the moral standards of society and/or the requirements of legislation;",
+          "4": "4.1.4. in Three Cubes’s opinion, it is required to do so in connection with the maintenance and/or updating of the Website;",
+          "5": "4.1.5. it is required by the competent authorities or is necessary in cases provided for by law;",
+          "6": "4.1.6. it is necessary to protect the rights and legitimate interests of Three Cubes or third parties;",
+          "7": "4.1.7. Three Cubes suspects that you have jeopardized or may jeopardize the legitimate interests of other users of the Website;",
+          "8": "4.1.8. in other cases specified in the Terms."
+        },
+        "2": "4.2. You have the right to withdraw from the Website at any time by deleting your login credentials in the manner specified on the Website.",
+        "3": "4.3. If you cancel your registration for any reason, you will no longer be able to use the Services for which registration is required and the information contained in your registration account will be deleted. You may also be permanently deleted from any Visitor Content."
+      },
+      "title5": "5. Intellectual property",
+      "msg5": {
+        "1": "5.1. All rights in and to the Website and the works and other intellectual property contained therein are protected and belong to Three Cubes, its licensors, or other providers of such material.",
+        "2": "5.2. You are permitted to use the Services for your personal, non-commercial use only. You must not copy, modify, create derivative works of, publicly display, publicly perform, republish, or transmit any of the material obtained through the Services, or delete, or alter any copyright, trademark, or other proprietary rights notices from copies of materials from the Services. However, if you are otherwise in compliance with these Terms, you are permitted to use, elsewhere and on other websites, an unaltered copy of portions of the content that is publicly available on the Website for the limited, non-commercial purpose of discussing such content.",
+        "3": "5.3. You agree that any information and/or data that you provide, post, input or otherwise transmit using the Website (\"Visitor Content\") shall become part of the Website and shall be retained and used by Three Cubes and/or its authorized agents in perpetuity and in an unlimited territory. Neither Three Cubes nor any other third party using such Visitor Content will be obligated to pay you any compensation for the use of the Visitor Content.",
+        "4": {
+          "0": "5.4. From the moment that the Visitor's Content reaches Three Cubes in any way, the visitor grants Three Cubes the following exclusive rights to the Visitor's Content free of charge, in perpetuity and in an unlimited territory:",
+          "1": "5.4.1. the right to reproduce, publish, publish, make available to the public and distribute in any form or by any means whatsoever, whether by way of sale, lease, making available to use it gratuitous, or other transfer of ownership;",
+          "2": "5.4.2. the right to modify or adapt, create derivative works from the information provided by the visitor;",
+          "3": "5.4.3. to use the Visitor Content gratuitously in any manner, for any purpose or form."
+        }
+      },
+      "title6": "6. Liability and limitation of liability",
+      "msg6": {
+        "1": "6.1. Three Cubes makes no representations and/or warranties that the operation of the Website and/or the Services on the Website will be proper, timely, uninterrupted, error-free, of high quality, or that the Website and/or the Services will not cause any adverse consequences to you or any third party. Three Cubes is not and will not be liable for any inconsistencies, inaccuracies, or incorrectness of the content on the Website, including the information on the Services and the description of the Services, and for any adverse consequences for you or any third party arising therefrom.",
+        "2": "6.2. To the maximum extent permitted by law, Three Cubes shall not be liable for any damage and/or loss which you may suffer as a result of your use of the Website and/or Services, whether or not Three Cubes has been informed of such damage or the possibility of such damage. By using the Website and/or the Services, you agree that such limitation shall apply to all uses, services, and content of the Website. To the extent that Three Cubes’s liability for damages could not be fully limited and Three CUbes could not be exempted from liability in accordance with applicable law, Three Cubes's liability to you and/or third parties arising out of these Terms shall be limited to an amount of EUR 500.",
+        "3": "6.3. You are liable for any damage caused or likely to be caused to Three Cubes and/or third parties as a result of your use of the Website and/or Services. You undertake to ensure that Three Cubes shall not incur any legal liability, obligation to pay, indemnify or otherwise compensate for any loss, damage or other expense arising out of your use of the Website and/or Services."
+      },
+      "title7": "7. Applicable law and dispute resolution",
+      "msg7": {
+        "1": "7.1. The Terms shall be governed by the law of the Republic of Lithuania.",
+        "2": "7.2. Any dispute between you and Three Cubes regarding the performance of the Terms shall be settled by negotiation and in accordance with these Terms and the text thereof. If the parties fail to resolve the dispute by negotiation within 30 (thirty) days from the date on which one of the parties has served to the other party a request for settlement, such dispute shall be finally settled in accordance with the procedure established by the laws of the Republic of Lithuania in the courts of the Republic of Lithuania in the jurisdiction of the seat of Three Cubes.",
+        "3": "7.3. The subject of out-of-court settlement of consumer disputes, which is competent to resolve consumer disputes arising from these Terms, is the State Consumer Rights Protection Authority (address: Vilniaus g. 25, LT-01402 Vilnius, tel. +37052626751, e-mail tarnyba@vvtat.lt; website http://www.vvtat.lt) or http://ec.europa.eu/odr/."
+      },
+      "title8": "8. Final provisions",
+      "msg8": {
+        "1": "8.1. All notices and information between you and Three Cubes will be sent electronically; to Three Cubes at the addresses set out in these Terms or on the Website, and to you at the addresses set out during registration.",
+        "2": "8.2. Information sent to you will be deemed to have been received 3 (three) hours after it has been sent. The existence of a copy of the email or other communication sent to you at Three Cubes or on a server (database or other device storing relevant information) used by Three Cubes shall be adequate evidence of the sending of information to you.",
+        "3": "8.3. The parties agree that Three Cubes may assign its rights and obligations under these Terms to third parties at any time without your consent by notifying you on the Website.",
+        "4": "8.4. The Privacy Policy and the descriptions of the Services published on the Website shall be deemed to be appendices to the Terms, forming an integral part of the Terms and having the same legal effect as the Terms."
+      }
+    }
+  },
+  "privacyPolicy": {
+    "title": "Privacy Policy",
+    "date": "This Privacy Policy has been published on",
+    "sub": "We understand the importance of protection of your personal data, therefore we process your personal data lawfully, transparently, and fairly, for the pre-determined purposes and only to the extent necessary to achieve those purposes. When we process your personal data, we make every effort to ensure that they are accurate, secure, confidential, properly stored and protected. When processing your personal data, we comply with the requirements of the Regulation (EU) 2016/679 (General Data Protection Regulation) (“GDPR”).",
+    "list": {
+      "title1": "1. What is this document?",
+      "msg1": {
+        "1": "1.1. This Privacy Policy (“Privacy Policy”) informs you of our policies regarding the collection, use and disclosure of data when you visit our website www.threecubes.gg (“Website”), contact us for recruiting purposes, use our services or enter into contract with us. The Privacy Policy applies to every person who visits the Website, as well as to any actions you may take on the Websites.",
+        "2": "1.2. Please read this Privacy Policy carefully to find out how we process your personal data, where we get them from and what your rights as a data subject are.",
+        "3": "1.3. The term \"personal data\" as used in this Privacy Policy means any information which could be used to identify you directly or indirectly."
+      },
+      "title2": "2. Who are we?",
+      "msg2": {
+        "1": "2.1. The Website is managed and administered by UAB „3 cubes investment“ (legal entity code 304843104, registered office address at Krivių str. 42-3, LT-01209, Vilnius, Lithuania, e-mail address info@tryskubai.lt).",
+        "2": "2.2. We are a controller of your personal data."
+      },
+      "title3": "3. What personal data we process and for what purposes?",
+      "msg3": {
+        "1": {
+          "0": "3.1. We process your personal data for the following purposes:",
+          "1": {
+            "0": "3.1.1. to make and cary out service agreements with legal or natural persons.",
+            "1": {
+              "title": "Personal data categories",
+              "msg": "First name, last name, individual activity certificate number, contact information, contents of correspondence, other details contained in the agreement"
+            },
+            "2": {
+              "title": "Legal basis for processing the personal data",
+              "msg": "Processing is necessary for the performance of a contract (Article 6(1)(b) of GDPR) or processing is necessary for the legitimate interest to pursue activities (Article 6(1)(f) of GDPR)."
+            },
+            "3": {
+              "title": "Time limit for processing of the personal data",
+              "msg": "Your personal data is processed for 10 (ten) years after the agreement expires."
+            },
+            "4": {
+              "title": "We receive the personal data from",
+              "msg": "You or your employer"
+            },
+            "5": {
+              "title": "We provide or transfer the personal data to",
+              "msg": "Third party service providers whose services we normally use for data storage, website hosting purposes and other technical services."
+            }
+          },
+          "2": {
+            "0": "3.1.2. to select candidate to fill vacant positions.",
+            "1": {
+              "title": "Personal data categories",
+              "msg": "First name, last name, phone number, email address, CV; cover letter; other information related to your professional competence that you voluntarily provide when applying for a job position. We only process your personal data that is provided in the documents sent to us and that relates to your competence, skills and experience and that helps us to better assess your potential and career opportunities."
+            },
+            "2": {
+              "title": "Legal basis for processing the personal data",
+              "msg": "Your consent to the processing of personal data (Article 6(1)(a) of GDPR); and Our legitimate interest in selecting suitable candidates (Article 6(1)(f) of GDPR)"
+            },
+            "3": {
+              "title": "Time limit for processing of the personal data",
+              "msg": "We will process your personal data only for as long as the selection of the candidate (usually 3-4 months) to which you have provided information about yourself is carried out. At the end of the selection phase and with your separate consent, we will process your data for another 1 (one) year so that during this period, if a suitable position appears according to your CV, we can offer you to participate in the selection or submit a job offer."
+            },
+            "4": {
+              "title": "We receive the personal data from",
+              "msg": "You."
+            },
+            "5": {
+              "title": "We provide or transfer the personal data to",
+              "msg": "Recruitment companies that assist us in recruiting candidates and provide us with services related to recruitment, candidate assessment and internal administration and third party service providers whose services we normally use for data storage, website hosting purposes and other technical services."
+            }
+          },
+          "3": {
+            "0": "3.1.3. to ensure the functionality of the Website, administer the Website, diagnose possible malfunctions of the Website, and perform statistical analyses in order to determine your needs in relation to certain functions and to analyse how and where to make the most efficient use of the available resources:",
+            "1": {
+              "title": "Personal data categories",
+              "msg": "Internet Protocol (IP) address; type of web browser used; number of visits; view pages of the website; time spent on the Website; online source from which the person came; information about the device you are using; language; country; internet provider, etc."
+            },
+            "2": {
+              "title": "Legal basis for processing the personal data",
+              "msg": "Your consent to the processing of personal data (Article 6(1)(a) of GDPR)"
+            },
+            "3": {
+              "title": "Time limit for processing of the personal data",
+              "msg": "Personal data is processed for as long as your consent is valid, but no longer than 2 (two) years"
+            },
+            "4": {
+              "title": "We receive the personal data from",
+              "msg": "You."
+            },
+            "5": {
+              "title": "We provide or transfer the personal data to",
+              "msg": "Third party service providers whose services we normally use for data storage, website hosting purposes and other technical services."
+            }
+          },
+          "4": {
+            "0": "3.1.4. to manage and administer our social media accounts ( LinkedIn, Facebook, Instagram, YouTube, Discord):",
+            "1": {
+              "title": "Personal data categories",
+              "msg": "Name of the social network account; personal photo; personal reactions to the content we generate (likes, comments, shares)"
+            },
+            "2": {
+              "title": "Legal basis for processing the personal data",
+              "msg": "Your consent to the processing of personal data (Article 6(1)(a) of GDPR)"
+            },
+            "3": {
+              "title": "Time limit for processing of the personal data",
+              "msg": "Personal data is processed for as long as our or your social networking account is valid, unless you express your wish to delete the data contained in our social networking accounts before"
+            },
+            "4": {
+              "title": "We receive the personal data from",
+              "msg": "You."
+            },
+            "5": {
+              "title": "We provide or transfer the personal data to",
+              "msg": "We are joint controllers of your personal data together with social network operators"
+            }
+          },
+          "5": {
+            "0": "3.1.5. to send You direct marketing messages (sending newsletters, promotions, surveys and other marketing offers and news):",
+            "1": {
+              "title": "Personal data categories",
+              "msg": "Name; e-mail address; telephone number"
+            },
+            "2": {
+              "title": "Legal basis for processing the personal data",
+              "msg": "Your consent to the processing of personal data (Article 6(1)(a) of GDPR)."
+            },
+            "3": {
+              "title": "Time limit for processing of the personal data",
+              "msg": "Personal data shall be processed for as long as the Data Subject's consent is valid, but not longer than 2 years."
+            },
+            "4": {
+              "title": "We receive the personal data from",
+              "msg": "You."
+            },
+            "5": {
+              "title": "We provide or transfer the personal data to",
+              "msg": "IT, server service providers; our service providers who provide marketing services;."
+            }
+          }
+        },
+        "2": "3.2. We may also use the information we collect in aggregate or otherwise anonymized form, i.e. the information that does not identify you or any specific person. We may use this general data for research, development, marketing, analytics.",
+        "3": "3.3. We do not collect or process your specific categories of personal data revealing your racial or ethnic origin, political opinions, religious or philosophical beliefs or trade union membership, as well as health data or data about your sexual life and sexual orientation. Therefore, please do not provide this personal data to us by e-mail, telephone or in any other way."
+      },
+      "title4": "4. To whom do we provide your personal data?",
+      "msg4": {
+        "1": "4.1. We guarantee that your personal data will not be sold, provided or otherwise transferred to third parties without a legitimate basis, as well as used for purposes other than those for which they were collected. We will not transfer your personal data in any way other than in accordance with this Privacy Policy or applicable law. However, we reserve the right to provide information about you if we were required to do so by law or if required to do so by law enforcement authorities or prosecuting authorities or seeking to protect our rights or interests (including the case when your personal data is transferred to others for debt recovery purposes).",
+        "2": "4.2. We may transfer your personal data to companies that help us operate, i.e. data processors. From such data processors, we require that your data be processed only in accordance with the instructions given by us and the applicable data protection legislation. We enter into agreements with these data processors that oblige the parties to adhere strictly to the personal data protection requirements.",
+        "3": {
+          "0": "4.3. We may disclose the personal data we collect about you to the following third parties:",
+          "a": "a) the partners;",
+          "b": "b) third party service providers whose services we normally use for data storage, website hosting purposes and other technical services or service providers as debt administration/collection companies or companies providing archiving services, also to legal/marketing service providers. In some cases, your data may be transferred to the third countries where other personal data protection regulations may apply. We have taken appropriate safeguards (e.g. Standart Contractual Clauses) to ensure that your personal data remains protected, and we require that our third-party service providers and partners also have appropriate safeguards in place;",
+          "c": "c) law enforcement authorities, bodies and/or other recipients to whom the data must be communicated in accordance with legal requirements."
+        }
+      },
+      "title5": "5. How and where do we store your personal data?",
+      "msg5": {
+        "1": "5.1. The personal data we collect from you will be located within the European Economic Area (EEA) but may be transferred or stored outside the EEA. When transferring your personal data outside the EEA, we will take all necessary steps to ensure that your personal data is processed securely and in accordance with this Privacy Policy, we will do this by ensuring necessary measures and safeguards, including Standart Contractual Clauses.",
+        "2": "5.2. The security of your information is important to us. We have a team dedicated to protecting your information and have put in place physical, electronic, and procedural safeguards. These measures include limiting access, using encryption, testing for vulnerabilities, advanced malware detection, employing pseudonymization and anonymization techniques, and more.",
+        "3": "5.3. Unfortunately, the transmission of information over the internet is not completely secure. Although we make every effort to protect your personal data, we cannot guarantee the complete security of it. Therefore, please be informed that you provide us with information at your own risk.",
+        "4": "5.4. Should unlikely circumstances arise and we become aware of a personal data breach that could seriously jeopardize your rights or freedoms, we will notify you immediately as soon as we become aware of it and determine what information has been accessed."
+      },
+      "title6": "6. How long do we store personal data?",
+      "msg6": {
+        "1": "6.1. We store your personal data for no longer than required by the purposes of the processing or as required by law if it provides a longer storage period. Section 3 of the Privacy Policy specifies the terms of storage of your personal data separately for each purpose of use of personal data."
+      },
+      "title7": "7. What rights do you have?",
+      "msg7": {
+        "1": {
+          "0": "7.1. When processing the personal data, we ensure your rights in accordance with the GDPR. As a personal data subject, you have the following rights:",
+          "a": "a) to know (be informed) about the processing of your personal data;",
+          "b": "b) to access your personal data that we process;",
+          "c": "c) to request the correction or supplementation of incorrect, inaccurate, incomplete personal data;",
+          "d": "d) to require the destruction of your personal data when they are no longer needed for the purposes for which they were collected;",
+          "e": "e) to demand the destruction of personal data if they are processed unlawfully or if you withdraw your consent to the processing of personal data or do not give such consent, which is necessary;",
+          "f": "f) to object to the processing of personal data or to withdraw prior consent;",
+          "g": "g) to demand the suspension (other than storage) of your personal data processing in the event of a dispute or verification of the lawfulness of the processing, the accuracy of the data, as well as in cases when we no longer need your personal data but you do not want us to destroy them;",
+          "h": "h) to require the submission, if technically possible, of your personal data collected with your consent or for the purposes of the performance of the agreement in an easy-to-read format or request their transfer to another controller."
+        },
+        "2": "7.2. We will endeavor to guarantee the exercise of your rights as a personal data subject and to create all conditions for the effective exercise of these rights, but we reserve the right not to comply with your requirements when it is required by the relevant legal grounds. If we refuse to comply with your request, we will clearly state the grounds for such refusal.",
+        "3": "7.3. You can submit requests related to the exercise of your rights to us in person, by post or by electronic means using contact details stated in this Privacy Policy. Upon receipt of your request, we may ask you to provide proof of identity, as well as any additional information we require regarding your request.",
+        "4": "7.4. Upon receipt of your request, we will respond to you no later than within 30 calendar days from the receipt of your request and the date of submission of all documents required for the response. This period may be extended by two months where necessary, taking into account the complexity and number of the requests. We will inform you of any such extension within one month of receipt of the request, together with the reasons for the delay.",
+        "5": "7.5. If we refuse to comply with your request, we will clearly state the grounds and reasons for such refusal.",
+        "6": "7.6. If you do not agree with our actions or the response to your request, you may appeal against our actions and decisions to the competent public authority."
+      },
+      "title8": "8. To whom can you make a complaint?",
+      "msg8": {
+        "1": "8.1. If you wish to make a complaint about our processing of your personal data, please provide it in writing, providing as much information as possible, using the contact details indicated at the end of this Privacy Policy. We will immediately try to resolve any issues.",
+        "2": "8.2. If you consider that the collection and processing of personal information relating to you infringes the GDPR and yours rights, you have the right to lodge a complaint with the State Data Protection Inspectorate (www.vdai.lrv.lt) or a supervisory authority in another Member State of the European Union in which you have habitual residence or place of work (list of supervisory authorities is available here: https://edpb.europa.eu/about-edpb/about-edpb/members_lt#member-lt ), or to apply to the court. Although, above all, we seek to resolve all disputes with you promptly and amicably."
+      },
+      "title9": "9. Cookies",
+      "msg9": {
+        "1": "9.1. Please be advised that the Website uses Cookies. You can find more information about Cookies in the “Cookie Policy”, which is an integral part of the Privacy Policy."
+      },
+      "title10": "10. How will we change this Privacy Policy?",
+      "msg10": {
+        "1": "10.1. We will continue to update our policies and practices as needed. We will notify you of any changes to our Privacy Policy by posting any changes here. If we do, you'll see that the date at the top of this Privacy Policy has changed."
+      }
+    }
+  },
+  "cookiesPolicy": {
+    "title": "Cookies Policy",
+    "date": "This Cookie Policy has been published on",
+    "sub": "Cookie Policy (hereinafter the “Cookie Policy”) of the Website www.threecubes.gg (hereinafter the “Website”) managed and administered by UAB „3 cubes investment“ (legal entity code 304843104, registered office address at Krivių str. 42-3, LT-01209, Vilnius, Lithuania, e-mail address info@tryskubai.lt) (hereinafter “We”) explains what cookies are and how they are processed.",
+    "list": {
+      "title1": "1. What are cookies?",
+      "msg1": {
+        "1": "1.1. Cookies are small text files that are sent to and temporarily stored on the device of each person visiting the Website from which the Website is accessed.",
+        "2": "1.2. The information collected by cookies on the Website helps to identify the visitor of the Website, save the history of the Website visited and adapt the content accordingly. The information collected by cookies allows Us to ensure your ability to browse more conveniently, provide you with attractive offers and learn more about the behavior of users of the Website, analyze trends and improve the Website, personal service and services provided by Us."
+      },
+      "title2": "2. How to manage cookies?",
+      "msg2": {
+        "1": "2.1. By visiting the Website, you can express your consent by your active actions if you want to use cookies. If you do not give your consent to the use of cookies, cookies that are not of a technical nature will not be stored on your device.",
+        "2": "2.2. Please be informed that you can also manage and/or delete cookies according to your preferences. You can choose which cookies you want to accept and which you want to reject in your browser settings (Internet Explorer, Safari, Firefox, Chrome, etc.). You can delete any cookies that are already on your device, and most browsers can be set to prevent cookies from being stored. The location of these settings depends on the browser you are using.",
+        "3": {
+          "0": "2.3. Please note that in most browsers it is possible to:",
+          "1": "check what cookies are stored and delete individual cookies;",
+          "2": "block third-party cookies;",
+          "3": "block cookies from specific Websites;",
+          "4": "block the sending of all cookies;",
+          "5": "delete all cookies when You close Your browser."
+        },
+        "4": "2.4. You can withdraw your consent to the use of cookies at any time by changing your settings and deleting the cookies you have saved. If you choose to delete cookies, please note that any options you have set will also be removed and the Website may not function or function properly. For these reasons, we do not recommend that you disable cookies when using the Website.",
+        "5": "2.5. To learn more about cookies and how to manage or remove them, you can visit: www.allaboutcookies.org."
+      },
+      "title3": "3. What kind of cookies are used on the website?",
+      "msg3": {
+        "1": {
+          "0": "3.1. We use technical, analytical and commercial cookies on this Website:",
+          "1": {
+            "0": "3.1.1. Technical cookies",
+            "0msg": "Technical cookies: help to display the Website to you and ensure its functionality. These technical cookies are essential for the proper functioning of the Website.",
+            "title1": "Name",
+            "msg1": {
+              "1": "Chaport",
+              "2": "mailerlite:webform:shown"
+            },
+            "title2": "Provider",
+            "msg2": {
+              "1": "Chaport Inc.",
+              "2": "MailerLite"
+            },
+            "title3": "Purpose",
+            "msg3": {
+              "1": "Registers a unique ID for tracking user live chat state and history for chat continuity.",
+              "2": "Checks whether the user has seen the newsletter dialog. Provides information to the mailerlite API on which dialog to show to the user."
+            },
+            "title4": "Valid till",
+            "msg4": {
+              "1": "1 Year",
+              "2": "1 Month"
+            },
+            "title5": "Type",
+            "msg5": {
+              "1": "HTTP Cookie",
+              "2": "HTTP Cookie"
+            }
+          },
+          "2": {
+            "0": "3.1.2. Analytical cookies",
+            "0msg": "Analytical cookies helps us to understand how our visitors use the Website. Helps you to optimise and improve your Website, understand the effectiveness of your advertising and communications.",
+            "title1": "Name",
+            "msg1": {
+              "1": "_ga",
+              "2": "_ga_[unique_ID]"
+            },
+            "title2": "Provider",
+            "msg2": {
+              "1": "Google Inc",
+              "2": "Google Inc"
+            },
+            "title3": "Purpose",
+            "msg3": {
+              "1": "Registers a unique ID that is used to generate statistical data on how the visitor uses the website.",
+              "2": "Used by Google Analytics to collect data on the number of times a user has visited the Website as well as dates for the first and most recent visit"
+            },
+            "title4": "Valid till",
+            "msg4": {
+              "1": "2 years",
+              "2": "2 years"
+            },
+            "title5": "Type",
+            "msg5": {
+              "1": "HTTP Cookie",
+              "2": "HTTP Cookie"
+            }
+          },
+          "3": "3.1.3. Commercial cookies \n Commercial cookies: Our and third-party cookies are used to serve personalised advertising on Our and third-party websites based on your browsing behaviour, such as the services you have searched for and downloaded. \n\n We would like to inform you that the Google Analytics tool is provided by Google Inc. and therefore it also has access to the statistics collected by this tool. Google Inc. is committed to the protection and privacy of personal data. You can learn more about the processing of data by Google Inc. by clicking on the following link: https://business.safety.google/adsprocessorterms/."
+        }
+      },
+      "title4": "4. To whom is the data collected by cookies transmitted?",
+      "msg4": {
+        "1": "The data collected through cookies may be transferred to Our authorised data processors who provide Us with, for example, Website hosting services and other services. Please be informed that we have concluded data processing agreements with each processor and ensure that each processor implements an adequate level of technical and organisational security measures for the protection of personal data."
+      },
+      "title5": "5. What are your rights and how can you implement them?",
+      "msg5": {
+        "1": {
+          "0": "As a data subject, you have the following rights:",
+          "1": "The right to be informed about our processing of personal data.",
+          "2": "The right to have access to your personal data processed by us.",
+          "3": "The right to request rectification of your personal data processed by us.",
+          "4": "The right to request erasure.",
+          "5": "The right to restriction of data processing.",
+          "6": "The right to object to the processing of data.",
+          "7": "Right to your personal data portability.",
+          "8": "The right to submit a complaint to the State Data Protection Inspectorate."
+        },
+        "2": "To exercise your rights, you can contact us at the following contact email address: info@tryskubai.lt\nMore detailed information about the procedure and time limits for exercising your rights is set out in our “Privacy Policy”."
+      },
+      "title6": "6. Your right to lodge a complaint",
+      "msg6": {
+        "1": "If you believe that your rights have been violated, you can always contact us by email at info@tryskubai.lt and/or file a complaint with the State Data Protection Inspectorate (L. Sapiegos g. 17, LT-10312 Vilnius, by e-mail ada@ada.lt)."
+      }
+    }
   }
 }

@@ -5,6 +5,7 @@
     opacity: 0.75;
     transform: scale(1.2);
   }
+
   100% {
     opacity: 0.5;
     transform: scale(1);
@@ -25,56 +26,64 @@
   z-index: 9999;
   width: 100%;
   height: 100%;
+
   &__imgContainer {
     position: absolute;
     bottom: 2rem;
-    right: 2rem;
+    left: 2rem;
     width: 75px;
     height: 75px;
     z-index: 99999;
     pointer-events: all;
+
     @include mq767 {
       width: 60px;
       height: 60px;
     }
+
     @include mq480 {
       width: 50px;
       height: 50px;
       bottom: 1.25rem;
       right: 1.25rem;
     }
+
     &:hover {
       &::before {
         content: attr(value);
         position: absolute;
         background: #333333;
         color: #ffffff;
-        right: calc(100% + 7px);
-        bottom: 1.5rem;
+        left: calc(100% + 7px);
+        bottom: 1.4rem;
         font-size: 1rem;
         font-family: $font;
         width: max-content;
         padding: 8px 22px;
         border-radius: 4px;
       }
+
       &::after {
         position: absolute;
         content: "";
         border: 6px solid transparent;
-        right: calc(100% + 2px);
-        bottom: 1.7rem;
-        border-right-width: 0;
-        border-left-color: #333;
+        left: calc(100% + 2px);
+        bottom: 2rem;
+        border-left-width: 0;
+        border-right-color: #333;
       }
     }
+
     &-cookieBtn {
       background: transparent;
     }
+
     &-cookieImg {
       width: 100%;
       height: 100%;
     }
   }
+
   &__boxContainer {
     position: absolute;
     display: none;
@@ -83,14 +92,17 @@
     bottom: 5rem;
     right: 200px;
     z-index: 999;
+
     @include mq767 {
       width: 300px;
       right: 150px;
     }
+
     @include mq480 {
       width: 225px;
       right: 105px;
     }
+
     &::after {
       position: absolute;
       content: "";
@@ -104,16 +116,20 @@
       border-top-color: inherit;
       transform: rotate(-90deg);
     }
+
     &-wrapper {
       text-align: start;
       background: white;
       margin: 0 auto;
       padding: 2rem;
+
       &_header {
         padding-bottom: 1rem;
       }
+
       &_body {
         line-height: 1.5rem;
+
         h6:first-child {
           padding-bottom: 1rem;
         }

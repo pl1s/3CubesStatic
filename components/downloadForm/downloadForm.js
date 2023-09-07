@@ -7,8 +7,7 @@ function defineDownloadForm(template) {
     constructor() {
       super();
       this.innerHTML = template;
-      this.downloadURL =
-        "https://utility-server.komandax.lt/Packages/RequestPackage";
+      this.downloadURL = "https://utility-server.komandax.lt/Packages/RequestPackage";
 
       this.dialgoIsActive = true;
 
@@ -111,8 +110,8 @@ function defineDownloadForm(template) {
 
       this.sendEmail(
         this.emailInput.value,
-        this.lesson + this.language,
-        this.newsletterCheckbox.checked
+        this.lesson + "LT",
+        true
       );
     }
   }
