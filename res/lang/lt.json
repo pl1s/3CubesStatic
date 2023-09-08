@@ -491,14 +491,15 @@
     },
     "ukraine": {
       "title": "„Humanitarinės pagalbos tiekimas Ukrainai“",
-      "sub": " Išmokstama kaip bendradarbiaujant tarpusavyje galima greitai tiekti humanitarinę pagalbą Ukrainai",
+      "sub": " Išmokstama, kaip bendradarbiaujant tarpusavyje galima greitai tiekti humanitarinę pagalbą Ukrainai",
       "lesson": {
         "desc": "Pamokos tikslas – išmokyti jaunimą, kaip kartu dirbdami galime paremti Ukrainą.",
         "topics": [
-          "Susipažystama su industriniais sektoriais",
+          "Susipažįstama su industriniais sektoriais",
           "Bendradarbiaujama ir atliekamos užduotis",
           "Skatinamas kūrybiškumas"
-        ]
+        ],
+        "note": "Prenumeruoti naujienlaiškio nebūtina"
       }
     },
     "instructions": {
@@ -522,7 +523,7 @@
         "Parsisiųsdami pamokos paketą sutinkate, kad Jūsų el. paštas bus užregistruotas statistikos ir atsiliepimų rinkimo tikslais. Daugiau apie tai:",
         "Privatumo politika",
         "ir",
-        "Slapuku politika"
+        "Slapukų politika"
       ],
       "desc": "Galite pasirinkti, ar norite gauti užklausas apie kitus mūsų produktus į savo el. paštą susisiekimo ir rinkodaros tikslais. Tai svarbu ir skirta tam, kad galėtume susisiekti su Jumis - išgirsti Jūsų nuomonę, kaip sekėsi savarankiškai vesti pamoką ir padėti iškilus klausimams.",
       "gdpr": "Parsisiųsdami pamoką, sutinkate, kad jūsų el. pašto adresas bus užregistruotas, statistikos ir atsiliepimų rinkimo tikslais.",
