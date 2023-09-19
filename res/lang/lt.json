@@ -29,6 +29,13 @@
     },
     "follow": {
       "main": "Sekite mus"
+    },
+    "policy": {
+      "sub": [
+        "Sąlygos ir nuostatos",
+        "Privatumo politika",
+        "Slapukų politika"
+      ]
     }
   },
   "main": {
@@ -457,9 +464,18 @@
   "sample": {
     "banner": "Specialus pasiūlymas — kviečiame nemokamai atsisiųsti „Trys kubai“ pamoką „Sausio 13-oji“.",
     "hero": {
-      "title": "Nemokamos pamokos!",
-      "sub": "Siūlome išbandyti mūsų nemokamus pamokų paketus!",
+      "title": "Dovanų — pamokos paketas!",
+      "sub": "Prenumeruok „Trys kubai“ naujienlaiškį ir gauk savarankiškai vedamos pamokos paketą į el. paštą!",
       "btn": "Susisiekite"
+    },
+    "king&queen": {
+      "title": "„Karalius Mindaugas ir karalienė Morta“",
+      "sub": "Mokiniai atlieka užduotis bendradarbiaujant ir sužino apie karūnavimo ceremoniją!",
+      "topics": [
+        "Lankomasi istorinių šaltinių bibliotekoje ir pilyje",
+        "Bendraujama su veikėjais",
+        "Atliekamas žinių testas labirinte"
+      ]
     },
     "jan13": {
       "title": "„Sausio 13-oji“",
@@ -475,14 +491,15 @@
     },
     "ukraine": {
       "title": "„Humanitarinės pagalbos tiekimas Ukrainai“",
-      "sub": " Išmokstama kaip bendradarbiaujant tarpusavyje galima greitai tiekti humanitarinę pagalbą Ukrainai",
+      "sub": " Išmokstama, kaip bendradarbiaujant tarpusavyje galima greitai tiekti humanitarinę pagalbą Ukrainai",
       "lesson": {
         "desc": "Pamokos tikslas – išmokyti jaunimą, kaip kartu dirbdami galime paremti Ukrainą.",
         "topics": [
-          "Susipažystama su industriniais sektoriais",
+          "Susipažįstama su industriniais sektoriais",
           "Bendradarbiaujama ir atliekamos užduotis",
           "Skatinamas kūrybiškumas"
-        ]
+        ],
+        "note": "Prenumeruoti naujienlaiškio nebūtina"
       }
     },
     "instructions": {
@@ -497,14 +514,57 @@
       "Jeigu norite, kad pamoką Jūsų klasei pravestų Trys kubai edukatorius, šių metų kaina — 3 eur/mokiniui, dėl pasiūlymo kreipkitės akvile@tryskubai.lt, +370 (602) 91 919"
     ],
     "downloadForm": {
-      "title": "Pamokos parsisiuntimas",
-      "instructions": "Įveskite savo el. pašto adresą ir išsiųsime visą reikalingą medžiagą jums į paštą.",
-      "note": "Mums svarbi Jūsų nuomonė!",
+      "title": "Pamokos paketas — dovanų!",
+      "instructions": "Prenumeruokite „Trys kubai“ naujienlaiškį ir gaukite savarankiškai vedamos pamokos paketą į el. paštą!",
+      "notes": [
+        "Pamokos paketas sukurtas taip, kad pedagogas klasei gali pats savarankiškai pravesti pamoką.",
+        "Pamokos paketą sudaro: programų įrašymo instrukcijos, pamokos planas ir paruoštukė, virtualus pamokos pasaulis.",
+        "Užprenumeravus naujienlaiškį, dovana — pamokos paketas — automatiškai atkeliaus į Jūsų nurodytą el. paštą.",
+        "Sutinku, kad nurodytu mano el. pašto adresu būtų siunčiami naujienlaiškiai. Prenumeruodami naujienlaiškį sutinkate su mūsų",
+        "Privatumo politika",
+        "ir",
+        "Slapukų politika"
+      ],
       "desc": "Galite pasirinkti, ar norite gauti užklausas apie kitus mūsų produktus į savo el. paštą susisiekimo ir rinkodaros tikslais. Tai svarbu ir skirta tam, kad galėtume susisiekti su Jumis - išgirsti Jūsų nuomonę, kaip sekėsi savarankiškai vesti pamoką ir padėti iškilus klausimams.",
       "gdpr": "Parsisiųsdami pamoką, sutinkate, kad jūsų el. pašto adresas bus užregistruotas, statistikos ir atsiliepimų rinkimo tikslais.",
-      "newsletter": "Jei taip pat norite gauti mūsų naujienlaiškį.",
+      "subscribe": "Prenumeruoti",
+      "sent": "Išsiųsta!",
+      "error": [
+        "Ši reikšmė negali būti tuščia.",
+        "Negalima naudoti (<b>\" ' / $ & \\ ;</b>)",
+        "Kažkas nutiko ne taip 🤕"
+      ],
+      "label": [
+        "Įveskite el. paštą",
+        "Pasirinkite paketo kalbą"
+      ]
+    },
+    "downloadForm2": {
+      "title": "Pamokos parsisiuntimas",
+      "instructions": "Gaukite savarankiškai vedamos pamokos paketą į el. paštą!",
+      "notes": [
+        "Pamokos paketas sukurtas taip, kad pedagogas klasei gali pats savarankiškai pravesti pamoką.",
+        "Pamokos paketą sudaro: programų įrašymo instrukcijos, pamokos planas ir paruoštukė, virtualus pamokos pasaulis.",
+        "PRENUMERUOTI NAUJIENLAIŠKĮ NEBŪTINA, šį pamokos paketą galite atsisiųsti įrašius el. paštą žemiau.",
+        "Parsisiųsdami pamokos paketą sutinkate, kad Jūsų el. paštas bus užregistruotas statistikos ir atsiliepimų rinkimo tikslais. Daugiau apie tai:",
+        "Privatumo politika",
+        "ir",
+        "Slapukų politika"
+      ],
+      "desc": "Galite pasirinkti, ar norite gauti užklausas apie kitus mūsų produktus į savo el. paštą susisiekimo ir rinkodaros tikslais. Tai svarbu ir skirta tam, kad galėtume susisiekti su Jumis - išgirsti Jūsų nuomonę, kaip sekėsi savarankiškai vesti pamoką ir padėti iškilus klausimams.",
+      "gdpr": "Parsisiųsdami pamoką, sutinkate, kad jūsų el. pašto adresas bus užregistruotas, statistikos ir atsiliepimų rinkimo tikslais.",
+      "newsletter": "Pažymėkite, jei taip pat norite prenumeruoti mūsų naujienlaiškį.",
       "send": "Siųsti",
-      "sent": "Išsiųsta!"
+      "sent": "Išsiųsta!",
+      "error": [
+        "Ši reikšmė negali būti tuščia.",
+        "Negalima naudoti (<b>\" ' / $ & \\ ;</b>)",
+        "Kažkas nutiko ne taip 🤕"
+      ],
+      "label": [
+        "Įveskite el. paštą",
+        "Pasirinkite paketo kalbą"
+      ]
     }
   },
   "gdpr": {
@@ -566,5 +626,410 @@
   },
   "error": {
     "500": "Kažkas nepavyko 🤕"
+  },
+  "termsConditions": {
+    "title": "Svetainės naudojimosi taisyklės",
+    "list": {
+      "title1": "1. Taisyklių taikymas ir aiškinimas",
+      "msg1": {
+        "1": "1.1. Šios taisyklės (toliau – Taisyklės) nustato naudojimosi internetine svetaine www.threecubes.gg (toliau – Svetainė), įskaitant bet kokį turinį, funkcijas, produktus ir paslaugas, siūlomus Svetainėje arba per ją, nepriklausomai nuo to, ar esate lankytojas, ar registruotas naudotojas.",
+        "2": "1.2. Svetainę valdo, administruoja ir paslaugas teikia UAB \"3 cubes investment\" (toliau - \"Trys kubai\"), juridinio asmens kodas 304843104, buveinės adresas Krivių g. 42-3, LT-01209, Vilnius, Lietuva, el. pašto adresas info@tryskubai.lt.",
+        "3": "1.3. Taisyklės yra sutartis tarp Jūsų (toliau – Jūs arba Lankytojas) ir Trys kubai. Naudodamiesi Svetaine, Jūs įsipareigojate laikytis šių Taisyklių. Jei nesutinkate su Taisyklėmis, nesinaudokite Svetaine.",
+        "4": "1.4. Kad galėtumėte šių Taisyklių pagrindu sudaryti sutartį, turite pilnametystės sulaukęs asmuo savo gyvenamojoje šalyje. Esate teisiškai ir finansiškai atsakingi už visus veiksmus, kuriuos atliekate naudodamiesi mūsų programine įranga arba prie jos prisijungdami, įskaitant veiksmus asmenų, kuriems leidžiate prisijungti prie savo paskyros. Patvirtinate, kad esate sulaukę pilnametystės, suprantate ir sutinkate su šiomis Taisyklėmis. Jei esate jaunesnis nei pilnametis, su šiomis Taisyklėmis turi sutikti jūsų tėvai arba teisėti globėjai.",
+        "5": "1.5. Paslaugos (toliau – Paslaugos) šių Taisyklių prasme apima visus Jūsų veiksmus, kuriuos Jūs galite atlikti Svetainėje, įskaitant, Svetainės informacijos skaitymą, peržiūrą, klausimų, bet kokio pobūdžio informacijos ir (ar) duomenų pateikimą, siuntimą bei gavimą.",
+        "6": "1.6. Be šių Taisyklių, programinei įrangai ar paslaugoms, kurios yra įtrauktos į Paslaugas ar kitaip jums prieinamos per Paslaugas, gali būti taikomos atskiros jūsų ir Trys kubai sutartys, pavyzdžiui, licencijos sutartys. Jei šios Taisyklės neatitinka tokių susitarimų, vadovaujamasi minimomis sutartimis.",
+        "7": "1.7. Trys kubai gali keisti Taisykles. Taisyklių pakeitimai ir (ar) papildymai įsigalioja po jų paskelbimo bet kokia forma Svetainėje. Jeigu Jūs po Taisyklių pakeitimų ir (ar) papildymo paskelbimo ir toliau naudojatės Svetaine, laikoma, kad Jūs sutinkate su visais Taisyklių pakeitimais ir (ar) papildymais. Jeigu Jūs nesutinkate su pakeistomis ir (ar) papildytomis Taisyklėmis, Jūs privalote nedelsiant nustoti naudotis Svetaine."
+      },
+      "title2": "2. Jūsų teisės ir pareigos",
+      "msg2": {
+        "1": "2.1. Jūs turite teisę naudotis Svetaine ir Paslaugomis Taisyklių nustatyta tvarka. Jūs privalote veikti teisėtai, nepažeisti teisės aktų reikalavimų, Trys kubai, kitų Svetainės vartotojų ir (ar) kitų asmenų teisių. Jūs pats atsakote už bet kokius naudojimosi Svetaine veiksmus ir dėl jų kylančias pasekmes.",
+        "2": {
+          "0": "2.2. Naudojantis Svetaine ir (ar) Paslaugomis draudžiama:",
+          "1": "2.2.1. atlikti veiksmus, sukeliančius ar galinčius sukelti pavojų Svetainės ir (ar) Paslaugų tinkamam veikimui, jų saugumui, vientisumui ar ribojančius Trys kubai galimybę tinkamai teikti Paslaugas ir (ar) kitų asmenų galimybę pasinaudoti Svetaine ir (ar) Paslaugomis;",
+          "2": "2.2.2. atlikti veiksmus, kurie galėtų pakenkti Trys kubai, kitiems asmenims, jų turtui ar teisėtiems interesams, įskaitant bet neapsiribojant neteisėtus sandorius arba sukčiavimą;",
+          "3": "2.2.3. naudoti Svetainę ir (ar) bet kokį jos turinį, su Svetaine ir (ar) Trys kubai konkuruojančiai veiklai vykdyti bei plėtoti, įskaitant ir reklamą, kurioje minimi su Trys kubai tiesiogiai ar netiesiogiai konkuruojantys tretieji asmenys arba tokių asmenų prekės ir (ar) paslaugos, taip pat nuorodos į tokius asmenis ir (ar) jų produktus;",
+          "4": "2.2.4. naudoti Svetainę nepageidaujamos informacijos, įskaitant bet neapsiribojant teisės aktų uždraustos informacijos (šmeižikiškos, įžeidžiančios, diskriminacinės, pornografinės ir pan.) perdavimui, siuntimui, talpinimui ir pan.",
+          "5": "2.2.5. siųsti elektroniniu paštu, kitu elektroniniu būdu ar kaip kitaip perduoti ar siųsti bet kokią informaciją ir (ar) nuorodas į informaciją, turint tikslą paveikti ar suprantant, kad tai paveiks kompiuterinių tinklų ar kompiuterinių tinklų savininkų turimos kompiuterinės įrangos veikimą, taip pat platinti kenkėjišką programinę įrangą, taip pat bet kokius nepageidautinus elektroninius laiškus, pranešimus, žinutes ar kitą informaciją;",
+          "6": "2.2.6. naudoti automatizuotas priemones, įskaitant, bet neapsiribojant papildoma kompiuterine technika ir (ar) programine įranga, skirtas apdoroti Svetainės duomenis, jos turinį ir (ar) Paslaugas, juos kopijuoti, redaguoti, peržiūrėti, dekompiliuoti, šifruoti, perprogramuoti, perkelti, nukreipti kitaip nei leidžia standartiniai Svetainės funkcionalumai;",
+          "7": "2.2.7. pašalinti autorių ar prekinius ženklus iš bet kokių Svetainės turinio kopijų, Svetainės turinio pagrindu kurti elektroninę ar rankiniu būdu atkurtą duomenų bazę, talpinti Svetainės turinį kitose interneto svetainėse, taip pat keisti turinį iš Svetainės parsisiųstame dokumente;",
+          "8": "2.2.8. rinkti, kaupti, perkelti į kitas laikmenas, padaryti viešai prieinamais, skelbti bei platinti kitų Svetainės vartotojų duomenis ar duomenis apie bet kokius Svetainės vartotojų veiksmus."
+        },
+        "3": {
+          "0": "2.3. Naudodamasis Svetaine ir (ar) Paslaugomis Jūs patvirtinate, kad:",
+          "1": "2.3.1. esate veiksnus fizinis asmuo;",
+          "2": "2.3.2. suprantate, jog pasinaudojus Svetainėje esančiais mokamais pasiūlymais, jums gali kilti pareiga apmokėti už įsigyjamas paslaugas bei vykdyti kitas iš tokio pasinaudojimo pasiūlymu kylančias prievoles;",
+          "3": "2.3.3. suprantate ir sutinkate, kad tuo atveju, jei Jūsų Prisijungimo duomenys taps žinomi tretiesiems asmenims, tokie tretieji asmenys gali prisiimti įsipareigojimus, kurie taps privalomais Jums, ir įsipareigojate tokius įsipareigojimus tinkamai vykdyti, o Trys kubai neturi pareigos jokiu kitu būdu, išskyrus Jūsų prisijungimo vardo ir slaptažodžio patikrinimą, tikrinti Jūsų tapatybės."
+        }
+      },
+      "title3": "3. Trys kubai teisės ir pareigos",
+      "msg3": {
+        "1": {
+          "0": "3.1. Trys kubai gali bet kada nepranešęs Jums:",
+          "1": "3.1.1. keisti Svetainę ir (ar) Paslaugas ar (jų dalis), visą ar dalį Svetainės turinio, Svetainės funkcijas, bet kokią informaciją, įskaitant ir Lankytojo turinį. Trys kubai nebus laikomas atsakingu už jokius tokiais ir kitais panašiais veiksmais sukeltus neigiamus padarinius Jums;",
+          "2": "3.1.2. neribotam laikotarpiui ir nenurodydamas priežasties apriboti arba sustabdyti galimybes patekti į Svetainę ir (ar) naudotis Svetaine ir (ar) Paslaugomis;",
+          "3": "3.1.3. vienašališkai savo nuožiūra spręsti apie Jūsų pateiktų prisijungimo duomenų teisingumą, išsamumą ir tikslumą. Jums pateikus neteisingus, neišsamius, netikslius, klaidinančius duomenis, taip pat Taisyklių ir (ar) teisės aktų neatitinkančius duomenis, Trys kubai turi teisę nedelsiant ir nepranešęs Jums, Jūsų neregistruoti, ištrinti atliktą Registraciją, blokuoti ar redaguoti tokius duomenis ir (ar) imtis bet kokių kitų veiksmų;",
+          "4": "3.1.4. profilaktinių ir (ar) techninės priežiūros darbų metu apriboti ar nutraukti prieigą prie Svetainės, Lankytojo turinio ir (ar) Paslaugų teikimą neribotam terminui. Tokiu atveju Jūs galite būti informuojamas bendru pranešimu, skelbiamu Svetainėje;",
+          "5": "3.1.5. nutraukti Svetainės veikimą ir Paslaugų teikimą."
+        },
+        "2": "3.2. Trys kubai turi teisę (bet ne pareigą) stebėti Jūsų veiksmus Svetainėje, įskaitant Lankytojo turinio stebėjimą. Šie veiksmai gali būti atliekami siekiant užkirsti kelią Taisyklių ar teisės aktų pažeidimui, taip pat siekiant aptikti nepageidaujamą informaciją ir ją pašalinti ar ją blokuoti."
+      },
+      "title4": "4. Paslaugų sustabdymas, apribojimas ir nutraukimas",
+      "msg4": {
+        "1": {
+          "0": "4.1. Trys kubai turi teisę savo nuožiūra apriboti arba nutraukti Jūsų teisę ar galimybę naudotis Svetaine ir (ar) Paslaugomis, panaikinti ar pakeisti Lankytojo turinį ir Prisijungimo duomenis, uždrausti Jums iš naujo užsiregistruoti Svetainėje ir imtis kitų veiksmų savo nuožiūra, jei:",
+          "1": "4.1.1. Jūs pažeidžiate šias Taisykles;",
+          "2": "4.1.2. Jūs pateikiate apgaulingą, neteisingą, nepilną ir (ar) klaidinančią informaciją registruodamasis ar naudodamasis Svetaine;",
+          "3": "4.1.3. Jūs nesilaikote visuomenėje nusistovėjusių moralės normų ir (ar) teisės aktų reikalavimų;",
+          "4": "4.1.4. Trys kubai nuomone, to reikalauja atliekami Svetainės techninės priežiūros ir (ar) atnaujinimo darbai;",
+          "5": "4.1.5. to pareikalauja kompetentingos valdžios institucijos arba tai yra reikalinga teisės aktų numatytais atvejais;",
+          "6": "4.1.6. tai yra reikalinga, siekiant apginti Trys kubai ar trečiųjų asmenų teises ir teisėtus interesus;",
+          "7": "4.1.7. Trys kubai įtaria, kad Jūs sukėlėte ar galite sukelti grėsmę kitų Svetainės naudotojų teisėtiems interesams;",
+          "8": "4.1.8. kitais Taisyklėse nurodytais atvejais."
+        },
+        "2": "4.2. Jūs turite teisę bet kuriuo metu atsisakyti naudotis Svetaine, panaikindami savo prisijungimo duomenis Svetainėje nurodytu būdu.",
+        "3": "4.3. Panaikinus registraciją dėl bet kokių priežasčių, tame tarpe ir atvejus, kai registraciją panaikinate Jūs pats, Jūs neteksite galimybės naudotis Paslaugomis, kurioms yra privaloma registracija, o Jūsų registracijos paskyroje esanti informacija bus panaikinta. Taip pat gali būti negrįžtamai panaikintas bet koks Lankytojo turinys."
+      },
+      "title5": "5. Intelektinė nuosavybė",
+      "msg5": {
+        "1": "5.1. Visos teisės į Svetainę ir joje esančius kūrinius bei kitus intelektinės nuosavybės objektus yra saugomos. Be išankstinio raštiško Trys kubai sutikimo tokių objektų neleidžiama naudoti jokiu būdu.",
+        "2": "5.2. Jums leidžiama naudotis Paslaugomis tik asmeniniam, nekomerciniam naudojimui. Negalite kopijuoti, keisti, kurti išvestinių kūrinių, viešai rodyti, viešai atlikti, skelbti ar perduoti jokios naudojantis Paslaugomis gautos medžiagos, taip pat ištrinti ar keisti bet kokius autorių teisių, prekių ženklų ar kitų nuosavybės teisių pranešimus Paslaugų medžiagos kopijose. Tačiau, jeigu laikotės šių Taisyklių, jums leidžiama kitur ir kitose svetainėse naudoti nepakeistą Svetainėje viešai prieinamo turinio dalių kopiją ribotam, nekomerciniam tikslui - aptarti tokį turinį.",
+        "3": "5.3. Jūs sutinkate, kad bet kokia informacija ir (ar) duomenys, kuriuos Jūs teikiate, siunčiate, įvedate ar kitaip perduodate naudodamasis Svetaine (toliau – Lankytojo turinys), taptų Svetainės dalimi, taip pat būtų Trys kubai ir (ar) jo įgaliotų asmenų saugomas ir naudojamas neribotą laiką bei neribotoje teritorijoje. Nei Trys kubai, nei kita trečioji šalis, naudodama tokį Lankytojo turinį, neprivalės mokėti Jums jokio atlyginimo už Lankytojo turinio panaudojimą.",
+        "4": {
+          "0": "5.4. Nuo to momento, kai Lankytojo turinys bet kokiu būdu patenka pas Trys kubai, Lankytojas neatlygintinai, visam laikui ir neribotoje teritorijoje suteikia Trys kubai šias išimtines teises į Lankytojo turinį:",
+          "1": "5.4.1. teisę bet kokia forma ar būdu atgaminti, išleisti, viešai skelbti, padaryti viešai prieinamu ir platinti parduodant, nuomojant, teikiant panaudai ar kitaip perduodant nuosavybėn;",
+          "2": "5.4.2. teisę keisti ar adaptuoti, kurti išvestinius kūrinius iš Lankytojo pateiktos informacijos;",
+          "3": "5.4.3. bet kokiu būdu, tikslais ir forma neatlygintinai naudotis Lankytojo turiniu."
+        }
+      },
+      "title6": "6. Atsakomybė ir jos ribojimas",
+      "msg6": {
+        "1": "6.1. Trys kubai nesuteikia jokių patvirtinimų ir (ar) garantijų, kad Svetainė veiks ir (ar) Paslaugos joje, bus teikiamos tinkamai ir laiku, be sutrikimų, kokybiškai, visa apimtimi arba, kad tai nesukels jokių neigiamų pasekmių Jums ar tretiesiems asmenims. Trys kubai nėra ir nebus atsakingas už Svetainėje esančio turinio, įskaitant informacijos apie Paslaugas ir jų aprašymu, neatitikimus, informacijos netikslumą ar klaidingumą ir iš to kilusias neigiamas pasekmes Jums ar tretiesiems asmenimis. Mokamos paslaugos yra siūlomos tokios, kokios yra. Mokamų paslaugų pobūdis ir turinys yra nurodomas Svetainėje esančiuose Paslaugų aprašymuose, kurie yra laikomi šių Taisyklių priedu.",
+        "2": "6.2. Maksimalia teisės aktų leidžiama apimtimi Trys kubai neatsako už jokią žalą ir (ar) nuostolius, kuriuos Jūs galite patirti naudodamasis Svetaine ir (ar) Paslaugomis, nepaisant to ar Trys kubai buvo pranešta apie tokią žalą ar jos atsiradimo galimybę. Naudodamasis Svetaine ir (ar) Paslaugomis, Jūs sutinkate, kad toks apribojimas būtų taikomas visiems Svetainės naudojimo būdams, paslaugoms ir turiniui. Jeigu pagal taikomus įstatymus Trys kubai atsakomybė už patirtą žalą negali būti visiškai apribota ir Trys kubai negali būti atleista nuo atsakomybės, Trys kubai atsakomybė Jums ir (ar) tretiesiems asmenims, kylanti iš šių Taisyklių, yra ribojama 500 Eur suma.",
+        "3": "6.3. Jūs esate atsakingas už žalą, kilusią ar galinčią kilti Trys kubai ir (ar) tretiesiems asmenims, dėl to, kad Jūs naudojatės Svetaine ir (ar) Paslaugomis. Jūs įsipareigojate užtikrinti, kad Trys kubai nekiltų jokia teisinė atsakomybė, pareiga apmokėti, atlyginti ar kitaip kompensuoti kokius nors nuostolius, žalą ar kitokias išlaidas, atsiradusias dėl to, kad Jūs naudojatės Svetaine ir (ar) Paslaugomis."
+      },
+      "title7": "7. Taikoma teisė ir ginčų sprendimas",
+      "msg7": {
+        "1": "7.1. Naudojimosi puslapiu taisyklėms yra taikoma Lietuvos Respublikos teisė",
+        "2": "7.2. Visi tarp Jūsų ir Trys kubai kilę nesutarimai dėl Taisyklių vykdymo yra sprendžiami derybų keliu ir remiantis šiomis Taisyklėmis, bei jų tekstu. Šalims neišsprendus ginčo derybų būdu per 30 (trisdešimt) dienų nuo tos dienos, kai viena iš šalių įteikė kitai šaliai prašymą išspręsti ginčą, toks ginčas galutinai sprendžiamas Lietuvos Respublikos įstatymų nustatyta tvarka Lietuvos Respublikos teismuose pagal Trys kubai buveinės vietą.",
+        "3": "7.3. Vartotojų ginčų neteisminio sprendimo subjektas, kompetentingas spręsti vartojimo ginčus, iš šių Taisyklių, yra Valstybinė vartotojų teisių apsaugos tarnyba (adresas: Vilniaus g. 25, LT-01402 Vilnius, tel. +37052626751, el. paštas tarnyba@vvtat.lt; tinklalapis http://www.vvtat.lt) arba http://ec.europa.eu/odr/."
+      },
+      "title8": "8. Baigiamosios nuostatos",
+      "msg8": {
+        "1": "8.1. Visi pranešimai ir informacija tarp Jūsų ir Trys kubai bus siunčiami elektroninėmis priemonėmis: Trys kubai – adresais, nurodytais šiose Taisyklėse arba Svetainėje, Jums – adresais, nurodytais registracijos metu.",
+        "2": "8.2. Jums siunčiama informacija bus laikoma gauta praėjus 3 (trims) valandoms nuo jos išsiuntimo momento. Jums siųsto elektroninio laiško ar kitokio pranešimo kopijos buvimas Trys kubai ar Trys kubai naudojamame serveryje (duomenų bazėje ar kitokiame atitinkamą informaciją kaupiančiame įrenginyje), yra tinkamas įrodymas apie informacijos Jums išsiuntimą.",
+        "3": "8.3. Šalys susitaria, jog Trys kubai gali bet kuriuo metu perleisti savo teises ir pareigas, kylančias iš šių Taisyklių, tretiesiems asmenims be Jūsų sutikimo, apie tai pranešusi Svetainėje.",
+        "4": "8.4. Svetainėje viešai skelbiama Privatumo politika ir Paslaugų aprašymai laikomi Taisyklių priedais, esančiais neatskiriama Taisyklių dalimi ir turinčiais tokią pačią teisinę galią kaip ir Taisyklės."
+      }
+    }
+  },
+  "privacyPolicy": {
+    "title": "Privacy Policy",
+    "date": "Ši privatumo politika buvo paskelbta",
+    "sub": "Suprantame jūsų asmens duomenų apsaugos svarbą, todėl jūsų asmens duomenis tvarkome teisėtai, skaidriai ir sąžiningai, iš anksto nustatytais tikslais ir tik tiek, kiek būtina tiems tikslams pasiekti. Tvarkydami jūsų asmens duomenis, dedame visas pastangas, kad jie būtų tikslūs, saugūs, konfidencialūs, tinkamai saugomi ir apsaugoti. Tvarkydami jūsų asmens duomenis laikomės Reglamento (ES) 2016/679 (Bendrasis duomenų apsaugos reglamentas) (toliau - BDAR) reikalavimų.",
+    "list": {
+      "title1": "1. Kas yra šis dokumentas?",
+      "msg1": {
+        "1": "1.1. Šioje privatumo politikoje (toliau - Privatumo politika) informuojame jus apie mūsų politiką, susijusią su duomenų rinkimu, naudojimu ir atskleidimu, kai lankotės mūsų svetainėje: www.threecubes.gg (toliau - Svetainė), susisiekiate su mumis įdarbinimo tikslais, naudojatės mūsų teikiamomis paslaugomis ar sudarote su mumis sutartį. Privatumo politika taikoma kiekvienam asmeniui, kuris apsilanko Svetainėje, taip pat visiems veiksmams, kuriuos galite atlikti Svetainėje.",
+        "2": "1.2. Atidžiai perskaitykite šią Privatumo politiką, kad sužinotumėte, kaip tvarkome jūsų asmens duomenis, iš kur juos gauname ir kokios yra jūsų, kaip duomenų subjekto, teisės.",
+        "3": "1.3. Šioje Privatumo politikoje vartojama sąvoka „asmens duomenys“ reiškia bet kokią informaciją, pagal kurią galima tiesiogiai ar netiesiogiai nustatyti jūsų tapatybę."
+      },
+      "title2": "2. Kas mes esame?",
+      "msg2": {
+        "1": "2.1. Svetainę valdo ir administruoja UAB „3 cubes investment“ (juridinio asmens kodas 304843104, registruotos buveinės adresas Krivių g. 42-3, LT-01209, Vilnius, Lietuva, el. pašto adresas info@tryskubai.lt).",
+        "2": "2.2. Esame jūsų asmens duomenų valdytojas."
+      },
+      "title3": "3. Kokius asmens duomenis tvarkome ir kokiais tikslais?",
+      "msg3": {
+        "1": {
+          "0": "3.1. Jūsų asmens duomenis tvarkome šiais tikslais:",
+          "1": {
+            "0": "3.1.1. sudaryti ir vykdyti paslaugų sutartis su juridiniais ar fiziniais asmenimis.",
+            "1": {
+              "title": "Asmens duomenų kategorijos",
+              "msg": "Vardas, pavardė, individualios veiklos pažymėjimo numeris, kontaktinė informacija, susirašinėjimo turinys, kita sutartyje nurodyta informacija"
+            },
+            "2": {
+              "title": "Asmens duomenų tvarkymo teisinis pagrindas",
+              "msg": "Tvarkyti duomenis būtina sutarčiai vykdyti (BDAR 6 straipsnio 1 dalies b punktas) arba tvarkyti duomenis būtina dėl teisėto intereso vykdyti veiklą (BDAR 6 straipsnio 1 dalies f punktas)."
+            },
+            "3": {
+              "title": "Asmens duomenų tvarkymo terminas",
+              "msg": "Jūsų asmens duomenys tvarkomi 10 (dešimt) metų po sutarties galiojimo pabaigos."
+            },
+            "4": {
+              "title": "Asmens duomenis gauname iš",
+              "msg": "Jūs arba jūsų darbdavys"
+            },
+            "5": {
+              "title": "Asmens duomenis teikiame arba perduodame",
+              "msg": "Trečiųjų šalių paslaugų teikėjai, kurių paslaugomis paprastai naudojamės duomenų saugojimui, svetainių prieglobos ir kitoms techninėms paslaugoms."
+            }
+          },
+          "2": {
+            "0": "3.1.2. atrinkti kandidatą į laisvas pareigas.",
+            "1": {
+              "title": "Asmens duomenų kategorijos",
+              "msg": "Vardas, pavardė, telefono numeris, el. pašto adresas, gyvenimo aprašymas, motyvacinis laiškas; kita su jūsų profesine kompetencija susijusi informacija, kurią savanoriškai pateikiate kreipdamiesi dėl darbo vietos. Tvarkome tik tuos jūsų asmens duomenis, kurie yra pateikti mums atsiųstuose dokumentuose ir yra susiję su jūsų kompetencija, įgūdžiais ir patirtimi bei padeda mums geriau įvertinti jūsų potencialą ir karjeros galimybes."
+            },
+            "2": {
+              "title": "Asmens duomenų tvarkymo teisinis pagrindas",
+              "msg": "Jūsų sutikimas tvarkyti asmens duomenis (BDAR 6 straipsnio 1 dalies a punktas) ir mūsų teisėtas interesas atrinkti tinkamus kandidatus (BDAR 6 straipsnio 1 dalies f punktas)."
+            },
+            "3": {
+              "title": "Asmens duomenų tvarkymo terminas",
+              "msg": "Jūsų asmens duomenis tvarkysime tik tol, kol bus vykdoma kandidato, kuriam pateikėte informaciją apie save, atranka (paprastai 3-4 mėnesius). Pasibaigus atrankos etapui ir gavę atskirą jūsų sutikimą, jūsų duomenis tvarkysime dar 1 (vienerius) metus, kad per šį laikotarpį, jei pagal jūsų gyvenimo aprašymą atsiras tinkama darbo vieta, galėtume jums pasiūlyti dalyvauti atrankoje arba pateikti darbo pasiūlymą."
+            },
+            "4": {
+              "title": "Asmens duomenis gauname iš",
+              "msg": "Jūs."
+            },
+            "5": {
+              "title": "Asmens duomenis teikiame arba perduodame",
+              "msg": "Įdarbinimo įmonės, kurios padeda mums įdarbinti kandidatus ir teikia mums paslaugas, susijusias su įdarbinimu, kandidatų vertinimu ir vidaus administravimu, ir trečiųjų šalių paslaugų teikėjai, kurių paslaugomis paprastai naudojamės duomenų saugojimui, svetainių prieglobos ir kitoms techninėms paslaugoms."
+            }
+          },
+          "3": {
+            "0": "3.1.3. užtikrinti Svetainės funkcionalumą, administruoti Svetainę, diagnozuoti galimus Svetainės veikimo sutrikimus ir atlikti statistinę analizę, siekiant nustatyti jūsų poreikius, susijusius su tam tikromis funkcijomis, ir analizuoti, kaip ir kur efektyviausiai naudoti turimus išteklius:",
+            "1": {
+              "title": "Asmens duomenų kategorijos",
+              "msg": "Interneto protokolo (IP) adresas; naudojamos interneto naršyklės tipas; apsilankymų skaičius; peržiūrėti svetainės puslapiai; svetainėje praleistas laikas; interneto šaltinis, iš kurio asmuo atėjo; informacija apie naudojamą įrenginį; kalba; šalis; interneto paslaugų teikėjas ir kt."
+            },
+            "2": {
+              "title": "Asmens duomenų tvarkymo teisinis pagrindas",
+              "msg": "Jūsų sutikimas tvarkyti asmens duomenis (BDAR 6 straipsnio 1 dalies a punktas)"
+            },
+            "3": {
+              "title": "Asmens duomenų tvarkymo terminas",
+              "msg": "Asmens duomenys tvarkomi tol, kol galioja jūsų sutikimas, bet ne ilgiau kaip 2 (dvejus) metus."
+            },
+            "4": {
+              "title": "Asmens duomenis gauname iš",
+              "msg": "Jūs."
+            },
+            "5": {
+              "title": "Asmens duomenis teikiame arba perduodame",
+              "msg": "Trečiųjų šalių paslaugų teikėjai, kurių paslaugomis paprastai naudojamės duomenų saugojimui, svetainių prieglobos ir kitoms techninėms paslaugoms."
+            }
+          },
+          "4": {
+            "0": "3.1.4. tvarkyti ir administruoti mūsų socialinės žiniasklaidos paskyras („LinkedIn“, „Facebook“, „Instagram“, „YouTube“, „Discord“):",
+            "1": {
+              "title": "Asmens duomenų kategorijos",
+              "msg": "Socialinio tinklo paskyros pavadinimas; asmeninė nuotrauka; asmeninės reakcijos į mūsų sukurtą turinį (patinka, komentarai, pasidalijimai)."
+            },
+            "2": {
+              "title": "Asmens duomenų tvarkymo teisinis pagrindas",
+              "msg": "Jūsų sutikimas tvarkyti asmens duomenis (BDAR 6 straipsnio 1 dalies a punktas)"
+            },
+            "3": {
+              "title": "Asmens duomenų tvarkymo terminas",
+              "msg": "Asmens duomenys tvarkomi tol, kol galioja mūsų arba jūsų socialinio tinklo paskyra, nebent prieš tai išreiškėte pageidavimą ištrinti mūsų socialinių tinklų paskyrose esančius duomenis."
+            },
+            "4": {
+              "title": "Asmens duomenis gauname iš",
+              "msg": "Jūs."
+            },
+            "5": {
+              "title": "Asmens duomenis teikiame arba perduodame",
+              "msg": "Esame bendri jūsų asmens duomenų valdytojai kartu su socialinių tinklų operatoriais."
+            }
+          },
+          "5": {
+            "0": "3.1.5. siųsti Jums tiesioginės rinkodaros pranešimus (naujienlaiškius, akcijas, apklausas ir kitus rinkodaros pasiūlymus bei naujienas):",
+            "1": {
+              "title": "Asmens duomenų kategorijos",
+              "msg": "Vardas ir pavardė; el. pašto adresas; telefono numeris"
+            },
+            "2": {
+              "title": "Asmens duomenų tvarkymo teisinis pagrindas",
+              "msg": "Jūsų sutikimas tvarkyti asmens duomenis (BDAR 6 straipsnio 1 dalies a punktas)."
+            },
+            "3": {
+              "title": "Asmens duomenų tvarkymo terminas",
+              "msg": "Asmens duomenys tvarkomi tol, kol galioja duomenų subjekto sutikimas, bet ne ilgiau kaip dvejus metus."
+            },
+            "4": {
+              "title": "Asmens duomenis gauname iš",
+              "msg": "Jūs."
+            },
+            "5": {
+              "title": "Asmens duomenis teikiame arba perduodame",
+              "msg": "IT, serverių paslaugų teikėjai; mūsų paslaugų teikėjai, teikiantys rinkodaros paslaugas."
+            }
+          }
+        },
+        "2": "3.2. Surinktą informaciją taip pat galime naudoti apibendrintą ar kitaip nuasmenintą, t. y. informaciją, kuri neidentifikuoja jūsų ar konkretaus asmens. Šiuos apibendrintus duomenis galime naudoti tyrimams, plėtrai, rinkodarai, analizei.",
+        "3": "3.3. Nerenkame ir netvarkome konkrečių kategorijų asmens duomenų, atskleidžiančių jūsų rasinę ar etninę kilmę, politines pažiūras, religinius ar filosofinius įsitikinimus, narystę profesinėse sąjungose, taip pat duomenų apie jūsų sveikatą ar lytinį gyvenimą ir seksualinę orientaciją. Todėl prašome neteikti mums šių asmens duomenų el. paštu, telefonu ar bet kokiu kitu būdu."
+      },
+      "title4": "4. Kam teikiame Jūsų asmens duomenis?",
+      "msg4": {
+        "1": "4.1. Garantuojame, kad jūsų asmens duomenys nebus parduodami, teikiami ar kitaip perduodami trečiosioms šalims be teisėto pagrindo, taip pat nebus naudojami kitais tikslais nei tie, dėl kurių jie buvo surinkti. Jūsų asmens duomenų neperduosime jokiais kitais būdais, išskyrus tuos, kurie numatyti šioje Privatumo politikoje arba galiojančiuose įstatymuose. Tačiau pasiliekame teisę pateikti informaciją apie jus, jei to iš mūsų būtų reikalaujama pagal įstatymus arba jei to reikalautų teisėsaugos ar baudžiamąjį persekiojimą vykdančios institucijos, arba siekdami apsaugoti savo teises ar interesus (įskaitant atvejį, kai jūsų asmens duomenys perduodami kitiems asmenims skolų išieškojimo tikslais).",
+        "2": "4.2. Galime perduoti jūsų asmens duomenis įmonėms, kurios padeda mums veikti, t. y. duomenų tvarkytojams. Iš tokių duomenų tvarkytojų reikalaujame, kad jūsų duomenys būtų tvarkomi tik pagal mūsų duotus nurodymus ir galiojančius duomenų apsaugos teisės aktus. Su tokiais duomenų tvarkytojais sudarome sutartis, kurios įpareigoja šalis griežtai laikytis asmens duomenų apsaugos reikalavimų.",
+        "3": {
+          "0": "4.3. Surinktus jūsų asmens duomenis galime atskleisti šioms trečiosioms šalims:",
+          "a": "a) partneriai;",
+          "b": "b) trečiųjų šalių paslaugų teikėjai, kurių paslaugomis paprastai naudojamės duomenų saugojimo, Svetainės prieglobos tikslais ir kitoms techninėms paslaugoms arba paslaugų teikėjams, pavyzdžiui, skolų administravimo ir (arba) išieškojimo bendrovėms arba archyvavimo paslaugas teikiančioms bendrovėms, taip pat teisinių ir (arba) rinkodaros paslaugų teikėjams. Kai kuriais atvejais jūsų duomenys gali būti perduodami į trečiąsias šalis, kuriose gali būti taikomos kitos asmens duomenų apsaugos taisyklės. Mes ėmėmės tinkamų apsaugos priemonių (pvz., Standartinių sutarčių sąlygų), kad užtikrintume jūsų asmens duomenų apsaugą, ir reikalaujame, kad mūsų trečiųjų šalių paslaugų teikėjai ir partneriai taip pat taikytų tinkamas apsaugos priemones;",
+          "c": "c) teisėsaugos institucijoms, įstaigoms ir (arba) kitiems gavėjams, kuriems duomenys turi būti perduoti pagal teisinius reikalavimus."
+        }
+      },
+      "title5": "5. Kaip ir kur saugome Jūsų asmens duomenis?",
+      "msg5": {
+        "1": "5.1. Jūsų surinkti asmens duomenys bus laikomi Europos ekonominėje erdvėje (EEE), tačiau gali būti perduodami arba saugomi už EEE ribų. Perduodami jūsų asmens duomenis už EEE ribų, imsimės visų būtinų veiksmų, kad jūsų asmens duomenys būtų tvarkomi saugiai ir laikantis šios Privatumo politikos; tai darysime užtikrindami būtinas priemones ir apsaugos priemones, įskaitant Standartines sutarčių sąlygas.",
+        "2": "5.2. Mums svarbus jūsų informacijos saugumas. Mes turime komandą, kuri rūpinasi jūsų informacijos apsauga ir yra įdiegusi fizines, elektronines ir procedūrines apsaugos priemones. Šios priemonės apima prieigos ribojimą, šifravimo naudojimą, pažeidžiamumų testavimą, pažangų kenkėjiškų programų aptikimą, pseudonimų ir anonimizavimo metodų taikymą ir kt.",
+        "3": "5.3. Deja, informacijos perdavimas internetu nėra visiškai saugus. Nors dedame visas pastangas, kad apsaugotume jūsų asmeninius duomenis, negalime garantuoti visiško jų saugumo. Todėl informuojame, kad informaciją mums teikiate savo rizika.",
+        "4": "5.4. Jei susiklostytų mažai tikėtinos aplinkybės ir sužinotume apie asmens duomenų saugumo pažeidimą, dėl kurio gali kilti rimtas pavojus jūsų teisėms ar laisvėms, nedelsdami, kai tik apie tai sužinosime, informuosime jus ir nustatysime, kokia informacija buvo pasinaudota."
+      },
+      "title6": "6. Kiek laiko saugome Jūsų asmens duomenis?",
+      "msg6": {
+        "1": "6.1. Jūsų asmens duomenis saugome ne ilgiau, nei to reikalauja duomenų tvarkymo tikslai, arba kiek to reikalauja įstatymai, jei juose numatytas ilgesnis saugojimo laikotarpis. Privatumo politikos 3 skyriuje nurodyti jūsų asmens duomenų saugojimo terminai atskirai kiekvienam asmens duomenų naudojimo tikslui."
+      },
+      "title7": "7. Kokias teises turite?",
+      "msg7": {
+        "1": {
+          "0": "7.1. Tvarkydami asmens duomenis užtikriname jūsų teises pagal BDAR. Kaip asmens duomenų subjektas turite šias teises:",
+          "a": "a) žinoti (būti informuotas) apie savo asmens duomenų tvarkymą;",
+          "b": "b) susipažinti su mūsų tvarkomais jūsų asmens duomenimis;",
+          "c": "c) prašyti ištaisyti ar papildyti neteisingus, netikslius, neišsamius jūsų asmens duomenis;",
+          "d": "d) reikalauti sunaikinti jūsų asmens duomenis, kai jie nebereikalingi tais tikslais, kuriais buvo surinkti;",
+          "e": "e) reikalauti sunaikinti asmens duomenis, jei jie tvarkomi neteisėtai arba jei atšaukiate savo sutikimą tvarkyti asmens duomenis arba tokio sutikimo neduodate, tačiau jis yra būtinas;",
+          "f": "f) nesutikti su asmens duomenų tvarkymu arba atšaukti savo sutikimą;",
+          "g": "g) reikalauti sustabdyti jūsų asmens duomenų tvarkymą (išskyrus saugojimą) kilus ginčui ar patikrinus duomenų tvarkymo teisėtumą, duomenų tikslumą, taip pat tais atvejais, kai mums nebereikia jūsų asmens duomenų, bet jūs nenorite, kad juos sunaikintume;",
+          "h": "h) reikalauti, jei techniškai įmanoma, pateikti jūsų asmens duomenis, surinktus su jūsų sutikimu arba sutarties vykdymo tikslais, lengvai skaitomu formatu arba prašyti juos perduoti kitam duomenų valdytojui."
+        },
+        "2": "7.2. Stengsimės užtikrinti jūsų, kaip asmens duomenų subjekto, teisių įgyvendinimą ir sudaryti visas sąlygas veiksmingai naudotis šiomis teisėmis, tačiau pasiliekame teisę nevykdyti jūsų reikalavimų, kai to reikalauja atitinkami teisiniai pagrindai. Jei atsisakysime vykdyti jūsų reikalavimą, aiškiai nurodysime tokio atsisakymo priežastis.",
+        "3": "7.3. Prašymus, susijusius su jūsų teisių įgyvendinimu, galite pateikti mums asmeniškai, paštu arba elektroninėmis priemonėmis, naudodamiesi šioje Privatumo politikoje nurodytais kontaktiniais duomenimis. Gavę jūsų prašymą, galime paprašyti jūsų pateikti tapatybę patvirtinantį dokumentą, taip pat bet kokią papildomą informaciją, kurios mums reikia dėl jūsų prašymo.",
+        "4": "7.4. Gavę jūsų prašymą, atsakymą jums pateiksime ne vėliau kaip per 30 kalendorinių dienų nuo prašymo gavimo ir visų atsakymui reikalingų dokumentų pateikimo dienos. Prireikus šis laikotarpis gali būti pratęstas dviem mėnesiais, atsižvelgiant į prašymų sudėtingumą ir skaičių. Apie bet kokį tokį pratęsimą informuosime jus per vieną mėnesį nuo prašymo gavimo dienos, kartu nurodydami vėlavimo priežastis.",
+        "5": "7.5. Jei atsisakysime patenkinti jūsų prašymą, aiškiai nurodysime tokio atsisakymo priežastis ir motyvus.",
+        "6": "7.6. Jei nesutinkate su mūsų veiksmais arba atsakymu į jūsų prašymą, galite apskųsti mūsų veiksmus ir sprendimus kompetentingai valdžios institucijai."
+      },
+      "title8": "8. Kam galite pateikti skundą?",
+      "msg8": {
+        "1": "8.1. Jei norite pateikti skundą dėl savo asmens duomenų tvarkymo, pateikite jį raštu, nurodydami kuo daugiau informacijos, naudodamiesi šios Privatumo politikos pabaigoje nurodytais kontaktiniais duomenimis. Mes nedelsdami pasistengsime išspręsti visas problemas.",
+        "2": "8.2. Jei manote, kad renkant ir tvarkant su jumis susijusią asmeninę informaciją pažeidžiamas BDAR ir jūsų teisės, turite teisę pateikti skundą Valstybinei duomenų apsaugos inspekcijai (www.vdai.lrv.lt) arba kitos Europos Sąjungos valstybės narės, kurioje yra jūsų nuolatinė gyvenamoji ar darbo vieta, priežiūros institucijai (priežiūros institucijų sąrašą rasite čia: https://edpb.europa.eu/about-edpb/about-edpb/members_lt#member-lt ), arba kreiptis į teismą. Nors visų pirma visus ginčus su jumis siekiame išspręsti greitai ir draugiškai."
+      },
+      "title9": "9. Slapukai",
+      "msg9": {
+        "1": "9.1. Informuojame, kad Svetainėje naudojami slapukai. Daugiau informacijos apie Slapukus galite rasti „Slapukų politikoje“, kuri yra neatskiriama Privatumo politikos dalis."
+      },
+      "title10": "10. Kaip pakeisime šią privatumo politiką?",
+      "msg10": {
+        "1": "10.1. Prireikus ir toliau atnaujinsime savo politiką ir praktiką. Apie bet kokius savo Privatumo politikos pakeitimus informuosime jus paskelbdami čia. Jei tai padarysime, pamatysite, kad šios Privatumo politikos viršuje esanti data pasikeitė."
+      }
+    }
+  },
+  "cookiesPolicy": {
+    "title": "Cookies Policy",
+    "date": "Ši slapukų politika paskelbta",
+    "sub": "Slapukų politika (toliau - Slapukų politika) interneto svetainės www.threecubes.gg (toliau - Svetainė), kurią valdo ir administruoja UAB „3 cubes investment“ (juridinio asmens kodas 304843104, registruotos buveinės adresas Krivių g. 42-3, LT-01209, Vilnius, Lietuva, el. pašto adresas info@tryskubai.lt) (toliau - Mes) paaiškina, kas yra slapukai ir kaip jie tvarkomi.",
+    "list": {
+      "title1": "1. Kas yra slapukai?",
+      "msg1": {
+        "1": "1.1. Slapukai - tai nedideli tekstiniai failai, kurie siunčiami į kiekvieno asmens, apsilankiusio Svetainėje, iš kurios pasiekiama Svetainė, įrenginį ir laikinai jame saugomi.",
+        "2": "1.2. Svetainėje slapukų surinkta informacija padeda identifikuoti Svetainės lankytoją, išsaugoti jo lankytų svetainių istoriją ir atitinkamai pritaikyti turinį. Slapukų surinkta informacija leidžia Mums užtikrinti galimybę jums patogiau naršyti Svetainėje, teikti Jums patrauklius pasiūlymus ir daugiau sužinoti apie Svetainės naudotojų elgseną, analizuoti tendencijas ir tobulinti Svetainę, asmeninį aptarnavimą ir Mūsų teikiamas paslaugas."
+      },
+      "title2": "2. Kaip valdyti slapukus?",
+      "msg2": {
+        "1": "2.1. Lankydamiesi Svetainėje aktyviais veiksmais galite išreikšti savo sutikimą, jei norite naudoti slapukus. Jei nesutiksite naudoti slapukų, tuomet slapukai, kurie nėra techniniai slapukai t.y. būtini užtikrinti Svetainės veikimą, jūsų įrenginyje nebus saugomi.",
+        "2": "2.2. Informuojame, kad taip pat galite tvarkyti ir (arba) ištrinti slapukus pagal savo pageidavimus. Savo naršyklės (Internet Explorer, Safari, Firefox, Chrome ir kt.) nustatymuose galite pasirinkti, kuriuos slapukus norite priimti, o kuriuos atmesti. Galite ištrinti visus slapukus, kurie jau yra jūsų įrenginyje, o daugumoje naršyklių galima nustatyti taip, kad slapukai nebūtų saugomi. Šių nustatymų vieta priklauso nuo naudojamos naršyklės.",
+        "3": {
+          "1": "patikrinti, kokie slapukai saugomi, ir ištrinti atskirus slapukus;",
+          "2": "blokuoti trečiųjų šalių slapukus;",
+          "3": "blokuoti konkrečių svetainių slapukus;",
+          "4": "blokuoti visų slapukų siuntimą;",
+          "5": "ištrinti visus slapukus, kai uždarote savo naršyklę.",
+          "0 ": "2.3. Atkreipkite dėmesį, kad daugumoje naršyklių galima:"
+        },
+        "4": "2.4. Savo sutikimą naudoti slapukus galite bet kada atšaukti pakeisdami nustatymus ir ištrindami išsaugotus slapukus. Jei nuspręsite ištrinti slapukus, atkreipkite dėmesį, kad bus pašalintos ir visos nustatytos parinktys, o Svetainė gali neveikti arba veikti netinkamai. Dėl šių priežasčių nerekomenduojame ištrinti slapukų naudojantis Svetaine.",
+        "5": "2.5. Norėdami sužinoti daugiau apie slapukus ir kaip juos valdyti arba pašalinti, galite apsilankyti adresu: www.allaboutcookies.org."
+      },
+      "title3": "3. Kokie slapukai naudojami sveitainėje?",
+      "msg3": {
+        "1": {
+          "0": "3.1. Šioje svetainėje naudojame techninius, analitinius ir komercinius slapukus:",
+          "1": {
+            "0": "3.1.1. Techniniai slapukai",
+            "0msg": "Techniniai slapukai: jie padeda rodyti jums Svetainę ir užtikrinti jos funkcionalumą. Šie techniniai slapukai yra būtini tinkamam Svetainės veikimui užtikrinti.",
+            "title1": "Pavadinimas",
+            "msg1": {
+              "1": "Chaport",
+              "2": "mailerlite:webform:shown"
+            },
+            "title2": "Tiekėjas",
+            "msg2": {
+              "1": "Chaport Inc.",
+              "2": "MailerLite"
+            },
+            "title3": "Tikslas",
+            "msg3": {
+              "1": "Registruoja unikalų ID, kad būtų galima sekti naudotojo tiesioginio pokalbio būseną ir istoriją pokalbių tęstinumui užtikrinti.",
+              "2": "Tikrinama, ar naudotojas matė naujienlaiškio dialogo langą. Suteikia informaciją mailerlite API apie tai, kurį dialogo langą rodyti naudotojui."
+            },
+            "title4": "Galioja iki",
+            "msg4": {
+              "1": "1 metai",
+              "2": "1 mėnuo"
+            },
+            "title5": "Tipas",
+            "msg5": {
+              "1": "HTTP slapukas",
+              "2": "HTTP slapukas"
+            }
+          },
+          "2": {
+            "0": "3.1.2. Analitiniai slapukai",
+            "0msg": "Analitiniai slapukai padeda mums suprasti, kaip lankytojai naudojasi Svetaine. Padeda optimizuoti ir tobulinti Svetainę, suprasti reklamos ir komunikacijos veiksmingumą.",
+            "title1": "Pavadinimas",
+            "msg1": {
+              "1": "_ga",
+              "2": "_ga_[unikalus_ID]"
+            },
+            "title2": "Tiekėjas",
+            "msg2": {
+              "1": "Google Inc",
+              "2": "Google Inc"
+            },
+            "title3": "Tikslas",
+            "msg3": {
+              "1": "Registruojamas unikalus ID, kuris naudojamas statistiniams duomenims apie tai, kaip lankytojas naudojasi svetaine, generuoti.",
+              "2": "Naudojama \"Google Analytics\" renkant duomenis apie tai, kiek kartų naudotojas apsilankė Svetainėje, taip pat pirmojo ir paskutinio apsilankymo datas."
+            },
+            "title4": "Galioja iki",
+            "msg4": {
+              "1": "2 metai",
+              "2": "2 metai"
+            },
+            "title5": "Tipas",
+            "msg5": {
+              "1": "HTTP slapukas",
+              "2": "HTTP slapukas"
+            }
+          },
+          "3": "3.1.3. komerciniai slapukai \n Komerciniai slapukai: Mūsų ir trečiųjų šalių slapukai naudojami, kad mūsų ir trečiųjų šalių svetainėse būtų rodoma personalizuota reklama, pagrįsta jūsų naršymo elgsena, pvz., paslaugomis, kurių ieškojote ir kurias atsisiuntėte. \n\n Komerciniai slapukai: Mūsų ir trečiųjų šalių slapukai naudojami, kad mūsų ir trečiųjų šalių svetainėse būtų rodoma personalizuota reklama, pagrįsta jūsų naršymo elgsena, pvz., paslaugomis, kurių ieškojote ir kurias atsisiuntėte."
+        }
+      },
+      "title4": "4. Kaip perduodami slapukų surinkti duomenys?",
+      "msg4": {
+        "1": "Slapukų pagalba surinkti duomenys gali būti perduodami Mūsų įgaliotiems duomenų tvarkytojams, kurie mums teikia, pavyzdžiui, Svetainės prieglobos paslaugas ir kitas paslaugas. Informuojame, kad su kiekvienu duomenų tvarkytoju esame sudarę duomenų tvarkymo sutartis ir užtikriname, kad kiekvienas duomenų tvarkytojas įgyvendina tinkamo lygio technines ir organizacines asmens duomenų apsaugos priemones."
+      },
+      "title5": "5. Kokios yra Jūsų teisės ir kaip jas įgyvendinti?",
+      "msg5": {
+        "1": {
+          "0": "Kaip duomenų subjektas turite šias teises:",
+          "1": "Teisė būti informuotam apie asmens duomenų tvarkymą.",
+          "2": "Teisė susipažinti su mūsų tvarkomais jūsų asmens duomenimis.",
+          "3": "Teisė prašyti ištaisyti mūsų tvarkomus jūsų asmens duomenis.",
+          "4": "Teisė prašyti ištrinti duomenis.",
+          "5": "Teisė apriboti duomenų tvarkymą.",
+          "6": "Teisė nesutikti su duomenų tvarkymu.",
+          "7": "Teisė į asmens duomenų perkeliamumą.",
+          "8": "Teisė pateikti skundą Valstybinei duomenų apsaugos inspekcijai."
+        },
+        "2": "Norėdami pasinaudoti savo teisėmis, galite susisiekti su mumis šiuo kontaktiniu el. pašto adresu: info@tryskubai.lt.\nIšsamesnė informacija apie jūsų teisių įgyvendinimo tvarką ir terminus pateikiama mūsų „Privatumo politikoje“."
+      },
+      "title6": "6. Jūsų teisė pateikti skundą",
+      "msg6": {
+        "1": "Jei manote, kad jūsų teisės buvo pažeistos, visada galite susisiekti su mumis el. paštu info@tryskubai.lt ir (arba) pateikti skundą Valstybinei duomenų apsaugos inspekcijai (L. Sapiegos g. 17, LT-10312 Vilnius, el. paštu ada@ada.lt)."
+      }
+    }
   }
 }

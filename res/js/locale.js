@@ -46,10 +46,10 @@ function setLocalizationLanguage(value, expiration = 2592000) {
 function toggleLogo(lang) {
   if (lang === "en") {
     headerComp.logo.src = "./res/img/header_footer/logo_en.png";
-    productTutElement.src = "./res/img/products/tutorial_en.png";
+    // productTutElement.src = "./res/img/products/tutorial_en.png";
   } else {
     headerComp.logo.src = "./res/img/header_footer/logo.png";
-    productTutElement.src = "./res/img/products/tutorial.png";
+    // productTutElement.src = "./res/img/products/tutorial.png";
   }
 }
 

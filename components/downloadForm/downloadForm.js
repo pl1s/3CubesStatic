@@ -7,8 +7,7 @@ function defineDownloadForm(template) {
     constructor() {
       super();
       this.innerHTML = template;
-      this.downloadURL =
-        "https://utility-server.komandax.lt/Packages/RequestPackage";
+      this.downloadURL = "https://utility-server.komandax.lt/Packages/RequestPackage";
 
       this.dialgoIsActive = true;
 
@@ -31,10 +30,12 @@ function defineDownloadForm(template) {
       this.language = "LT";
       this.lesson = "S13";
 
-      this.emailCheckRegEx = /[“‘/$&\;]/g;
+      this.emailCheckRegEx = /["'/$&\\;]/g;
 
       this.downloadSubmitButton.addEventListener("click", () => this.submit());
       this.downloadFormBackground.addEventListener("click", () => this.hide());
+
+      this.packageLang = this.querySelector('#packageLang');
     }
 
     show() {
@@ -51,10 +52,6 @@ function defineDownloadForm(template) {
     }
 
     validate() {
-      console.log(
-        this.emailInput.value,
-        this.emailInput.value.match(this.emailCheckRegEx)
-      );
       this.requiredBox.style.display = "none";
       this.symbolsBox.style.display = "none";
 
@@ -96,9 +93,10 @@ function defineDownloadForm(template) {
           }
           //reset
           this.emailInput.value = "";
-          this.newsletterCheckbox.checked = false;
+          //this.newsletterCheckbox.checked = false;
         })
         .catch((error) => {
+          //console.log(error)
           this.failOverlay.style.display = "block";
           setTimeout(() => {
             this.failOverlay.style.display = "none";
@@ -111,8 +109,8 @@ function defineDownloadForm(template) {
 
       this.sendEmail(
         this.emailInput.value,
-        this.lesson + this.language,
-        this.newsletterCheckbox.checked
+        this.lesson + this.packageLang.value,
+        false
       );
     }
   }
@@ -121,8 +119,24 @@ function defineDownloadForm(template) {
 }
 
 function onClickDownloadButton(lesson) {
-  let downloadForm = document.querySelector("download-form");
+  
+  const downloadForm = document.querySelector("download-form");
+  const packageLangSelect = document.querySelector('#packageLang');
+  const packageLangEn = document.querySelector('#packageLangEn');
+
   downloadForm.lesson = lesson;
   downloadForm.language = getLocalizationLanguage().toUpperCase();
   downloadForm.show();
+
+  packageLangSelect.value = 'LT';
+  packageLangEn.disabled = lesson === 'KMKM';
+
+  if (packageLangEn.disabled == true)
+  {
+    packageLangEn.style.display = 'none';
+  }
+  else
+  {
+    packageLangEn.style.display = '';
+  }
 }

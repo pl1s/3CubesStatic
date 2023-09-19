@@ -31,11 +31,6 @@
     * {
       padding-bottom: 1%;
     }
-
-    h4,
-    h2 {
-      text-align: center;
-    }
   }
 
   &__body {
@@ -81,6 +76,7 @@
 
           img {
             padding: 0 5px;
+            margin: 1px 0;
 
             @include mq767 {
               width: 25px;
@@ -267,27 +263,37 @@ input[type="email"]:focus {
 
 //JAN13
 .splide button.splide__arrow--prev {
-  right: calc(10% + 50px) !important;
+  right: calc(13% + 50px) !important;
   top: 106% !important;
 }
 
 .splide button.splide__arrow--next {
-  right: calc(10% + 0px) !important;
+  right: calc(13% + 0px) !important;
   top: 106% !important;
 }
 
 //UKRAINE
-.splide02 button.splide__arrow--prev {
+.splide02 button.splide__arrow--prev,
+.splide03 button.splide__arrow--prev {
   right: unset;
   left: 0;
   top: 104% !important;
 }
 
-.splide02 button.splide__arrow--next {
+.splide02 button.splide__arrow--next,
+.splide03 button.splide__arrow--next {
   right: unset;
   top: 104% !important;
 }
 
 .splide02 button.splide__arrow {
   margin: 0 11rem !important;
+}
+
+.splide03 button.splide__arrow {
+  margin: 0.5rem 11rem !important;
+}
+
+.splide03 button.splide__arrow--next {
+  left: 50px;
 }
