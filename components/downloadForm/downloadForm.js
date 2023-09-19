@@ -93,9 +93,10 @@ function defineDownloadForm(template) {
           }
           //reset
           this.emailInput.value = "";
-          this.newsletterCheckbox.checked = false;
+          //this.newsletterCheckbox.checked = false;
         })
         .catch((error) => {
+          //console.log(error)
           this.failOverlay.style.display = "block";
           setTimeout(() => {
             this.failOverlay.style.display = "none";
@@ -118,6 +119,7 @@ function defineDownloadForm(template) {
 }
 
 function onClickDownloadButton(lesson) {
+  
   const downloadForm = document.querySelector("download-form");
   const packageLangSelect = document.querySelector('#packageLang');
   const packageLangEn = document.querySelector('#packageLangEn');
@@ -128,4 +130,13 @@ function onClickDownloadButton(lesson) {
 
   packageLangSelect.value = 'LT';
   packageLangEn.disabled = lesson === 'KMKM';
+
+  if (packageLangEn.disabled == true)
+  {
+    packageLangEn.style.display = 'none';
+  }
+  else
+  {
+    packageLangEn.style.display = '';
+  }
 }
