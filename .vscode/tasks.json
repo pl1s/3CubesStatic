@@ -7,7 +7,7 @@
         {
             "label": "Sass Compile",
             "type": "shell",
-            "command": "sass --no-source-map --update --trace src/styles/scss/styles.scss styles.css",
+            "command": "sass --no-source-map --update --trace --watch src/styles/scss/styles.scss styles.css",
             "group": "build",
         }
     ]

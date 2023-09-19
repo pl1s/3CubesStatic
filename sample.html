@@ -1,315 +1,549 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <link rel="icon" href="./res/img/favicon.ico" />
+    <link href="./styles.css" rel="stylesheet" />
+    <link rel="stylesheet" href="./res/css/splide.min.css" />
+    <link rel="stylesheet" href="./res/css/splide-core.min.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="keywords"
+      content=" three-cubes, learning, minecraft, education edition, lessons, informal, formal, gamified, students, products"
+    />
+    <meta name="author" content="Three Cubes" />
+    <meta
+      name="description"
+      content="It benefit informal education experience !"
+    />
+    <title>Informal Education Lessons with Minecraft | Three Cubes</title>
+    <!-- Components -->
+    <script src="./components/header/header.js"></script>
+    <script src="./components/chaport-chat/chat.js"></script>
+    <script src="./components/gdprPopup/gdprPopup.js"></script>
+    <script src="./components/footer/footer.js"></script>
+    <script src="./components/noticeOverlay/noticeOverlay.js"></script>
+    <script src="./components/downloadForm/downloadForm.js"></script>
+    <script src="./components/downloadForm2/downloadForm2.js"></script>
+    <!-- GOOGLE ANALYTICS -->
+    <script>
+      let gaProperty = "G-78KBBN7H92"
+      let disableStr = "ga-disable-" + gaProperty
+      // Define dataLayer and the gtag function.
+      window.dataLayer = window.dataLayer || []
+      function gtag() {
+        dataLayer.push(arguments)
+      }
 
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <link rel='icon' href='./res/img/favicon.ico' />
-  <link href='./styles.css' rel="stylesheet">
-  <link rel="stylesheet" href="./res/css/splide.min.css">
-  <link rel="stylesheet" href="./res/css/splide-core.min.css">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="keywords"
-    content=" three-cubes, learning, minecraft, education edition, lessons, informal, formal, gamified, students, products">
-  <meta name="author" content="Three Cubes">
-  <meta name="description" content="It benefit informal education experience !" />
-  <title>Informal Education Lessons with Minecraft | Three Cubes</title>
-  <!-- Components -->
-  <script src="./components/header/header.js"></script>
-  <script src="./components/chaport-chat/chat.js"></script>
-  <script src="./components/gdprPopup/gdprPopup.js"></script>
-  <script src="./components/footer/footer.js"></script>
-  <script src="./components/noticeOverlay/noticeOverlay.js"></script>
-  <script src="./components/downloadForm/downloadForm.js"></script>
-  <!-- GOOGLE ANALYTICS -->
-  <script>
-    let gaProperty = 'G-78KBBN7H92'
-    let disableStr = 'ga-disable-' + gaProperty;
-    // Define dataLayer and the gtag function.
-    window.dataLayer = window.dataLayer || [];
-    function gtag() { dataLayer.push(arguments); }
+      // Default ad_storage to 'denied'.
+      gtag("consent", "default", {
+        ad_storage: "denied",
+        analytics_storage: "denied",
+        wait_for_update: 5000,
+      })
+    </script>
+    <!-- Global site tag (gtag.js) - Google Ads: CONVERSION_ID  -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=AW-YYYYYY"
+    ></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/3.1.2/rollups/aes.js"></script>
+    <script>
+      window.dataLayer = window.dataLayer || []
+      function gtag() {
+        dataLayer.push(arguments)
+      }
 
-    // Default ad_storage to 'denied'.
-    gtag('consent', 'default', {
-      ad_storage: 'denied',
-      analytics_storage: 'denied',
-      wait_for_update: 5000
-    });
-  </script>
-  <!-- Global site tag (gtag.js) - Google Ads: CONVERSION_ID  -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=AW-YYYYYY"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/3.1.2/rollups/aes.js"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag() { dataLayer.push(arguments); }
+      gtag("js", new Date())
+      gtag("config", gaProperty)
+    </script>
 
-    gtag('js', new Date());
-    gtag('config', gaProperty);
-  </script>
+    <!-- NewsLetters Universal -->
+    <script>
+      // CHECKING for GDPR COOKIE & functional preference STATUS
+      if (document.cookie.includes("GDPRConfirmed=functi-true")) {
+        ;(function (m, a, i, l, e, r) {
+          m["MailerLiteObject"] = e
+          function f() {
+            var c = { a: arguments, q: [] }
+            var r = this.push(c)
+            return "number" != typeof r ? r : f.bind(c.q)
+          }
+          f.q = f.q || []
+          m[e] = m[e] || f.bind(f.q)
+          m[e].q = m[e].q || f.q
+          r = a.createElement(i)
+          var _ = a.getElementsByTagName(i)[0]
+          r.async = 1
+          r.src = l + "?v" + ~~(new Date().getTime() / 1000000)
+          _.parentNode.insertBefore(r, _)
+        })(
+          window,
+          document,
+          "script",
+          "https://static.mailerlite.com/js/universal.js",
+          "ml"
+        )
 
-  <!-- NewsLetters Universal -->
-  <script>
-    // CHECKING for GDPR COOKIE & functional preference STATUS
-    if (document.cookie.includes("GDPRConfirmed=functi-true")) {
-      (function (m, a, i, l, e, r) {
-        m['MailerLiteObject'] = e; function f() {
-          var c = { a: arguments, q: [] }; var r = this.push(c); return "number" != typeof r ? r : f.bind(c.q);
-        }
-        f.q = f.q || []; m[e] = m[e] || f.bind(f.q); m[e].q = m[e].q || f.q; r = a.createElement(i);
-        var _ = a.getElementsByTagName(i)[0]; r.async = 1; r.src = l + '?v' + (~~(new Date().getTime() / 1000000));
-        _.parentNode.insertBefore(r, _);
-      })(window, document, 'script', 'https://static.mailerlite.com/js/universal.js', 'ml');
+        var ml_account = ml("accounts", "1928266", "y4a6p1v7u9", "load")
+      }
+    </script>
+    <!-- NewsLetters Universal -->
+  </head>
 
-      var ml_account = ml('accounts', '1928266', 'y4a6p1v7u9', 'load');
-    }
-  </script>
-  <!-- NewsLetters Universal -->
-</head>
-
-<body>
-  <header-comp></header-comp>
-  <download-form style="display: none;"></download-form>
-  <main>
-    <section class="hero-main side-padding">
-      <div class="hero-main__cta">
-        <div class="hero-main__cta-topLeft">
-          <h1 class="title element" data="sample.hero.title">Interactive educational adventures!</h1>
-          <h3 class="element" data="sample.hero.sub">Special offer — we invite you to download"Trys cubes\" \"January
-            13th\" and \"Humanitarian Aid for Ukraine\" lessons for FREE</h3>
-          <button id="contactBtn">
+  <body>
+    <header-comp></header-comp>
+    <download-form style="display: none"></download-form>
+    <download-form-2 style="display: none"></download-form-2>
+    <main>
+      <section class="hero-main side-padding">
+        <div class="hero-main__cta">
+          <div class="hero-main__cta-topLeft">
+            <h1 class="title element" data="sample.hero.title">
+              Gift - lesson package!
+            </h1>
+            <h3 class="element" data="sample.hero.sub">
+              Subscribe to the "Three Cubes" newsletter and receive a
+              self-guided lesson package by e-mail!
+            </h3>
+            <!-- <button id="contactBtn">
             <h4 class="element" data="sample.hero.btn">Contact Us!</h4>
-          </button>
+          </button> -->
+          </div>
+          <div class="hero-main__cta-topRight">
+            <img
+              class="book"
+              src="./res/img/reusable/king-avatar.png"
+              alt="king"
+            />
+          </div>
         </div>
-        <div class="hero-main__cta-topRight">
-          <img class="book" src="./res/img/nonformal/rover_v08_t.png" alt="rover" class="book">
-        </div>
-      </div>
-    </section>
-    <section class="banner">
+      </section>
+      <!-- <section class="banner">
       <div class="banner__wrapper">
         <h5 class="element" data="sample.banner">Special offer — we invite you to download "Three Cubes" "January 13th"
           and "Humanitarian Aid
           for Ukraine"
           lessons for FREE</h5>
       </div>
-    </section>
-    <section class="sample flex-column ">
-      <div class="sample__title flex-column  ">
-        <h2 class="element" data="sample.jan13.title">January 13th</h2>
-        <h4 class="element" data="sample.jan13.sub">Explore Vilnius TV tower and get to know what happened on January 13
-        </h4>
-      </div>
-      <div class="sample__body flex-row">
-        <div class="sample__body-container">
-          <div class="sample__body-container_video">
-            <video class="video" src="./res/video/jan13.mp4" controls></video>
-          </div>
-          <!-- <div class="sample__body-container_container flex-row"> -->
-          <div class="splide">
-            <div class="splide__track">
-              <div class="splide__list">
-                <li class="splide__slide slide01">
-                  <div class="sample__body-container-item">
-                    <img src="./res/img/jan13/1.png" alt="january 13">
-                  </div>
-                </li>
-                <li class="splide__slide slide02">
-                  <div class="sample__body-container-item">
-                    <img src="./res/img/jan13/2.png" alt="january 13">
-                  </div>
-                </li>
-                <li class="splide__slide slide03">
-                  <div class="sample__body-container-item">
-                    <img src="./res/img/jan13/3.png" alt="january 13">
-                  </div>
-                </li>
-                <li class="splide__slide slide04">
-                  <div class="sample__body-container-item">
-                    <img src="./res/img/jan13/4.png" alt="january 13">
-                  </div>
-                </li>
+    </section> -->
+      <section id="king_queen" class="sample flex-column">
+        <div class="sample__title flex-column">
+          <h2 class="element" data="sample.king&queen.title">
+            "King Mindaugas & Queen Morta"
+          </h2>
+          <h4 class="element" data="sample.king&queen.sub">
+            Students complete tasks cooperatively and learn about the coronation
+            ceremony!
+          </h4>
+        </div>
+        <div class="sample__body flex-row-reverse">
+          <div class="sample__body-container">
+            <!-- <div class="sample__body-container_container flex-row"> -->
+            <div class="splide03">
+              <div class="splide__track">
+                <div class="splide__list">
+                  <li class="splide__slide slide01">
+                    <div class="sample__body-container-item">
+                      <img
+                        src="./res/img/king_mindaugas/1.jpg"
+                        alt="king mindaugas lesson"
+                      />
+                    </div>
+                  </li>
+                  <li class="splide__slide slide02">
+                    <div class="sample__body-container-item">
+                      <img
+                        src="./res/img/king_mindaugas/2.jpg"
+                        alt="king mindaugas lesson"
+                      />
+                    </div>
+                  </li>
+                  <li class="splide__slide slide03">
+                    <div class="sample__body-container-item">
+                      <img
+                        src="./res/img/king_mindaugas/3.jpg"
+                        alt="king mindaugas lesson"
+                      />
+                    </div>
+                  </li>
+                </div>
               </div>
             </div>
           </div>
+          <div class="sample__body-themes side-half-padding flex-column">
+            <div class="sample__body-themes_list">
+              <ul>
+                <li>
+                  <img
+                    class="mark"
+                    src="./res/img/nonformal/Rectangle 237.png"
+                    alt="list icon"
+                  />
+                  <h4 class="element" data="sample.king&queen.topics.0">
+                    Visits to the library of historical sources and the castle
+                  </h4>
+                </li>
+                <li>
+                  <img
+                    class="mark"
+                    src="./res/img/nonformal/Rectangle 237.png"
+                    alt="list icon"
+                  />
+                  <h4 class="element" data="sample.king&queen.topics.1">
+                    Communicating with characters
+                  </h4>
+                </li>
+                <li>
+                  <img
+                    class="mark"
+                    src="./res/img/nonformal/Rectangle 237.png"
+                    alt="list icon"
+                  />
+                  <h4 class="element" data="sample.king&queen.topics.2">
+                    Knowledge test in the maze
+                  </h4>
+                </li>
+              </ul>
+            </div>
+            <section class="download">
+              <div class="download__container">
+                <button
+                  id="showDialog"
+                  class="flex center transparent UA"
+                  onclick="onClickDownloadButton('KMKM')"
+                >
+                  <img
+                    class="arrow"
+                    src="./res/img/reusable/arrowR.png"
+                    alt="download arrow"
+                  />
+                  <h4 class="element" data="formal.download.btn">Download</h4>
+                </button>
+              </div>
+            </section>
+          </div>
         </div>
-        <div class="sample__body-themes side-half-padding flex-column">
-          <div class="sample__body-themes_title flex center">
-            <h3 class="element" data="sample.jan13.lesson.desc">Critical thinking, social and citizenship
+      </section>
+      <section class="sample flex-column">
+        <div class="sample__title flex-column">
+          <h2 class="element" data="sample.jan13.title">"January 13th"</h2>
+          <h4 class="element" data="sample.jan13.sub">
+            Get acquainted with historical events, the course of the day of
+            January 13
+          </h4>
+        </div>
+        <div class="sample__body flex-row">
+          <div class="sample__body-container">
+            <div class="sample__body-container_video">
+              <video class="video" src="./res/video/jan13.mp4" controls></video>
+            </div>
+            <!-- <div class="sample__body-container_container flex-row"> -->
+            <div class="splide">
+              <div class="splide__track">
+                <div class="splide__list">
+                  <li class="splide__slide slide01">
+                    <div class="sample__body-container-item">
+                      <img src="./res/img/jan13/1.png" alt="january 13" />
+                    </div>
+                  </li>
+                  <li class="splide__slide slide02">
+                    <div class="sample__body-container-item">
+                      <img src="./res/img/jan13/2.png" alt="january 13" />
+                    </div>
+                  </li>
+                  <li class="splide__slide slide03">
+                    <div class="sample__body-container-item">
+                      <img src="./res/img/jan13/3.png" alt="january 13" />
+                    </div>
+                  </li>
+                  <li class="splide__slide slide04">
+                    <div class="sample__body-container-item">
+                      <img src="./res/img/jan13/4.png" alt="january 13" />
+                    </div>
+                  </li>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="sample__body-themes side-half-padding flex-column">
+            <!-- <div class="sample__body-themes_title flex center">
+              <h3 class="element" data="sample.jan13.lesson.desc">Critical thinking, social and citizenship
               competences, respect for human rights and freedoms are developed. Students perform tasks individually and
               in groups.</h3>
-          </div>
-          <div class="sample__body-themes_list">
-            <ul>
-              <li><img src="./res/img/nonformal/Rectangle 237.png" alt="list icon">
-                <h4 class="element" data="sample.jan13.lesson.topics.0">exploring Vilnius TV tower</h4>
-              </li>
-              <li><img src="./res/img/nonformal/Rectangle 237.png" alt="list icon">
-                <h4 class="element" data="sample.jan13.lesson.topics.1">completing tasks</h4>
-              </li>
-              <li><img src="./res/img/nonformal/Rectangle 237.png" alt="list icon">
-                <h4 class="element" data="sample.jan13.lesson.topics.2">sharing tea with others
-                </h4>
-              </li>
-            </ul>
-          </div>
-          <section class="download">
-            <div class="download__container">
-              <button id="showDialog" 
-                class="flex center transparent S13" 
-                onclick="onClickDownloadButton('S13')">
-                </a><img class="arrow" src="./res/img/reusable/arrowR.png" alt="download arrow">
-                <h4 class="element" data="formal.download.btn">Download</h4>
-              </button>
+            </div> -->
+            <div class="sample__body-themes_list">
+              <ul>
+                <li>
+                  <img
+                    class="mark"
+                    src="./res/img/nonformal/Rectangle 237.png"
+                    alt="list icon"
+                  />
+                  <h4 class="element" data="sample.jan13.lesson.topics.0">
+                    Complete tasks at Vilnius TV tower
+                  </h4>
+                </li>
+                <li>
+                  <img
+                    class="mark"
+                    src="./res/img/nonformal/Rectangle 237.png"
+                    alt="list icon"
+                  />
+                  <h4 class="element" data="sample.jan13.lesson.topics.1">
+                    Work in teams
+                  </h4>
+                </li>
+                <li>
+                  <img
+                    class="mark"
+                    src="./res/img/nonformal/Rectangle 237.png"
+                    alt="list icon"
+                  />
+                  <h4 class="element" data="sample.jan13.lesson.topics.2">
+                    Reflect on the events with the teacher and share what you
+                    learned
+                  </h4>
+                </li>
+              </ul>
             </div>
-          </section>
-        </div>
-      </div>
-    </section>
-    <section class="sample flex-column top-bottom-padding">
-      <div class="sample__title flex-column">
-        <h2 class="element" data="sample.ukraine.title">Humanitarian Aid for Ukraine</h2>
-        <h4 class="element" data="sample.ukraine.sub">Learn how to quickly deliver humanitarian aid to Ukraine through
-          cooperation</h4>
-      </div>
-      <div class="sample__body flex-row-reverse">
-        <div class="sample__body-container">
-          <div class="sample__body-container_video">
-            <video class="video" src="./res/video/ua.mp4" controls></video>
+            <section class="download">
+              <div class="download__container">
+                <button
+                  id="showDialog"
+                  class="flex center transparent S13"
+                  onclick="onClickDownloadButton('S13')"
+                >
+                  <img
+                    class="arrow"
+                    src="./res/img/reusable/arrowR.png"
+                    alt="download arrow"
+                  />
+                  <h4 class="element" data="formal.download.btn">Download</h4>
+                </button>
+              </div>
+            </section>
           </div>
-          <!-- <div class="sample__body-container_container flex-row"> -->
-          <div class="splide02">
-            <div class="splide__track">
-              <div class="splide__list">
-                <li class="splide__slide slide01">
-                  <div class="sample__body-container-item">
-                    <img src="./res/img/products/intl_affairs/1.png" alt="ukraine lesson">
-                  </div>
-                </li>
-                <li class="splide__slide slide02">
-                  <div class="sample__body-container-item">
-                    <img src="./res/img/products/intl_affairs/2.png" alt="ukraine lesson">
-                  </div>
-                </li>
-                <li class="splide__slide slide03">
-                  <div class="sample__body-container-item">
-                    <img src="./res/img/products/intl_affairs/3.png" alt="ukraine lesson">
-                  </div>
-                </li>
-                <li class="splide__slide slide04">
-                  <div class="sample__body-container-item">
-                    <img src="./res/img/products/intl_affairs/4.png" alt="ukraine lesson">
-                  </div>
-                </li>
+        </div>
+      </section>
+      <section class="sample flex-column top-bottom-padding">
+        <div class="sample__title flex-column">
+          <h2 class="element" data="sample.ukraine.title">
+            Humanitarian Aid for Ukraine
+          </h2>
+          <h4 class="element" data="sample.ukraine.sub">
+            Learn how to quickly deliver humanitarian aid to Ukraine through
+            cooperation
+          </h4>
+        </div>
+        <div class="sample__body flex-row-reverse">
+          <div class="sample__body-container">
+            <div class="sample__body-container_video">
+              <video class="video" src="./res/video/ua.mp4" controls></video>
+            </div>
+            <!-- <div class="sample__body-container_container flex-row"> -->
+            <div class="splide02">
+              <div class="splide__track">
+                <div class="splide__list">
+                  <li class="splide__slide slide01">
+                    <div class="sample__body-container-item">
+                      <img
+                        src="./res/img/products/intl_affairs/1.png"
+                        alt="ukraine lesson"
+                      />
+                    </div>
+                  </li>
+                  <li class="splide__slide slide02">
+                    <div class="sample__body-container-item">
+                      <img
+                        src="./res/img/products/intl_affairs/2.png"
+                        alt="ukraine lesson"
+                      />
+                    </div>
+                  </li>
+                  <li class="splide__slide slide03">
+                    <div class="sample__body-container-item">
+                      <img
+                        src="./res/img/products/intl_affairs/3.png"
+                        alt="ukraine lesson"
+                      />
+                    </div>
+                  </li>
+                  <li class="splide__slide slide04">
+                    <div class="sample__body-container-item">
+                      <img
+                        src="./res/img/products/intl_affairs/4.png"
+                        alt="ukraine lesson"
+                      />
+                    </div>
+                  </li>
+                </div>
               </div>
             </div>
           </div>
-        </div>
-        <div class="sample__body-themes side-half-padding flex-column">
-          <div class="sample__body-themes_title flex center">
-            <h3 class="element" data="sample.ukraine.lesson.desc">The goal of the lesson is to teach the youth how we
-              can
-              support Ukraine by working together.</h3>
+          <div class="sample__body-themes side-half-padding flex-column">
+            <!-- <div class="sample__body-themes_title flex center">
+              <h3 class="element" data="sample.ukraine.lesson.desc">
+                The goal of the lesson is to teach the youth how we can support
+                Ukraine by working together.
+              </h3>
+            </div> -->
+            <div class="sample__body-themes_list">
+              <ul>
+                <li>
+                  <img
+                    class="mark"
+                    src="./res/img/nonformal/Rectangle 237.png"
+                    alt="list icon"
+                  />
+                  <h4 class="element" data="sample.ukraine.lesson.topics.0">
+                    gathering resources
+                  </h4>
+                </li>
+                <li>
+                  <img
+                    class="mark"
+                    src="./res/img/nonformal/Rectangle 237.png"
+                    alt="list icon"
+                  />
+                  <h4 class="element" data="sample.ukraine.lesson.topics.1">
+                    making aid packages
+                  </h4>
+                </li>
+                <li>
+                  <img
+                    class="mark"
+                    src="./res/img/nonformal/Rectangle 237.png"
+                    alt="list icon"
+                  />
+                  <h4 class="element" data="sample.ukraine.lesson.topics.2">
+                    collaborate and perform tasks
+                  </h4>
+                </li>
+              </ul>
+              <h5
+                style="padding-top: 1rem"
+                class="element"
+                data="sample.ukraine.lesson.note"
+              >
+                Subscribing to newsletters is optional
+              </h5>
+            </div>
+            <section class="download">
+              <div class="download__container">
+                <button
+                  id="showDialog"
+                  class="flex center transparent UA"
+                  onclick="onClickDownloadButton2('UA')"
+                >
+                  <img
+                    class="arrow"
+                    src="./res/img/reusable/arrowR.png"
+                    alt="download arrow"
+                  />
+                  <h4 class="element" data="formal.download.btn">Download</h4>
+                </button>
+              </div>
+            </section>
           </div>
-          <div class="sample__body-themes_list">
+        </div>
+      </section>
+      <section class="instructions side-padding">
+        <div class="instructions__container">
+          <h2 class="element" data="sample.instructions.title">
+            Getting Started Guides
+          </h2>
+          <h3 class="element" data="sample.instructions.desc">
+            Bellow are hyperlinks to instructions. Select preferable language,
+            then option of your operating system and Minecraft edition
+          </h3>
+          <div class="instructions__container-list">
             <ul>
-              <li><img src="./res/img/nonformal/Rectangle 237.png" alt="list icon">
-                <h4 class="element" data="sample.ukraine.lesson.topics.0">gathering resources</h4>
+              <li>
+                <a
+                  class="element"
+                  data="sample.instructions.en"
+                  href="https://sites.google.com/three-cubes.net/guide/en"
+                  target="_blank"
+                  >ENGLISH</a
+                >
               </li>
-              <li><img src="./res/img/nonformal/Rectangle 237.png" alt="list icon">
-                <h4 class="element" data="sample.ukraine.lesson.topics.1">making aid packages</h4>
-              </li>
-              <li><img src="./res/img/nonformal/Rectangle 237.png" alt="list icon">
-                <h4 class="element" data="sample.ukraine.lesson.topics.2">collaborate and perform tasks
-                </h4>
+              <li>
+                <a
+                  class="element"
+                  data="sample.instructions.lt"
+                  href="https://gidas.three-cubes.net/lt"
+                  target="_blank"
+                  >LITHUANIAN</a
+                >
               </li>
             </ul>
           </div>
-          <section class="download">
-            <div class="download__container">
-              <button id="showDialog" class="flex center transparent UA"
-                  onclick="onClickDownloadButton('UA')">
-                </a><img class="arrow" src="./res/img/reusable/arrowR.png" alt="download arrow">
-                <h4 class="element" data="formal.download.btn">Download</h4>
-              </button>
-            </div>
-          </section>
+          <div class="instructions__container-hyperlinks"></div>
         </div>
-      </div>
-    </section>
-    <section class="instructions side-padding">
-      <div class="instructions__container">
-        <h2 class="element" data="sample.instructions.title">Getting Started Guides</h2>
-        <h3 class="element" data="sample.instructions.desc">Bellow are hyperlinks to instructions. Select preferable
-          language, then option of your operating
-          system and Minecraft edition</h3>
-        <div class="instructions__container-list">
-          <ul>
-            <li><a class="element" data="sample.instructions.en"
-                href="https://sites.google.com/three-cubes.net/guide/en" target="_blank">ENGLISH</a> </li>
-            <li><a class="element" data="sample.instructions.lt" href="https://gidas.three-cubes.net/lt"
-                target="_blank">LITHUANIAN</a></li>
-          </ul>
+      </section>
+      <section class="info full-padding">
+        <div class="info__container flex-column">
+          <h4 class="element" data="sample.info.0">
+            Our free lesson packages are designed in a way that the teacher
+            could go along with material and teach class on his own.
+          </h4>
+          <h4 class="element" data="sample.info.1">
+            For any questions feel free to contact <b>gabriele@tryskubai.lt</b>
+          </h4>
+          <h4 class="element" data="sample.info.2">
+            "Trys kubai educator could teach your class, this year's price is 3
+            eur/student, contact <b>akvile@tryskubai.lt</b>, +370 (602) 91 919
+            for an offer.
+          </h4>
         </div>
-        <div class="instructions__container-hyperlinks">
-        </div>
-      </div>
-    </section>
-    <section class="info full-padding">
-      <div class="info__container flex-column">
-        <h4 class="element" data="sample.info.0">Our free lesson packages are designed in a way that the teacher could
-          go along with material and teach class
-          on his own. </h4>
-        <h4 class=" element" data="sample.info.1">For any questions feel free to contact <b>gabriele@tryskubai.lt</b>
-        </h4>
-        <h4 class=" element" data="sample.info.2">"Trys kubai educator could teach your class, this year's price is 3
-          eur/student, contact
-          <b>akvile@tryskubai.lt</b>, +370 (602) 91 919 for an offer.
-        </h4 class=" element" data="sample.info.3">
-      </div>
-    </section>
-    
-  </main>
-    
-  
-  <footer-comp></footer-comp>
-  <gdpr-popup></gdpr-popup>
-  <notice-overlay></notice-overlay>
-  <!-- script loading -->
-  <script src="./res/js/main.js"></script>
-  <!-- <script src="./res/js/sendEmail.js"></script> -->
-  <script src="./res/js/i18next.min.js"></script>
-  <script src="./res/js/splide.min.js"></script>
-  <!-- CONFIGS -->
-  <script src="./res/js/locale.js"></script>
-  <script type="text/javascript">
+      </section>
+    </main>
 
-    new Splide(".splide", {
-      type: "loop",
-      perPage: 1,
-      perMove: 1,
-      autoplay: true,
-      pagination: false,
-      breakpoints: {
-        480: {
+    <footer-comp></footer-comp>
+    <gdpr-popup></gdpr-popup>
+    <notice-overlay></notice-overlay>
+    <!-- script loading -->
+    <script src="./res/js/main.js"></script>
+    <!-- <script src="./res/js/sendEmail.js"></script> -->
+    <script src="./res/js/i18next.min.js"></script>
+    <script src="./res/js/splide.min.js"></script>
+    <!-- CONFIGS -->
+    <script src="./res/js/locale.js"></script>
+    <script type="text/javascript">
+      new Splide(".splide", {
+        type: "loop",
+        perPage: 1,
+        perMove: 1,
+        autoplay: true,
+        pagination: false,
+        breakpoints: {
+          480: {},
+        },
+      }).mount()
 
-        }
-      },
-    }).mount();
+      new Splide(".splide02", {
+        type: "loop",
+        perPage: 1,
+        perMove: 1,
+        autoplay: true,
+        pagination: false,
+        breakpoints: {
+          480: {},
+        },
+      }).mount()
 
-    new Splide(".splide02", {
-      type: "loop",
-      perPage: 1,
-      perMove: 1,
-      autoplay: true,
-      pagination: false,
-      breakpoints: {
-        480: {
-
-        }
-      },
-    }).mount();
-  </script>
-    
-</body>
-
+      new Splide(".splide03", {
+        type: "loop",
+        perPage: 1,
+        perMove: 1,
+        autoplay: true,
+        pagination: false,
+        breakpoints: {
+          480: {},
+        },
+      }).mount()
+    </script>
+  </body>
 </html>
