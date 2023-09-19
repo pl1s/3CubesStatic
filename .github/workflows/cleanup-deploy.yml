@@ -39,3 +39,5 @@ jobs:
           git add .
           git commit -m "Automated: clean up and deployment"
           git push -f
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
