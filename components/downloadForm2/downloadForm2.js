@@ -1,9 +1,9 @@
-fetch("./components/downloadFormEn/downloadFormEn.html")
+fetch("./components/downloadForm2/downloadForm2.html")
   .then((stream) => stream.text())
-  .then((response) => defineDownloadFormEn(response));
+  .then((response) => defineDownloadForm2(response));
 
-function defineDownloadFormEn(template) {
-  class DownloadFormEn extends HTMLElement {
+function defineDownloadForm2(template) {
+  class DownloadForm2 extends HTMLElement {
     constructor() {
       super();
       this.innerHTML = template;
@@ -31,10 +31,12 @@ function defineDownloadFormEn(template) {
       this.language = "LT";
       this.lesson = "S13";
 
-      this.emailCheckRegEx = /[“‘/$&\;]/g;
+      this.emailCheckRegEx = /["'/$&\\;]/g;
 
       this.downloadSubmitButton.addEventListener("click", () => this.submit());
       this.downloadFormBackground.addEventListener("click", () => this.hide());
+
+      this.packageLang = this.querySelector('#packageLang');
     }
 
     show() {
@@ -51,10 +53,6 @@ function defineDownloadFormEn(template) {
     }
 
     validate() {
-      console.log(
-        this.emailInput.value,
-        this.emailInput.value.match(this.emailCheckRegEx)
-      );
       this.requiredBox.style.display = "none";
       this.symbolsBox.style.display = "none";
 
@@ -111,18 +109,24 @@ function defineDownloadFormEn(template) {
 
       this.sendEmail(
         this.emailInput.value,
-        this.lesson + getLocalizationLanguage().toUpperCase(),
+        this.lesson + this.packageLang.value,
         this.newsletterCheckbox.checked
       );
     }
   }
 
-  window.customElements.define("download-form-en", DownloadFormEn);
+  window.customElements.define("download-form-2", DownloadForm2);
 }
 
-function onClickDownloadButtonEn(lesson) {
-  let downloadForm = document.querySelector("download-form-en");
+function onClickDownloadButton2(lesson) {
+  const downloadForm = document.querySelector("download-form-2");
+  const packageLangSelect = document.querySelector('#packageLang');
+  const packageLangEn = document.querySelector('#packageLangEn');
+
   downloadForm.lesson = lesson;
   downloadForm.language = getLocalizationLanguage().toUpperCase();
   downloadForm.show();
+
+  packageLangSelect.value = 'LT';
+  packageLangEn.disabled = lesson === 'KMKM';
 }

@@ -514,6 +514,32 @@
       "Jeigu norite, kad pamoką Jūsų klasei pravestų Trys kubai edukatorius, šių metų kaina — 3 eur/mokiniui, dėl pasiūlymo kreipkitės akvile@tryskubai.lt, +370 (602) 91 919"
     ],
     "downloadForm": {
+      "title": "Pamokos paketas — dovanų!",
+      "instructions": "Prenumeruokite „Trys kubai“ naujienlaiškį ir gaukite savarankiškai vedamos pamokos paketą į el. paštą!",
+      "notes": [
+        "Pamokos paketas sukurtas taip, kad pedagogas klasei gali pats savarankiškai pravesti pamoką.",
+        "Pamokos paketą sudaro: programų įrašymo instrukcijos, pamokos planas ir paruoštukė, virtualus pamokos pasaulis.",
+        "Užprenumeravus naujienlaiškį, dovana — pamokos paketas — automatiškai atkeliaus į Jūsų nurodytą el. paštą.",
+        "Sutinku, kad nurodytu mano el. pašto adresu būtų siunčiami naujienlaiškiai. Prenumeruodami naujienlaiškį sutinkate su mūsų",
+        "Privatumo politika",
+        "ir",
+        "Slapukų politika"
+      ],
+      "desc": "Galite pasirinkti, ar norite gauti užklausas apie kitus mūsų produktus į savo el. paštą susisiekimo ir rinkodaros tikslais. Tai svarbu ir skirta tam, kad galėtume susisiekti su Jumis - išgirsti Jūsų nuomonę, kaip sekėsi savarankiškai vesti pamoką ir padėti iškilus klausimams.",
+      "gdpr": "Parsisiųsdami pamoką, sutinkate, kad jūsų el. pašto adresas bus užregistruotas, statistikos ir atsiliepimų rinkimo tikslais.",
+      "subscribe": "Prenumeruoti",
+      "sent": "Išsiųsta!",
+      "error": [
+        "Ši reikšmė negali būti tuščia.",
+        "Negalima naudoti (<b>\" ' / $ & \\ ;</b>)",
+        "Kažkas nutiko ne taip 🤕"
+      ],
+      "label": [
+        "Įveskite el. paštą",
+        "Pasirinkite paketo kalbą"
+      ]
+    },
+    "downloadForm2": {
       "title": "Pamokos parsisiuntimas",
       "instructions": "Gaukite savarankiškai vedamos pamokos paketą į el. paštą!",
       "notes": [
@@ -532,8 +558,12 @@
       "sent": "Išsiųsta!",
       "error": [
         "Ši reikšmė negali būti tuščia.",
-        "Negalima naudoti (<b>“‘/$&\\;</b>)",
+        "Negalima naudoti (<b>\" ' / $ & \\ ;</b>)",
         "Kažkas nutiko ne taip 🤕"
+      ],
+      "label": [
+        "Įveskite el. paštą",
+        "Pasirinkite paketo kalbą"
       ]
     }
   },

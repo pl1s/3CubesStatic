@@ -457,22 +457,22 @@
   "sample": {
     "banner": "Special offer — we invite you to download \"Three Cubes\" \"January 13th\" and \"Humanitarian Aid for Ukraine\" lessons for FREE",
     "hero": {
-      "title": "Free lessons!",
-      "sub": "We prepared lesson packages for anyone to try out",
+      "title": "Gift - lesson package!",
+      "sub": "Subscribe to the \"Three Cubes\" newsletter and receive a self-guided lesson package by e-mail!",
       "btn": "Contact us!"
     },
     "king&queen": {
-      "title": "„Karalius Mindaugas ir karalienė Morta“",
-      "sub": "Mokiniai atlieka užduotis bendradarbiaujant ir sužino apie karūnavimo ceremoniją!",
+      "title": "\"King Mindaugas & Queen Morta\"",
+      "sub": "Students complete tasks cooperatively and learn about the coronation ceremony!",
       "topics": [
-        "Lankomasi istorinių šaltinių bibliotekoje ir pilyje",
-        "Bendraujama su veikėjais",
-        "Atliekamas žinių testas labirinte"
+        "Visits to the library of historical sources and the castle",
+        "Communicating with characters",
+        "Knowledge test in the maze"
       ]
     },
     "jan13": {
       "title": "\"January 13th\"",
-      "sub": "Explore Vilnius TV tower and get to know what happened on January 13",
+      "sub": "Get acquainted with historical events, the course of the day of January 13",
       "lesson": {
         "desc": "Critical thinking, social and citizenship competences, respect for human rights and freedoms are developed. Students perform tasks individually and in groups.",
         "topics": [
@@ -508,6 +508,32 @@
     ],
     "downloadForm": {
       "title": "Lesson download form",
+      "instructions": "Subscribe to the \"Three Cubes\" newsletter and receive a self-guided lesson package by e-mail. mail!",
+      "notes": [
+        "The lesson package is designed in a way that the teacher can conduct the lesson for the class on his own.",
+        "The lesson package includes: program installation instructions, lesson plan and preparation files, virtual lesson world file.",
+        "After subscribing to the newsletter, a gift — a lesson package — will be automatically sent to the specified e-mail.",
+        "By downloading the lesson package, you agree that your email address will be registered for statistical and feedback gathering purposes. More about this:",
+        "Privacy Policy",
+        "and",
+        "Cookie Policy"
+      ],
+      "desc": "You can choose to receive news about our products and other communications for direct marketing purposes. This is important and is intended for us to be able to contact you - to hear your opinion, how you managed to conduct the lesson on your own and help in case of questions.",
+      "gdpr": "By downloading lesson you agree that your email will be stored for statistical and feedback collecting purposes.",
+      "subscribe": "Subscribe",
+      "sent": "Sent!",
+      "error": [
+        "This value cannot be empty.",
+        "Do not use (<b>\" ' / $ & \\ ;</b>)",
+        "Something went wrong 🤕"
+      ],
+      "label": [
+        "Enter email",
+        "Select package language"
+      ]
+    },
+    "downloadForm2": {
+      "title": "Lesson download form",
       "instructions": "Receive the lesson package to your email!",
       "notes": [
         "The lesson package is designed in a way that the teacher can conduct the lesson for the class on his own.",
@@ -525,8 +551,12 @@
       "sent": "Sent!",
       "error": [
         "This value cannot be empty.",
-        "Do not use (<b>“‘/$&\\;</b>)",
+        "Do not use (<b>\" ' / $ & \\ ;</b>)",
         "Something went wrong 🤕"
+      ],
+      "label": [
+        "Enter email",
+        "Select package language"
       ]
     }
   },

@@ -55,7 +55,7 @@
           <div style="display: flex; justify-content: center">
             <h2
               class="element"
-              data="sample.downloadForm.title"
+              data="sample.downloadForm2.title"
               style="margin-top: 0; font-weight: 400; padding: 1.2rem 0"
             >
               Lesson download form
@@ -64,7 +64,7 @@
           <div>
             <h4
               class="element"
-              data="sample.downloadForm.instructions"
+              data="sample.downloadForm2.instructions"
               style="font-weight: 300; margin-bottom: 10px"
             >
               Receive the lesson package to your email!
@@ -72,15 +72,15 @@
           </div>
 
           <ul style="padding: 1rem 0; list-style-type: disc; margin-left: 30px">
-            <li class="element" data="sample.downloadForm.notes.0">
+            <li class="element" data="sample.downloadForm2.notes.0">
               The lesson package is designed in a way that the teacher can
               conduct the lesson for the class on his own.
             </li>
-            <li class="element" data="sample.downloadForm.notes.1">
+            <li class="element" data="sample.downloadForm2.notes.1">
               The lesson package includes: program installation instructions,
               lesson plan and preparation files, virtual lesson world file.
             </li>
-            <li class="element" data="sample.downloadForm.notes.2">
+            <li class="element" data="sample.downloadForm2.notes.2">
               SUBSCRIBE TO THE NEWSLETTER IS NOT NECESSARY, you can download
               this lesson pack by entering your email. below
             </li>
@@ -95,41 +95,77 @@
                 padding-bottom: 5px;
               "
             >
-              <input
-                style="
-                  height: 30px;
-                  width: 100%;
-                  max-width: 265px;
-                  padding-left: 5px;
-                  border: 2px solid #aaa;
-                  border-radius: 4px;
-                  box-sizing: border-box;
-                  outline: none;
-                  font-weight: 400;
-                  transition: 0.3s;
-                  margin: auto;
-                "
-                id="email"
-                type="email"
-                placeholder="el.paštas@gmail.com"
-                size="30"
-                required
-                autocomplete="off"
-              />
-              <span
-                id="valid-required"
-                class="valid-error element"
-                style="padding-top: 5px; margin: auto"
-                data="sample.downloadForm.error.0"
-                >Ši reikšmė negali būti tuščia.</span
-              >
-              <span
-                id="valid-symbols"
-                class="valid-error element"
-                style="padding-top: 5px; margin: auto"
-                data="sample.downloadForm.error.1"
-                >Negalima naudoti (<b>“‘/$&\;</b>)</span
-              >
+              <label style="max-width: 265px; margin: auto">
+                <span
+                  class="element"
+                  data="sample.downloadForm.label.0"
+                  style="padding-left: 2px; font-size: 14px"
+                >
+                  Enter email
+                </span>
+                <input
+                  style="
+                    height: 30px;
+                    width: 100%;
+                    padding-left: 5px;
+                    border: 2px solid #aaa;
+                    border-radius: 4px;
+                    box-sizing: border-box;
+                    outline: none;
+                    font-weight: 400;
+                    transition: 0.3s;
+                    margin: 5px auto 0;
+                  "
+                  id="email"
+                  type="email"
+                  placeholder="el.paštas@gmail.com"
+                  size="30"
+                  required
+                  autocomplete="off"
+                />
+                <span
+                  id="valid-required"
+                  class="valid-error element"
+                  style="padding-top: 5px; margin: auto"
+                  data="sample.downloadForm.error.0"
+                  >This value cannot be empty.</span
+                >
+                <span
+                  id="valid-symbols"
+                  class="valid-error element"
+                  style="padding-top: 5px; margin: auto"
+                  data="sample.downloadForm.error.1"
+                  >Do not use (<b>" ' / $ & \ ;</b>)</span
+                >
+              </label>
+              <label style="width: 265px; margin: 10px auto 0">
+                <span
+                  class="element"
+                  data="sample.downloadForm.label.1"
+                  style="padding-left: 2px; font-size: 14px"
+                >
+                  Select package language
+                </span>
+                <select
+                  style="
+                    height: 30px;
+                    width: 100%;
+                    padding-left: 5px;
+                    border: 2px solid #aaa;
+                    border-radius: 4px;
+                    box-sizing: border-box;
+                    outline: none;
+                    font-weight: 400;
+                    transition: 0.3s;
+                    margin: 5px auto 0;
+                    cursor: pointer;
+                  "
+                  id="packageLang"
+                >
+                  <option value="LT">LT</option>
+                  <option value="EN">EN</option>
+                </select>
+              </label>
             </div>
             <div
               style="
@@ -147,7 +183,7 @@
               <div class="checkbox-container">
                 <input id="checkbox" type="checkbox" />
                 <h6
-                  data="sample.downloadForm.newsletter"
+                  data="sample.downloadForm2.newsletter"
                   class="element checkbox-txt"
                   style="padding: 0 3px"
                 >
@@ -156,25 +192,25 @@
               </div>
             </div>
             <h6>
-              <span class="element" data="sample.downloadForm.notes.3">
+              <span class="element" data="sample.downloadForm2.notes.3">
                 By downloading the lesson package, you agree that your email
                 adress will be registered for statistical and feedback gathering
                 purposes. More about this:
               </span>
               <a
                 class="element"
-                data="sample.downloadForm.notes.4"
+                data="sample.downloadForm2.notes.4"
                 href="./privacy-policy.html"
                 style="font-weight: 400 !important; font-size: 16px"
               >
                 Privacy Policy
               </a>
-              <span class="element" data="sample.downloadForm.notes.5">
+              <span class="element" data="sample.downloadForm2.notes.5">
                 and
               </span>
               <a
                 class="element"
-                data="sample.downloadForm.notes.6"
+                data="sample.downloadForm2.notes.6"
                 href="./cookies-policy.html"
                 style="font-weight: 400 !important; font-size: 16px"
               >
@@ -202,7 +238,7 @@
             >
               <h3
                 class="element"
-                data="sample.downloadForm.send"
+                data="sample.downloadForm2.send"
                 style="font-size: 1rem; font-weight: 400; color: white"
               >
                 Send
@@ -276,7 +312,7 @@
             <h2
               style="padding: 3rem"
               class="element"
-              data="sample.downloadForm.error.2"
+              data="sample.downloadForm2.error.2"
             >
               Something went wrong 🤕
             </h2>

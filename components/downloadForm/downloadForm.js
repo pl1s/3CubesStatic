@@ -30,10 +30,12 @@ function defineDownloadForm(template) {
       this.language = "LT";
       this.lesson = "S13";
 
-      this.emailCheckRegEx = /[“‘/$&\;]/g;
+      this.emailCheckRegEx = /["'/$&\\;]/g;
 
       this.downloadSubmitButton.addEventListener("click", () => this.submit());
       this.downloadFormBackground.addEventListener("click", () => this.hide());
+
+      this.packageLang = this.querySelector('#packageLang');
     }
 
     show() {
@@ -50,10 +52,6 @@ function defineDownloadForm(template) {
     }
 
     validate() {
-      console.log(
-        this.emailInput.value,
-        this.emailInput.value.match(this.emailCheckRegEx)
-      );
       this.requiredBox.style.display = "none";
       this.symbolsBox.style.display = "none";
 
@@ -110,8 +108,8 @@ function defineDownloadForm(template) {
 
       this.sendEmail(
         this.emailInput.value,
-        this.lesson + "LT",
-        true
+        this.lesson + this.packageLang.value,
+        false
       );
     }
   }
@@ -120,8 +118,14 @@ function defineDownloadForm(template) {
 }
 
 function onClickDownloadButton(lesson) {
-  let downloadForm = document.querySelector("download-form");
+  const downloadForm = document.querySelector("download-form");
+  const packageLangSelect = document.querySelector('#packageLang');
+  const packageLangEn = document.querySelector('#packageLangEn');
+
   downloadForm.lesson = lesson;
   downloadForm.language = getLocalizationLanguage().toUpperCase();
   downloadForm.show();
+
+  packageLangSelect.value = 'LT';
+  packageLangEn.disabled = lesson === 'KMKM';
 }

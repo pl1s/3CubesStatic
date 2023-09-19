@@ -25,7 +25,7 @@
     <script src="./components/footer/footer.js"></script>
     <script src="./components/noticeOverlay/noticeOverlay.js"></script>
     <script src="./components/downloadForm/downloadForm.js"></script>
-    <script src="./components/downloadFormEn/downloadFormEn.js"></script>
+    <script src="./components/downloadForm2/downloadForm2.js"></script>
     <!-- GOOGLE ANALYTICS -->
     <script>
       let gaProperty = "G-78KBBN7H92"
@@ -95,17 +95,17 @@
   <body>
     <header-comp></header-comp>
     <download-form style="display: none"></download-form>
-    <download-form-en style="display: none"></download-form-en>
+    <download-form-2 style="display: none"></download-form-2>
     <main>
       <section class="hero-main side-padding">
         <div class="hero-main__cta">
           <div class="hero-main__cta-topLeft">
-            <h1 class="title" data="sample.hero.title">
-              Dovanų — pamokos paketas!
+            <h1 class="title element" data="sample.hero.title">
+              Gift - lesson package!
             </h1>
-            <h3 data="sample.hero.sub">
-              Prenumeruok „Trys kubai“ naujienlaiškį ir gauk savarankiškai
-              vedamos pamokos paketą į el. paštą!
+            <h3 class="element" data="sample.hero.sub">
+              Subscribe to the "Three Cubes" newsletter and receive a
+              self-guided lesson package by e-mail!
             </h3>
             <!-- <button id="contactBtn">
             <h4 class="element" data="sample.hero.btn">Contact Us!</h4>
@@ -128,14 +128,14 @@
           lessons for FREE</h5>
       </div>
     </section> -->
-      <section class="sample flex-column">
+      <section id="king_queen" class="sample flex-column">
         <div class="sample__title flex-column">
-          <h2 data="sample.king&queen.title">
-            „Karalius Mindaugas ir karalienė Morta“
+          <h2 class="element" data="sample.king&queen.title">
+            "King Mindaugas & Queen Morta"
           </h2>
-          <h4 data="sample.king&queen.sub">
-            Mokiniai atlieka užduotis bendradarbiaujant ir sužino apie
-            karūnavimo ceremoniją!
+          <h4 class="element" data="sample.king&queen.sub">
+            Students complete tasks cooperatively and learn about the coronation
+            ceremony!
           </h4>
         </div>
         <div class="sample__body flex-row-reverse">
@@ -181,8 +181,8 @@
                     src="./res/img/nonformal/Rectangle 237.png"
                     alt="list icon"
                   />
-                  <h4 data="sample.king&queen.topics.0">
-                    Lankomasi istorinių šaltinių bibliotekoje ir pilyje
+                  <h4 class="element" data="sample.king&queen.topics.0">
+                    Visits to the library of historical sources and the castle
                   </h4>
                 </li>
                 <li>
@@ -191,8 +191,8 @@
                     src="./res/img/nonformal/Rectangle 237.png"
                     alt="list icon"
                   />
-                  <h4 data="sample.king&queen.topics.1">
-                    Bendraujama su veikėjais
+                  <h4 class="element" data="sample.king&queen.topics.1">
+                    Communicating with characters
                   </h4>
                 </li>
                 <li>
@@ -201,8 +201,8 @@
                     src="./res/img/nonformal/Rectangle 237.png"
                     alt="list icon"
                   />
-                  <h4 data="sample.king&queen.topics.2">
-                    Atliekamas žinių testas labirinte
+                  <h4 class="element" data="sample.king&queen.topics.2">
+                    Knowledge test in the maze
                   </h4>
                 </li>
               </ul>
@@ -219,7 +219,7 @@
                     src="./res/img/reusable/arrowR.png"
                     alt="download arrow"
                   />
-                  <h4 data="formal.download.btn">Atsisiųsti</h4>
+                  <h4 class="element" data="formal.download.btn">Download</h4>
                 </button>
               </div>
             </section>
@@ -228,9 +228,10 @@
       </section>
       <section class="sample flex-column">
         <div class="sample__title flex-column">
-          <h2 data="sample.jan13.title">„Sausio 13-oji“</h2>
-          <h4 data="sample.jan13.sub">
-            Susipažinti su istoriniais įvykiais, Sausio 13-osios dienos eiga
+          <h2 class="element" data="sample.jan13.title">"January 13th"</h2>
+          <h4 class="element" data="sample.jan13.sub">
+            Get acquainted with historical events, the course of the day of
+            January 13
           </h4>
         </div>
         <div class="sample__body flex-row">
@@ -280,8 +281,8 @@
                     src="./res/img/nonformal/Rectangle 237.png"
                     alt="list icon"
                   />
-                  <h4 data="sample.jan13.lesson.topics.0">
-                    Atliekamos užduotys prie Vilniaus televizijos bokšto
+                  <h4 class="element" data="sample.jan13.lesson.topics.0">
+                    Complete tasks at Vilnius TV tower
                   </h4>
                 </li>
                 <li>
@@ -290,8 +291,8 @@
                     src="./res/img/nonformal/Rectangle 237.png"
                     alt="list icon"
                   />
-                  <h4 data="sample.jan13.lesson.topics.1">
-                    Bendradarbiaujama komandose
+                  <h4 class="element" data="sample.jan13.lesson.topics.1">
+                    Work in teams
                   </h4>
                 </li>
                 <li>
@@ -300,8 +301,9 @@
                     src="./res/img/nonformal/Rectangle 237.png"
                     alt="list icon"
                   />
-                  <h4 data="sample.jan13.lesson.topics.2">
-                    Pamokos gale kartu su mokytoju vyksta refleksija
+                  <h4 class="element" data="sample.jan13.lesson.topics.2">
+                    Reflect on the events with the teacher and share what you
+                    learned
                   </h4>
                 </li>
               </ul>
@@ -318,7 +320,7 @@
                     src="./res/img/reusable/arrowR.png"
                     alt="download arrow"
                   />
-                  <h4 data="formal.download.btn">Atsisiųsti</h4>
+                  <h4 class="element" data="formal.download.btn">Download</h4>
                 </button>
               </div>
             </section>
@@ -433,7 +435,7 @@
                 <button
                   id="showDialog"
                   class="flex center transparent UA"
-                  onclick="onClickDownloadButtonEn('UA')"
+                  onclick="onClickDownloadButton2('UA')"
                 >
                   <img
                     class="arrow"

@@ -54,33 +54,35 @@
         >
           <div style="display: flex; justify-content: center">
             <h2
+              class="element"
               data="sample.downloadForm.title"
               style="margin-top: 0; font-weight: 400; padding: 1.2rem 0"
             >
-              Pamokos paketas — dovanų!
+              Lesson package — gift!
             </h2>
           </div>
           <div>
             <h4
+              class="element"
               data="sample.downloadForm.instructions"
               style="font-weight: 300; margin-bottom: 10px"
             >
-              Prenumeruokite „Trys kubai“ naujienlaiškį ir gaukite savarankiškai
-              vedamos pamokos paketą į el. paštą!
+              Subscribe to the "Three Cubes" newsletter and receive a
+              self-guided lesson package by e-mail!
             </h4>
           </div>
           <ul style="padding: 1rem 0; list-style-type: disc; margin-left: 30px">
-            <li>
-              Pamokos paketas sukurtas taip, kad pedagogas klasei gali pats
-              savarankiškai pravesti pamoką.
+            <li class="element" data="sample.downloadForm.notes.0">
+              The lesson package is designed in a way that the teacher can
+              conduct the lesson for the class on his own.
             </li>
-            <li>
-              Pamokos paketą sudaro: programų įrašymo instrukcijos, pamokos
-              planas ir paruoštukė, virtualus pamokos pasaulis.
+            <li class="element" data="sample.downloadForm.notes.1">
+              The lesson package includes: program installation instructions,
+              lesson plan and preparation files, virtual lesson world file.
             </li>
-            <li>
-              Užprenumeravus naujienlaiškį, dovana — pamokos paketas —
-              automatiškai atkeliaus į Jūsų nurodytą el. paštą.
+            <li class="element" data="sample.downloadForm.notes.2">
+              After subscribing to the newsletter, a gift — a lesson package —
+              will be automatically sent to the specified e-mail.
             </li>
           </ul>
 
@@ -93,39 +95,77 @@
                 padding-bottom: 5px;
               "
             >
-              <input
-                style="
-                  height: 30px;
-                  width: 100%;
-                  max-width: 265px;
-                  padding-left: 5px;
-                  border: 2px solid #aaa;
-                  border-radius: 4px;
-                  box-sizing: border-box;
-                  outline: none;
-                  font-weight: 400;
-                  transition: 0.3s;
-                  margin: auto;
-                "
-                id="email"
-                type="email"
-                placeholder="el.paštas@gmail.com"
-                size="30"
-                required
-                autocomplete="off"
-              />
-              <span
-                id="valid-required"
-                class="valid-error"
-                style="padding-top: 5px; margin: auto"
-                >Ši reikšmė negali būti tuščia.</span
-              >
-              <span
-                id="valid-symbols"
-                class="valid-error"
-                style="padding-top: 5px; margin: auto"
-                >Negalima naudoti (<b>“‘/$&\;</b>)</span
-              >
+              <label style="max-width: 265px; margin: auto">
+                <span
+                  class="element"
+                  data="sample.downloadForm.label.0"
+                  style="padding-left: 2px; font-size: 14px"
+                >
+                  Enter email
+                </span>
+                <input
+                  style="
+                    height: 30px;
+                    width: 100%;
+                    padding-left: 5px;
+                    border: 2px solid #aaa;
+                    border-radius: 4px;
+                    box-sizing: border-box;
+                    outline: none;
+                    font-weight: 400;
+                    transition: 0.3s;
+                    margin: 5px auto 0;
+                  "
+                  id="email"
+                  type="email"
+                  placeholder="el.paštas@gmail.com"
+                  size="30"
+                  required
+                  autocomplete="off"
+                />
+                <span
+                  id="valid-required"
+                  class="valid-error element"
+                  style="padding-top: 5px; margin: auto"
+                  data="sample.downloadForm.error.0"
+                  >This value cannot be empty.</span
+                >
+                <span
+                  id="valid-symbols"
+                  class="valid-error element"
+                  style="padding-top: 5px; margin: auto"
+                  data="sample.downloadForm.error.1"
+                  >Do not use (<b>" ' / $ & \ ;</b>)</span
+                >
+              </label>
+              <label style="width: 265px; margin: 10px auto 0">
+                <span
+                  class="element"
+                  data="sample.downloadForm.label.1"
+                  style="padding-left: 2px; font-size: 14px"
+                >
+                  Select package language
+                </span>
+                <select
+                  style="
+                    height: 30px;
+                    width: 100%;
+                    padding-left: 5px;
+                    border: 2px solid #aaa;
+                    border-radius: 4px;
+                    box-sizing: border-box;
+                    outline: none;
+                    font-weight: 400;
+                    transition: 0.3s;
+                    margin: 5px auto 0;
+                    cursor: pointer;
+                  "
+                  id="packageLang"
+                >
+                  <option value="LT">LT</option>
+                  <option id="packageLangEn" value="EN">EN</option>
+                </select>
+              </label>
             </div>
             <div
               style="
@@ -139,25 +179,31 @@
             <div class="checkbox">
               <div class="checkbox-container">
                 <h6
-                  data="sample.downloadForm.newsletter"
-                  class="checkbox-txt"
+                  data="sample.downloadForm.notes.3"
+                  class="checkbox-txt element"
                   style="padding-bottom: 1rem"
                 >
-                  Sutinku, kad nurodytu mano el. pašto adresu būtų siunčiami
-                  naujienlaiškiai. Prenumeruodami naujienlaiškį sutinkate su
-                  mūsų
+                  I agree that newsletters would be sent to the specified e-mail
+                  address. By subscribing to the newsletter, you agree to our
+
                   <a
+                    class="element"
+                    data="sample.downloadForm.notes.4"
                     style="font-weight: 400 !important; font-size: 16px"
                     href="./privacy-policy.html"
                     target="_blank"
-                    >Privatumo Politika</a
+                    >Privacy Policy</a
                   >
-                  ir
+                  <span class="element" data="sample.downloadForm.notes.5"
+                    >and</span
+                  >
                   <a
+                    class="element"
+                    data="sample.downloadForm.notes.6"
                     style="font-weight: 400 !important; font-size: 16px"
                     href="./cookies-policy.html"
                     target="_blank"
-                    >Slapukų Politika</a
+                    >Cookie Policy</a
                   >.
                 </h6>
               </div>
@@ -185,10 +231,11 @@
                 "
               >
                 <h3
-                  data="sample.downloadForm.send"
+                  class="element"
+                  data="sample.downloadForm.subscribe"
                   style="font-size: 1rem; font-weight: 400; color: white"
                 >
-                  Prenumeruoti
+                  Subscribe
                 </h3>
               </button>
             </div>
@@ -223,7 +270,13 @@
                   rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
               "
             >
-              <h2 style="padding: 3rem">Sent!</h2>
+              <h2
+                class="element"
+                data="sample.downloadForm.sent"
+                style="padding: 3rem"
+              >
+                Sent!
+              </h2>
             </div>
           </div>
           <div
@@ -256,7 +309,13 @@
                   rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
               "
             >
-              <h2 style="padding: 3rem">Something went wrong 🤕</h2>
+              <h2
+                class="element"
+                style="padding: 3rem"
+                data="sample.downloadForm.error.2"
+              >
+                Something went wrong 🤕
+              </h2>
             </div>
           </div>
         </div>
